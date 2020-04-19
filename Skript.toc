@@ -1,0 +1,69 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Begriffsdefinition}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Schwingungen}{2}{section.1.2}
+\contentsline {paragraph}{\nonumberline Definition.}{2}{section*.1}
+\contentsline {subsection}{\numberline {1.2.1}Klassifikation von Schwingungen}{2}{subsection.1.2.1}
+\contentsline {paragraph}{\nonumberline Periodische Schwingungen.}{2}{section*.2}
+\contentsline {paragraph}{\nonumberline Harmonische Schwingungen.}{3}{section*.4}
+\contentsline {paragraph}{\nonumberline \"Uberlagerte harmonische Schwingungen.}{4}{section*.6}
+\contentsline {subsection}{\numberline {1.2.2}Weitere Klassifikationen f\"ur Schwingungen}{6}{subsection.1.2.2}
+\contentsline {paragraph}{\nonumberline Klassifikation nach Verlauf (nicht-harmonischer Fall)}{6}{section*.8}
+\contentsline {paragraph}{\nonumberline Klassifikation nach der Anzahl der Freiheisgrade}{6}{section*.9}
+\contentsline {paragraph}{\nonumberline Klassifikation nach Schwingungsform.}{6}{section*.11}
+\contentsline {paragraph}{\nonumberline Klassifikation nach Aufbau der Bewegungsgleichung}{7}{section*.13}
+\contentsline {paragraph}{\nonumberline Klassifikation nach dem Entstehungmechanismus}{7}{section*.14}
+\contentsline {chapter}{\numberline {2}Freie Schwingungen}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Freie unged\"ampfte Schwingungen}{8}{section.2.1}
+\contentsline {paragraph}{\nonumberline Fazit.}{15}{section*.19}
+\contentsline {section}{\numberline {2.2}Freie ged\"ampfte Schwingungen}{15}{section.2.2}
+\contentsline {paragraph}{\nonumberline Fall 1: starke D\"ampfung.}{17}{section*.21}
+\contentsline {paragraph}{\nonumberline Fall 2: aperiodischer Grenzfall.}{17}{section*.22}
+\contentsline {paragraph}{\nonumberline Fall 3: schwache D\"ampfung.}{18}{section*.23}
+\contentsline {paragraph}{\nonumberline 2.1}{19}{section*.26}
+\contentsline {paragraph}{\nonumberline 2.2}{19}{section*.27}
+\contentsline {paragraph}{\nonumberline 2.3}{19}{section*.28}
+\contentsline {paragraph}{\nonumberline 2.4}{19}{section*.29}
+\contentsline {paragraph}{\nonumberline 2.5}{19}{section*.30}
+\contentsline {paragraph}{\nonumberline 2.6}{19}{section*.31}
+\contentsline {chapter}{\numberline {3}Erzwungene Schwingungen}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Unged\"ampfte krafterregte Schwingungen}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Ged\"ampfte krafterregte Schwingungen}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Ged\"ampfte fu\IeC {\ss }punkterrekte Schwingungen -- Maxwell-Modell}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Ged\"ampfte fu\IeC {\ss }punkterrekte Schwingungen -- Voigt-Modell}{28}{section.3.4}
+\contentsline {section}{\numberline {3.5}Ged\"ampfte unwuchterregte Schwingungen}{30}{section.3.5}
+\contentsline {section}{\numberline {3.6}Alternative L\"osungsans\"atze f\"ur Zwangsschwingungen}{33}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Ansatz mit Phasenverschiebung}{34}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Komplexe Erweiterung}{35}{subsection.3.6.2}
+\contentsline {paragraph}{\nonumberline 3.1}{37}{section*.40}
+\contentsline {paragraph}{\nonumberline 3.2}{37}{section*.41}
+\contentsline {paragraph}{\nonumberline 3.3}{37}{section*.42}
+\contentsline {paragraph}{\nonumberline 3.4}{37}{section*.43}
+\contentsline {paragraph}{\nonumberline 3.5}{37}{section*.44}
+\contentsline {paragraph}{\nonumberline 3.6}{37}{section*.45}
+\contentsline {chapter}{\numberline {4}Anregungssignale und Fourieranalyse}{38}{chapter.4}
+\contentsline {section}{\numberline {4.1}Anregung durch Impuls}{38}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Sprungfunktion und Dirac-Impuls}{38}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Sto\IeC {\ss }antwort}{39}{subsection.4.1.2}
+\contentsline {paragraph}{\nonumberline Vor Sto\IeC {\ss } ($t \leq -\varepsilon $)}{39}{section*.46}
+\contentsline {paragraph}{\nonumberline W\"ahrend des Sto\IeC {\ss }es ($-\varepsilon \leq t \leq \varepsilon $)}{39}{section*.47}
+\contentsline {paragraph}{\nonumberline Nach Sto\IeC {\ss } ($\varepsilon \leq t $)}{40}{section*.48}
+\contentsline {section}{\numberline {4.2}Periodische Anregung}{40}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Darstellung von Singalen im Zeit- und im Frequenzbereich}{40}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Darstellung periodischer Funktionen durch Fourierreihen}{41}{section.4.3}
+\contentsline {paragraph}{\nonumberline Gerade Funktionen.}{43}{section*.52}
+\contentsline {paragraph}{\nonumberline Ungerade Funktionen.}{43}{section*.53}
+\contentsline {section}{\numberline {4.4}Erzwungene Schwingungen mit periodischer Anregung}{47}{section.4.4}
+\contentsline {paragraph}{\nonumberline Fall 1: $k=0$.}{47}{section*.59}
+\contentsline {paragraph}{\nonumberline Fall 2: $k\geq 1$, $F_{S,k}=0$.}{47}{section*.60}
+\contentsline {paragraph}{\nonumberline Fall 3: $k\geq 0$ $F_{C,k}=0$.}{48}{section*.61}
+\contentsline {section}{\numberline {4.5}Nichtperiodische Vorg\"ange}{50}{section.4.5}
+\contentsline {section}{\numberline {4.6}Berechnung der Schwingungsantwort mithilfe des komplexen Frequenzgangs}{53}{section.4.6}
+\contentsline {chapter}{\numberline {5}Schwingungen mit 2 Freiheitsgraden}{56}{chapter.5}
+\contentsline {section}{\numberline {5.1}Beispiele}{56}{section.5.1}
+\contentsline {section}{\numberline {5.2}Bewegungsgleichung}{57}{section.5.2}
+\contentsline {section}{\numberline {5.3}Unged\"ampfte Schwingungen}{58}{section.5.3}
+\contentsline {section}{\numberline {5.4}Modale Entkopplung}{65}{section.5.4}
+\contentsline {section}{\numberline {5.5}Systeme mit modaler D\"ampfung}{68}{section.5.5}
+\contentsline {section}{\numberline {5.6}Erzwungene Koppelschwingungen und Tilgung}{70}{section.5.6}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{73}{chapter*.70}

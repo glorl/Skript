@@ -1,0 +1,210 @@
+\begin{thebibliography}{10}
+
+\bibitem{bertram2008elasticity}
+A.~Bertram.
+\newblock {\em Elasticity and plasticity of large deformations}.
+\newblock Springer, 2008.
+
+\bibitem{bolotin1963nonconservative}
+V.~V. Bolotin.
+\newblock {\em Nonconservative problems of the theory of elastic stability}.
+\newblock Pergamon Press Oxford London New York Paris, 1963.
+
+\bibitem{braun2016convergence}
+B.~Braun, J.~Deppler, A.~Fidlin, and M.~Hochbruck.
+\newblock Convergence of viscoelastic constraints to nonholonomic idealization.
+\newblock {\em European Journal of Mechanics-A/Solids}, 2016.
+
+\bibitem{Debrabant2004Numerische}
+K.~Debrabant.
+\newblock {\em {Numerische Behandlung linearer und semilinearer partieller
+  differentiell-algebraischer Systeme mit Runge-Kutta-Methoden}}.
+\newblock Dissertation, Martin-Luther-Universität Halle-Wittenberg, 2004.
+
+\bibitem{demir2000floquet}
+A.~Demir.
+\newblock Floquet theory and non-linear perturbation analysis for oscillators
+  with differential-algebraic equations.
+\newblock {\em International Journal of Circuit Theory and Applications},
+  28(2):163--185, 2000.
+
+\bibitem{gantmacher1998theory}
+F.~Gantmacher and K.~Hirsch.
+\newblock {\em The theory of matrices (english translation)}, volume~1.
+\newblock Chelsea Publishing Co., Chapman \& Hall, 1998.
+
+\bibitem{gantmacher2000applications}
+F.~Gantmacher and K.~Hirsch.
+\newblock {\em The theory of matrices (english translation)}, volume~2.
+\newblock Chelsea Publishing Co., Chapman \& Hall, 2000.
+
+\bibitem{greve2003kontinuums}
+R.~Greve.
+\newblock {\em Kontinuumsmechanik}.
+\newblock Springer-Verlag Berlin Heidelberg New York, 2003.
+
+\bibitem{Griepentrog1986Differential}
+E.~Griepentrog and R.~März.
+\newblock {\em Differential-algebraic equations and their numerical treatment}.
+\newblock BSB Teubner, Leipzig, 1986.
+
+\bibitem{guckenheimer1983nonlinear}
+J.~Guckenheimer and P.~Holmes.
+\newblock {\em Nonlinear oscillations, dynamical systems, and bifurcations of
+  vector fields}.
+\newblock Springer Science \& Business Media, 1983.
+
+\bibitem{hagedorn1988non}
+P.~Hagedorn and W.~Stadler.
+\newblock {\em Non-linear oscillations}.
+\newblock Oxford University Press, USA, 1988.
+
+\bibitem{heisler2002advanced}
+H.~Heisler.
+\newblock {\em Advanced vehicle technology}.
+\newblock Butterworth-Heinemann, 2. edition, 2002.
+
+\bibitem{hibbeler2012technische}
+R.~Hibbeler, J.~Wauer, and W.~Seemann.
+\newblock {\em Technische Mechanik 3 -- Dynamik}.
+\newblock Pearson, 2012.
+
+\bibitem{hill1970constitutive}
+R.~Hill.
+\newblock Constitutive inequalities for isotropic elastic solids under finite
+  strain.
+\newblock In {\em Proceedings of the Royal Society of London A: Mathematical,
+  Physical and Engineering Sciences}, volume 314, pages 457--472. The Royal
+  Society, 1970.
+
+\bibitem{jelali2003hydraulic}
+M.~Jelali and A.~Kroll.
+\newblock {\em Hydraulic servo-systems: modelling, identification and control}.
+\newblock Springer, 2003.
+
+\bibitem{kerle2011getriebetechnik}
+H.~Kerle, B.~Corves, and M.~H{\"u}sing.
+\newblock {\em Getriebetechnik: Grundlagen, Entwicklung und Anwendung
+  ungleichm{\"a}{\ss}ig {\"u}bersetzender Getriebe}.
+\newblock Springer-Verlag, 2011.
+
+\bibitem{kirillov2013nonconservative}
+O.~Kirillov.
+\newblock {\em Nonconservative stability problems of modern physics},
+  volume~14.
+\newblock Walter de Gruyter, 2013.
+
+\bibitem{klement2011Fahrzeug}
+W.~Klement.
+\newblock {\em Fahrzeuggetriebe}.
+\newblock Carl Hanser Verlag München, 2011.
+
+\bibitem{lamour2003stability}
+R.~Lamour, R.~M{\"a}rz, and R.~Winkler.
+\newblock Stability of periodic solutions of index-2 differential algebraic
+  systems.
+\newblock {\em Journal of Mathematical Analysis and Applications},
+  279(2):475--494, 2003.
+
+\bibitem{laurien2009numerische}
+E.~Laurien and H.~Oertel.
+\newblock {\em Numerische Str{\"o}mungsmechanik}.
+\newblock Springer, 2009.
+
+\bibitem{leine2004dynamics}
+R.~Leine and H.~Nijmeijer.
+\newblock {\em Dynamics and bifurcations of non-smooth mechanical systems}.
+\newblock Springer-Verlag Berlin Heidelberg New York, 2004.
+
+\bibitem{lorang2006tgv}
+X.~Lorang, F.~Foy-Margiocchi, Q.~Nguyen, and P.-E. Gautier.
+\newblock {TGV disc brake squeal}.
+\newblock {\em Journal of Sound and Vibration}, 293(3):735--746, 2006.
+
+\bibitem{marx2011dynamische}
+B.~Marx and W.~Vogt.
+\newblock {\em Dynamische Systeme: Theorie und Numerik}.
+\newblock Springer Science+Business Media, 2011.
+
+\bibitem{merkin1997introduction}
+D.~Merkin.
+\newblock {\em Introduction to the theory of stability}.
+\newblock Springer Science \& Business Media, 1997.
+
+\bibitem{muller2013stabilitat}
+P.~M{\"u}ller.
+\newblock {\em Stabilit{\"a}t und Matrizen: Matrizenverfahren in der
+  Stabilit{\"a}tstheorie linearer dynamischer Systeme}.
+\newblock Springer-Verlag, 2013.
+
+\bibitem{nayfeh1995applied}
+A.~Nayfeh and B.~Balachandran.
+\newblock {\em Applied nonlinear dynamics: analytical, computational and
+  experimental methods}.
+\newblock John Wiley \& Sons, 1995.
+
+\bibitem{nemark2004dynamics}
+J.~Neimark and N.~Fufaev.
+\newblock {\em Dynamics of nonholonomic systems}, volume~33.
+\newblock American Mathematical Soc., 2004.
+
+\bibitem{oertel2009stromungsmechanik}
+H.~Oertel, M.~B{\"o}hle, and U.~Dohrmann.
+\newblock {\em Str{\"o}mungsmechanik}, volume~5.
+\newblock Springer, 2009.
+
+\bibitem{popov2009Kontakt}
+V.~Popov.
+\newblock {\em Kontaktmechanik und Reibung}.
+\newblock Springer-Verlag Berlin Heidelberg, 2009.
+
+\bibitem{riemer1993mathematische}
+M.~Riemer, J.~Wauer, and W.~Wedig.
+\newblock {\em Mathematische Methoden der Technischen Mechanik}.
+\newblock Springer, 1993.
+
+\bibitem{selting1997numerical}
+P.~Selting and Q.~Zheng.
+\newblock Numerical stability analysis of oscillating integrated circuits.
+\newblock {\em Journal of Computational and Applied Mathematics},
+  82(1):367--378, 1997.
+
+\bibitem{seyranian2003multiparameter}
+A.~Seyranian and A.~Mailybaev.
+\newblock {\em Multiparameter stability theory with mechanical applications}.
+\newblock World Scientific, 2003.
+
+\bibitem{strogatz2014nonlinear}
+S.~Strogatz.
+\newblock {\em Nonlinear dynamics and chaos: with applications to physics,
+  biology, chemistry, and engineering}.
+\newblock Westview press, 2014.
+
+\bibitem{wauer2008kontinuumsschwingungen}
+J.~Wauer.
+\newblock {\em Kontinuumsschwingungen: Vom einfachen Strukturmodell zum
+  komplexen Mehrfeldsystem}.
+\newblock Vieweg+Teubner / GWV Fachverlage GmbH, Wiesbaden, 2008.
+
+\bibitem{willner2013kontinuums}
+K.~Willner.
+\newblock {\em Kontinuums- und Kontaktmechanik: Synthetische und analytische
+  Darstellung}.
+\newblock Springer-Verlag, 2013.
+
+\bibitem{wittel2009roloff}
+H.~Wittel, D.~Muhs, D.~Jannasch, and J.~Vo{\ss}iek.
+\newblock {\em {Roloff/Matek Maschinenelemente}}.
+\newblock Springer, 2009.
+
+\bibitem{wittenburg2008dynamics}
+J.~Wittenburg.
+\newblock {\em Dynamics of multibody systems}.
+\newblock Springer-Verlag Berlin/ Heidelberg/ New York, 2008.
+
+\bibitem{zirpke1989zahnrader}
+K.~Zirpke.
+\newblock {\em Zahnr{\"a}der}.
+\newblock VEB Fachbuchverlag, Leipzig, 1989.
+
+\end{thebibliography}

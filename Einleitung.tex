@@ -1,0 +1,245 @@
+% !TeX spellcheck = de_DE
+\chapter{Einleitung}
+Dieses Skript wurde als Begleitmaterial zur Vorlesung ''Maschinendynamik'' an der Hochschule Mannheim zusammengestellt. Es behandelt das Schwingungsverhalten von linearen 1- und 2-Freiheitsgradsystemen sowie Grundlagen der Signalanalyse. Hierzu wurden Inhalte aus den Lehrbüchern von \textsc{Bronstein} \cite{bronstein2012taschenbuch}, \textsc{Dresig} \cite{dresig2014schwingungen}, \textsc{Dubbel} \cite{dubbel2013dubbel}, \textsc{Gasch} \cite{gasch2006rotordynamik}, \textsc{Hauger} \cite{hauger2013kinetik}, \textsc{Hibbeler} \cite{hibbeler2012technische} und \textsc{Wittenburg} \cite{wittenburg2013schwingungslehre} übernommen. 
+\section{Begriffsdefinition}
+Die Maschinendynamik untersucht das Verhalten technischer Konstruktionen unter Einwirkung zeitabhängiger (=dynamischer) Beanspruchungen. Das Ziel der Untersuchungen besteht darin, dynamische Bewegungen und Kräfte vorherzusagen. Die Problemstellungen aus dem Bereich des Maschinenbaus sind sehr vielfältig; wohlbekannte Vertreter sind: 
+\begin{itemize}
+	\item Torsionsschwingungen von Kolbenmaschinen
+	\item Biegeschwingungen von Turbinenschaufeln
+	\item Unwuchten in Rotoren oder Reifen 
+	\item Bewegung von Vibrationsstampfern
+	\item Dynamik von Rüttelplatten	
+	\item Schlaglochfahrt eines Fahrzeugs
+\end{itemize}
+Oft sind Schwingungen von mechanischen Komponenten die Ursache für deren Versagen. Die aus Schwingungen entstehenden Probleme können unerwünschte Festigkeitsprobleme sein, aber auch komfortrelevante Gerauschphänomene, sogenannte NVH (Noise- Vibration - Harshness) - Probleme. 
+\section{Schwingungen} 
+\paragraph{Definition.}
+Kennzeichen einer Schwingung in einem physikalischen System ist die mehr oder weniger regelmäßige Widerkehr bestimmter Merkmale. Die Merkmale werden an messbaren Größen festgemacht: 
+\begin{itemize}
+	\item Mechanik: Weg, Geschwindigkeit, Beschleunigung, Winkel, Kraft, Moment
+	\item Elektrotechnik: Spannung, Strom, ... 
+	\item Optik: Intensität, Phase, ... 
+	\item Thermik: Temperatur (Warm-Kalt-Zyklen), ...
+\end{itemize}
+
+\subsection{Klassifikation von Schwingungen}
+Schwingungen physikalischer Größen können nach verschiedenen Gesichtspunkten klassifiziert werden. Die Klassifizierung ist dann sinnvoll, wenn dahinter liegende Mechanismen analysiert werden sollen. 
+\paragraph{Periodische Schwingungen.} 
+Eine Zeitfunktion, die eine Schwingung beschreibt ist periodisch, wenn $\forall t \in \mathbb{R}$ gilt 
+\begin{align}
+&x(t+T) = x(t); && T>0.&
+\label{eq:11}
+\end{align}
+Dann gilt auch 
+\begin{align}
+&x(t+n T) = x(t);&& T>0; && n\in \mathbb{N}.&
+\end{align}
+Die Größe T ist nicht eindeutig bestimmt. Die kleinste Konstante, für die \ref{eq:11} gilt, heißt {Schwingungsdauer} (Periode). Die {Frequenz} ist ihr Kehrwert 
+\begin{align}
+& f = \frac{1}{T}&
+& [f] = \frac{1}{\textrm{s}} = \textrm{Hz}&
+\end{align}
+Sie gibt die Anzahl der Schwingungen pro Sekunde an.
+\begin{figure}[h]
+	\centering
+\begin{tikzpicture}
+\begin{axis}[
+domain=0:10,
+xmax=9,ymin=-2,ymax=2, 
+samples=100,
+grid=both,
+x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+xlabel={$t$},
+ylabel={$x(t)$}]
+\addplot[blue, ultra thick] {sin(deg(x))+0.3*cos(3*deg(x-0.3))};
+\draw (axis cs:2.2,1) -- (axis cs:2.2,-1.5);
+\draw (axis cs:8.4,1) -- (axis cs:8.4,-1.5);
+\draw [](axis cs:2,1.1) -- (axis cs:8.5,1.1);
+\draw[<->,>=stealth] (axis cs:5.3,1) -- node[left]{$2 \hat x$} (axis cs:5.3,-1);
+\draw[<->,>=stealth] (axis cs:2.2,-1.3) -- node[below]{T} (axis cs:8.4,-1.3);
+\end{axis}
+\end{tikzpicture}
+\caption{Schwingung, Schwingungsdauer, Amplitude}
+\label{abb:Schwingung}
+\end{figure} \\
+Die Schwingungsamplitude eines Signals ist näherungsweise gegeben durch 
+\begin{align}
+\hat x = \frac{\max(x)-\min(x)}{2}
+\end{align}
+\paragraph{Harmonische Schwingungen.} 
+Harmonische Schwingungen können in einer der folgenden Formen angegebene werden:
+\begin{align}
+&x_1(t) = S \sin (\omega t)& 
+&\textrm{bzw.}& 
+&x_2(t) = C \cos(\omega t)& 
+\end{align}
+Hierbei sind die zwei verschiedenen Amplituden $S$ und $C$, und $\omega$ die Kreisfrequenz. 
+Aus $\omega T = 2\pi$ folgt 
+\begin{align}
+&\omega = \frac{2\pi}{T}= 2\pi f&& [\omega] = \frac{\textrm{rad}}{\textrm{s}}&
+\end{align}
+die Kreisfrequenz der Schwingung. Eine allgemeine harmonische Schwingung hat die Form 
+\begin{align}
+x(t) = C_0 + C\cos(\omega t) + S\sin(\omega t)
+\end{align}
+Dies ist äquivalent darstellbar mithilfe von Amplitude $\hat x$ und Nullphasenwinkel $\varphi$: 
+\begin{align}
+x(t) = C_0 + \hat x \cos(\omega t-\varphi)
+\end{align}
+Dabei gilt der Zusammenhang 
+\begin{align}
+&x(\omega t=0) = C_0 + \hat x \cos(\varphi) = C_0+C,&\\
+&x(\omega t=\frac{\pi}{2}) = C_0 + \hat x \sin(\varphi) = C_0+S.&
+\end{align}
+Somit folgt der Zusammenhang zwischen den verschiedenen Darstellung der Amplituden und Nullphasenwinkel:  
+\begin{align}
+&C = \hat x \cos(\varphi) && S = \hat x \sin(\varphi) &
+\end{align}
+oder invers 
+\begin{align}
+&\hat x =\sqrt{C^2+S^2}, && \tan(\varphi) =\frac{S}{C}.&
+\end{align}
+Eine periodische Schwingung wie in Abb. \ref{abb:Schwingung} kann als Überlagerung unendlich vieler harmonischer Teilschwingungen dargestellt werden, die wiederum mithilfe von Fourier-Reihen abgebildet werden können (siehe spätere Kapitel). Die Konvergenz solcher Reihen ist für gemessene Signale in aller Regel erfüllt. Fourier-Reihen haben einige angenehme Eigenschaften, weshalb deren Verwendung im Vergleich zu Rohsignalen im Allgemeinen vorteilhaft ist. 
+\begin{figure}[h]
+	\subfloat{
+\begin{tikzpicture}
+	\begin{axis}[
+	width=0.45\textwidth,
+	domain=0:4,
+	xmin=0,xmax=4,ymin=-2,ymax=2, 
+	samples=1000,
+	grid=both,
+	x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+	xlabel={$t$},
+	ylabel={$x(t)$}]
+	\addplot[blue, ultra thick] {2*(x-floor(x))-1};
+	\end{axis}
+\end{tikzpicture}}
+\subfloat{
+\begin{tikzpicture}
+\begin{axis}[
+width=0.45\textwidth,
+domain=0:4,
+xmin=0,xmax=4,ymin=-2,ymax=2, 
+samples=1000,
+grid=both,
+x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+xlabel={$t$},
+ylabel={$x(t)$}]
+\addplot[blue, ultra thick] coordinates {(0,1) (0,-1) (1,-1) (1,1) (2,1) (2,-1) (3, -1) (3,1) (4,1) (4,-1)};
+\end{axis}
+\end{tikzpicture}}
+\caption{Beispiele für periodische nicht-harmonische Funktionen: Sägezahnfunktion, Rechteckfunktion. Statt der Schwingungsantwort auf Sägezahn- oder Rechteckanregung können äquivalent die Schwingungsantworten auf deren harmonische Entwicklung (Fourier-Reihen) betrachtet werden.}
+\end{figure}\\
+\paragraph{Überlagerte harmonische Schwingungen.}
+Überlagerte harmonische Schwingungen stellen sich zum Beispiel ein, wenn Schwingungen von Mehrfreiheitsgradsystemen betrachtet werden. Die Schwingungsanteile sind dann gleichfrequent: 
+\begin{align}
+&x_1(t) = c_{1} + \hat x_1 \cos(\omega t + \varphi_1 )\\
+&x_2(t) = c_{1} + \hat x_2 \cos(\omega t + \varphi_2 )
+\end{align}
+Für $\varphi_1 = \varphi_2$ heißen die Schwingungen \emph{in Phase}, für  $|\varphi_1 - \varphi_2|=\pi$ \emph{in Gegenphase}. Die resultierende Schwingung ist die Summe der zwei Komponenten. \\ 
+Des weiteren können mechanische Systeme mit verschiedenen Anregungsquellen beaufschlagt werden, welche im allgemeinen nicht dieselbe Frequenz haben. Dann folgt für die Gesamtschwingung durch kurze Rechnung 
+\begin{align}
+x(t) &= x_1(t) + x_2(t) = \hat x_1 \cos(\omega_1 t) + \hat x_2 \cos(\omega_2 t)\\
+& = \frac{\hat x_1+ \hat x_2}{2}\left(\cos(\omega_1 t) + \cos(\omega_2 t)\right)
++\frac{\hat x_1- \hat x_2}{2}\left(\cos(\omega_1 t) - \cos(\omega_2 t)\right)\\
+& = (\hat x_1 + \hat x_2)\cos (\omega_D t)\cos (\omega_m t) - (\hat x_1 - \hat x_2)\sin (\omega_D t)\sin (\omega_m t)
+\end{align}
+Hierbei handelt es sich um zwei harmonische Schwingungen unterschiedlicher Frequenz
+mit $\omega_D = \frac{\omega_1-\omega_2}{2}$ und $\omega_m = \frac{\omega_1+\omega_2}{2}$. Für $\omega_1\approx \omega_2$ ist also $\omega_m\approx \omega_1\approx \omega_2$ (Schwingungsfrequenz wie bisher) und $\omega_D$ sehr klein (langsame überlagerte Schwingung). Die Überlagerung lässt sich auch umschreiben zu 
+\begin{align}
+	x(t) = \hat x \cos(\omega_m t +\varphi)
+\end{align}
+wobei 
+\begin{align}
+\hat x  &= \sqrt{(\hat x_1 + \hat x_2)^2\cos^2 (\omega_D t) + (\hat x_1 - \hat x_2)^2\sin^2 (\omega_D t)},\\
+\tan(\varphi) &= \frac{\hat x_2-\hat x_1}{\hat x_2+\hat x_1} \tan(\omega_d t). 
+\end{align}
+Die Amplitude und die Phase der Schwingung ändern sich also mit $\omega_D$. Dieser Effekt wird als Schwebung bezeichnet. 
+\begin{figure}[h]
+	\centering
+		\begin{tikzpicture}
+		\begin{axis}[
+		domain=0:20,
+		xmin=0,xmax=20,ymin=-2.2,ymax=2.2, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$t$},
+		ylabel={$x(t)$}]
+		\addplot[blue, ultra thick] {1*cos(2*pi*deg(x)) + 1*cos(2*pi*1.1*deg(x))};
+		\addplot[black, dashed] {-2*cos(0.1*pi*deg(x))};
+		\addplot[black, dashed] {2*cos(0.1*pi*deg(x))};
+		\end{axis}
+		\end{tikzpicture}
+\caption{Schwebung, entstanden aus der Addition $\cos(2\pi t) + \cos(2.2 \pi t)$.}
+\end{figure}
+\subsection{Weitere Klassifikationen für Schwingungen}
+\paragraph{Klassifikation nach Verlauf (nicht-harmonischer Fall)}
+\begin{itemize}
+	\item Impulsförmige Schwingung\\
+	Bsp.: Hammerschlag, Impulshammer, Kollision, mechanischer Stoß, ...
+	\item Zufallsschwingung\\
+Bsp.: Seitenwind bewegt Fahrzeug, die Fahrbahnunebenheit regt ein Fahrzeug zu zufälligen horizontalen Schwingungen an, reale Messungen mit Messrauschen, ...
+\end{itemize}
+\paragraph{Klassifikation nach der Anzahl der Freiheisgrade}
+\begin{itemize}
+	\item 1-Freiheitsgrad-System
+	\item $n$-Freiheitsgrad-System
+	\item System mit $\infty$ vielen Freiheitsgraden (elastisches Kontinuum) 
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\subfloat{\includegraphics[width=0.11\textheight]{Bilder/01EinMassenSchwinger.pdf}}\hspace{15mm}
+	\subfloat{\includegraphics[width=0.155\textheight]{Bilder/01ZweiMassenSchwinger.pdf}}\hspace{15mm}
+	\subfloat{\includegraphics[width=0.14\textheight]{Bilder/01DehnSchwinger.pdf}}
+% 	\subfloat{\includegraphics[width=0.3\textwidth]{Bilder/01ZweiMassenSchwinger.pdf}
+	\caption{Schwingungen eines 1-, 2- und $\infty-$Freiheitsgrad-Systems}
+\end{figure}
+\paragraph{Klassifikation nach Schwingungsform.} Vor allem mechanische Schwingungen sind dadurch gekennzeichnet, dass die Frequenzen mit einer bestimmten Bewegungsform des Körpers in Verbindung gebracht werden. Die Bewegung des Körpers bei der betrachteten Frequenz ist die Schwingungsform. Am Beispiel eines 4-Freiheitsgradschwingers können drei verschiedene Schwingungsformen dargestellt werden: 
+\begin{figure}[h]
+	\centering
+	\subfloat{\includegraphics[width=0.21\textheight]{Bilder/01Schwingformen01.pdf}}\hfill
+	\subfloat{\includegraphics[width=0.21\textheight]{Bilder/01Schwingformen02.pdf}}\hfill
+	\subfloat{\includegraphics[width=0.21\textheight]{Bilder/01Schwingformen03.pdf}}
+	% 	\subfloat{\includegraphics[width=0.3\textwidth]{Bilder/01ZweiMassenSchwinger.pdf}
+	\caption{Schwingungsformen eines $4-$Freiheitsgrad-Systems}
+\end{figure}
+\paragraph{Klassifikation nach Aufbau der Bewegungsgleichung}
+\begin{itemize}
+	\item Linear: geralisierte Koordinaten und Zeitableitungen treten nur linear in der Bewegungsgleichung auf. Allgemeine Form: 
+	\begin{align}
+		&M \ddot q + P \dot q + Q q = f(t)& &q \in \mathbb{R}^n&
+	\end{align}
+	\item Nichtlinear: geralisierte Koordinaten und Zeitableitungen treten nichtlinear in der Bewegungsgleichung auf. Die allgemeine Form lautet:
+	\begin{align}
+	&M (q,\dot q) \ddot q =F(t,q,\dot q)& &q \in \mathbb{R}^n&
+	\end{align}
+\end{itemize}
+\paragraph{Klassifikation nach dem Entstehungmechanismus}
+\begin{itemize}
+	\item \textbf{Freie Schwingung} \\
+	Bsp.: Pendel, Stimmgabel \\
+	Ursache: einmaliger Anstoß\\
+	Frequenz: Eigenfrequenz $\omega$ \\
+	Typ der Bewegungsgl.: homogen 
+	\item \textbf{Erzwungene Schwingung}\\
+	Bsp.: Fahrzeug auf Fahrbahn\\
+	Ursache: äußere Kräfte, Momente\\
+	Frequenz: Erregerfrequenz $\Omega$ \\
+	Typ der Bewegungsgl.: inhomogen 
+	\item \textbf{Selbsterregte Schwingung}\\
+	Bsp.: Uhr, Klingel, Reibschwinger\\
+	Ursache: Energiequelle und -Senke im System\\
+	Frequenz: Etwa Eigenfrequenz $\omega_0$ \\
+	Typ der Bewegungsgl.: linear, nichtlinear 
+	\item \textbf{Parametererregte Schwingung}\\
+	Bsp.: Kolbenmotor, Schaukel, Zahnradgetriebe\\
+	Ursache: Periodisch zeitveränderliche Parameter im System\\
+	Frequenz: Teile oder Vielfache der Parameterfrequenz\\
+	Typ der Bewegungsgl.: periodische Koeffizienten 
+\end{itemize}

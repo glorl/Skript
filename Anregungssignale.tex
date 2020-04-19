@@ -1,0 +1,886 @@
+% !TeX spellcheck = de_DE
+\setcounter{chapter}{3}
+\chapter{Anregungssignale und Fourieranalyse}
+\section{Anregung durch Impuls}
+\subsection{Sprungfunktion und Dirac-Impuls}
+Die Sprung- und die Impulsfunktion gehören zur Funktionenklasse der Distributionen. Sie zeichnen sich dadurch aus, dass sie mengenwertige Eigenschaften besitzen -- beispielsweise die elementweise Definition. 
+\begin{theo}[Sprungfunktion]{theo:Sprung}
+Die Sprungfunktion $\sigma(t)$ ist definiert als 
+\begin{align}
+	\sigma(t) = \left\{
+	\begin{array}{ll}
+		0 & t < 0 \\
+		1 & 0 \leq t \\
+	\end{array}
+	\right. \nonumber
+\end{align}
+\end{theo}
+Formal betrachtet ist der Dicac-Impuls die Ableitung der Sprungfunktion. Wegen der unendlich großen Steigung bei $t=0$ wird die Definition über einen Grenzwert eingeführt:
+\begin{theo}[Dirac-Impuls]{theo:Dirac}
+	Der Dirac-Impuls $\delta(t)$ ist definiert als 
+	\begin{align}
+		\delta(t)& = \frac{\textrm{d} \sigma(t)}{\textrm{d} t}
+		= 
+		\left\{
+		\begin{array}{ll}
+			\infty & t =0\\
+			0 & \textrm{sonst} \\
+		\end{array}
+		\right\}
+		= \lim_{\varepsilon\rightarrow0}
+		\left\{
+		\begin{array}{ll}
+			0 & t \leq -\varepsilon \\
+			\frac{1}{2\varepsilon} & -\varepsilon  \leq t \leq \varepsilon  \\
+			0 & \varepsilon \leq t \\
+		\end{array}
+		\right. \nonumber
+	\end{align}
+\end{theo}
+%\begin{figure}[h]
+%	\begin{tikzpicture}
+%	\begin{axis}[
+%	width=0.45\textwidth,
+%	xmin=-1,xmax=1,ymin=-0.3,ymax=1.3, 
+%	samples=1000,
+%	grid=none,
+%	x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+%	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+%	xlabel={$t$},
+%	ylabel={$x(t)$}, 
+%	xtick={-0.2,0,0.2}, 
+%	xticklabels={$-\varepsilon$,0,$\varepsilon$}]
+%	\addplot[blue, ultra thick] coordinates {(-1,0) (-0.2,0) (-0.2,1) (0.2,1) (0.2,0) (1,0)};
+%	\end{axis}
+%	\end{tikzpicture}
+%\end{figure}\\
+Es gilt der integrale Zusammenhang zwischen Sprungfunktion und Dirac-Impuls 
+\begin{align}
+\int_{-\infty}^{\infty}\delta(t) \textrm{d}t
+= \lim_{\varepsilon\rightarrow0}\int_{-\varepsilon}^{\varepsilon}\frac{1}{2\varepsilon} \textrm{d}t
+= \lim_{\varepsilon\rightarrow0}\left.\frac{1}{2\varepsilon}t\right|_{-\varepsilon}^{\varepsilon}
+= \lim_{\varepsilon\rightarrow0}\frac{\varepsilon-(-\varepsilon)}{2\varepsilon}
+=1
+\end{align}
+Die zu erwähnenden Eigenschaften des Dirac-Impulses sind
+\begin{itemize}
+	\item Die Impulsdauer $2\varepsilon$ ist wegen $\varepsilon\rightarrow0$ unendlich kurz
+	\item Die Impulshöhe $\frac{1}{2\varepsilon}$ ist unendlich groß
+	\item Für jede Funktion $f(x)$ gilt die Ausblendeigenschaft 
+	\begin{align}
+		\int_{-\infty}^{\infty}f(t)\delta(t-t_0) \textrm{d}t = f(t_0)		
+	\end{align}
+\end{itemize}
+\subsection{Stoßantwort}
+Die Anregung eines Einmassenschwingers durch einen Stoß (z.B. Hammerschlag) kann formal über den Dirac-Impuls eingeführt werden. Zunächst lautet die DGL 
+\begin{align}
+	m\ddot x + d\dot x + c x = \delta(t)
+	\label{eq:EMSImpuls}
+\end{align}
+wobei für den Dirac-Impuls $\delta(t)$ die abschnittsweise Definition in Abhängigkeit von $\varepsilon$ verwendet wird. Dementsprechend ist die Lösung eine abschnittsweise definierte Funktion: 
+\paragraph{Vor Stoß ($t \leq -\varepsilon $)}
+Die Masse ist in Ruhe. Also sind Lage und Geschwindigkeit 
+	\begin{align}
+	&x(-\varepsilon)=0&  &\dot x(-\varepsilon)=0&
+	\end{align}
+\paragraph{Während des Stoßes ($-\varepsilon  \leq t \leq \varepsilon$)}
+Die Bewegungsgleichung lautet 
+	\begin{align}
+	m\ddot x + d\dot x + c x = \frac{1}{2\varepsilon}
+	\end{align}
+	Die Integration über die Stoßdauer ergibt in mehreren Schritten  
+	\begin{align}
+	\int_{-\varepsilon}^{\varepsilon}\left(m\ddot x + d\dot x + c x\right)\textrm{d}t = \int_{-\varepsilon}^{\varepsilon}\frac{1}{2\varepsilon}\textrm{d}t\\
+	m\int_{-\varepsilon}^{\varepsilon}\ddot x\textrm{d}t 
+	+ d\int_{-\varepsilon}^{\varepsilon}\dot x\textrm{d}t 
+	+c \int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = 1\\
+	m (\dot x(\varepsilon)-\dot x(-\varepsilon)) + d(x(\varepsilon)-x(-\varepsilon)) 
+	+c \int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = 1
+	\end{align}
+	Unter der Annahme, dass die Lage $x(t)$ während der Stoßdauer stetig bleibt, folgt $x(-\varepsilon)= x(\varepsilon)=x_0$ und damit 
+	\begin{align}
+		\int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = c \int_{-\varepsilon}^{\varepsilon}x_0\textrm{d}t = 2\varepsilon x_0 \underset{\varepsilon\rightarrow 0}{\rightarrow} 0
+	\end{align}
+	Somit verbleibt 
+	\begin{align}
+		m\left(\dot x(\varepsilon)-\underbrace{\dot x(-\varepsilon)}_{0}\right)=1
+	\end{align}
+	Zur Zeit $t=\varepsilon$ gilt also: 
+	\begin{align}
+		&x(\varepsilon)=x(-\varepsilon)=0&&\dot{x}(\varepsilon) = \frac{1}{m}&
+	\end{align}
+	Wegen $\varepsilon\rightarrow0$ gelten auch die Bezeichnungen 
+	\begin{align}
+		& t=-\varepsilon = 0^- && t=\varepsilon = 0^+ &
+	\end{align}
+\paragraph{Nach Stoß ($\varepsilon  \leq t $)} 
+Die Bewegungsgleichung lautet mit Anfangsbedingungen
+	\begin{align}
+	& m\ddot x + d\dot x + c x = 0 &&x(0^+) = 0& &\dot x(0^+) = \frac{1}{m}&
+	\end{align}
+	Die Lösung ist gegeben durch 
+	\begin{align}
+		x(t) &= \frac{1}{m\omega_d}e^{-D\omega_0 t}\sin(\omega_d t)
+	\end{align}
+Die Impulsantwort (Antwort auf einen mechanischen Stoß) wird gerne als Testsignal verwendet. Es lässt sich über einen Hammerschlag realisieren: Das System wird kurz angestoßen und dann sich selbst überlassen. Aus der Stoßantwort lassen sich die Systemparameter $m$, $d$, $D$ bestimmen. 
+\section{Periodische Anregung}
+%%\subsection{Darstellung einer Schwingung durch komplexe Zeiger}
+%%\fbox{\begin{minipage}{\textwidth}
+%%\paragraph{Definition: Euler-Formel.} Es gilt die folgende Zerlegung der Exponentialfunktion: 
+%%\begin{align}
+%%e^{i\varphi}  = \cos (\varphi) + i \sin (\varphi)
+%%\end{align}
+%%\end{minipage}}\\[5mm]
+%%Damit lässt sich eine harmonische Schwingung $\hat x \cos (\omega t+\varphi)$ schreiben als Realteil der \emph{komplexen Erweiterung} $X$
+%%\begin{align}
+%%	X &= \hat x e^{i(\omega t + \varphi)}  = \hat x \left(\cos (\omega t+\varphi) + i \sin (\omega t+\varphi)\right)\\
+%%	Re(X) &= \hat x \cos (\omega t+\varphi)
+%%\end{align}
+%%Die geometrische Interpretation der komplexen Erweiterung $X$ ist mit der Abbildung \ref{abb:Einheitskreis} gegeben. 
+%%%\begin{figure}[H]
+%%%	\subfloat{
+%%%		\begin{tikzpicture}
+%%%		\begin{axis}[
+%%%		width=0.4\textwidth,
+%%%		height=0.4\textwidth,
+%%%		xmin=-1.2,xmax=1.2,
+%%%		ymin=-1.2,ymax=1.2,
+%%%		grid=both,
+%%%		x label style={at={(axis description cs:0.3,-0.1)},anchor=north},
+%%%		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+%%%		xlabel={$Im(x)$},
+%%%		ylabel={$Re(x)$}, 
+%%%		xtick = {-1,0,1}, 
+%%%		xticklabels = {1,0,-1}]
+%%%		\addplot[samples=100, domain=0:2*pi] ({cos(deg(x))}, {sin(deg(x))});
+%%%		\addplot[black] coordinates {(0,0) (-0.342020143, 0.939692621)};
+%%%		\addplot[black] coordinates {(0,0) (-0.7, 0.7)};		\end{axis}
+%%%		\end{tikzpicture}
+%%%	}
+%%%	\subfloat{
+%%%		\begin{tikzpicture}
+%%%		\begin{axis}[
+%%%		width=0.4\textwidth,
+%%%		height=0.4\textwidth,
+%%%		xmin=-1.2,xmax=1.2,
+%%%		ymin=-1.2,ymax=1.2,
+%%%		grid=both,
+%%%		x label style={at={(axis description cs:0.3,-0.1)},anchor=north},
+%%%		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+%%%		xlabel={$Im(x)$},
+%%%		ylabel={$Re(x)$}, 
+%%%		xtick = {-1,0,1}, 
+%%%		xticklabels = {1,0,-1}]
+%%%		\addplot[samples=100, domain=0:2*pi] ({cos(deg(x))}, {sin(deg(x))});
+%%%		\end{axis}
+%%%		\end{tikzpicture}
+%%%	}
+%%%	\caption{Einheitskreis und Projektion auf die reelle Achse.}
+%%%\label{abb:Einheitskreis}
+%%%\end{figure}
+%%\begin{figure}[H]
+%%	\includegraphics[width=\textwidth]{Bilder/04Einheitskreis.png}
+%%	\caption{Einheitskreis und Projektion auf die reelle Achse.}
+%%	\label{abb:Einheitskreis}
+%%\end{figure}
+%
+\subsection{Darstellung von Singalen im Zeit- und im Frequenzbereich}
+Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Amplitude $\hat x$, Frequenz $\omega_0$ und Nullphasenwinkel $\varphi$ beschreiben. Diese Eigenschaft motiviert die Darstellung im Zeit- und im Frequenzbereich:
+\begin{figure}[H]
+	\subfloat[Zeitbereich]{
+		\begin{tikzpicture}
+			\begin{axis}[
+			width=0.3\textwidth,
+			height=3.5cm,
+			domain=0:2*pi,
+			xmin=0,xmax=2*pi,
+			grid=both,
+			x label style={at={(axis description cs:0.7,-0.1)},anchor=north},
+			y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+			xlabel={$t$},
+			ylabel={$x(t)$}, 
+			xtick={0,3.141,6.282},
+			xticklabels={0,,$2\pi/\omega_0$}, 
+			yticklabels={,$-\hat x$,0,$\hat x$}]
+			\addplot[black, thick] {cos(deg(x)))};
+			\end{axis}
+		\end{tikzpicture}
+	}
+	\subfloat[Frequenzbereich]{
+		\begin{tikzpicture}
+			\begin{axis}[
+			width=0.3\textwidth,
+			height=3.5cm,
+			xmin=0,xmax=2,ymin=0,ymax=1.8,
+			grid=both,
+			x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+			y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+			xlabel={$\omega$},
+			ylabel={Amplitude}, 
+			xtick={0,1,2},
+			xticklabels={0,$\omega_0$,},
+			ytick={0,1},
+			yticklabels={0,$\hat x$}]
+			\addplot[black, thick,mark=*] coordinates { (1,1)};
+			\addplot[black, thick] coordinates {(1,0) (1,1)};
+			\end{axis}
+		\end{tikzpicture}
+	}
+	\subfloat[Frequenzbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		xmin=0,xmax=2,ymin=-1.2,ymax=1.2,
+		grid=both,
+		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$\omega$},
+		ylabel={Phase}, 
+		xtick={0,1,2},
+		xticklabels={0,$\omega_0$,},
+		ytick={-1,0,1},
+		yticklabels={$-\pi$,0,$\pi$}
+		]
+		\addplot[black, thick,mark=*] coordinates { (1,0)};
+		\end{axis}
+	\end{tikzpicture}
+}
+\caption{Reines Cosinussignal $x(t) = \hat{x}\cos (\omega t) = Re(\hat{x} e^{\omega t})$}
+\end{figure}
+\begin{figure}[H]
+	\subfloat[Zeitbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		domain=0:2*pi,
+		xmin=0,xmax=2*pi,
+		grid=both,
+		x label style={at={(axis description cs:0.7,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$t$},
+		ylabel={$x(t)$}, 
+		xtick={0,3.141,6.282},
+		xticklabels={0,,$2\pi/\omega_0$}, 
+		yticklabels={,$-\hat x$,0,$\hat x$}]
+		\addplot[black, thick] {sin(deg(x)))};
+		\end{axis}
+		\end{tikzpicture}
+	}
+	\subfloat[Frequenzbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		xmin=0,xmax=2,ymin=0,ymax=1.8,
+		grid=both,
+		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$\omega$},
+		ylabel={Amplitude}, 
+		xtick={0,1,2},
+		xticklabels={0,$\omega_0$,},
+		ytick={0,1},
+		yticklabels={0,$\hat x$}]
+		\addplot[black, thick,mark=*] coordinates { (1,1)};
+		\addplot[black, thick] coordinates {(1,0) (1,1)};
+		\end{axis}
+		\end{tikzpicture}
+	}
+	\subfloat[Frequenzbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		xmin=0,xmax=2,ymin=-1.2,ymax=1.2,
+		grid=both,
+		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$\omega$},
+		ylabel={Phase}, 
+		xtick={0,1,2},
+		xticklabels={0,$\omega_0$,},
+		ytick={-1,0,1},
+		yticklabels={$-\pi$,0,$\pi$}
+		]
+		\addplot[black, thick,mark=*] coordinates { (1,-0.5)};
+		\addplot[black, thick] coordinates { (1,-0.5) (1,0)};
+		\end{axis}
+		\end{tikzpicture}
+	}
+	\caption{Reines Sinussignal $x(t) = \hat{x}\sin (\omega t)  = Re(\hat{x} e^{\omega t-\pi/2})$}
+\end{figure}
+\begin{figure}[H]
+\subfloat[Zeitbereich]{
+	\begin{tikzpicture}
+	\begin{axis}[
+	width=0.3\textwidth,
+	height=3.5cm,
+	domain=0:2*pi,
+	xmin=0,xmax=2*pi,
+	grid=both,
+	x label style={at={(axis description cs:0.7,-0.1)},anchor=north},
+	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+	xlabel={$t$},
+	ylabel={$x(t)$}, 
+	xtick={0,3.141,6.282},
+	xticklabels={0,,$2\pi/\omega_0$}, 
+	yticklabels={,$-\hat x$,0,$\hat x$}]
+	\addplot[black, thick] {cos(deg(x+pi/3)))};
+	\end{axis}
+	\end{tikzpicture}
+}
+\subfloat[Frequenzbereich]{
+	\begin{tikzpicture}
+	\begin{axis}[
+	width=0.3\textwidth,
+	height=3.5cm,
+	xmin=0,xmax=2,ymin=0,ymax=1.8,
+	grid=both,
+	x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+	xlabel={$\omega$},
+	ylabel={Amplitude}, 
+	xtick={0,1,2},
+	xticklabels={0,$\omega_0$,},
+	ytick={0,1},
+	yticklabels={0,$\hat x$}]
+	\addplot[black, thick,mark=*] coordinates { (1,1)};
+	\addplot[black, thick] coordinates {(1,0) (1,1)};
+	\end{axis}
+	\end{tikzpicture}
+}
+\subfloat[Frequenzbereich]{
+	\begin{tikzpicture}
+	\begin{axis}[
+	width=0.3\textwidth,
+	height=3.5cm,
+	xmin=0,xmax=2,ymin=-1.2,ymax=1.2,
+	grid=both,
+	x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+	xlabel={$\omega$},
+	ylabel={Phase}, 
+	xtick={0,1,2},
+	xticklabels={0,$\omega_0$,},
+	ytick={-1,0,1},
+	yticklabels={$-\pi$,0,$\pi$}
+	]
+	\addplot[black, thick,mark=*] coordinates { (1,0.3)};
+	\addplot[black, thick] coordinates { (1,0.3) (1,0)};
+	\end{axis}
+	\end{tikzpicture}
+}
+\caption{Allgemeines Signal $x(t) = \hat{x}\cos (\omega t+\varphi) = Re(\hat{x} e^{\omega t+\varphi})$}
+\end{figure}
+Die Überführung einer harmonischen Funktion vom Zeit- in den Frequenzbereich ist eine Äquivalenztransformation. Wird eine allgemeine periodische Funktion als Überlagerung vieler harmonischer Schwingungsanteile mit jeweiliger Kreisfrequenz, Amplitude und Nullphasenwinkel betrachtet, dann kommen in der Darstellung im Frequenzbereich entsprechende Komponenten hinzu. Dies motiviert den nächsten Abschnitt: 
+\section{Darstellung periodischer Funktionen durch Fourierreihen}
+Es sei eine $T$-periodische Funktion mit der Grundfrequenz $\omega_0 = \frac{2\pi}{T}$ gegeben. Unter den Voraussetzungen 
+\begin{itemize}
+	\item endlich viele Sprungstellen endlicher Höhe
+	\item 2-Fache Integrierbarkeit von $x(t)$
+\end{itemize}
+lässt sich die Funktion $x(t)$ als \emph{Fourierreihe} darstellen:
+\begin{theo}[Fourierreihe]{theo:Fourierreihe}
+Die Entwicklung von $x(t)$ als Fourierreihe lautet 
+\begin{align}
+	x(t) = C_0 + \sum_{k=1}^{\infty}C_k \cos (k\omega_0 t) + S_k \sin (k\omega_0 t) \nonumber 
+\end{align}
+wobei die Koeffizienten des Polynoms nach 
+\begin{align}
+	C_0 & = \frac{1}{T}\int_{-T/2}^{T/2}x(t) \textrm{d}t \nonumber\\
+	C_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\cos(k\omega_0 t)\textrm{d}t& 
+	&k\in \mathbb{N}&\nonumber\\
+	S_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\sin(k\omega_0 t)\textrm{d}t& 
+	&k\in \mathbb{N}&\nonumber
+\end{align}
+berechnet werden. 
+\end{theo}
+Alternativ gelten auch die folgenden Darstellungen:\\
+\begin{theo}[Darstellung der Fourierreihe durch Amplitude und Phase]{theo:FourierreiheAmpPha}
+\begin{align}
+x(t) = C_0 + \sum_{k=1}^{\infty}\hat x_k \cos (k\omega_0 t+\varphi_k) \nonumber 
+\end{align}
+Die Folge $\hat x_1$, $\hat x_2$,... heißt \emph{Amplitudenspektrum}, die Folge  $\varphi_1$, $\varphi_2$, ... heißt \emph{Phasenspektrum}. Man spricht auch von der Spektraldarstellung der Funktion $x(t)$. 
+\end{theo}
+\begin{theo}[Darstellung der Fourierreihe also komplexes Polynom]{theo:Fourierreihekomplex}
+		\begin{align}
+		x(t) = \sum_{k=-\infty}^{\infty} a_k e^{i k\omega_0 t} \nonumber 
+		\end{align}
+		wobei die Koeffizienten des Polynoms nach 
+		\begin{align}
+		a_k & = \frac{1}{T}\int_{0}^{T}x(t)e^{-i k\omega_0 t}\textrm{d}t & 
+		&k\in \{-n,n\}, n\in \mathbb{N}&\nonumber 
+		\end{align}
+		berechnet werden. 
+\end{theo}
+Anmerkungen: 
+\begin{itemize}
+	\item Die Darstellung der Funktion $x(t)$ als Fourierreihe bietet den Vorteil der Zerlegung in einzelne Frequenzanteile
+	\item Der Anteil $\hat x_1\cos (\omega_0 t+\varphi_1)$ heißt \emph{Grundschwingung} oder \emph{1. Harmonische}
+	\item Der Anteil $\hat x_2\cos (2\omega_0 t+\varphi_2)$ heißt \emph{1. Oberschwingung} oder \emph{2. Harmonische}
+	\item Der Anteil $\hat x_k\cos (k \omega_0 t+\varphi_k)$ heißt \emph{(k-1)-te Oberschwingung} oder \emph{k-te Harmonische}
+	\item Bei der Berechnung der Fourierkoeffizienten muss nicht zwingend auf $t\in [-T/2, T/2]$ integriert werden. Wichtig ist, dass eine Periode vollständig abgedeckt ist: Es muss gelten $t\in [t_0, t_0 + T]$ für beliebige $t_0$. 
+	\item Periodische Funktionen können durch eine endliche Zahl von Elementen ihrer Fourierreihe approximiert werden. Der Fehler konvergiert im quadratischen Mittel. 
+\end{itemize}
+%\subsection{Berechnung der Fourierkoeffizienten bei symmetrischen Funktionen}
+Es gelten insbesondere die zwei Spezialfälle: 
+\paragraph{Gerade Funktionen.} Für gerade Funktionen $x(t)$ gilt $x(t)=x(-t)$. Dann folgt: 
+\begin{align}
+	&S_k = 0&
+	&C_k = \frac{4}{T}\int_{0}^{T/2} x(t) \cos (k\omega_0 t) \textrm{d}t&
+\end{align}
+\paragraph{Ungerade Funktionen.} Für ungerade Funktionen $x(t)$ gilt $x(t)=-x(-t)$. Dann folgt: 
+\begin{align}
+&S_k = \frac{4}{T}\int_{0}^{T/2} x(t) \sin (k\omega_0 t) \textrm{d}t&
+&C_k = 0&
+\end{align}
+\begin{beispiel}[Rechteckschwingung]{beispiel:Rechteckschwingung}
+Das Rechtecksignal ist definiert als 
+\begin{align}
+	x(t) = \left\{
+	\begin{array}{ll}
+		-1 & \frac{-T}{2} \leq t \leq 0\\
+		1 & 0\leq t \leq \frac{T}{2}\\
+	\end{array}
+	\right. 
+\end{align}
+Die Grundfrequenz ist $\omega_0=2\pi/T$. Diese Funktion ist punktsymmetrisch zum Ursprung, also ungerade. Daher ist
+\begin{align}
+	C_k&=0, k\in \mathbb N_0,\\
+	S_k&=\frac{4}{T}\int_{0}^{T/2}x(t)\sin(k\omega_0 t)\textrm{d}t\\
+	& =-\frac{4}{T k \omega_0}\left(\cos\left(k\omega_0 \frac{T}{2}\right)-1\right)\\
+	& = \frac{2}{k \pi}\left(1-(-1)^k\right)\\
+	& = \left\{
+	\begin{array}{ll}
+		0 & k \textrm{ gerade}\\
+		\frac{4}{k \pi} & k \textrm{ ungerade}\\
+	\end{array}
+	\right. 	
+\end{align}
+Die Reihenentwicklung der Rechteckfunktion $x(t)=\sum_{k} S_k \sin (k\omega_0 t)$ hat wegen $x(t)= \sum_{k} S_k \cos (k\omega_0 t-\pi/2)$ die Amplituden $\hat x_k=S_k$ und die Phasen $\varphi_k =-\pi/2$. Die Darstellung im Zeit- und im Frequenzbereich ist wie folgt: 
+\begin{figure}[H]
+	\subfloat[Zeitbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		domain=-1:7,
+		xmin=-0.2,xmax=2*pi+0.2,
+		grid=both,
+		x label style={at={(axis description cs:0.7,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$t$},
+		ylabel={$x(t)$}, 
+		xtick={0,3.141,6.282},
+		xticklabels={0,,$2\pi/\omega_0$}, 
+		%yticklabels={,$-\hat x$,0,$\hat x$}
+		]
+		\addplot[black, thick] coordinates {(-1,-1) (0,-1) (0,1) (3.141,1) (3.141,-1) (6.242,-1) (6.242,1) (6.5,1)};
+		\end{axis}
+		\end{tikzpicture}
+	}
+	\subfloat[Frequenzbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		%		xmin=0,xmax=2,ymin=0,ymax=1.8,
+		grid=both,
+		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$\omega/\omega_0$},
+		ylabel={$S_k\cdot \pi/4$}, 
+		xtick={1,3,5,7},
+		%		xticklabels={0,$\omega_0$,},
+		ytick={0,1},
+		%		yticklabels={0,$\hat x$}
+		]
+		\addplot[black, thick,mark=*,only marks] coordinates {(1,1) (2,0) (3,1/3) (4,0) (5,1/5) (6,0) (7,1/7)};
+		%		\addplot[black, thick] coordinates {(1,0) (1,1)};
+		\end{axis}
+		\end{tikzpicture}
+	}
+	\subfloat[Frequenzbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		ymin=-3.2,ymax=0.2,%ymin=-1.2,ymax=1.2,
+		grid=both,
+		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.15,.85)},rotate=0,anchor=south},
+		xlabel={$\omega/\omega_0$},
+		ylabel={$\varphi_k$}, 
+		xtick={1,3,5,7},
+		%		xticklabels={0,$\omega_0$,},
+		ytick={-3.141,-1.505,0},
+		yticklabels={$-\pi$,$-\pi/2$,$0$}
+		]
+		\addplot[black, thick,mark=*,only marks] coordinates {(1,-1.505) (2,0) (3,-1.505) (4,0) (5,-1.505) (6,0) (7,-1.505)};
+		\end{axis}
+		\end{tikzpicture}
+	}
+\end{figure}
+Die Amplituden der $k$-ten Harmonischen fallen mit $\frac{1}{k}$ ab. Aufgrund der steilen Flanken der Rechteckfunktion spielen höhere Harmonische eine wichtige Rolle bei der Konvergenz der Reihe. Wegen der Unstetigkeit im Zeitverlauf tritt das \emph{Gibbs'sche Phänomen} auf, das zum Überschwingen der Fourierentwicklung gegenüber der Rechteckfunktion führt. 
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+		width=0.6\textwidth,
+		height=0.3\textwidth,
+		domain=-1:7,
+		xmin=-0.2,xmax=2*pi+0.2,
+		grid=both,
+		x label style={at={(axis description cs:0.7,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$t$},
+		ylabel={$x(t)$}, 
+		xtick={0,3.141,6.282},
+		xticklabels={0,,$2\pi/\omega_0$}, 
+		yticklabels={,$-\hat x$,0,$\hat x$}]
+		\addplot[black, thick] coordinates {(-1,-1) (0,-1) (0,1) (3.141,1) (3.141,-1) (6.242,-1) (6.242,1) (6.5,1)};
+		\addplot[blue, thick,samples=200] {sin(deg(x))*4/pi + sin(3*deg(x))*4/pi/3 + sin(5*deg(x))*4/pi/5};
+		\addplot[red, thick,samples=400] {sin(deg(x))*4/pi + sin(3*deg(x))*4/pi/3 + sin(5*deg(x))*4/pi/5+sin(7*deg(x))*4/pi/7+sin(9*deg(x))*4/pi/9+sin(11*deg(x))*4/pi/11+sin(13*deg(x))*4/pi/13+sin(15*deg(x))*4/pi/15};
+		\legend{Rechteck,$k=5$,$k=15$}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{beispiel}
+\begin{beispiel}[Rechteckimpulsfolge]{beispiel:Rechteckimpulsfolge}
+Eine Rechteckimpulsfolge ist definiert als die periodische Abfolge von Rechteckimpulsen. Die Periode sei gegeben durch $T$, die Impulslänge durch $\tau$. Analog zum Dirac-Stoß hat die Fläche des Stoßes per Definition den Wert 1. 
+\begin{figure}[H]
+\includegraphics[width=0.5\textwidth]{Bilder/04Rechteckimpulsfolge.pdf}
+\end{figure}
+Es liegt eine gerade Funktion vor. Die Berechnung der Fourierkoeffizienten liefert
+\begin{align}
+S_k&=0, k\in \mathbb N_0,\\
+C_0&=\frac{1}{T}\int_{0}^{T/2}x(t)\textrm{d}t = \frac{1}{T}\\
+C_k& =\frac{2}{T}\int_{0}^{T}x(t)\cos (k \omega_0 t)\textrm{d}t =\frac{2}{T}\left(\int_{-\tau/2}^{\tau/2}\frac{1}{\tau}\cos (k \omega_0 t)\textrm{d}t +\int_{\tau/2}^{T-\tau/2}0\textrm{d}t\right)\\
+& =2\cdot \frac{2}{T k \omega_0}\frac{1}{\tau}\left(\sin\left(k\omega_0 \frac{\tau}{2}\right)\right)\\
+&= \frac{2}{k\pi \tau}\sin\left(k\pi\frac{\tau}{T}\right)
+\end{align}
+Somit lautet die Fourierreihe der Rechteckimpulsfolge
+\begin{align}
+	x(t) = \frac{1}{T} + \sum_{k=1}^{\infty}\frac{2}{k\pi \tau}\sin\left(k\pi \frac{\tau}{T}\right)\cos (k\omega_0 t)
+\end{align}
+Der Stoßcharakter wird unterschieden nach Verhältnis von $\tau$ und $T$: Bei einem kleinen Wert von $\tau$ (kurzer Stoßdauer) ist die Amplitude $\frac{2}{k\pi\tau}$ groß. Die erste Nullstelle der $C_k$ liegt bei $\frac{\tau}{T}=\frac{1}{k}$. Es liegt viel Energie bei hohen Frequenzen vor. Man spricht vom \emph{harten Stoß}. Im Gegensatz dazu kommt die erste Nullstelle der $C_k$ umso früher, je größer das Verhältnis $\tau/T$. Es liegt viel Energie bei den kleinen Frequenzen. Die Verteilung der Amplituden in Abhängigkeit der Frequenz ist in der folgenden Abbildung zu sehen. 
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	width=0.6\textwidth,
+	%		height=3.5cm,
+	domain=1:20,
+	xmin=1,xmax=20,
+	grid=both,
+	x label style={at={(axis description cs:0.7,-0.1)},anchor=north},
+	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+	xlabel={$k$},
+	ylabel={$C_k$}, 
+	]
+	\addplot[blue, thick,samples=20, mark=*, only marks] {abs(2*sin(deg(x*0.25*pi))/(x*0.25*pi))};
+	\addplot[red, thick,samples=20, mark=*, only marks] {abs(2*sin(deg(x*0.07*pi))/(x*0.07*pi))};
+	\legend{weicher Stoß ($\tau/T=0.25$),harter Stoß ($\tau/T=0.07$)}
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Harter und weicher Stoß.}
+%	\label{abb:HarterWeicherStoß}
+\end{figure}
+\end{beispiel}
+\begin{beispiel}[Dreieckschwingung]{beispiel:Dreieckschwingung}
+Die Dreieckschwingung ist definiert als 
+\begin{align}
+x(t) = \left\{
+\begin{array}{ll}
+t\cdot \frac{4}{T} & -\frac{T}{4} \leq t \leq \frac{T}{4}\\
+2-t \cdot \frac{4}{T} &  \frac{T}{4} \leq t \leq \frac{3 T}{4}\\
+\end{array}
+\right. 
+\end{align}
+Auch diese Funktion ist symmetrisch, weshalb die Koeffizienten $C_k$ allesamt verschwinden. Ferner ist 
+\begin{align}
+S_k&=\frac{4}{T}\int_{0}^{T/2}x(t)\sin(k\omega_0 t)\textrm{d}t\\
+& = \left\{
+\begin{array}{ll}
+0 & k \textrm{ gerade}\\
+\frac{8}{k^2 \pi^2}\cdot (-1)^{(k-1)/2} & k \textrm{ ungerade}\\
+\end{array}
+\right. 	
+\end{align}
+Die Darstellung von Zeitsignal, Amplituden- und Phasenspektrum ist wie folgt: 
+\begin{figure}[H]
+	\subfloat[Zeitbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		domain=-1:7,
+		xmin=-0.2,xmax=2*pi+0.2,
+		grid=both,
+		x label style={at={(axis description cs:0.7,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$t$},
+		ylabel={$x(t)$}, 
+		xtick={0,3.141,6.282},
+		xticklabels={0,,$2\pi/\omega_0$}, 
+		%yticklabels={,$-\hat x$,0,$\hat x$}
+		]
+		\addplot[black, thick] coordinates {(0,0) (1.5705,1) (3.141,0) (4.712,-1) (6.242,0) };
+		\end{axis}
+		\end{tikzpicture}
+	}
+	\subfloat[Frequenzbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		%		xmin=0,xmax=2,ymin=0,ymax=1.8,
+		grid=both,
+		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$\omega/\omega_0$},
+		ylabel={$S_k\cdot \pi^2/8$}, 
+		xtick={1,3,5,7},
+		%		xticklabels={0,$\omega_0$,},
+		ytick={0,1},
+		%		yticklabels={0,$\hat x$}
+		]
+		\addplot[black, thick,mark=*,only marks] coordinates {(1,1) (2,0) (3,1/9) (4,0) (5,1/25) (6,0) (7,1/49)};
+		%		\addplot[black, thick] coordinates {(1,0) (1,1)};
+		\end{axis}
+		\end{tikzpicture}
+	}
+	\subfloat[Frequenzbereich]{
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.3\textwidth,
+		height=3.5cm,
+		ymin=-1.7,ymax=1.7,%ymin=-1.2,ymax=1.2,
+		grid=both,
+		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.15,.7)},rotate=0,anchor=south},
+		xlabel={$\omega/\omega_0$},
+		ylabel={$\varphi_k$}, 
+		xtick={1,3,5,7},
+		%		xticklabels={0,$\omega_0$,},
+		ytick={-1.505,0,1.505},
+		yticklabels={$-\pi/2$,$0$,$\pi/2$}
+		]
+		\addplot[black, thick,mark=*,only marks] coordinates {(1,-1.505) (2,0) (3,1.505) (4,0) (5,-1.505) (6,0) (7,1.505)};
+		\end{axis}
+		\end{tikzpicture}
+	}
+\end{figure}
+\end{beispiel}
+\section{Erzwungene Schwingungen mit periodischer Anregung}
+Es wird der gedämpfte Einmassenschwinger (Parameter $m$, $d$, $c$) mit periodischer Krafterregung $F(t)$ betrachtet. Die Krafterregung sei jetzt \emph{polyharmonisch}, d.h. sie setzt sich aus vielen Frequenzanteilen zusammen. Dies ist beispielsweise bei Rechtecks- oder Dreiecksanregung der Fall. Die allgemeine Darstellung sei als Fourierreihe gegeben: 
+\begin{align}
+	F(t) = \frac{F_0}{2} +\sum_{k=1}^{\infty} F_{C,k}\cos(k\Omega t) + F_{S,k}\sin(k\Omega t)
+\end{align}
+Somit lautet die DGL
+\begin{align}
+m\ddot x + d\dot x + c x = \frac{F_0}{2} +\sum_{k=1}^{\infty} F_{C,k}\cos(k\Omega t) + F_{S,k}\sin(k\Omega t)
+\end{align}
+Die Antwort $x(t)$ kann für drei isolierte Fälle separat betrachtet werden: 
+\paragraph{Fall 1: $k=0$.} Die Anregung $F_1(t)=F_0/2$ ist konstant; die Antwort darauf (partikuläre Lösung) kann durch einen Ansatz vom Typ der rechten Seite bestimmt werden: 
+\begin{align}
+	&x_1(t) = K \textrm{ (konstant)}&&\dot x(t)=0&&\ddot x(t)=0& 
+\end{align}
+Nach kurzer Umformung folgt 
+\begin{align}
+x_1(t) = K = \frac{F_0}{2 c}
+\end{align}
+\paragraph{Fall 2: $k\geq 1$, $F_{S,k}=0$.} Die Anregung durch eine Drehzahlvielfache lautet $F_2(t)=F_{C,k}\cos(k\Omega t)$. Die Antwort darauf (partikuläre Lösung) lautet 
+\begin{align}
+x_2(t) &= V\left(\frac{k\Omega}{\omega_0}\right)\frac{F_{C,k}}{c}\cos\left(k\Omega t+\varphi_k\right)\\
+V\left(\frac{k\Omega}{\omega_0}\right) &= \frac{1}{\sqrt{\left(1-\left(\frac{k\Omega}{\omega_0}\right)^2\right)^2+\left(2D\frac{k\Omega}{\omega_0}\right)^2}}\\
+&= \frac{1}{\sqrt{\left(1-\left(k\eta\right)^2\right)^2+\left(2Dk\eta\right)^2}}
+\end{align}
+\begin{align}
+\tan(\varphi_k) &= - \frac{2D\frac{k\Omega}{\omega_0}}{1-\left(\frac{k\Omega}{\omega_0}\right)^2} 
+= -\frac{2Dk\eta}{1-\left(k\eta\right)^2}
+\end{align}
+\paragraph{Fall 3: $k\geq 0$ $F_{C,k}=0$.} Die Anregung durch eine Drehzahlvielfache lautet $F_3(t)=F_{C,k}\sin(k\Omega t)$. Die Antwort darauf (partikuläre Lösung) lautet in Analogie zu Fall 2
+\begin{align}
+x_3(t) &= V\left(\frac{k\Omega}{\omega_0}\right)\frac{F_{C,k}}{c}\sin\left(k\Omega t+\varphi_k\right)
+\end{align}
+Gemäß dem Superpositionsprinzip ist die Schwingungsantwort auf die Einzelanregungen $F(t) = F_1(t) + F_2(t) + F_3(t)$ die Summe der Einzelantworten $x(t) = x_1(t) + x_2(t) + x_3(t)$, also 
+\begin{align}
+x(t) = \frac{F_0}{2c} + \sum_{k=1}^{\infty}V\left(\frac{k\Omega}{\omega_0}\right)\left(\frac{F_{C,k}}{c}\cos\left(k\Omega t+\varphi_k\right) + \frac{F_{S,k}}{c}\sin\left(k\Omega t+\varphi_k\right)\right)
+\label{eq:PolyH}
+\end{align}
+Diese Lösung hat Eigenschaften wie die Schwingungsantwort auf eine Einzelanregung. Die Resonanz des ungedämpften Einmassenschwingers wird jetzt nicht mehr nur bei $\Omega=\omega_0$, sondern bei $k \Omega=\omega_0$ mit allen $k\in \mathbb N$ angeregt. 
+\begin{beispiel}[Motorblockanregung]{beispiel:Motorblockanregung}
+Die Vertikalbewegung eines Motorblocks kann durch die bekannte DGL des 1-Massen-Schwingers beschrieben werden. Die Schwingungsanregung durch Zündung der 4 Zylinder hat ihre Hauptkomponente bei doppelter Motordrehzahl, eine weitere wichtige Komponente ist die 4. Dehzahlordnung. Wenn die Anregung vereinfachend konstante Amplituden hat, dann lautet die Bewegungsgleichung 
+\begin{align}
+	m\ddot x + d\dot x + c x = F_{C,2} \cos(2 \Omega t) + F_{C,4} \cos(4 \Omega t)
+\end{align}
+Gemäß Gleichung (4.41) lautet die partikuläre Lösung
+\begin{align}
+x(t) = & V_{Kraftanregung}\left(\frac{2\Omega}{\omega_0}\right)\frac{F_{C,2}}{c}\cos\left(2\Omega t+\varphi_2\right) \\
+&+V_{Kraftanregung}\left(\frac{4\Omega}{\omega_0}\right)\frac{F_{C,4}}{c}\cos\left(2\Omega t+\varphi_4\right) 
+\end{align}
+Diese Aufgabe kann numerisch gelöst werden. In \emph{Octave} lautet eine mögliche Implementierung 
+\begin{lstlisting}[frame=single] 
+function dy = Motorblock(t,y)
+m = 1; d = 5; c = 1e4*(2*pi)^2;
+Fc2 = 1; Fc4 = 0.5; 
+
+Omega = t*500*2*pi/60; % Drehzahlhochlauf (500 rpm 
+                       % pro Sekunde)
+Phi = 1/2*Omega*t; 
+
+dy = zeros(size(y)); 
+dy(1) = y(2); 
+dy(2) = (-c*y(1)-d*y(2) + Fc2*cos(2*Phi) + Fc4*cos(4*Phi))/m; 
+\end{lstlisting}
+\begin{lstlisting}[frame=single] 
+% main function
+close all; clear variables; clc;
+tspan = linspace(0,10,10000);
+y0 = [0,0];
+[tout,yout] = ode45(@Motorblock,tspan,y0);
+figure, plot(tout,yout(:,1)); 
+
+Fs=length(tout)/(tout(end)-tout(1));
+step=ceil(50*Fs/1000); window=ceil(500*Fs/1000);
+[s,f,t] = specgram(yout(:,1), 2^10, Fs,window, window-step);
+[t,f] = meshgrid(t,f);
+figure, surf(t,f,abs(s),'edgecolor','none');
+caxis([0.0 1e-3]); axis([0 10 10 200 0 1e-2]); 
+\end{lstlisting}
+\begin{figure}[H]
+%	\centering
+	\subfloat{\includegraphics[width=0.5\textwidth]{Bilder/Hochlaufsimulation_Farbkarte.png}}
+	\subfloat{\includegraphics[width=0.4\textwidth]{Bilder/Hochlaufsimulation_y.png}}
+	\caption{Spektrogramm der Auslenkung $y(t)$ bei Hochlaufsimulation und Anregung mit 2. und 4. Ordnung. Charakteristisch sind im Spektrogramm die Anregungsordnungen, mit denen die Resonanz jeweils getroffen wird. }
+\end{figure}
+\end{beispiel}
+\section{Nichtperiodische Vorgänge}
+Für periodische Funktionen gilt: $\omega_0 = \frac{2\pi}{T}$. Die Grundfrequenz ist also durch die endliche Periodenlänge begrenzt. Für nichtperiodische Funktionen (z.B. einmalige Vorgänge) geht die Schwingungsdauer $T$ gegen unendlich. Damit ist auch die Grundfrequenz $\omega_0\rightarrow \textrm{d}\omega$ (sie wird differenziell klein). 
+Mit Darstellung von (Mathematik 4.5) lauten die komplexen Schwingungskomponenten im Grenzübergang
+\begin{align}
+x(t) &= \sum_{k=-\infty}^{\infty}a_k e^{i k\omega_0 t} = \sum_{k=-\infty}^{\infty}\frac{1}{T}\underbrace{\int_{0}^{T}x(t)e^{-i k\omega_0 t}\textrm{d}t}_{=: X_k = X(k\omega_0)} e^{i k\omega_0 t}\\
+&\rightarrow \frac{1}{2\pi}\int_{-\infty}^{\infty}\underbrace{\int_{0}^{\infty}x(t)e^{-i \omega t}\textrm{d}t}_{X(\omega)} e^{i \omega t}\textrm{d}\omega
+\end{align}
+Dies motiviert die folgende Definition:
+\begin{theo}[Fouriertransformation]{theo:Fouriertransformation}
+Die Fouriertransformation $\mathcal{F}(x)$ beschreibt die Transformation einer Funktion $x(t)$ in den Frequenzbereich. Sie ist definiert durch 
+\begin{align}
+X(\omega) = \mathcal F \{x(t)\}&= \int_{0}^{\infty} x(t)e^{-i \omega t}\textrm{d}t \nonumber
+\end{align}
+Die Rücktransformierte $x(t) = \mathcal{F}^{-1}\{X(\omega)\}$ wird berechnet als 
+\begin{align}
+x(t) = \frac{1}{2\pi}\int_{-\infty}^{\infty} X(\omega)e^{i \omega t}\textrm{d}\omega\nonumber
+\end{align}
+\end{theo}
+Der Betrag $|X(\omega)|$ beschreibt das Amplitudenspektrum der nichtperiodischen Funktion $x(t)$. Es gilt der Zusamenhang zwischen Amplitude und Phase
+\begin{align}
+	X(\omega) &= |X(\omega)| e^{i\varphi(\omega)} =  Re\{X(\omega)\} +i\cdot Re\{X(\omega)\}\\
+	\tan (\varphi(\omega)) & = \frac{Im\{X(\omega)\}}{Re\{X(\omega)\}}
+\end{align}
+In der Definition der Fouriertransformierten in (Mathematik 4.6) wurde angenommen, dass die aperiodischen Signale für $t<0$ den Wert $0$ haben. Um den Fall $x(t<0)\neq 0$ abzudecken, lautet die verallgemeinerte Fouriertransformierte
+\begin{align}
+	X(\omega)&= \int_{-\infty}^{\infty} x(t)e^{-i \omega t}\textrm{d}t
+\end{align}
+Die Rücktransformierte bleibt unverändert. Für die Fouriertransformation gelten die folgenden Rechenregeln: 
+\begin{itemize}
+	\item Linearität
+\begin{align}
+\mathcal{F}\{c_1 x_1(t) + c_2 x_2(t)\} = c_1 X_1(\omega) + c_2 X_2(\omega)
+\end{align}
+	\item Differentiation im Urbildraum
+\begin{align}
+\mathcal{F}\left\{\frac{d^n x(t)}{\textrm{d} t}\right\} = (i \omega)^n X(\omega) - x(0^+)
+\end{align}
+mit der Anfangsbedingung $x(0^+)$, welche bei homogenen Anfangsbedingungen verschwindet.
+\end{itemize}
+\begin{beispiel}[Dirac-Impuls]{beispiel:Diracimpuls}
+Die Fouriertransformierte des Dirac-Impuls berechnet sich unter Berücksichtigung der Ausblendeigenschaft zu  
+\begin{align}
+	\mathcal{F}(\delta(t))&=\int_{-\infty}^{\infty}\delta(t)e^{-i\omega t}\textrm{d}t = e^{-i\omega \cdot 0} = 1
+\end{align}
+Ein Dirac-Impuls ist ein unendlich harter Stoß. Folglich befinden sich in dessen Amplitudenspektrum alle Frequenzen mit der Spektraldichte 1. Man spricht von \emph{weißem Rauschen}. 	
+\end{beispiel}
+\begin{beispiel}[Sprungfunktion]{beispiel:Sprung}
+Die Fouriertransformierte der Sprungfunktion berechnet sich wegen $\delta (t) = \textrm{d}\sigma(t)/\textrm{d}t$ und 
+\begin{align}
+\mathcal{F}(\delta(t))&=i\omega \mathcal{F}(\sigma(t))-\delta(0^+)=i\omega \mathcal{F}(\sigma(t))
+\end{align}
+zu 
+\begin{align}
+\mathcal{F}(\sigma(t))&=\frac{1}{i\omega }
+\end{align}
+\end{beispiel}
+\begin{beispiel}[Harmonische Funktion]{beispiel:harmonisch}
+\begin{align}
+\mathcal{F}(\sin(\omega_0 t)) &= i \pi \left(\delta(\omega+\omega_0)-\delta(\omega-\omega_0)\right)\\
+\mathcal{F}(\cos(\omega_0 t)) &= \pi \left(\delta(\omega-\omega_0)+\delta(\omega+\omega_0)\right)
+\end{align}
+\end{beispiel}
+\begin{beispiel}[Rechteckimpuls ohne Wiederholung]{beispiel:ImpulsOhneWdh}
+In Analogie zur Rechteckimpulsfolge wird der einmalige Rechteckimpuls ohne Wiederholung, d.h. mit $T\rightarrow\infty$, im Frequenzbereich betrachtet. Dafür eignet sich die Fouriertransformation: 
+\begin{align}
+	X(\omega) &= \int_{-\tau/2}^{\tau/2}\frac{1}{\tau}e^{-i\omega t}\textrm{d}t = \frac{e^{i\omega\tau/2}-e^{-i\omega\tau/2}}{i\tau\omega} = \frac{2}{\tau \omega}\sin(\omega\tau /2)
+\end{align}
+Bemerkenswert an diesem Ergebnis sind zwei Beobachtungen: Das bisherige diskrete Frequenzspektrum (Grundfrequenz $\omega_0$) geht nun über in ein verteiltes Spektrum, für das alle reellen Werte von $\omega$ zugelassen sind; die weiteren Eigenschaften des bisherigen Ergebnisses sind beibehalten. Ferner folgt für den Grenzübergang $\tau\rightarrow0$ das Ergebnis von Beispiel 4.5. 
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	width=0.6\textwidth,
+	height=4cm,
+	domain=1:20,
+	xmin=1,xmax=20,
+	grid=both,
+	x label style={at={(axis description cs:0.7,-0.3)},anchor=north},
+	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+	xlabel={$\omega$},
+	ylabel={$|X(\omega)|$}, 
+	]
+	\addplot[black, thick,samples=200] {abs(2*sin(deg(x*0.5)/2)/x/0.5)};
+	\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{beispiel}\newpage
+\begin{beispiel}[Impulsantwort des Einmassenschwingers]{beispiel:HarmOsz}
+Die Fouriertransformation angewandt auf die Gleichung (4.3) lautet gemäß der Rechenregeln: 
+\begin{align}
+	-\omega^2 X(\omega) + 2Di\omega X(\omega)+\omega_0^2 X(\omega)& =\frac{1}{m}\mathcal{F}\{\delta(t)\}=\frac{1}{m}&&\textrm{bzw.}&\label{eq:GImpuls}\\
+	X(\omega)& = \frac{1}{m}\frac{1}{\left(\omega_0^2-\omega^2 + 2Di\omega \right)}&
+\end{align}
+\end{beispiel}
+Diese Darstellung der Fouriertransformierten erinnert stark an die komplexe Darstellung der Übertragungsfunktion und motiviert den nächsten Abschnitt: 
+\section{Berechnung der Schwingungsantwort mithilfe des komplexen Frequenzgangs}
+Als Ausgangspunkt wird ein lineares System mit zeitunabhängigen Parametern und einer allgemeinen Eingangsgröße $y(t)$ gewählt. Die Anwendung der Fouriertransformation auf die Differentialgleichung 
+\begin{align}
+& \sum_{k=0}^{n} a_k \frac{\textrm{d}^k x}{\textrm{d} t^k} = b_0 y& &n\in \mathbb N&
+\end{align}
+lautet 
+\begin{align}
+\left(\sum_{k=0}^{n} a_k \cdot (i\omega)^k \right) X(\omega) = b_0 Y(\omega)
+\end{align}
+Ferner wird die Übertragungsfunktion 
+\begin{align}
+G(\omega)=\frac{X(\omega)}{Y(\omega)} = \frac{b_0}{\sum_{k=0}^{n} a_k \cdot (i\omega)^k }
+\end{align}
+eingeführt, welche im Frequenzbereich den Zusammenhang zwischen Einheitsanregung und Antwort herstellt. \\
+Wie im (Beispiel 4.9) ersichtlich, folgt aus der \emph{Einheitsanregung} $y(t)=\delta(t)$ im Frequenzbereich die Übertragungsfunktion. Außerdem ist die Übertragungsfunktion $G(\omega)$ auch aus der Fouriertransformation der Impulsantwort $g(t)$ berechenbar: $\mathcal{F}\left\{\frac{1}{m\omega_d}e^{-D\omega_0 t}\sin(\omega_d t)\right\} = \frac{1}{m}\frac{1}{\left(\omega_0^2-\omega^2 + 2Di\omega \right)}$. Diese Beobachtung ist allgemein gültig: Es ist stets 
+\begin{align}
+	\mathcal{F}\left\{g(t)\right\} = G(\omega)
+\end{align}
+Die Übertragungsfunktion $G(\omega)$ beschreibt ein lineares zeitinvariantes System vollständig. Ist sie bekannt, dann kann die Antwort auf eine beliebige Anregung im Frequenzbereich berechnet werden. Die Rücktransformation liefert die Schwingungsantwort im Zeitbereich: mit $X(\omega) = G(\omega) Y(\omega)$ ist 
+\begin{align}
+	\mathcal{F}\left\{x(t)\right\} &=X(\omega)= G(\omega) Y(\omega) = \int_{-\infty}^{\infty}g(z)e^{-i\omega t}\textrm{d}t \cdot \int_{-\infty}^{\infty}y(t)e^{-i\omega t}\textrm{d}t\\
+	& = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}g(t-\tau)y(\tau)\textrm{d}\tau \cdot e^{-i\omega t}\textrm{d}t\\
+	&= \mathcal{F}\left\{g(t)*y(t)\right\} 
+\end{align}
+mit 
+\begin{align}
+	g(t)*y(t) := \int_{-\infty}^{\infty}g(t-\tau)y(\tau)\textrm{d}\tau
+\end{align}
+der \emph{Faltung} zwischen der Gewichtsfunktion und einer beliebigen Anregungsfunktion. \\\newpage
+\section*{Aufgaben zu Kapitel 4}
+

@@ -1,0 +1,353 @@
+% This file was created with JabRef 2.10.
+% Encoding: Cp1252
+
+
+@Book{altenbach2012kontinuumsmechanik,
+  Title                    = {Kontinuumsmechanik: Einf{\"u}hrung in die materialunabh{\"a}ngigen und materialabh{\"a}ngigen Gleichungen},
+  Author                   = {Altenbach, Holm},
+  Publisher                = {Springer-Verlag},
+  Year                     = {2012}
+}
+
+@Book{bertram2008elasticity,
+  Title                    = {Elasticity and plasticity of large deformations},
+  Author                   = {Bertram, Albrecht},
+  Publisher                = {Springer},
+  Year                     = {2008}
+}
+
+@Book{campbell1924protection,
+  Title                    = {Protection of steam turbine disk wheels from axial vibration},
+  Author                   = {Campbell, Wilfred},
+  Publisher                = {General electric Company},
+  Year                     = {1924}
+}
+
+@Book{dresig2014schwingungen,
+  Title                    = {Schwingungen mechanischer Antriebssysteme: Modellbildung, Berechnung, Analyse, Synthese},
+  Author                   = {Dresig, Hans and Fidlin, Alexander},
+  Publisher                = {Springer-Verlag},
+  Year                     = {2014}
+}
+
+@Book{dubbel2013dubbel,
+  Title                    = {DUBBEL: Taschenbuch f{\"u}r den Maschinenbau},
+  Author                   = {Dubbel, Heinrich and Beitz, Wolfgang and K{\"u}ttner, Karl-Heinz},
+  Publisher                = {Springer-Verlag},
+  Year                     = {2013}
+}
+
+@Article{follinger1978regelungstechnik,
+  Title                    = {Regelungstechnik. Einf{\"u}hrung in die Methoden und ihre Anwendung},
+  Author                   = {F{\"o}llinger, Otto and D{\"o}rrscheidt, Frank and Klittich, Manfred},
+  Journal                  = {Berlin: Elitera Verlag, 1978, 2. ueberarb. Aufl.},
+  Year                     = {1978},
+  Volume                   = {1}
+}
+
+@Article{fidlin2009radial,
+  Title                    = {On the radial dynamics of friction disks},
+  Author                   = {Fidlin, Alexander and Stamm, Wolfgang},
+  Journal                  = {European Journal of Mechanics-A/Solids},
+  Year                     = {2009},
+  Number                   = {3},
+  Pages                    = {526--534},
+  Volume                   = {28},
+
+  Publisher                = {Elsevier}
+}
+
+@Book{gauss1815methodus,
+  Title                    = {Methodus nova integralium valores per approximationem inveniendi},
+  Author                   = {Gau\ss, Carl Friedrich},
+  Publisher                = {apud Henricum Dieterich},
+  Year                     = {1815}
+}
+
+@Conference{hagedorn2014selfexcited,
+  Title                    = {Self-Excited Vibrations in Mechanical Systems: Old Observations and New Results},
+  Author                   = {Peter Hagedorn},
+  Year                     = {2014},
+  Note                     = {ENOC 2014, July 6-11, Vienna},
+
+  Owner                    = {Jehle},
+  Timestamp                = {2015.11.25}
+}
+
+@Book{hetzler2008stabilitat,
+  Title                    = {{Zur Stabilit{\"a}t von Systemen bewegter Kontinua mit Reibkontakten am Beispiel des Bremsenquietschens}},
+  Author                   = {Hetzler, Hartmut},
+  Publisher                = {Univ.-Verlag Karlsruhe},
+  Year                     = {2008}
+}
+
+@Book{hinrichs1997reibungsschwingungen,
+  Title                    = {Reibungsschwingungen mit selbst-und fremderregung: Experiment, modellierung und berechnung},
+  Author                   = {Hinrichs, Nikolaus},
+  Publisher                = {VDI-Verlag},
+  Year                     = {1997}
+}
+
+@Article{hochlenert2007friction,
+  Title                    = {Friction induced vibrations in moving continua and their application to brake squeal},
+  Author                   = {Hochlenert, Daniel and Spelsberg-Korspeter, Gottfried and Hagedorn, Peter},
+  Journal                  = {Journal of Applied Mechanics},
+  Year                     = {2007},
+  Number                   = {3},
+  Pages                    = {542--549},
+  Volume                   = {74},
+
+  Publisher                = {American Society of Mechanical Engineers}
+}
+
+@Article{ivanov2009dynamically,
+  Title                    = {A dynamically consistent model of the contact stresses in the plane motion of a rigid body},
+  Author                   = {Ivanov, AP},
+  Journal                  = {Journal of Applied Mathematics and Mechanics},
+  Year                     = {2009},
+  Number                   = {2},
+  Pages                    = {134--144},
+  Volume                   = {73},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{jehle2014friction,
+  Title                    = {Friction induced vibrations in shift gearboxes},
+  Author                   = {Jehle, Georg and Fidlin, Alexander},
+  Journal                  = {ZAMM-Journal of Applied Mathematics and Mechanics/Zeitschrift f{\"u}r Angewandte Mathematik und Mechanik},
+  Year                     = {2014},
+  Number                   = {11},
+  Pages                    = {911--916},
+  Volume                   = {94},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{jehle2013Schwingungen,
+  Title                    = {{Schwingungen in Schaltgetrieben: Selbsterregung durch Reibung in der Kupplung und Modenkopplung in der Verzahnung}},
+  Author                   = {G. Jehle and A. Fidlin},
+  Journal                  = {VDI-Berichte},
+  Year                     = {2013},
+  Note                     = {8. Fachtagung Schwingungen in Antrieben 2013, Fulda, 5. und 6. November 2013, VDI Verlag Düsseldorf 2013},
+  Pages                    = {209-222},
+  Volume                   = {2197},
+
+  Owner                    = {georg},
+  Timestamp                = {2015.11.20}
+}
+
+@Book{jelali2003hydraulic,
+  Title                    = {Hydraulic servo-systems: modelling, identification and control},
+  Author                   = {Jelali, Mohieddine and Kroll, Andreas},
+  Publisher                = {Springer},
+  Year                     = {2003}
+}
+
+@Book{kerle2011getriebetechnik,
+  Title                    = {Getriebetechnik: Grundlagen, Entwicklung und Anwendung ungleichm{\"a}{\ss}ig {\"u}bersetzender Getriebe},
+  Author                   = {Kerle, Hanfried and Corves, Burkhard J and H{\"u}sing, Mathias},
+  Publisher                = {Springer-Verlag},
+  Year                     = {2011}
+}
+
+@Book{khalil1996nonlinear,
+  Title                    = {Nonlinear systems},
+  Author                   = {Khalil, Hassan K and Grizzle, JW},
+  Publisher                = {Prentice hall New Jersey},
+  Year                     = {1996},
+  Volume                   = {3}
+}
+
+@Article{kireenkov2008combined,
+  Title                    = {Combined model of sliding and rolling friction in dynamics of bodies on a rough plane},
+  Author                   = {Kireenkov, AA},
+  Journal                  = {Mechanics of Solids},
+  Year                     = {2008},
+  Number                   = {3},
+  Pages                    = {412--425},
+  Volume                   = {43},
+
+  Publisher                = {Springer}
+}
+
+@Book{krylov2006approximate,
+  Title                    = {Approximate calculation of integrals},
+  Author                   = {Krylov, Vladimir Ivanovich and Stroud, Arthur H},
+  Publisher                = {Courier Corporation},
+  Year                     = {2006}
+}
+
+@Book{laurien2009numerische,
+  Title                    = {Numerische Str{\"o}mungsmechanik},
+  Author                   = {Laurien, Eckart and Oertel Jr, Herbert},
+  Publisher                = {Springer},
+  Year                     = {2009},
+
+  Journal                  = {Vieweg{\th}Teubner, Wiesbaden, Germany}
+}
+
+@TechReport{leissa1969vibration,
+  Title                    = {Vibration of plates},
+  Author                   = {Leissa, Arthur W},
+  Institution              = {DTIC Document},
+  Year                     = {1969}
+}
+
+@Book{molerus1963laufunruhige,
+  Title                    = {{Laufunruhige Drehzahlbereiche mehrstufiger Stirnradgetriebe}},
+  Author                   = {Molerus, Otto},
+  Year                     = {1963}
+}
+
+@Book{Riemer1993,
+  Title                    = {Mathematische Methoden der technischen Mechanik},
+  Author                   = {Riemer, Michael; Wauer, Jörg; Wedig, Walter},
+  Publisher                = {Springer},
+  Year                     = {1993},
+
+  Address                  = {Berlin},
+  Series                   = {Springer-Lehrbuch},
+
+  Bestand                  = {Hochschule für Technik und Wirtschaft des Saarlandes <Sa 16>; Sächsische Landesbibliothek - Staats- und Universitätsbibliothek <14> [Signatur: 95 8 62904]; Württembergische Landesbibliothek <24> [Signatur: 43/20816]; Karlsruher Institut für Technologie (KIT) - KIT-Bibliothek Süd <90> [Signatur: 93 A 3390]; KIT, Campus Süd, Mathematische Bibliothek <90/5>; KIT, Campus Süd, Institut für Mechanik <90/14>; KIT, Campus Süd, Institut für Mess- und Regelungstechnik <90/99>; KIT, Campus Süd, Institut für Produktentwicklung <90/113>; KIT, Campus Süd, Institut für Regelungs- <90/130>; Universitätsbibliothek Stuttgart <93> [Signatur: 4H 3813]; Universität Stuttgart, Institut für Mechanik (Bauwesen) <93/53> [Signatur: RIEM]; Universität Stuttgart, Institut für Angewandte und <93/83> [Signatur: Mechanik/allgemein]; Universität Stuttgart, Institut für Konstruktion und Fertigung <93/153> [Signatur: Ee 12]; Badische Landesbibliothek <31> [Signatur: 93 A 15436]; Universitätsbibliothek Chemnitz <Ch 1> [Signatur: UF 1500 rie]; Kommunikations- u. Informationszentrum Universität Ulm (kiz) <289> [Signatur: QA 401/1993 R]; TU Bergakademie Freiberg, Universitätsbibliothek <105> [Signatur: 93.7870 8.]; Hochschulbibliothek Reutlingen <Rt 2> [Signatur: Ma 2-200-52]; Hochschule Mittweida, Hochschulbibliothek <Mit 1>; Westsächsische Hochschule Zwickau <Zwi 2> [Signatur: 34 953]; Hochschulbibliothek Heilbronn <840> [Signatur: 531. RIE]; Hochschule für Technik, Wirtschaft und Kultur Leipzig <L 189>; Hochschulbibliothek Konstanz - <Kon 4> [Signatur: xk/87]; Hochschulbibliothek Pforzheim, <951>; Hochschule Mannheim, Hochschulbibliothek <953> [Signatur: B I]; Hochschule Esslingen <753> [Signatur: Fa Rie]; Hochschule Ulm, Hochschule für Technik <943> [Signatur: 531/534 Rie]; Hochschule Offenburg <Ofb 1> [Signatur: C 93/048]; Duale Hochschule Baden-Württemberg Karlsruhe <Ka 90>; Duale Hochschule Baden-Württemberg Stuttgart, <Stg 258> [Signatur: MB l 10.33];},
+  ISBN                     = {3-540-55741-5},
+  Keywords                 = { ; Engineering mathematics / Mechanics, applied ; Technische Mechanik / Mathematische Methode},
+  Size                     = {XI, 310 S. : graph. Darst.},
+  Url                      = {http://www.bsz-bw.de/cgi-bin/ekz.cgi?SWB03566694 ; http://swbplus.bsz-bw.de/bsz035666943inh.htm}
+}
+
+@PhdThesis{schild2005theoretische,
+  Title                    = {Theoretische und experimentelle Untersuchungen zum Gangspringen bei Schaltgetrieben},
+  Author                   = {Schild, Andreas},
+  School                   = {Technischen Universität Dresden},
+  Year                     = {2005}
+}
+
+@MastersThesis{ruijin2015experimentelle,
+  Title                    = {{Experimentelle Untersuchung einer axialschwingenden Hydraulikleitung zur Beeinflussung von schwingenden Wellen}},
+  Author                   = {Ruijin Shi},
+  School                   = {Karlsruher Institut f{\"u}r Technologie},
+  Year                     = {2015},
+
+  Owner                    = {georg},
+  Timestamp                = {2016.01.05}
+}
+
+@Book{strogatz2014nonlinear,
+  Title                    = {Nonlinear dynamics and chaos: with applications to physics, biology, chemistry, and engineering},
+  Author                   = {Strogatz, Steven H},
+  Publisher                = {Westview press},
+  Year                     = {2014}
+}
+
+@PhdThesis{thoma2011lastubertragung,
+  Title                    = {Last{\"u}bertragung im verformten System Lager-Welle-Zahnrad},
+  Author                   = {Thoma, Falko},
+  School                   = {Technische Universit{\"a}t M{\"u}nchen},
+  Year                     = {2011}
+}
+
+@Article{treschev2012final,
+  Title                    = {On the final motion of cylindrical solids on a rough plane},
+  Author                   = {Treschev, Dmitrii Valer'evich and Erdakova, Nadezhda Nikolaevna and Ivanova, Tat'yana Borisovna},
+  Journal                  = {Rus. J. Nonlin. Dyn},
+  Year                     = {2012},
+  Number                   = {3},
+  Pages                    = {585--603},
+  Volume                   = {8}
+}
+
+@Book{volmer1969getriebetechnik,
+  Title                    = {Getriebetechnik: Lehrbuch},
+  Author                   = {Volmer, Johannes},
+  Publisher                = {Verlag Technik},
+  Year                     = {1969},
+  Volume                   = {1}
+}
+
+@Book{Wauer2008,
+  Title                    = {Kontinuumsschwingungen: Vom einfachen Strukturmodell zum komplexen Mehrfeldsystem},
+  Author                   = {Wauer, Jörg},
+  Publisher                = {Vieweg+Teubner / GWV Fachverlage GmbH, Wiesbaden},
+  Year                     = {2008},
+
+  Address                  = {Wiesbaden},
+  Note                     = {In: Springer-Online},
+
+  Bestand                  = {Universitätsbibliothek Freiburg <25>; Saarländische Universitäts- und Landesbibliothek <291>; Universitätsbibliothek Leipzig <15>; Karlsruher Institut für Technologie (KIT) - KIT-Bibliothek Süd <90>; Universitätsbibliothek Stuttgart <93>; Universitätsbibliothek Chemnitz <Ch 1>; TU Bergakademie Freiberg, Universitätsbibliothek <105>; Hochschulbibliothek Reutlingen <Rt 2> [Signatur: eBook]; Pädagogische Hochschule Weingarten, Hochschulbibliothek <747> [Signatur: eBook Springer]; Hochschule Mittweida, Hochschulbibliothek <Mit 1>; Westsächsische Hochschule Zwickau <Zwi 2> [Signatur: Springer E-Book]; Hochschule Zittau/Görlitz (FH) <Zi 4>; Hochschulbibliothek Heilbronn <840> [Signatur: Springer E-Book]; Hochschule für Technik, Wirtschaft und Kultur Leipzig <L 189>; Hochschulbibliothek Konstanz - <Kon 4> [Signatur: eBook Springer]; Hochschule für Technik und Wirtschaft <520>; Hochschule Mannheim, Hochschulbibliothek <953> [Signatur: eBook Springer]; Hochschule der Medien Stuttgart, Standort Nobelstraße <958> [Signatur: eBook Springer]; Hochschule Furtwangen, Hochschule für Technik und Wirtschaft <Fn 1> [Signatur: Springer E-Book]; Duale Hochschule Baden-Württemberg Stuttgart <Stg 259> [Signatur: eBook Springer]; Hochschule Aalen <944> [Signatur: eBook Springer]; Hochschule für Technik Stuttgart <1033> [Signatur: eBook Springer]; Hochschule Esslingen <753> [Signatur: eBook Springer]; Duale Hochschule Baden-Württemberg Mannheim <Mh 35> [Signatur: eBook Springer]; Hochschule Ulm, Hochschule für Technik <943> [Signatur: eBook Springer]; Duale Hochschule Baden-Württemberg Villingen-Schwenningen <Vil 2> [Signatur: Springer E-Book]; Hochschule Offenburg <Ofb 1> [Signatur: eBook Springer]; Berufsakademie Sachsen, Staatliche Studienakademie Dresden <D 161>; Berufsakademie Sachsen, Staatliche Studienakademie Leipzig <L 229>; Berufsakademie Sachsen, Staatliche Studienakademie Glauchau <Gla 1>; Berufsakademie Sachsen, Staatliche Studienakademie Bautzen <Bn 3>; Berufsakademie Sachsen, Staatliche Studienakademie Riesa <Rs 1>; Duale Hochschule Baden-Württemberg Ravensburg <Rav 1> [Signatur: Springer E-Book]; Hochschule Nürtingen-Geislingen <950> [Signatur: eBook Springer]; Duale Hochschule Baden-Württemberg Lörrach, <Lör 2> [Signatur: eBook Springer]; Duale Hochschule Baden-Württemberg Mosbach <941> [Signatur: e-Book Springer]; Duale Hochschule Baden-Württemberg Heidenheim <Hed 2> [Signatur: e-Book Springer]; Bibl.sigel <948> [Signatur: e-Book Springer]; Duale Hochschule Baden-Württemberg Ravensburg, <Rav 1/a> [Signatur: Springer E-Book]; Berufsakademie Sachsen, Staatliche Studienakademie Plauen <Pl 11>;},
+  ISBN                     = {978-3-8351-9239-3},
+  Keywords                 = {Kontinuumsmechanik / Mechanische Schwingung / Lehrbuch ; Mechanics, applied / Engineering},
+  Size                     = {Online-Ressource : v.: digital},
+  Url                      = {http://dx.doi.org/10.1007/978-3-8351-9239-3}
+}
+
+@Book{willner2013kontinuums,
+  Title                    = {Kontinuums- und Kontaktmechanik: Synthetische und analytische Darstellung},
+  Author                   = {Willner, Kai},
+  Publisher                = {Springer-Verlag},
+  Year                     = {2013}
+}
+
+@Article{ziegler1952stabilitatskriterien,
+  Title                    = {Die Stabilit{\"a}tskriterien der elastomechanik},
+  Author                   = {Ziegler, Hans},
+  Journal                  = {Archive of Applied Mechanics},
+  Year                     = {1952},
+  Number                   = {1},
+  Pages                    = {49--56},
+  Volume                   = {20},
+
+  Publisher                = {Springer}
+}
+
+@Article{zirpke1989zahnrader,
+  Title                    = {Zahnr{\"a}der. 13},
+  Author                   = {Zirpke, K},
+  Journal                  = {Auflage, Leipzig},
+  Year                     = {1989}
+}
+
+@Proceedings{jehle2015numerical,
+  Title                    = {Numerical and experimental investigation of the effect of a fluid pipe on systems subjected to forced vibrations},
+  Year                     = {2015},
+  Author		   = {Jehle, Georg and Fidlin, Alexander},
+  Owner                    = {georg},
+  Timestamp                = {2016.01.05}
+}
+
+@misc{schnell1989technische,
+	title={{Technische Meschanik 2: Elastostatik}},
+	author={Schnell, W and Gross, D},
+	year={1989},
+	publisher={Springer Verlag}
+}
+
+@BOOK{scheithauer1998signale,
+title = {Signale und Systeme},
+publisher = {Teubner Stuttgart},
+year = {1998},
+author = {Scheithauer, R.},
+volume = {2}
+}
+
+@article{uchida1956pulsating,
+  title={The pulsating viscous flow superposed on the steady laminar motion of incompressible fluid in a circular pipe},
+  author={Uchida, Shigeo},
+  journal={Zeitschrift f{\"u}r angewandte Mathematik und Physik ZAMP},
+  volume={7},
+  number={5},
+  pages={403--422},
+  year={1956},
+  publisher={Springer}
+}
+@article{fan1965unsteady,
+  title={Unsteady, laminar, incompressible flow through rectangular ducts},
+  author={Fan, Chien and Chao, Bei-Tse},
+  journal={Zeitschrift f{\"u}r angewandte Mathematik und Physik ZAMP},
+  volume={16},
+  number={3},
+  pages={351--360},
+  year={1965},
+  publisher={Springer}
+}
+

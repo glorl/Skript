@@ -1,0 +1,669 @@
+This is TeX, Version 3.14159265 (TeX Live 2015/Debian) (preloaded format=tex 2015.11.15)  7 MAY 2016 23:17
+**docstrip
+(/usr/share/texlive/texmf-dist/tex/latex/base/docstrip.tex
+\blockLevel=\count26
+\emptyLines=\count27
+\processedLines=\count28
+\commentsRemoved=\count29
+\commentsPassed=\count30
+\codeLinesPassed=\count31
+\TotalprocessedLines=\count32
+\TotalcommentsRemoved=\count33
+\TotalcommentsPassed=\count34
+\TotalcodeLinesPassed=\count35
+\NumberOfFiles=\count36
+\inFile=\read0
+\inputcheck=\read1
+\@tempcnta=\count37
+\off@0=\count38
+\off@1=\count39
+\off@2=\count40
+\off@3=\count41
+\off@4=\count42
+\off@5=\count43
+\off@6=\count44
+\off@7=\count45
+\off@8=\count46
+\off@9=\count47
+\off@10=\count48
+\off@11=\count49
+\off@12=\count50
+\off@13=\count51
+\off@14=\count52
+\off@15=\count53
+\@temptokena=\toks12
+\@maxfiles=\count54
+\@maxoutfiles=\count55
+
+Utility: `docstrip' 2.5e <2014/09/29>
+English documentation    <2014/09/29>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+
+****************************************************
+* First type the extension of your input file(s):  *
+\infileext=mbs
+****************************************************
+
+****************************************************
+* Now type the extension of your output file(s)  : *
+\outfileext=tex
+****************************************************
+
+****************************************************
+* Now type the name(s) of option(s) to include   : *
+\Options=bblbst
+****************************************************
+
+****************************************************
+* Finally give the list of input file(s) without   *
+* extension separated by commas if necessary     : *
+\filelist=merlin
+****************************************************
+
+
+Generating file(s) merlin.tex 
+\openout0 = `merlin.tex'.
+
+
+Processing file merlin.mbs (bblbst) -> merlin.tex
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % <*!tail % . . .
+. . . . . . . . % . % > <*a&!a % % . . > <*driver . . . . . . . . . . . . . .
+. . > % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% <*options . . . . . . . . . . . . . . . . . . . . . . . . . . . . % % % % %
+% % % % % % % % % . . . . . . . . . . . . . % % % % % % % % % % % % % % % % .
+. . . . . . . . % % % % % . . . . . . . . . . . % % % % % % % . . . . . . . .
+. . . % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . % % % % % % % % . . . . . . . . % % % %
+% % % . . . . . % % % % % % % . . . . . % % % % % % % % % . . . . . . . . % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % . . . . . .
+. . . . % . . . . . . . . . . . . . . % % % % % . . . . . . . % % % % % % . .
+. . . . % % % % % % % % % % % % % % % % % . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . % % % % % % % % % % % % . . .
+. . . . . . . . . . . . . . . . . . . . . . . . % % % % % % . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . % % % % % % % % % % % % % % % % % % % .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . % % % % % % % %
+% % % % % % % % % % % % % % . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . % % % % % % % % % % % % % % % % % % . . . . . . . % % % % % % % % . .
+. . . . . % % % % % % % % % % % % % . . . . . . . . % % % % % % % % % % % % %
+% . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . % % % % % % %
+% % . . . . . . . % % % % % % % % % % % % % % % % % % % % % . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . % % % % % % % . . . . .
+% % % . . . . . % % % % % % % % % % % . . . . . . . . . . . . . . . . . . . %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % . . . .
+. . . % % % % % % . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . % % % % % . . . . . . . . . . . % % % % %
+. . . . . . . . . . . % % % % . . . . . . . . . . . % % % % % . . . . . % % %
+% % % % % . . . . . . . . . . . . . . . . . . % % % % % % % % % % . . . . . .
+. . . . . . . . . . . . . . . . % % % % % % % % % % % % % % % % % % % . . . .
+. . . . . . . . . . . . . . . % % % % % % % % % % % % % % % % % . . . . . . .
+. . . % % % % % % % % % % % % % % % % . . . . . . . . . . . . . . . . . . . .
+. . . . . % % % % % % % % % % % % % % % . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . % % % % % % . . . . . . . . . . . . . . . % % % % % % .
+. . . . % % % % % % % % % % % % . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . % % % % % % % . . . . % % % % % % % % . . . . . .
+% % % % % % % % % % % % % % . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . % % % % % % % . . . . . . % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % . . . . . . . . . . . .
+. . % % % % % % % % % % % % % % % % . . . . . . . . . % % % % % % % % % % % %
+% . . . . . . . % % % % % % % % % % . . . . . . . . % % % % % % % % % % % . .
+. . . % % % % % . . . . . . . > % % % % % % <*!options&!driver&!bblbst <*!tail
+. .
+<*(!nmft&(nmft-it|nmft-sc|nmft-bf|nmft-def))|(!lab&(lab-it|lab-bf|lab-sc|lab-de
+f)) . . <nmft-it|nmft-sc|nmft-bf|nmft-def . >
+<lab-it|lab-sc|lab-bf|lab-def . > . <nmft-it|nmft-sc|nmft-bf|nmft-def . >
+<lab-it|lab-sc|lab-bf|lab-def . > . . . > <*!exlang <!babel . > <*babel . . >
+> <*exlang . <bahasa . > <brazilian . > <catalan . > <croatian . > <czech . >
+<danish . > <dansk . > <dutch . > <english . > <esperanto . > <finnish . >
+<french . > <galacian . > <german . > <hungarian . > <italian . >
+<norwegian . > <norsk . > <polski . > <polish . > <portuguese . >
+<romanian . > <russian . > <slovak . > <slovenian . > <slovene . >
+<spanish . > <swedish . > <turkish . > > <*!html <*ay . . . <*alk . . . >
+<*!(har|ast|alk|cay|nmd|cn) . . <nat . > . . . . <nat . > . . . . . <nat . > .
+<nat . > . . . . <nat . > . > <*har . <harnm . > . . > <*cay . . . . > <*nmd .
+. . > <*ast . . . > <*cn . . . > > <*!ay <*!alph&!cite . > <*alph . . >
+<*cite&!alph . . > . . <!alph&!cite . > <alph . > <!alph&cite . > <*!cite|alph
+. <*!alph&!cite . . . > <*alph . . . > <*seq-no&!alph . . > <*!seq-no&!alph .
+> > > > <*html . . . . . . <htlist&!htdes . > <htdes . > <htdes . >
+<!htlist&!htdes . > > . . % % % % % % % % % % % % % % % . . <annote . >
+<eprint . > . . . <revdata . > <doi|url-doi . > . . . <eprint . > . .
+<isbn . > <issn . > . . <lang . > . . . <revdata . > . . . . . . .
+<url|harnm|revdata . > . . . . <!ay&!alph . > <!ay&alph . > <ay . > % % % % .
+% % % % . . . . . . % % % % % % % . % % % % . . .
+<!blk-com|(!com-semi&!com-blank) . > <blk-com&com-semi . >
+<blk-com&!com-semi&com-blank . > . . . <!html . > . . . . . . . . . . . . % %
+% % % . . . . . . % % % % % . . . . . . . % % % % % % % % % % . <*!fin-bare .
+. > <*fin-bare . . . . > <html&htdes . > <html&!htdes&htlist . >
+<html&!htdes&!htlist . > . <*annote <*!html . . . . . > <*html . . . . . . . .
+. > > . . % % % % % . . . . . . % % % % % . . . . . . . . . . % % % % % % % %
+% % % % . . . . % % % % % % % <*au-col|tit-col . . . . . . . > % % % % % % % %
+% <*yrpp-xsp . <*!html . . > <html . > . > % % % % % % % % % . . <*!yrp-x
+<yrp-col . > <*!yrp-col <yrp-semi . > <*!yrp-semi
+<!blk-com&!blk-tit&!blk-tita . > <(blk-com|blk-tit|blk-tita)&!yrp-per . >
+<(blk-com|blk-tit|blk-tita)&yrp-per . > > > > <*yrp-x|yrp-col|yrp-semi
+<!yrpp-xsp . > <yrpp-xsp . > > . . % % % % % . . . . . % % % % % . . . . . % %
+% % % . . . . . % % % % % % % % % % <*!tit-it&tit-qq . . . . . . > % % % % % %
+% % % % % % % % % <*nm-rv|nm-rvx|nm-rvcx|mth-bare|jxper . . . . . . . . . . .
+. . . . . . . . . > % % % % % <*!ay . . . . . . > % % % % % . . . . . . . . %
+% % % % <*!ay . . . . . . > % % % % % <*!ay . . . . . . . . > % % % % % . . .
+. . . % % % % % % % % % . <*!em-x . . <html . > <*!html <em-ul . > <*!em-ul
+<*!nfss <!em-it . > <em-it . > > <*nfss <!em-it . > <em-it . > > > > . . >
+<em-x . > % % % % % % % <*nmft-bf|vol-bf|vol-2bf|lab-bf|dtbf|pres-bf . . .
+<html . > <*!html <!nfss . > <nfss . > > . . > % % % % % % %
+<*lab-sc|nmft-sc|pres-sc . . . <html . > <*!html <!nfss . > <nfss . > > . . >
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % <*nmft .
+<nmft-it . > <!nmft-it&nmft-bf . > <!nmft-it&!nmft-bf&nmft-sc . >
+<*!nmft-it&!nmft-bf&!nmft-sc&nmft-def . . <!html . > <html . > . . > .
+<!fnm-rm&!fnm-def . > <fnm-rm . > <*!fnm-rm&fnm-def . . <!html . > <html . > .
+. > > % % % <*lab . <lab-it . > <!lab-it&lab-bf . >
+<!lab-it&!lab-bf&lab-sc . > <*!lab-it&!lab-bf&!lab-sc&lab-def . . <!html . >
+<html . > . . > > % % % % % % % % % % % % % % % % % % % % % % . . . . . . . %
+% % % % % % % % . . <!babel . > <babel . > . % % % % % % % % % % % % . . % % %
+% . . % % % <*!exlang % % % % % % % % % % % % % <*!babel . . <!varand|html . >
+<varand&!html . > . . . . . <!ed . > <ed . > . . <!ed . > <ed . > . . . . .
+<!abr . > <abr&!ednx . > <abr&ednx . > . . <!abr . > <abr . > . . . . .
+<!abr . > <abr . > . . . . . . . . <!pp&!ppx . > <pp . > <!pp&ppx . > . .
+<!pp&!ppx . > <pp . > <!pp&ppx . > . <*revdata . . . > . <!abr . > <abr . > .
+. <!abr . > <abr . > . . . . . . . <*!xedn . <!ord . > <ord . > . . <!ord . >
+<ord . > . . <!ord . > <ord . > . . <!ord . > <ord . > . . <!ord . > <ord . >
+. . . . . . . . . . . . . > <*!abr . . . . . . . . . . . . . . . . . . . . . .
+. . > <*abr . . . . . . . . . . . . . . . . . . . . . . . . > > % % % % % % %
+<*babel . . . . . . . . <!ed . > <ed . > . . <!ed . > <ed . > . . . . .
+<!abr . > <abr . > . . <!abr . > <abr . > . . . . . <!abr . > <abr . > . . . .
+. . . . <!pp&!ppx . > <pp . > <!pp&ppx . > . . <!pp&!ppx . > <pp . >
+<!pp&ppx . > . . <!abr . > <abr . > . . <!abr . > <abr . > . . . . . . .
+<*revdata . . . > <*!xedn . <!ord . > <ord . > . . <!ord . > <ord . > . .
+<!ord . > <ord . > . . <!ord . > <ord . > . . <!ord . > <ord . > . . . . . . .
+. . . . . . > . . . . . . . . . . . . . . . . . . . . . . . . > % % % % % % %
+% % % % % % % % <*(english|!exlang)&!xedn . . . . . . . . . . . . . . . . . .
+. . . > % % % % > % % % > % % % <*!head % % % % <*!jabr . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . > % % % % % % <*jabr
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . > % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % . . . . <bibinfo.warning . > <!bibinfo.warning . > . . .
+. <bibinfo.warning . > <!bibinfo.warning . > . . <bibinfo . > <!bibinfo . > .
+. . . . % % % % % % % % % % % % % % % . . . . . . . . . . . . <bibinfo . >
+<!bibinfo . > . . . . . % % % % % % % % % % % % <*eprint . . . . . . . . . . .
+. > % % % % % % % % % % % % % % <*(harnm|url-nl)&!revdata . <*!html .
+<*url-doi&url . . . . > <!url-doi|!url . > . . <harnm . > <!harnm&url-nl . > .
+. > <*html . <*url-doi&url . . . . > <!url-doi|!url . > . . . . . . > . > % %
+% % % % % % % % % <*(url-blk&!harnm)|revdata . . <*url-doi&url . . . . >
+<!url-doi|!url . > . . <!html . > <html . > <html . > . . . > % % % % % % % %
+% % % . . <*pres-bf|pres-it|pres-sc . . . . <pres-bf . > <pres-it&!pres-bf . >
+<pres-sc&!pres-it&!pres-bf . > . . . . . . . > % % . % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % . . % %
+% % % % % . . . . . . . . . . % % % % <*!(nmft&(fnm-rm|fnm-def))
+<*!nm-rev1&!nm-revv1 <nm-init . > <*!nm-init <nm-rev&!jnrlst . >
+<nm-rev&jnrlst . > <*!nm-rev <nm-rv&!jnrlst . > <nm-rv&jnrlst . > <*!nm-rv
+<nm-rvx&!jnrlst . > <nm-rvx&jnrlst . > <*!nm-rvx <nm-rvcx&!jnrlst . >
+<nm-rvcx&jnrlst . > <*!nm-rvcx <nm-rvv&!jnrlst . > <nm-rvv&jnrlst . >
+<*!nm-rvv <nm-rvvc&!jnrlst . > <nm-rvvc&jnrlst . > <*!nm-rvvc
+<nm-revf&!jnrlst . > <nm-revf&jnrlst . > <*!nm-revf . > > > > > > > > >
+<*nm-rev1 . . <!jnrlst . > <jnrlst . > . > <*!nm-rev1&nm-revv1 . .
+<!jnrlst . > <jnrlst . > . > . <nm-rv|nm-rvx . > <nmft&nmand-rm . > > % % % %
+% % % <*nmft&(fnm-rm|fnm-def) <*!nm-rev1&!nm-revv1 <*nm-init . . . . . . . . .
+> <*!nm-init <*nm-rev . . <!jnrlst . > <jnrlst . > . . . > <*!nm-rev <*nm-rv .
+. <!jnrlst . > <jnrlst . > . . . > <*!nm-rv <*nm-rvx . . <!jnrlst . >
+<jnrlst . > . . . > <*!nm-rvx <*nm-rvcx . . <!jnrlst . > <jnrlst . > . . . >
+<*!nm-rvcx <*nm-rvv . . <!jnrlst . > <jnrlst . > . . . > <*!nm-rvv <*nm-rvvc .
+. <!jnrlst . > <jnrlst . > . . . > <*!nm-rvvc <*nm-revf . . <!jnrlst . >
+<jnrlst . > . . . > <*!nm-revf . . . . . . . . . > > > > > > > > > <*nm-rev1 .
+. . . . . . . . . . . . <!jnrlst . > <jnrlst . > . . . . . >
+<*!nm-rev1&nm-revv1 . . . . . . . . . . . . . <!jnrlst . > <jnrlst . > . . . .
+. > . > . <*pres-bf|pres-it|pres-sc . . . . > . . . <*nmlm <m1 . > <m2 . >
+<m3 . > <m4 . > <m5 . > <m6 . > <m7 . > <m8 . > <m9 . > <m0 . > <m10 . >
+<m20 . > <m30 . > <m40 . > <m50 . > <m60 . > <m70 . > <m80 . > <m90 . > .
+<x1 . > <x2 . > <x3 . > <x4 . > <x5 . > <x6 . > <x7 . > <x8 . > <x9 . >
+<x0 . > <x10 . > <x20 . > <x30 . > <x40 . > <x50 . > <x60 . > <x70 . >
+<x80 . > <x90 . > . . . . . > . <!aunm-semi&!aunm-sl . > <aunm-semi . >
+<aunm-sl&!aunm-semi . > . . . . . <(and-com|xand)&!aunm-semi&!aunm-sl . >
+<(and-com|xand)&aunm-semi . > <(and-com|xand)&aunm-sl&!aunm-semi . >
+<*!and-xcom&!and-com&!xand . <etal-xc . > <!aunm-semi&!aunm-sl . >
+<aunm-semi . > <aunm-sl&!aunm-semi . > . . > . .
+<nmft&!nmand-rm&!(fnm-rm|fnm-def)&(etal-it|etal-rm) . > <*!etal-it
+<nmft&(nmand-rm|(fnm-rm|fnm-def))&!etal-rm . >
+<!(nmft&(nmand-rm|(fnm-rm|fnm-def)))|etal-rm . > > <etal-it . >
+<nmft&!nmand-rm&!(fnm-rm|fnm-def)&!(etal-it|etal-rm) . > . <*!xand . <*!harnm
+<!amper . > <amper . > > <harnm . > <nmft&!nmand-rm&(fnm-rm|fnm-def) . > . . >
+<xand . > . . . . . . . . . . <*nmft&!nmand-rm&!(fnm-rm|fnm-def) . . . . > . .
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % . . <ed-rev|ed-au . > <*!ed-rev&!ed-au . . . . . . . . . %
+% % <*!(nmft&nmfted&(fnm-rm|fnm-def)) <nm-init|nm-rev|nm-rev1 . >
+<*!nm-init&!nm-rev&!nm-rev1 <nm-revv1 . > <*!nm-revv1 <nm-rv . > <*!nm-rv
+<nm-rvx . > <*!nm-rvx <nm-rvcx . > <*!nm-rvcx <nm-rvv|nm-rvvc . >
+<*!nm-rvv&!nm-rvvc . > > > > > > . <nm-rv|nm-rvx|nm-rvcx . >
+<nmft&nmfted&nmand-rm . > > % % % <*(nmft&nmfted&(fnm-rm|fnm-def))
+<*nm-init|nm-rev|nm-rev1 . . . . . . . . . > <*!nm-init&!nm-rev&!nm-rev1
+<*nm-revv1 . . . . . . . . . > <*!nm-revv1 <*nm-rv . . . . . . . . . >
+<*!nm-rv <*nm-rvx|nm-rvcx . . . . . . . . . > <*!nm-rvx&!nm-rvcx
+<*nm-rvv|nm-rvvc . . . . . . . . . > <*!nm-rvv&!nm-rvvc . . . . . . . . . > >
+> > > . > . . . . . <!aunm-semi&!aunm-sl . > <aunm-semi . >
+<aunm-sl&!aunm-semi . > . . . . . <(and-com-ed|xand)&!aunm-semi&!aunm-sl . >
+<(and-com-ed|xand)&aunm-semi . > <(and-com-ed|xand)&aunm-sl&!aunm-semi . >
+<*!and-xcom&!and-com-ed&!xand . <etal-xc . > <!aunm-semi&!aunm-sl . >
+<aunm-semi . > <aunm-sl&!aunm-semi . > . . > . . .
+<nmft&nmfted&!nmand-rm&!(fnm-rm|fnm-def)&(etal-it|etal-rm) . > <*!etal-it
+<nmft&nmfted&(nmand-rm|(fnm-rm|fnm-def))&!etal-rm . >
+<!(nmft&nmfted&(nmand-rm|(fnm-rm|fnm-def)))|etal-rm . > > <etal-it . >
+<nmft&nmfted&!nmand-rm&!(fnm-rm|fnm-def)&!(etal-it|etal-rm) . > . <*!xand .
+<*!harnm <!amper . > <amper . > > <harnm . >
+<nmft&nmfted&!nmand-rm&(fnm-rm|fnm-def) . > . . > <xand . > . . . . . . . . .
+. <*nmft&nmfted&!nmand-rm&!(fnm-rm|fnm-def) . . . . > . > . % % % % % <*ay . .
+. . . . . > % % % % % % % . . <*revdata . . . . . . . . > . % % % % % % % . .
+. % % % % % % % % % % % % % % % % % % % % . . . <!edpar&!edparxc . > . .
+<bkedcap . > <edpar|edparc|edparxc . > . . . . % % % % % % % % % % % % % % % %
+<*pg-bk . . . . . . > % % % % % % % <*isbn . . . .
+<!blk-com&!blk-tit&!blk-tita . > . . . . . > % % % % % % % <*issn . . . .
+<!blk-com&!blk-tit&!blk-tita . > . . . . . > % % % % % % % %
+<*doi|(url-doi&!url) . . . . <!blk-com&!blk-tit&!blk-tita . > <!html . >
+<html . > . . . > % % % % % % % % <*lang . . . . . . . . . . . > % % % % % % %
+% % % % % % % % % % % % % % % . . <*url-nt&!revdata . . <!html . > <html . >
+<html . > . > . . . . . . . . . . . . . . . . . % % % % % % % % % % % % % % %
+% % % . . <*!atit-u . . . > . <*tit-it|tit-qq|lang . . <tit-it . >
+<*!tit-it&tit-qq . <*!qx <*blk-com . <!com-semi&!com-blank . > <com-semi . >
+<!com-semi&com-blank . > . . > <!blk-com . > > <*qx <*blk-com
+<!com-semi&!com-blank . > <com-semi . > <!com-semi&com-blank . > >
+<!blk-com . > > > <lang . > . . > . % % % % % % % % % % % % <*blk-com&tit-qq .
+. . . . . > % % % % % % % % % % % % % % % % % <*bt-qq . . .
+<!edby&!edby-par&!edby-parc . > <*edby|edby-par|edby-parc . . . . . > . . > %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+<*har|cay|nat . . . . . . . . <!jnrlab . > <*jnrlab
+<!nm-rv&!nm-rvv&!nm-rvx&!nm-rvcx . > <nm-rv|nm-rvv|nm-rvx|nm-rvcx . > >
+<lab&and-rm . > . . . <*nmlm <m1 . > <m2 . > <m3 . > <m4 . > <m5 . > <m6 . >
+<m7 . > <m8 . > <m9 . > <m0 . > <m10 . > <m20 . > <m30 . > <m40 . > <m50 . >
+<m60 . > <m70 . > <m80 . > <m90 . > . <x1 . > <x2 . > <x3 . > <x4 . > <x5 . >
+<x6 . > <x7 . > <x8 . > <x9 . > <x0 . > <x10 . > <x20 . > <x30 . > <x40 . >
+<x50 . > <x60 . > <x70 . > <x80 . > <x90 . > . . . . . > . . . . . . . . .
+<lab&!and-rm&(etal-it|etal-rm) . > <*!etal-it <lab&and-rm&!etal-rm . >
+<!lab|!and-rm|etal-rm . > > <etal-it . > <lab&!and-rm&!(etal-it|etal-rm) . > .
+. <*!harnm <*!and-xcom . . . . > <!amper . > <amper . > > <harnm . > . . . . .
+. . . . . . . <*lab&!and-rm . . . . > . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . > % % % % % %
+% % % % % % % % % % . . <*!html <*ay <!har&!nat . > <!har&nat . > <har . >
+<nmd . > <ast . > <cay . > <cn . > <!har . > <har . > <har . > <har . >
+<har . > <har . > <har . > <cn . > <cay|nmd|ast . >
+<(har|cn|cay|nmd|ast)&blkyear . > <(har|cn|cay|nmd|ast)&!blkyear . >
+<har|cn|cay|nmd|ast . > <har|cn|cay|nmd|ast . > <har . > <cn . >
+<cay|nmd|ast . > <alk . > <!(har|cay|nmd|ast|alk|cn|nat) . > <nat . > <nat . >
+<nat . > <nat . > <nat . > > <!ay&!(cite|alph) . > <!ay&(cite|alph) . > . . .
+. > <*html <*htdes . . . . > <htlist&!htdes . > <!htlist&!htdes . > > . . . %
+% % % % % % % <*pgsep-c|pgsep-s|pgsep-p . . . . . . . . . . . . % % % % % % %
+% % % . . . . . . . . . . . . . . <pgsep-c . > <pgsep-p . > <pgsep-s&!html . >
+<pgsep-s&html . > . . . . . . > % % % % % . . <pgsep-c|pgsep-s|pgsep-p . > . .
+. . . . . . . . . . . . . . . . . . . . . . % % % % % % % % % % % % % % % % %
+% . <in-x . > <*!in-x <blk-com|blk-tita . > <!blk-com&!blk-tita . >
+<in-col . > <in-it . > . > . % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % <*ay . . . <*!blkyear . . > . . . <*aymth . . .
+<dtrev . > . . . . <mth-bare . > > <dtbf . > . <*!harnm
+<*yr-par|yr-brk|yr-col|yr-blk|yr-com|yr-per . <yr-par . > <!yr-par&yr-brk . >
+<!yr-par&!yr-brk&yr-col . > <!yr-par&!yr-brk&!yr-col&yr-com . >
+<!yr-par&!yr-brk&!yr-col&!yr-com&yr-per . >
+<!yr-par&!yr-brk&!yr-col&!yr-com&!yr-per&yr-blk . > > > <*harnm . .
+<yr-col . > <!yr-col&yr-com . > <!yr-col&!yr-com&yr-per . >
+<!yr-col&!yr-com&!yr-per&yr-blk . > > . > <*!ay . . <!xmth . > <xmth . > . . .
+. . . . . . <showstack . > <!dtrev . > . . . . <mth-bare . > . . <dtbf . >
+<*yr-par|yr-brk|yr-col|yr-com|yr-per|yr-blk . . . . <yr-par . >
+<!yr-par&yr-brk . > <!yr-par&!yr-brk&yr-col . >
+<!yr-par&!yr-brk&!yr-col&yr-com . >
+<!yr-par&!yr-brk&!yr-col&!yr-com&yr-per . >
+<!yr-par&!yr-brk&!yr-col&!yr-com&!yr-per&yr-blk . > . . > . > % % % % % % % %
+% % <*jdt-p|jdt-pc|jdt-v|jdt-vs . . . <ay&!blkyear . > . <ay&!blkyear . > . .
+<!ay&jdt-vs . > <!ay&!jdt-vs . > . . <*ay . <jdt-vs . > <!jdt-vs . > > . > % %
+% % % % . . . . <!btit-rm . > <lang . > . . . % % % % % . . . . . . % % % % %
+% . . . . . . . <*!ser-vol . . > <ser-vol . > . . . . . % % % % % . . . .
+<*num-xser . . . . . . . . . . . . > <*!num-xser . . . . . . . . . . . . > . .
+. . . % % % % % % % % % <*!xedn . . . . . . % % % % % % % % % % % % % . . . .
+. . . . . . . . . . . . . . % % % % % % % % % % % % % % % % % % % % % % . . .
+. . . . . . . . . . <!english&exlang . > <english|!exlang . > . . . . . . . .
+. . . . . . > . % % % % % % % % % % % . . . <!xedn . > . . . . . . . . . % % %
+% . % % % % . . . . . . . . . . . . . . . . . . . % % % % % % % % % . . . .
+<!bkpg-x&!ppx . > . . . <!bkpg-x&!ppx . > . . <!bkpg-x&!ppx . > .
+<!bkpg-x&!ppx . > <bkpg-par . > . . . % % % % % <*jpg-1 . . . . . . . . . . >
+% % % % % % % % % % % % % % . . . . . <volp-sp . > <*!volp-sp <volp-blk . >
+<*!volp-blk <volp-com . > <*!volp-com <volp-semi . > <!volp-semi . > > > >
+<!jdt-v&!jdt-vs&jdt-p . > <!jdt-v&!jdt-vs&!jdt-p&jdt-pc . > . <jpg-1 . >
+<!jpg-1 . > <*jwdpg . . . . . > . <jwdpg . > . . . . . . % % % % % % % % % % %
+% % . . . . . <volp-sp . > <*!volp-sp <volp-blk . > <*!volp-blk <volp-com . >
+<*!volp-com <volp-semi . > <!volp-semi . > > > > . . . <*revdata . . . . . . >
+. . . % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % . . . .
+<jwdvol . > . <jwdvol . > . . <vol-bf&!vol-2bf . >
+<!vol-bf&!vol-2bf&vol-it . > <jdt-v|jdt-vs . > <*!vnum-x . . . . . . .
+<vnum-sp . > <!vnum-sp&vnum-cm . > <!vnum-sp&!vnum-cm&vnum-nr . >
+<!vnum-sp&!vnum-cm&!vnum-nr&vnum-h . >
+<!vnum-sp&!vnum-cm&!vnum-nr&!vnum-h&vnum-b . >
+<!vnum-sp&!vnum-cm&!vnum-nr&!vnum-h&!vnum-b . > . . <!vol-bf&vol-2bf . > >
+<*!pp-last . . . . > . . % % % % % % % . . <!pp-last . > <pp-last . > . . . .
+. . . . . <*!pp-last . . . . > . . . . % % % % % % % % % % % <*bt-qq . . .
+<*!qx . . . . > <*qx . > . . . > % % % % % % % % % % % % % % . . .
+<!bt-qq&!bt-rm . > <bt-qq . > . % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % .
+. . <showstack . > <*ser-ed . . . > . . <*!(edby|edby-par|edby-parc)
+<showstack . > <!edpar&!edparxc . > . . <bkedcap . > <edpar . >
+<!edpar&(edparc|edparxc) . > <!edpar&!(edparc|edparxc) . > . <showstack . > >
+<*edby|edby-par|edby-parc <showstack . > <edbyx|edbyy|edbyw . >
+<!(edbyx|edbyy|edbyw) . > <edcap . > <!(edby-par|edby-parc)&edbyw . >
+<showstack . > <(edby-par|edby)&edbyy . > . <showstack . >
+<(edby-par|edby-parc)&!edbyw . > . <edby|edby-parc . > . > <showstack . > . .
+<showstack . > . . . . % % % % % <*!ay . . . . <!seq-no|alph . > . . . . > % %
+% % % . . . . . . . . % % % % % % . . . . . . . . . . . . % % % % % % % % % %
+. . <*!ay . . . . . . . . . > <ay . > <!html . > <html . > . % % % % % % %
+<*!ay . . <nmft&nmfted&nmand-rm . > . . . .
+<nmft&nmfted&!nmand-rm&(etal-it|etal-rm) . > . . <etal-it . > .
+<nmft&nmfted&!nmand-rm&!(etal-it|etal-rm) . >
+<nmft&nmfted&!nmand-rm&!(etal-it|etal-rm) . > . . . . .
+<nmft&nmfted&!nmand-rm&(etal-it|etal-rm) . > . . <etal-it . > .
+<nmft&nmfted&!nmand-rm&!(etal-it|etal-rm) . >
+<nmft&nmfted&!nmand-rm&!(etal-it|etal-rm) . > . . <*!harnm <!amper . >
+<amper . > > <harnm . > . <nmft&nmfted&nmand-rm . > . . . . . . . .
+<*nmft&nmfted&!nmand-rm . . . . > . > % % % % % % % % % % % . . . . . .
+<!(blk-com|blk-tita) . > . . . <*!ay . . . . . . . . . . . . . . . . . >
+<!html . > <html . > . % % % % % % % % % % . . <*!ay . . . . . . . . . . . . .
+. . . > <ay . > <!html . > <html . > . % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % . . . <*pub-date&!ay . . . . >
+<*!(pub-date&ay) . <pub-date . > . . > <pub-par|(pub-date&!pub-xpar) . >
+<*add-pub . . . > <*!add-pub . . . . . . . . . > <*add-pub . . . . . . > .
+<*pub-date&!ay . . . . <!pub-xc . > <pub-xc . > . . <dtbf . > . . . >
+<*pub-date&ay . <*!blkyear . . > <*blkyear . . > <!dtbf . > <dtbf . > . . .
+<!pub-xc . > <pub-xc . > . > <pub-par|(pub-date&!pub-xpar) . >
+<*!(pub-date&ay) . . > . % % % % % % % % % . . . . % % % % % % . . . . % % % %
+% % % % % % <*nmdash . . . . . . . <*!au-col <!nmd-2&!nmd-3 . >
+<nmd-2&!nmd-3 . > <nmd-3 . > > <*au-col <!nmd-2&!nmd-3 . > <nmd-2&!nmd-3 . >
+<nmd-3 . > > . . . . . . > % % % % % % % % % % % % % % % % % % % % % % % % % %
+. . . <ay . > <au-col . > <nmdash . > <*dt-beg&!jdt-p&!jdt-pc&!jdt-vs&!jdt-v .
+. > <!dt-beg&!blk-com&!blk-tit&!blk-tita . > <*!jtit-x . <blk-com&tit-qq . >
+<!blk-com&!blk-tit&!blk-tita . > <*blk-tit|blk-tita <!tit-col . > <tit-col . >
+> > . . . <jxper . > . <!jttl-rm . > <injnl . > . <jnm-x . >
+<*!dt-beg&!dt-end&dt-jnl&!jdt-p&!jdt-pc&!jdt-vs&!jdt-v . . > .
+<doi&agu-doi . > <*!dt-beg&!dt-end&!dt-jnl&!jdt-p&!jdt-pc&!jdt-vs&!jdt-v . > .
+. <!pp-last . > . . <*pp-last . . . . > <issn . >
+<(doi|(url-doi&!url))&!agu-doi . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > .
+<*!dt-beg&dt-end&!jdt-p&!jdt-pc&!jdt-vs&!jdt-v
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <*revdata . > .
+<harnm|url-nl . > . % % % % % % % % % . . . . <ay . >
+<!edpar&(edparc|edparxc)&!au-col . > <au-col . > <nmdash . > . . <au-col . >
+<nmdash . > . . . . . . <dt-beg&!pub-date . > <dt-beg&!pub-date . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > . . .
+<!blk-com&!blk-tit&!blk-tita . > <blk-tit&!tit-col . > <blk-tit&tit-col . >
+<!numser . > <pre-edn . > <!blk-com&!blk-tit&!blk-tita . > <numser . >
+<pg-bk&pg-pre . > . . . <!blk-com&!blk-tit&!blk-tita . > <blk-tit&!tit-col . >
+<blk-tit&tit-col . > . <!dt-beg&!dt-end&pub-date . > . . <!pre-edn . >
+<!dt-beg&!dt-end&!pub-date . > <isbn . > <pg-bk&!pg-pre . >
+<doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*!dt-beg&dt-end&!pub-date
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . % % % % % % % . . . <ay . > <au-col . >
+<nmdash . > <ay&dt-beg . > <!ay&dt-beg . > <dt-beg . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > . <blk-com&tit-qq . >
+<!blk-com&!blk-tit&!blk-tita . > <blk-tit&!tit-col . > <blk-tit&tit-col . > .
+. <ay&!dt-beg&!dt-end . > <!ay&!dt-beg&!dt-end . > <isbn . > <pg-bk . >
+<doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*ay&!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <*!ay&!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . . % % % % % % % % % % % % % % % % % % % % % % %
+. . . . <ay . > <au-col . > <nmdash . > . . <au-col . > <nmdash . > . . . . .
+. <dt-beg&!pub-date . > <dt-beg&!pub-date . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > . . . <pre-pub&numser . >
+<pre-pub . > . <*dt-beg|dt-end|!dt-jnl|a|!a . >
+<!blk-com&!blk-tit&!blk-tita . > <blk-tit&!tit-col . > <blk-tit&tit-col . >
+<!numser . > <pre-edn . > <!blk-com&!blk-tit&!blk-tita . >
+<!pre-pub&numser . > <!pre-pub . > . . <*dt-beg|dt-end|!dt-jnl|a|!a . >
+<!blk-com&!blk-tit&!blk-tita . > <blk-tit&!tit-col . > <blk-tit&tit-col . > .
+<!dt-beg&!dt-end&!dt-jnl&pub-date . > . . <!pre-edn . >
+<!dt-beg&!dt-end&!dt-jnl&!pub-date . > <*isbn . . . . >
+<*(!dt-beg&!dt-end&dt-jnl)&!pub-date . . > <pp-last . >
+<doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*!dt-beg&dt-end&!pub-date
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . . % % % % % % % % . . . <ay . > <au-col . >
+<nmdash . > <dt-beg&!pub-date . > <dt-beg&!pub-date . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > <*!jtit-x . <blk-com&tit-qq . >
+<!blk-com&!blk-tit&!blk-tita . > <blk-tit&!tit-col . > <blk-tit&tit-col . > >
+. . <bt-qq . > <pre-pub&numser . > <pre-pub . > <!ser-ed . > <!numser . >
+<pre-edn . > . <!blk-com&!blk-tit&!blk-tita . > <!pre-pub&numser . >
+<!pre-pub . > <!pre-edn . > <!dt-beg&!dt-end&!dt-jnl&!pub-date . > <isbn . > .
+. . . . <*(!dt-beg&!dt-end&dt-jnl)&!pub-date . . > <pp-last . >
+<doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*!dt-beg&dt-end&!pub-date
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . % % % % % % % % % % % . . . <ay . > <au-col . >
+<nmdash . > <dt-beg&!pub-date . > <dt-beg&!pub-date . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > <*!jtit-x . <blk-com&tit-qq . >
+<!blk-com&!blk-tit&!blk-tita . > <blk-tit&!tit-col . > <blk-tit&tit-col . > >
+. . <bt-qq . > <*!pre-pub <!ser-ed . > <!numser . >
+<(dt-beg|dt-end|!dt-jnl)&!pp-last . > > <!blk-com&!blk-tit&!blk-tita . >
+<numser . > . . . . . . <!dt-beg&!dt-end&!dt-jnl&!pub-date . > <*pre-pub .
+<!numser . > <(dt-beg|dt-end|!dt-jnl)&!pp-last . > > <isbn . > <issn . > . .
+<(dt-beg|dt-end|!dt-jnl)&!pp-last . > . . <*!dt-beg&!dt-end&dt-jnl&!pp-last
+<!pub-date . > <!pub-date . > <jdt-v|jdt-vs|jdt-p|!jdt-pc . > . > <pp-last . >
+<doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*!dt-beg&dt-end&!pub-date
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . % % % % % . % % % % % % % <*ay . . . .
+<au-col . > <nmdash . > <dt-beg . > <dt-beg . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > . <blk-tit&!tit-col . >
+<blk-tit&tit-col . > <!blk-com&!blk-tit&!blk-tita . > . . .
+<!dt-beg&!dt-end . > <doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . . > <*!ay . . . . . . . . . . . . <au-col . >
+<nmdash . > <ay&dt-beg . > <!ay&dt-beg . > <dt-beg . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > . <blk-tit&!tit-col . >
+<blk-tit&tit-col . > . . . <!blk-com&!blk-tit&!blk-tita . > . . . . . .
+<!blk-com&!blk-tit&!blk-tita . > . . . . . <ay&!dt-beg&!dt-end . >
+<!ay&!dt-beg&!dt-end . > <doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*ay&!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <*!ay&!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . . > % % % % % % % % % % % % . . . <ay . >
+<au-col . > <nmdash . > <dt-beg . > <dt-beg . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > <*!thtit-x <!thtit-a . > <thtit-a . >
+. <thtit-a&blk-com&tit-qq . > <!blk-com&!blk-tit&!blk-tita . >
+<blk-tit&!tit-col . > <blk-tit&tit-col . > > . . . <!dt-beg&!dt-end . >
+<doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . . % % % % % . . . <ay . > <au-col . >
+<nmdash . > <ay&dt-beg . > <!ay&dt-beg . > <*ay <dt-beg . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > . <blk-com&tit-qq . >
+<!blk-com&!blk-tit&!blk-tita . > <blk-tit&!tit-col . > <blk-tit&tit-col . > >
+<*!ay <!blk-com&!blk-tit&!blk-tita . > . <blk-com&tit-qq . >
+<blk-tit&!tit-col . > <blk-tit&tit-col . > <!blk-com&!blk-tit&!blk-tita . > >
+. <ay&!dt-beg&!dt-end . > <!ay&!dt-beg&!dt-end . > <doi|(url-doi&!url) . >
+<*url-blk&!harnm&!revdata <!blk-com&!blk-tit&!blk-tita . > . >
+<!blk-com&!blk-tit&!blk-tita . > <(blk-com|blk-tit|blk-tita)&blknt . > .
+<*ay&!dt-beg&dt-end <!blk-com&!blk-tit&!blk-tita . > . > <*!ay&!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > <!ay . > . % % % % % % % % % % % % . . . <ay . >
+<au-col . > <nmdash . > <dt-beg . > <dt-beg . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > <*!thtit-x <!thtit-a . > <thtit-a . >
+. <thtit-a&blk-com&tit-qq . > <!blk-com&!blk-tit&!blk-tita . >
+<blk-tit&!tit-col . > <blk-tit&tit-col . > > . . . <!dt-beg&!dt-end . >
+<doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . . % % % % % <*pres . . . <ay . > <au-col . >
+<nmdash . > <!blk-com&!blk-tit&!blk-tita . > . <blk-com&tit-qq . >
+<!blk-com&!blk-tit&!blk-tita . > <blk-tit&!tit-col . > <blk-tit&tit-col . > .
+. . <!blk-com&!blk-tit&!blk-tita . > <(blk-com|blk-tit|blk-tita)&blknt . > . .
+. . . <*url-blk&!harnm <!blk-com&!blk-tit&!blk-tita . > . > .
+<(harnm|url-nl)&!revdata . > . . > % % % % % % % % <*ay . . . . <au-col . >
+<nmdash . > <dt-beg . > <dt-beg . > <!dt-beg&!blk-com&!blk-tit&!blk-tita . > .
+. <!numser . > <!blk-com&!blk-tit&!blk-tita . > <numser . > . . . . . .
+<!dt-beg&!dt-end&!pub-date . > <isbn . > <issn . > <doi|(url-doi&!url) . >
+<*url-blk&!harnm&!revdata <!blk-com&!blk-tit&!blk-tita . > . >
+<!blk-com&!blk-tit&!blk-tita . > <(blk-com|blk-tit|blk-tita)&blknt . > .
+<*!dt-beg&dt-end&!pub-date <!blk-com&!blk-tit&!blk-tita . > . > <eprint . >
+<revdata . > . <(harnm|url-nl)&!revdata . > . . > % % % <*!ay . . . . . . .
+<au-col . > <nmdash . > <dt-beg . > <dt-beg . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > . . <!numser . > . . <!numser . >
+<numser . > . <!blk-com&!blk-tit&!blk-tita . > <numser . > . . . . . .
+<!blk-com&!blk-tit&!blk-tita . > <numser . > . .
+<!blk-com&!blk-tit&!blk-tita . > <numser . > . . . . . .
+<!dt-beg&!dt-end&!pub-date . > <isbn . > <issn . > <doi|(url-doi&!url) . >
+<*url-blk&!harnm&!revdata <!blk-com&!blk-tit&!blk-tita . > . >
+<!blk-com&!blk-tit&!blk-tita . > <(blk-com|blk-tit|blk-tita)&blknt . > .
+<*!dt-beg&dt-end <!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . >
+. <(harnm|url-nl)&!revdata . > . . > % % % % % % % % % % . . . <ay . >
+<au-col . > <nmdash . > <dt-beg . > <dt-beg . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > <trtit-b . > <!trtit-b . > .
+<!trtit-b&blk-com&tit-qq . > <!blk-com&!blk-tit&!blk-tita . >
+<blk-tit&!tit-col . > <blk-tit&tit-col . > <!trnum-it . > <trnum-it . > . .
+<!dt-beg&!dt-end . > <doi|(url-doi&!url) . > <*url-blk&!harnm&!revdata
+<!blk-com&!blk-tit&!blk-tita . > . > <!blk-com&!blk-tit&!blk-tita . >
+<(blk-com|blk-tit|blk-tita)&blknt . > . <*!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . . % % % % % % % % . . . <ay . > <au-col . >
+<nmdash . > <ay&dt-beg . > <!ay&dt-beg . > <dt-beg . >
+<!dt-beg&!blk-com&!blk-tit&!blk-tita . > . <blk-com&tit-qq . >
+<ay&!dt-beg&!dt-end . > <!ay&!dt-beg&!dt-end . > <doi|(url-doi&!url) . >
+<*url-blk&!harnm&!revdata <!blk-com&!blk-tit&!blk-tita . > . >
+<!blk-com&!blk-tit&!blk-tita . > <(blk-com|blk-tit|blk-tita)&blknt . > .
+<*ay&!dt-beg&dt-end <!blk-com&!blk-tit&!blk-tita . > . > <*!ay&!dt-beg&dt-end
+<!blk-com&!blk-tit&!blk-tita . > . > <eprint . > <revdata . > .
+<(harnm|url-nl)&!revdata . > . . % % % % % . % % % % . % % % <*ay|alph|!seq-no
+% % % % % % % % % % . . . . % % % % . % % % % . . . . . . . . % % % %
+<*!ay&alph % % % % % % % % % % % % % % % % % . % % % . . . % % % . % % % . .
+<*alf-1 <!vonx . > <vonx . > . . . . > <*!alf-1&alf-f <!vonx . > <vonx . > >
+<*!alf-1&!alf-f . . . . . . . . . . . . . . <!vonx . > <vonx . > . .
+<!vonx . > <vonx . > . . . . . . . . . . . . <!vonx . > <vonx . > . . . . . .
+> . % % % > % % % % % % <*ay&!mcite . . . <!jnrlab . > <*jnrlab
+<!nm-rv&!nm-rvv&!nm-rvx&!nm-rvcx . > <nm-rv|nm-rvv|nm-rvx|nm-rvcx . > >
+<lab&and-rm . > . . . <lab&!and-rm&(etal-it|etal-rm) . > <*!etal-it
+<lab&and-rm&!etal-rm . > <!lab|!and-rm|etal-rm . > > <etal-it . >
+<lab&!and-rm&!(etal-it|etal-rm) . > <lab&!and-rm . > . . . . . % <*!etal-it
+<lab&and-rm&!etal-rm . > <!lab|!and-rm|etal-rm . > > <etal-it . >
+<lab&!and-rm&!(etal-it|etal-rm) . > <lab&!and-rm . > . <*!harnm <*!amper .
+<lab&and-rm . > . > <*amper . <lab&and-rm . > . > > <*harnm . <lab&and-rm . >
+. > . . . . . <*lab&!and-rm . . . . > . . > % % % % % % % % % <*ay&mcite . . .
+. . . . . <!jnrlab . > <*jnrlab <!nm-rv&!nm-rvv&!nm-rvx&!nm-rvcx . >
+<nm-rv|nm-rvv|nm-rvx|nm-rvcx . > > <lab&and-rm . > . . . <mct-1 . > <mct-2 . >
+<mct-3 . > <mct-4 . > <mct-5 . > <mct-6 . > <mct-x2 . > <mct-x3 . >
+<mct-x4 . > <mct-x5 . > <mct-x6 . > . . . . . . . . . . . . .
+<lab&!and-rm&(etal-it|etal-rm) . > <*!etal-it <lab&and-rm&!etal-rm . >
+<!lab|!and-rm|etal-rm . > > <etal-it . > <lab&!and-rm&!(etal-it|etal-rm) . > .
+. <*!harnm <*!and-xcom . . . . > <!amper . > <amper . > > <harnm . > . . . . .
+. . . . . . . <*lab&!and-rm . . . . > . . > % % % % % % % % % % % % % % % %
+<*ay|alph . . . . <ay . > <!ay . > . . . . . . . . . . . <ay . > <!ay . > . .
+. . . . . . . > <*!ay&alph . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . > <*ay . . . . . . . . . . . % % % % % % % % % % % . . . . . . . . . .
+. . . . % % % % % % % % % % . . . <!(har|ast|cay|nmd|alk|cn) . >
+<har|ast|cay|nmd|alk|cn . > . . <keyxyr . > <(blkyear|keyxyr) . >
+<!(blkyear|keyxyr) . > <!note-yr . > <note-yr . > . . . . . > <*!ay&alph . . .
+. . . . . . . . . . . . . . . . . . . . % % % % > % % % <*ay % % %
+<*har|cay|nmd|ast|cn % % % % % % . . . . % % % % > % % % > % % % % % % % % % %
+% % % % % % . . . . . . . . <*xintls <!vonx . > <vonx . > > <*!xintls
+<*!nm-init&!nm-rev&!nm-rev1&!nm-rv&!nm-rvx&!nm-rvcx&!nm-rvv&!nm-rvvc
+<!vonx . > <vonx . > >
+<*nm-init|nm-rev|nm-rev1|nm-rv|nm-rvx|nm-rvcx|nm-rvv|nm-rvvc <!vonx . >
+<vonx . > > > . . . <*nmlm <m1 . > <m2 . > <m3 . > <m4 . > <m5 . > <m6 . >
+<m7 . > <m8 . > <m9 . > <m0 . > <m10 . > <m20 . > <m30 . > <m40 . > <m50 . >
+<m60 . > <m70 . > <m80 . > <m90 . > . <x1 . > <x2 . > <x3 . > <x4 . > <x5 . >
+<x6 . > <x7 . > <x8 . > <x9 . > <x0 . > <x10 . > <x20 . > <x30 . > <x40 . >
+<x50 . > <x60 . > <x70 . > <x80 . > <x90 . > . . . . . > . . . . .
+<*seq-lab|seq-key|seq-labc . . <seq-labc . > . <seq-labc . > <!seq-labc . > .
+> <!seq-labc . > . . . . . . . . . % % % % % . . . . . . . . . . % % % % % . .
+. . . . . . . . . . % % % % % . . . . . . . . . . . . . . . . % % % % % % % %
+% <*seq-yrr&!seq-yr . . . . . . . . . . > % % % % <*ay % % % % . . . . . . . .
+. . . . % % % % <*seq-no % % % . % % % % . . % % % % . % % % % . . . . % % % %
+> % % % % % % % . . . . . <*!seq-no . . . . . . . . . . . > <*seq-no . . > . .
+. <seq-yr . > <seq-yrr&!seq-yr . > <*!seq-key&!seq-labc&!seq-yr&!seq-yrr . . .
+. . > <seq-key|seq-yr|seq-yrr . > . . % . . % % % % > % % % <*!ay % % % % . .
+. . . . . . . . . . . . . . % % % % % . . . . . . . . . . . . . . . . % % % %
+% . <*alph . . . . . > <!alph . > . . . . . . . . . . . . . <alph . > . .
+<seq-yrr . > <!seq-yrr . > <!(seq-yr|seq-yrr)|alph . > . .
+<(seq-yr|seq-yrr)&!alph . > . . . . . . % % % % > % % % . % % % . % % % > % %
+% % % % % <*ay % % % . % % % % % % % . % % % % % . . . . . . . . % % % % % % %
+% . . . . . . . . . . . . . . . . . . . . . . . % % % % > % % % <*!ay&alph % %
+% . % % % . % % % % . . . . . . . % % % % % . . . . . . . . . . . % % % % > %
+% % % % % % % % % % % % % % % % % % % % % <*ay % % % . . . . . . .
+<xlab-it . > <*!html . . . . > . <!(har|ast|cay|nmd|cn) . > . % % % > % % %
+<*!ay&alph % % % . . . . . . . . . . . . . . % % % > % % % % <ay . >
+<!ay&alph . > % % % <*ay|alph . % % % . % % % > % % % <*ay . . . .
+<seq-yrr . > <!seq-yrr . > <(seq-yr|seq-yrr)&!(seq-lab|seq-key|seq-labc) . > .
+<*!seq-key&!seq-labc&!seq-yr&!seq-yrr . . . . . > <seq-key|seq-yr|seq-yrr . >
+. . % <har|cay|nmd|cn|ast . > . % % % . % % % . % % % > % % % <*!ay&!alph % %
+% . % % % . % % % . . . . . % % % . <*!cite . . > <cite . > . . . . . . . % %
+% . % % % . % % % > % % % % % % % % % % % % % % % % % % . <*!html <*!ay&alph .
+. . . . > <ay|!alph . > . . . <ay . > <!ay . > .
+<*(!nmft&(nmft-it|nmft-sc|nmft-bf|nmft-def))|(!lab&(lab-it|lab-bf|lab-sc|lab-de
+f)) . . . . . . . > <*!plntx <!tit-it&tit-qq&qt-s . >
+<!tit-it&tit-qq&!qt-s&!qt-g . > > <*plntx <!tit-it&tit-qq&qt-s . >
+<!tit-it&tit-qq&!qt-s&!qt-g . > > <*!tit-it&tit-qq&!qt-s&qt-g <!plntx . >
+<plntx . > . . . <!plntx . > <plntx . > . . . <!plntx . > <plntx . > >
+<!tit-it&tit-qq . > <umlaut . > <em-ul . > <em-ul . > <*ay <!plntx . >
+<plntx . > . <*har . . . > > <*nmft&nmft-def <!plntx . > <plntx . > <plntx . >
+<plntx . > . > <*nmft&fnm-def <!plntx . > <plntx . > <plntx . > <plntx . > . >
+<*lab&lab-def <!plntx . > <plntx . > <plntx . > <plntx . > . >
+<*(url&!harnm)|eprint <*!plntx <nfss . > <!nfss . > . . . > <*plntx . .
+<nfss . > <!nfss . > . . . > > <*doi . . <*!plntx . . . . > <*plntx . . . . .
+. . . > > <*lang <!plntx . > <*plntx . . . > . > <*!plntx <*babel . . . >
+<*annote . . . . . . . . . . . . > > <*bibinfo <!plntx . > <plntx . > . >
+<*eprint <!plntx . > <plntx . > . > . > <*html . . . . <htdes . >
+<!htdes&htlist . > . > % % % % . % % % . % % % . % % % % . . <!html . >
+<html . > . % % % % . % % % > % % % > % % % % % % % <*bblbst . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . > % % %
+Lines  processed: 9446
+Comments removed: 3867
+Comments  passed: 1
+Codelines passed: 3732
+
+More files to process (y/n)?
+\answer=n
+ )
+No pages of output.

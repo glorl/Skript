@@ -1,0 +1,258 @@
+
+%===== Sprache und Struktur =============================================================
+%---- Sprache und Codierung ---
+%\usepackage{ngerman}								% Deutsches Sprachpaket
+\usepackage[german,ngerman]{babel}					% Legt die Trennregeln fest
+\usepackage[ansinew]{inputenc}			% Inputencoding
+\usepackage[T1]{fontenc}				% legt fest, wie die Schriften kodiert werden
+\newcommand{\changefont}[3]{				% Befehle zum einfachen Ändern der Schriftart (KOMA-Skript-Standard
+\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+
+
+%---- Links ----
+\usepackage[breaklinks=true]{hyperref}						% Verlinkung zwischen Zitaten und Verweisen
+\usepackage[all]{hypcap}        % Sorgt dafuer, dass Links im Text auf das entsprechende Bild und nicht auf die Bildunterschrift verweisen. 
+\usepackage{breakurl}						% Umbrechen zu langer URLs
+
+\usepackage{blindtext}		% Blindtext
+
+
+%===== Layout ===================================================================
+
+%---- Seitenlayout ----
+%\pagestyle{headings}
+
+%\usepackage[paperwidth=17cm,paperheight=24cm,top=15.5mm,inner=20.5mm,outer=18.5mm,includeheadfoot]{geometry}  %Einstellen der Seitengeometrie und des Druckbereichs für Originalformat 17x24cm
+% !!!!! Beim Originalformat Schriftgröße 10pt verwenden
+\usepackage[a4paper%,total={15.5cm,23.5cm}
+,top=19mm,bottom=19mm,inner=25.5mm,outer=23mm,includeheadfoot]{geometry}	%Einstellen der Seitengeometrie und des Druckbereichs für A4 Format
+
+% Inhaltsverzeichnis-Design
+\usepackage{tocloft}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} 	% Punkte zwischen 
+\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}}	% Kapitelbezeichnung und 
+														% Seitenzahl
+
+
+\emergencystretch 1.5em                            % verhindert ueberlange Zeilen durch "Strecken" der Zeichenabstaende
+
+\parindent0mm			% Einzug am Anfang eines neuen Abschnitts
+\unitlength1mm		% Länge 
+
+% horizontale Ausrichtung von Überschriften 
+\newlength{\secnumwidth}
+\setlength{\secnumwidth}{3em}
+
+\makeatletter
+\def\@makechapterhead#1{%
+	\vspace*{50\p@}%
+	{\interlinepenalty\@M
+		\parindent \z@ \raggedright \normalfont 
+		\huge\bfseries
+		\ifnum \c@secnumdepth >\m@ne
+		\makebox[\secnumwidth][l]{\thechapter}%
+		\fi
+		#1\par\nobreak
+		\vskip 40\p@
+	}}
+\renewcommand{\@seccntformat}[1]{\makebox[\secnumwidth][l]{\csname the#1\endcsname}}
+\makeatother
+
+%---- mathematische Symbole und Umgegungen ----
+% \usepackage{tensor}                  % Tensordarstellungen
+\usepackage{mathrsfs}                % Für Sonderzeichen, z.B. Lagrange \mathscr{}
+\usepackage{amsmath,amssymb,amsbsy,amsthm}  % AMS-Style
+
+
+\usepackage{units}	            		 % Setzen von Einheiten nicht kursiv in Formeln
+% \usepackage{undertilde}							 % Paket für Tilden unter Buchstaben
+
+%---- Grafik und Farben ----
+\usepackage{graphicx}						% Grafikpaket (ermöglicht unter anderem das Einbinden von .jpg-Bildern)
+
+\usepackage[export]{adjustbox}
+\usepackage{subfig}							% Paket zum Einbinden von Subfigures
+%\usepackage{subfigure}
+\usepackage[table]{xcolor}			% Paket zur Verwendung von farbigen Schriften, Hintergruenden etc., spezieller Zusatz Tabellenzellen unterlegen
+\usepackage{pdfpages}	        % Einbinden externer PDF-Dokumente
+% Zusätzlicher Grafikpfad
+\graphicspath{{Bilder/}
+}
+\usepackage{tikz,pgfplots}
+\usepackage{wasysym}
+\pgfplotsset {
+    compat                   = newest,
+    every tick/.append style = thin, 
+    select coords between index/.style 2 args={
+        x filter/.code={
+            \ifnum\coordindex<#1\def\pgfmathresult{}\fi
+            \ifnum\coordindex>#2\def\pgfmathresult{}\fi
+        }
+        }
+  }
+\tikzset{
+  every picture/.append style={
+    line join=round,
+    line cap=round,
+  }
+}
+\usetikzlibrary{positioning}
+%\usepackage{KITcolors}
+\usepackage{cancel}
+
+
+\usepackage[framemethod=TikZ]{mdframed}
+
+%==== Listen,Verzeichnisse und Tabellen ========================================
+
+%---- Floats und Tabellen ----
+\usepackage{float}							%	Package f"ur Floats
+\usepackage[section]{placeins}	% Barriere f"ur Floats "uber sectionengrenze hinweg
+\usepackage{booktabs}           % sch{\"o}nere Tabellen
+\usepackage{footnpag}           % Sorgt dafür, dass die Fussnotennummerierung mit jeder neuen Seite wieder bei 1 startet.
+\usepackage{longtable}
+
+
+%---- Verzeichnisse ----
+\usepackage[printonlyused]%
+			{acronym}					% Paket für die Erstellung des Abkürzungsverzeichnisses
+\usepackage{expdlist}						% Erweiterte Listenfunktionen (enumerate und Co)
+\usepackage{index}              % Zur Erstellung eines Indexverzeichnisses, \makeindex
+\usepackage[numbers]{natbib}    % Für Literaturdarstellung
+%\usepackage{multibib}
+%\newcites{Eigene}{Eigene Publikationen}
+%\newcites{BscMsc}{Betreute Abschlussarbeiten}
+
+% Nomenklatur-Paket (Symbolvereichnis)
+\usepackage[german]{nomencl}		%Nomenklatur-Paket (+ in Inhaltsverzeichnis aufgenommen)
+\RequirePackage{ifthen}					% Package zum unterteilen des Symbolverzeichnisses benötigt
+\newcommand{\nomunit}[1]{\renewcommand{\nomentryend}{\hspace*{\fill}#1}} % Ermöglicht Spalte für Einheit beim Formelverzeichnis
+% Untergruppen im Symbolverzeichnis anlegen:
+\renewcommand{\nomgroup}[1]{%
+\ifthenelse{\equal{#1}{I}}{\item[\textbf{Indizes\\}]}{
+\ifthenelse{\equal{#1}{S}}{\item[\textbf{Symbole}]}}}
+\newcommand{\Symbol}[3]{\nomenclature[S]{$#1$}{#2 \nomunit{$\left[\unit{#3}\right]$} }} % Zum einfachen Einfügen von Symbolen mit Makebox
+\makeindex
+
+
+
+%====== Definitionsänderungen für den \Autoref-Befehl ====================================
+
+% ACHTUNG LATEX SPEZIAL: Die Eintraege muessen mit % enden sonst gibt es ueberfluessige Leerzeichen
+\makeatletter  
+\let\orgautoref\autoref% Für alle, denen "`Unterunterabschnitt"' grotesk anmutet
+% Definition der Singularform
+\renewcommand{\autoref}%
+            {\def\sectionautorefname{Abschnitt}%
+            \def\subsectionautorefname{\sectionautorefname}%
+            \def\subsubsectionautorefname{\sectionautorefname}%
+            \def\equationautorefname{Gleichung}%
+            \def\figureautorefname{Abbildung}%
+            \def\subfigureautorefname{\figureautorefname}% Subfloats sind Abb.
+            \def\tableautorefname{Tabelle}%
+    \orgautoref}%
+% Definition der Pluralform ... für alle, die Pluralformen verwenden wollen 
+% <siehe \autoref{ADAMS}, \ref{MATLAB} und \ref{FORTRAN}> ergibt dann beispielsweise: 'siehe Abschnitte (2.3.1), (2.3.2) und (2.3.3)'
+\providecommand{\autorefs}%
+            {\def\sectionautorefname{Abschnitte}%
+               \def\subsectionautorefname{\sectionautorefname}%
+               \def\subsubsectionautorefname{\sectionautorefname}%
+               \def\equationautorefname{Gleichungen}%
+               \def\figureautorefname{Abbildungen}%
+               \def\subfigureautorefname{\figureautorefname}%
+               \def\tableautorefname{Tabellen}%
+    \orgautoref}%
+% Definition der im Dativ abweichenden Pluralform von Abschnitt
+% <in den \autoref{ADAMS}, \ref{MATLAB} und \ref{FORTRAN}> ergibt dann beispielsweise: 'in den Abschnitten (2.3.1), (2.3.2) und (2.3.3)'
+\providecommand{\autorefsd}%
+            {\def\sectionautorefname{Abschnitten}%
+               \def\subsectionautorefname{\sectionautorefname}%
+               \def\subsubsectionautorefname{\sectionautorefname}%
+               \def\equationautorefname{Gleichungen}%
+                        \def\figureautorefname{Abbildungen}%
+                     \def\subfigureautorefname{\figureautorefname}%
+                        \def\tableautorefname{Tabellen}%
+    \orgautoref}%
+%---- automatische Klammern bei mathematischen Formeln ----
+%%\makeatletter
+\newcommand\embrace[1]{(#1)}
+\renewcommand\p@equation{\expandafter\embrace}
+\makeatother
+
+
+
+%--- Veränderte Schriftart ------
+% Latex Standard für Druck in Unidruckerei nicht erlaubt!
+
+\usepackage{palatino}	% Palatino
+%\usepackage{txfonts}		% Times Roman
+%\usepackage{bookman}		% Bookman
+%\usepackage{fouriernc} % New Century
+%\usepackage{lmodern}		% Latin Modern
+%\usepackage{sans}
+
+
+\setkomafont{disposition}{\normalcolor\bfseries}
+\usepackage{setspace}
+\setstretch{1.15}
+
+% Schriftgröße von Bildunterschriften
+\usepackage[font=footnotesize]{caption}
+
+% Kopf- und Fußzeile
+\usepackage[]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+% Seitenzahl (Fußzeile)
+\ofoot[\pagemark]{\pagemark}
+%\ofoot[\pagemark]{Page style with \KOMAScript}
+\setkomafont{pagefoot}{\normalsize}
+% Kopfzeile: nicht kursiv, kleiner als Text
+\ohead[]{\emph\headmark}
+\setkomafont{pagehead}{\footnotesize}
+%\automark[chapter]{chapter}
+%\automark*[section]{}
+
+% Fußnoten einstellen
+\usepackage[hang]{footmisc}
+\setlength\footnotemargin{10pt}
+
+% Hurenkinder und Schusterjungen verhindern (für Druckerei)
+\clubpenalty10000
+\widowpenalty10000
+\displaywidowpenalty=10000
+
+\hyphenpenalty=500
+\exhyphenpenalty=500
+
+% Seiten nach unten auslaufen lassen
+\raggedbottom
+
+% Textrahmen anzeigen (Layout-check)
+%\usepackage{showframe}
+
+
+%%% eigene 
+\usepackage{listings}    
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{tikz,pgfplots}
+
+%\usepackage{wasysym}
+\pgfplotsset {
+	compat                   = newest,
+	every tick/.append style = thin, 
+	select coords between index/.style 2 args={
+		x filter/.code={
+			\ifnum\coordindex<#1\def\pgfmathresult{}\fi
+			\ifnum\coordindex>#2\def\pgfmathresult{}\fi
+		}
+	}
+}
+\tikzset{
+	every picture/.append style={
+		line join=round,
+		line cap=round,
+	}
+}
+\usetikzlibrary{arrows,decorations.markings}

@@ -1,0 +1,152 @@
+\documentclass[a4paper, 12pt,headsepline, openany,fleqn,titlepage,twoside=false,openright,
+numbers=noenddot,%
+headings=normal, %small,big
+index=totoc,listof=totoc,bibliography=totoc]{scrbook}
+
+
+\input{Header}
+
+\usepgfplotslibrary{external}
+\tikzexternalize[prefix=BilderExternalized/, shell escape=-enable-write18,optimize=false]
+
+%\tikzexternalize[prefix=tikz/]
+\tikzexternalenable
+
+
+
+%Mathematik
+\newcounter{theo}[chapter] \setcounter{theo}{0}
+\renewcommand{\thetheo}{\arabic{chapter}.\arabic{theo}}
+\newenvironment{theo}[2][]{%
+	\refstepcounter{theo}%
+	\ifstrempty{#1}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!20]
+				{\strut Mathematik~\thetheo};}}
+	}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!20]
+				{\strut Mathematik~\thetheo:~#1};}}%
+	}%
+	\mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+		linewidth=2pt,topline=true,%
+		frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+	}
+	\begin{mdframed}[]\relax%
+		\label{#2}}{\end{mdframed}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Mechanik
+\newcounter{lem}[chapter] \setcounter{lem}{0}
+\renewcommand{\thelem}{\arabic{chapter}.\arabic{lem}}
+\newenvironment{lem}[2][]{%
+	\refstepcounter{lem}%
+	\ifstrempty{#1}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=green!20]
+				{\strut Mechanik~\thelem};}}
+	}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=green!20]
+				{\strut Mechanik~\thelem:~#1};}}%
+	}%
+	\mdfsetup{innertopmargin=10pt,linecolor=green!20,%
+		linewidth=2pt,topline=true,%
+		frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+	}
+	\begin{mdframed}[]\relax%
+		\label{#2}}{\end{mdframed}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Beispiel
+\newcounter{beispiel}[chapter] \setcounter{beispiel}{0}
+\renewcommand{\thebeispiel}{\arabic{chapter}.\arabic{beispiel}}
+\newenvironment{beispiel}[2][]{%
+	\refstepcounter{beispiel}%
+	\ifstrempty{#1}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=red!20]
+				{\strut Beispiel~\thebeispiel};}}
+	}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=red!20]
+				{\strut Beispiel~\thebeispiel:~#1};}}%
+	}%
+	\mdfsetup{innertopmargin=10pt,linecolor=red!20,%
+		linewidth=2pt,topline=true,%
+		frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+	}
+	\begin{mdframed}[]\relax%
+		\label{#2}}{\end{mdframed}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\pagestyle{plain}
+
+\title{Skript zur Vorlesung Maschinendynamik}
+\author{Georg Jehle}
+\date{Sommersemester 2020}
+\maketitle
+% \include{Titelseite_Bogen}  % Dekortitelseite für Referentenversion
+% \pagestyle{headings}
+
+% \include{titelseite}        % Titelseite für Fakultät, Vorwort und Kurzfassung 
+%
+%\setcounter{tocdepth}{2}				% aufgeführte Ebenen im Inhaltverzeichnis
+% \pdfbookmark{Inhaltsverzeichnis}{Inhaltsverzeichnis} % Eintrag in PDF und Inhaltsverzeichnis
+\tableofcontents
+
+
+%\input{Symbol_und_Abkuerzungsverzeichnis}
+% \include{Vorwort}
+% \include{Notation}
+
+%%% Eigene Befehle 
+
+%%% Eigentlicher Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\pagenumbering{arabic}
+
+% Hier stehen die eigentlichen Inhaltskapitel
+\include{Einleitung}
+\include{EinFhg}
+\include{ErzwungeneSchwingungen}
+\include{Anregungssignale}
+\include{NFhg}
+
+%%% Anhang %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{appendix}
+% \include{Anhang}
+% \end{appendix}
+
+
+%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+%\listoffigures
+
+
+
+\newpage
+
+
+% \currentpdfbookmark{Literaturverzeichnis}{Literaturverzeichnis}
+\bibliographystyle{plaindin}%
+\bibliography{Literaturliste}
+
+%\include{Lebenslauf}
+\end{document}

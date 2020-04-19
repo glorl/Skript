@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Skript.aux
+A level-1 auxiliary file: Einleitung.aux
+A level-1 auxiliary file: EinFhg.aux
+A level-1 auxiliary file: ErzwungeneSchwingungen.aux
+A level-1 auxiliary file: Anregungssignale.aux
+A level-1 auxiliary file: NFhg.aux
+The style file: plaindin.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Literaturliste.bib
+You've used 7 entries,
+            4335 wiz_defined-function locations,
+            861 strings with 6773 characters,
+and the built_in function-call counts, 3790 in all, are:
+= -- 318
+> -- 145
+< -- 125
++ -- 155
+- -- 50
+* -- 255
+:= -- 747
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 39
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 111
+empty$ -- 269
+format.name$ -- 100
+if$ -- 698
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 28
+newline$ -- 45
+num.names$ -- 14
+pop$ -- 67
+preamble$ -- 1
+purify$ -- 39
+quote$ -- 0
+skip$ -- 182
+stack$ -- 0
+substring$ -- 168
+swap$ -- 34
+text.length$ -- 27
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 14
+warning$ -- 0
+while$ -- 39
+width$ -- 8
+write$ -- 84

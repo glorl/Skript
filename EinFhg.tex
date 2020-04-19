@@ -1,0 +1,351 @@
+% !TeX spellcheck = de_DE
+\chapter{Freie Schwingungen}
+In diesem Abschnitt werden freie Schwingungen untersucht. Dabei handelt es sich um die Bewegung von Systemen, die ohne Einwirkung äußerer Kräfte oder Bewegungen nach einer Anfangsauslenkung sich selbst überlassen werden. Der Einfachheit halber werden die Betrachtungen anhand von mechanischen 1-Freiheitsgrad-Systemen behandelt. 
+\section{Freie ungedämpfte Schwingungen}\label{kap:UngedaempftEMS}
+Ausgangspunkt für die freien ungedämpften Schwingungen ist ein 1-Massen-Schwinger mit nichtlinearer Federkraft $f(x)$. 
+\begin{figure}[h]
+	\centering
+	\subfloat{\includegraphics[width=0.11\textheight,valign=t]{Bilder/02EinMassenSchwinger.pdf}}\hspace{15mm}
+	\subfloat{\includegraphics[width=0.11\textheight,valign=t]{Bilder/02EinMassenSchwingerdAlembert.pdf}}
+	\caption{Einmassenschwinger mit nichtlinearer Kennlinie sowie dessen Kräftefreischnitt nach d'Alembert, wobei $m\ddot x$ die d'Alembert'sche Trägheitskraft ist und $f(x)$ die Federkraft.}
+\end{figure}\\
+Die Bilanz der Kräfte liefert: 
+\begin{align}
+	m \ddot x + f(x) = 0
+\label{eq:21}
+\end{align}\\
+Eine solche Differentialgleichung (DGL) ist aufgrund des nichtlinearen Zusammenhangs $f(x)$ im Allgemeinen nicht analytisch lösbar. Wenn dennoch eine Analyse durchgeführt werden soll, dann kann die Gleichung \ref{eq:21} als nächstes linearisiert werden (Mechanik 2.1). Nach dieser Vereinfachung beschreibt die Gleichung nur noch die Dynamik kleiner Störungen $\Delta x$ um eine Ruhelage $x_0$, was aber in vielen Fällen in der Praxis ausreichend ist. Die Linearisierung wird nach dem Satz von Taylor (Mathematik 2.1) durchgeführt. 
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	domain=-0.5:2,
+	xmin=-1,xmax=2,ymin=-3,ymax=3, 
+	samples=100,
+	grid=both,
+	x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+	xlabel={$x$},
+	ylabel={$f(x)$}, 
+	xtick={0,1}, 
+	ytick={0}, 
+	xticklabels={0,$x_0$}]
+	\addplot[blue, ultra thick] {(x-1)+(x-1)*(x-1)*(x-1)};
+	\addplot[black, dashed, ultra thick] {(x-1)};
+	\legend{$f(x)$, Linearisierung um $x_0$}
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Nichtlineare Federkennlinie}
+\end{figure} \\\newpage
+\begin{theo}[Taylorreihen-Entwicklung]{theo:taylor}
+Sei $f(x)$ eine $n-$mal stetig differenzierbare Funktion und $x_0$ ein Entwicklungspunkt. Dann ist die Taylorreihenentwicklung definiert als 
+\[f(x) = \sum_{k=0}^{n}\frac{\textrm{d}^k f(x_0)}{\textrm{d} x} \frac{\left(x-x_0\right)^k}{k !} = f(x_0) + f'(x_0) (x-x_0) + f''(x_0) \frac{(x-x_0)^2}{2} + ...\]
+Die Reihendarstellung konvergiert für $n\rightarrow\infty$ mit $f(x)$, falls $f(x)$ $\infty-$mal stetig differenzierbar ist.
+\end{theo}
+\begin{lem}[Linearisierung um eine Ruhelage]{lem:linearisierung}
+	Zur Linearisierung einer DGL um eine Ruhelage werden folgende Schritte befolgt: 
+	\begin{itemize}
+		\item \textbf{Berechnung der Ruhelage:} setze $x=x_0=$konst., dann ist $\dot x=0$, $\ddot x=0$. Einsetzen in die DGL liefert eine algebraische Gleichung zur Bestimmung der Ruhelage(n): 
+		\[f(x_0)=0\]
+		\item \textbf{Definition der Störung} $\Delta x$ um die Ruhelage $x_0$: $x=x_0+\Delta x$. Einsetzen in die DGL ergibt 
+		\[m\Delta \ddot x + f(x_0 + \Delta x)=0\]
+		\item \textbf{Linearisierung:} Taylorreihen-Entwicklung der nichtlinearen Funktion $f(x_0+\Delta x)$ in der Störung $\Delta x$ bis zur 1. Ordnung: 
+		\[f(x_0 + \Delta x)\approx f(x_0) + f'(x_0)\cdot \Delta x\]
+		\item \textbf{Einsetzen und vereinfachen:}
+		\[m\Delta \ddot x + f(x_0) + f'(x_0)\cdot \Delta x = 0\]
+		Der Term $f(x_0)$ verschwindet, da aus ihm die Ruhelage berechnet wurde. Es bleibt die homogene lineare DGL mit konstanten Koeffizienten für die Beschreibung der kleinen Störung um die Ruhelage
+		\[m\Delta \ddot x + f'(x_0)\cdot \Delta x = 0\]
+	\end{itemize}
+\end{lem}
+\begin{beispiel}[Nichtlineare Federkennlinie]{beispiel:linearisierung}
+Eine Federkennlinie kann beschrieben werden durch den Kraft-Weg-Zusammenhang $f(x) = \sin(x) + a_1 x + a_3 x^3$. Die DGL des 1-Massen-Schwingers lautet somit: 
+\begin{align*}
+m \ddot x + \sin(x) + a_1 x + a_3 x^3 = 0
+\end{align*}
+Die Ruhelage berechnet sich aus der Gleichung
+\begin{align*}
+\sin(x_0) + a_1 x_0 + a_3 x_0^3 = 0
+\end{align*}
+zu $x_0=0$. Die DGL in der Störung um $x_0$ ist also 
+\begin{align*}
+0 = &m(\ddot x_0+\Delta \ddot x) + \sin(x_0) + a_1 (x_0+x) + a_3 (x_0+x)^3 \\
+= &m\Delta \ddot x + \sin(x_0+x) + a_1 (x_0+x) + a_3 (x_0+x)^3 \\
+= &m\Delta \ddot x + \sin(x_0) + a_1 x_0 + a_3 (x_0)^3 + \left(\cos(x_0)+a_1 +3 x_0^2\right)\Delta x\\
+\approx &m\Delta \ddot x + \left(1+a_1\right)\Delta x
+\end{align*}
+Hier ist $f'(x_0)=1+a_1=c$ die lokale Steifigkeit in der Nähe der Ruhelage. Alternativ wird die DGL 
+\begin{align*}
+\Delta \ddot x + \omega_0^2 \Delta x=0, 
+% \label{eq:27}
+\end{align*}
+wobei $\omega_0^2 = \frac{f'(x_0)}{m}=\frac{c}{m}$ das Quadrat der ungedämpften Eigenkreisfrequenz ist. 
+\end{beispiel}
+Die Koeffizienten der DGL \ref{eq:21} sind konstant, weshalb als Lösungsansatz für die homogene Lösung der Exponentialansatz verwendet werden kann: 
+\begin{theo}[Lineare homogene DGL mit konstanten Koeffizienten]{theo:konstKoeff}
+	Eine lineare homogene DGL mit konstanten Koeffizienten 
+	\begin{align}
+	\sum_{k=0}^{n} a_k \frac{\textrm{d}^k x(t)}{\textrm d t^k} = a_n \frac{\textrm{d}^n x(t)}{\textrm d t^n}+...+a_1 \frac{\textrm{d} x(t)}{\textrm d t} + a_0 x(t)=0\nonumber
+	\end{align}
+	wird mithilfe des Exponentialansatzes 
+	\begin{align}
+	x(t)=C e^{\lambda t} \nonumber
+	\end{align}
+	gelöst. Der Ansatz eingesetzt in die DGL liefert das Eigenwertproblem 
+	\begin{align}
+	\sum_{k=0}^{n} a_k C \lambda^k e^{\lambda t} 
+	= \left(\sum_{k=0}^{n} a_k \lambda^k\right)C e^{\lambda t} =0.\nonumber 
+	\end{align}
+	Wegen $C\neq 0$ folgt das charakteristische Polynom
+	\begin{align}
+	\sum_{k=0}^{n} a_k \lambda^k = a_n \lambda^n + ... +a_1 \lambda +a_0 =0\nonumber 
+	\end{align}
+	woraus die Eigenwerte $\lambda_{1,2,...,n}$ bestimmt werden. Die Lösungsanteile 
+	\begin{align}
+	x_k(t) = C_k e^{\lambda_k t}\nonumber 
+	\end{align}
+	werden \emph{Fundamentallösungen} genannt; die Gesamtlösung setzt sich aus ihnen zusammen: 
+	\begin{align}
+	x(t) = \sum_{k=0}^{n} C_k x_k(t) = C_n e^{\lambda_n t} +...+ C_2 e^{\lambda_2 t} + C_1 e^{\lambda_1 t}. \nonumber 
+	\end{align}
+	Die Integrationskonstanten $C_k$ müssen durch geeignete Anfangsbedingungen bestimmt werden. 
+\end{theo}
+Nach dem beschriebenen Vorgehen in (Mathematik 2.2) und $f'(x_0)=:c$ lautet die DGL der Störung zur Gl. \ref{eq:21}
+\begin{align}
+&m\Delta \ddot x + c \Delta x = 0 &&\textrm{bzw.}&&\Delta \ddot x + \underbrace{\frac{c}{m}}_{:=\omega_0^2} \Delta x = 0 &\label{eq:27}
+\end{align}
+Der Lösungsansatz und dessen Ableitungen sind 
+\begin{align}
+& \Delta x =A e^{\lambda t}, &
+& \Delta \dot x =\lambda A e^{\lambda t}, &&
+&\Delta \ddot x =\lambda^2 A e^{\lambda t} &&
+\end{align}
+Dies eingesetzt in Gl. \ref{eq:21} liefert 
+\begin{align}
+& (\lambda^2 +\omega_0^2) A e^{\lambda t}=0, &
+& \textrm{woraus folgt} &
+& \lambda_{1,2} =\pm i \omega_0.&
+\end{align}
+Somit gibt es zwei komplexe Fundamentallösungen 
+\begin{align}
+& x_1(t) = A_1 e^{i \omega_0 t}, &
+& x_2(t) = A_2 e^{-i \omega_0 t} &
+\end{align}
+Die Gesamtlösung ergibt sich unter Beschränkung auf rein reelle Lösungen zu 
+\begin{align}
+	x(t) &= Re\{x_1(t) + x_2(t)\}\\
+	& = Re\{A_1 e^{i \omega_0 t} + A_2 e^{-i \omega_0 t}\}\nonumber \\
+	& = Re\{A_1 +A_2 \} \cos(\omega_0 t) + Re\{i A_1 -i A_2 \} \sin(\omega_0 t)\nonumber \\
+	& = C_1 \cos(\omega_0 t) + C_2 \sin(\omega_0 t)\nonumber 
+\end{align}
+Hierbei wurde zur Transformation die Euler-Formel verwendet: 
+\begin{theo}[Euler-Formel]{theo:Euler}
+	Es gilt der Zusammenhang 
+	\begin{align}
+	e^{i\varphi}=\cos(\varphi)+i\sin(\varphi)\nonumber 
+	\end{align}
+\end{theo}
+Die Kreisfrequenz $\omega_0$ wurde bereits durch Masse und Steifigkeit festgelegt und hängt somit nur von Systemparametern ab. Sie ist dem System \emph{eigen} und heißt deshalb \emph{Eigenkreisfrequenz}.\\
+Als Parameter bleiben die Integrationskonstanten $C$ und $S$, die durch die Anfangsbedingungen (Anfangslage und, Anfangsgeschwindigkeit) festgelegt werden: 
+\begin{align}
+	x(t=0) &=  C_1 \cos(0) + C_2 \sin(0)  = C_1 \overset{!}{=}x_0\\
+	\dot x(t=0) &= -C_1 \omega_0 \sin(0) + C_2 \omega_0 \cos(0)  = C_2 \omega_0 \overset{!}{=}v_0
+\end{align}
+Als Gesamtlösung ergibt sich so 
+\begin{align}
+x(t) &=  x_0 \cos(\omega_0 t) + \frac{v_0}{\omega_0} \sin(\omega_0 t)  
+\end{align}
+Die Schwingungsdauer der Bewegung ist $T=\frac{2\pi}{\omega_0}$.
+\begin{beispiel}[Mathematisches Pendel]{beispiel:mathPendel}
+Ein mathematisches Pendel besteht aus einem masselosen Stab der Länge $\ell$, der einseitig an einem Gelenk befestigt ist. An seinem freien Ende befindet sich ein Gewicht mit Punktmasse $m$. Das System ist der Schwerkraft unterworfen (Gravitationskonstante $g$). Die Auslenkung wird durch den Verdrehwinkel $\varphi$ beschrieben. \\[2mm]
+\hspace*{3cm}\includegraphics[width=0.12\textwidth]{Bilder/02MathematischesPendel.pdf} \\[2mm]
+Die Bewegungsgleichung folgt aus der Momentenbilanz um das Gelenk und lautet
+\begin{align*}
+&m \ell^2 \ddot \varphi + m g \ell \sin(\varphi) = 0& 
+&\textrm{bzw.}&
+&\ddot \varphi + \frac{g}{\ell}\sin(\varphi) = 0& 
+\end{align*}
+Diese DGL ist zunächst nichtlinear. Bei der Bestimmung der Ruhelagen finden sich zwei Lösungen: 
+\begin{align*}
+	&\ddot \varphi=0&& \rightarrow&
+	&\frac{g}{\ell}\sin(\varphi) = 0&
+\end{align*}
+also 
+\begin{align*}
+&\varphi_{0,1} = 0, &&\varphi_{0,2} = \pi.&\\
+&\textrm{(Hängelage)} &&\textrm{(Überkopflage)} &
+\end{align*}
+\paragraph{Linearisierung um die Hängelage:} Die Linearisierung der Nichtlinearität um die Ruhelage $\varphi_{0,1}=0$ lautet 
+\begin{align*}
+	\frac{g}{\ell}\sin(\varphi) \approx \frac{g}{\ell}\sin(\varphi_{0,1}) + \frac{g}{\ell}\cos(\varphi_{0,1})\cdot (\varphi - \varphi_{0,1}) = \frac{g}{\ell}(\varphi - \varphi_{0,1}) = \frac{g}{\ell}\Delta \varphi
+\end{align*}
+wobei $\Delta\varphi$ die Störung um die Ruhelage ist. Außerdem ist 
+\begin{align*}
+	\Delta \ddot \varphi = \ddot \varphi -0 = \ddot \varphi
+\end{align*}
+Somit lautet die linearisierte DGL
+\begin{align*}
+&\Delta \ddot \varphi + \frac{g}{\ell}\Delta \varphi = 0&
+&\textrm{oder}&
+&\Delta \ddot \varphi + \omega_0^2\Delta \varphi = 0&
+\end{align*}
+mit $\omega_0^2 = \frac{g}{\ell}$. Die DGL hat nun exakt die Form der Gl. (2.2), weshalb die Lösung direkt angegeben werden kann: 
+\begin{align*}
+\varphi(t) &=  \varphi_0 \cos(\omega_0 t) + \frac{\dot\varphi_0}{\omega_0} \sin(\omega_0 t)  
+\end{align*}
+Interpretation: Für kleine Anfangswinkel $\varphi_0$ und kleine Anfangsgeschwindigkeiten $\dot \varphi_0$ bleibt die Lösung $\varphi(t)$ für alle Zeiten klein. Die Linearisierung beschriebt das Systemverhalten gut. 
+\paragraph{Linearisierung um die Überkopflage:} Die Linearisierung der Nichtlinearität um die Ruhelage $\varphi_{0,2}=\pi$ lautet 
+\begin{align*}
+\frac{g}{\ell}\sin(\varphi) \approx \frac{g}{\ell}\sin(\varphi_{0,2}) + \frac{g}{\ell}\cos(\varphi_{0,2})\cdot (\varphi - \varphi_{0,2}) = -\frac{g}{\ell}(\varphi - \varphi_{0,2}) = -\frac{g}{\ell}\Delta \varphi
+\end{align*}
+Somit lautet die linearisierte DGL
+\begin{align*}
+&\Delta \ddot \varphi - \frac{g}{\ell}\Delta \varphi = 0&
+\end{align*}
+Dies entspricht wegen des negativen Vorzeichens nicht der Form der Gl. (2.2), kann aber trotzdem mithilfe eines Exponentialansatzes $\Delta \varphi = C e^{\lambda t}$ gelöst werden. Dieser ergibt nach Einsetzen die Eigenwerte 
+\begin{align*}
+	\lambda_{1,2}=\pm \sqrt{\frac{g}{\ell}}=\pm \delta
+\end{align*}
+also zwei reelle Eigenwerte. Die zwei Fundamentallösungen 
+\begin{align*}
+&\Delta \varphi_1 =C_1 e^{\delta t}&&\Delta \varphi_2 = C_2 e^{-\delta t}&
+\end{align*}
+ergeben die Gesamtlösung 
+\begin{align*}
+\Delta \varphi = C_1 e^{\delta t}+C_2 e^{-\delta t}
+\end{align*}
+Anpassen an die Anfangslage $\varphi(t=0)$ und Anfangsgeschwindigkeit $\dot \varphi(t=0)$ liefert schließlich die Gesamtlösung 
+\begin{align*}
+\Delta \varphi = \frac{\varphi_0+\frac{\dot \varphi_0}{\delta}}{2} e^{\delta t}+ \frac{\varphi_0-\frac{\dot \varphi_0}{\delta}}{2}  e^{-\delta t}
+\end{align*}
+Interpretation: Nach einer Störung in der Auslenkung und/oder Geschwindigkeit zum Zeitpunkt $t=0$ klingt die Lösung in der Nähe der Überkopflage exponentiell auf. Sie ist im Gegensatz zur Hängelage nicht schwingungsfähig. Die linearisierte Lösung beschreibt das qualitative Verhalten korrekt, ist aber quantitativ höchstens für eine sehr kurze Zeitdauer richtig. 
+\end{beispiel}
+
+\paragraph{Fazit.} Eine Linearisierung um unterschiedliche Ruhelagen liefert im Allgemeinen verschiedene Bewegungsgleichungen, die verschiedene Eigenschaften haben können. 
+\section{Freie gedämpfte Schwingungen}
+Im gedämpften Einmassenschwinger wird zusätzlich parallel zur Federkraft ein Dämpfer geschaltet, sodass sich das System um die Dämpferkraft erweitert: 
+\begin{figure}[h]
+	\centering
+	\subfloat{\includegraphics[width=0.11\textheight,valign=c]{Bilder/02EinMassenSchwingerDamped.pdf}}\hspace{15mm}
+	\subfloat{\includegraphics[width=0.15\textheight,valign=c]{Bilder/02EinMassenSchwingerDampeddAlembert.pdf}}
+	\caption{Linearer gedämpfter Einmassenschwinger sowie dessen Kräftefreischnitt nach d'Alembert, wobei $m\ddot x$ die d'Alembert'sche Trägheitskraft ist, $c x$ die Federkraft und $d\dot x$ die Dämpferkraft.}
+\end{figure}\\
+Der ungedämpfte Einmassenschwinger (Kapitel \ref{kap:UngedaempftEMS}) stellt somit den Sonderfall $d=0$ dar. 
+Die Kräftebilanz liefert
+\begin{align}
+	&m\ddot x + d\dot x + c x= 0 &&\textrm{bzw.}&\label{eq:GedEMS}\\
+	&\ddot x + \frac{d}{m}\dot x + \frac{c}{m} x= 0 &\nonumber 
+\end{align}
+\begin{lem}[Parameter des gedämpften Einmassenschwingers]{lem:ged1ms}
+	Zur einheitlichen Beschreibung werden die folgenden Parameter eingeführt: 
+	\begin{itemize}
+		\item Ungedämpfte Eigenkreisfrequenz: $\omega_0 = \sqrt{\frac{c}{m}}$
+		\item Exponentielle Abklingrate: $\delta = \frac{d}{2m}$
+		\item Lehr'sches Dämpfungsmaß: $D = \frac{d}{2 m \omega_0}$
+		\item Gedämpfte Eigenkreisfrequenz $\omega_d = \sqrt{1-D^2}\omega_0 $
+		\item Schwingungsdauer $T = 2\pi/\omega_d$
+	\end{itemize}
+\end{lem}
+Die vereinfachte Gleichung des homogenen gedämpften Einmassenschwingers lautet nach (Mechanik 2.2): 
+\begin{align}
+\ddot x + 2D \omega_0 \dot x +\omega_0^2 x =0\label{eq:GedEMSD}
+\end{align}
+\begin{beispiel}[Nichlinearer Einmassenschwinger mit Dämpfung]{beispiel:EMSDamp}
+Die DGL lautet in diesem Beispiel
+\begin{align}
+(J + m R^2 )\ddot x + d\dot x \cos(x) + c_0 x + c_3 x^3 = 0 \nonumber
+\end{align}
+wobei alle Koeffizienten positive Werte haben sollen. Das Ziel ist, auf die Form (2.11) zu kommen. Dazu werden zunächst die Ruhelagen bestimmt. Mit $x=x_0$, $\dot x=0$, $\ddot x=0$ folgt 
+\begin{align}
+&c_0 x_0 + c_3 x_0^3 = 0,&&\textrm{ weshalb}&&x_{0,1}=0,&&x_{0,2/3}=\pm\sqrt{-c_0/c_3}&\nonumber
+\end{align}
+Mit $c_0>0$, $c_3>0$ ist nur die Ruhelagen $x_{0,1}$ physikalisch sinnvoll. Also wird um diese Ruhelage linearisiert. Es ist 
+\begin{align}
+f(x,\dot x) &= d\dot x \cos(x) + c_0 x + c_3 x^3\nonumber \\
+f(x_{0,1}+\Delta x,\Delta \dot x) &= d \Delta \dot x \cos(x_{0,1}+\Delta x) + c_0 (x_{0,1}+\Delta x) + c_3 (x_{0,1}+\Delta x)^3\nonumber \\
+&= d \Delta \dot x \cos(\Delta x) + c_0 \Delta x + c_3 \Delta x^3\nonumber \\
+&\approx d \Delta \dot x \cdot (\cos(0)-\cancel{\sin(0)\cdot \Delta x})+ c_0 \Delta x + \cancel{c_3 \Delta x^3}\nonumber \\
+&= d \Delta \dot x +c_0 \Delta x\nonumber
+\end{align}
+Also folgt die linearisierte DGL 
+\begin{align}
+(J + m R^2 )\Delta \ddot x + d\Delta \dot x + c_0 \Delta x \nonumber 
+\end{align}
+Sie lässt sich auf die Form der Gl. (2.11) bringen, wenn die Koeffizienten 
+\begin{align}
+& \omega_0^2 = \frac{c_0}{J + m R^2 } && D = \frac{d}{2}\sqrt{\frac{1}{c_0 (J+mR^2)}}&\nonumber
+\end{align}
+gewählt werden. \\
+\end{beispiel}
+Die Fundamentallösung der Gl. \ref{eq:GedEMSD} ist mit $\lambda_{1,2}=-D\omega_0\pm\sqrt{D^2-1}\omega_0$
+\begin{align}
+x = C_1 e^{\lambda_1 t} + C_2 e^{\lambda_2 t}
+\end{align}
+Welchen qualitativen Verlauf die Lösung annimmt, hängt maßgeblich mit der Größe des Lehr'schen Dämpfungsmaßes $D$ zusammen: 
+\paragraph{Fall 1: starke Dämpfung.} Bei $D>1$ gilt 
+\begin{align}
+&	\lambda_1 = -D\omega_0+\omega_0\sqrt{D^2-1}<0&& \lambda_2 = -D\omega_0-\omega_0\sqrt{D^2-1}<0
+\end{align}
+Die Lösung $x = C_1 x_1 + C_2 x_2$ setzt sich also aus zwei Anteilen zusammen, deren Verlauf wegen der $\lambda_i<0$ immer expontiell abklingt. Da hiermit Schwingungen ausgeschlossen sind, wird die Bewegung auch \emph{Kriechbewegung} genannt. 
+\paragraph{Fall 2: aperiodischer Grenzfall.} Bei $D=1$ gilt 
+\begin{align}
+&	\lambda_1 = -D\omega_0=-\delta,&& \lambda_2 = -D\omega_0=-\delta
+\end{align}
+Der Verlauf der Lösung ist qualitativ gleich wie im Fall 1. 
+\paragraph{Fall 3: schwache Dämpfung.} Bei $0<D<1$ ist 
+\begin{align}
+&	D^2-1<0,& &\textrm{also}&& \omega_0\sqrt{D^2-1}=i\omega_0\sqrt{1-D^2}=i\omega_d& 
+\end{align}
+mit $i$ der komplexen Zahl. Die (komplexe) Fundamentallösung kann hier transformiert werden in reellwertige Funktionen: 
+\begin{align}
+	x &= \tilde{C}_1 e^{-\delta t+i \omega_d t} + \tilde{C}_2 e^{-\delta t-i \omega_d t}\\
+	 &= e^{-\delta t}\left(\tilde{C}_1 e^{i \omega_d t} + \tilde{C}_2 e^{-i \omega_d t}\right)\nonumber\\
+	 &= e^{-\delta t}\left(C_1\cos(\omega_d t) + C_2\sin(\omega_d t)\right)\nonumber
+\end{align}
+Es handelt sich bei der Bewegung um eine gedämpfte Schwingung, deren Amplitude mit zunehmender Zeit exponentiell abklingt. 
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	domain=0:10,
+	xmin=0,xmax=10,ymin=-1.2,ymax=1.2, 
+	samples=1000,
+	grid=both,
+	x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+	xlabel={$t$},
+	ylabel={$x(t)$}]
+	\addplot[blue, ultra thick] {exp(-x/2)*cos(2*pi*deg(x))};
+	\addplot[black, dashed] {-exp(-x/2)};
+	\addplot[black, dashed] { exp(-x/2)};
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Verlauf einer gedämpften Schwingung.}
+\end{figure}\\
+Es lässt sich zeigen, dass das Maß der Amplitudenreduktion gegeben ist durch 
+\begin{align}
+	\frac{x(t)}{x(t+T_d)} = e^{\delta T_d}
+\end{align} 
+Daraus folgt direkt das \emph{logarithmische Dekrement}: 
+\begin{align}
+\Lambda := \ln\left(\frac{x(t)}{x(t+T_d)}\right) = \delta T_d = D \omega_0 T_d
+\end{align} 
+Mit bekanntem $\omega_0$, gemessenen $T_d$ und $\Lambda$ lässt sich so aus einer Messung das Lehr'sche Dämpfungsmaß bestimmen. 
+\section*{Aufgaben zu Kapitel 2}
+\paragraph{2.1} Welche Unterschiede gibt es zwischen ungedämpften und gedämpften Schwingungen?
+\paragraph{2.2} Mit welchen Parametern (Konstanten) lässt sich ein lineares mechanisches Schwingungssystem mit einem Freiheigsgrad beschreiben? Welche Bedeutung haben sie?
+\paragraph{2.3} Welche Eigenschaften muss eine DGL haben, damit sie mit einem Exponentialansatz gelöst werden kann?
+\paragraph{2.4} Linearisieren Sie die folgenden Ausdrücke in der Variable $x$ um den Entwicklungspunkt $x=0$: 
+\begin{align}
+	& y = x^2+\sin(x) + \frac{e^x}{1+x} && y = \frac{a x +b}{c x + d}&
+\end{align}
+\paragraph{2.5} Bestimmen Sie die Ruhelage(n) der folgenden DGLn: 
+\begin{align}
+	& \ddot x + c_1 x - c_3 x^3=0 && \ddot x + d\dot x + c_1 \sin(k x)=0&\\
+	& \ddot x + (d_1 + d_2 )\dot x + c_1 x + c_2 x^2=0&
+\end{align}
+Linearisieren Sie die DGL anschließend für kleine Störungen $\Delta x = x-x_0$ um jede berechnete Ruhelage $x_0$! 
+\paragraph{2.6} Bestimmen Sie für die DGL
+\begin{align}
+	(m+R^2 J) \ddot x + m e \Omega^2\dot x + c_0 x=0
+\end{align}
+die Ersatzparameter $\omega_0$, $\omega_d$, $D$, $\delta$, und geben Sie die Lösung der DGL in allgemeiner Form an! Passen Sie die Integrationskonstanten an die Anfangsbedingungen $x (t=0)=0$ und $\dot{x}(t=0) = v_0$ an. 

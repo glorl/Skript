@@ -1,0 +1,817 @@
+% !TeX spellcheck = de_DE
+\chapter{Erzwungene Schwingungen}
+In diesem Kapitel wird die Situation betrachtet, dass der Einmassenschwinger harmonisch wirkenden Kräften oder vorgegebenen Bewegungen ausgesetzt ist:
+\begin{figure}[h]
+	\centering
+	\subfloat[Kraft]{\includegraphics[height=0.13\textwidth]{Bilder/03EinMassenSchwinger}\label{abb:ErzKraft}}\hfill
+	\subfloat[Fußpunkt (Maxwell)]{\includegraphics[height=0.13\textwidth]{Bilder/03EinMassenSchwingeruMaxwell}\label{abb:ErzMaxwell}}\hfill
+	\subfloat[Fußpunkt (Voigt)]{\includegraphics[height=0.13\textwidth]{Bilder/03EinMassenSchwingeru}\label{abb:ErzVoigt}}\hfill
+	\subfloat[Unwucht]{\includegraphics[height=0.13\textwidth]{Bilder/03EinMassenSchwingerExz}\label{abb:ErzUnwucht}}
+	\caption{Einmassenschwinger mit Anregung durch äußere Kraft, durch Fußpunkt- und durch und durch Unwuchterregung.}
+	\label{abb:Anregungen}
+\end{figure}\\
+Dies ändert die Sachlage insofern, als dass die Bewegung $x(t)$ aus zwei Anteilen besteht: einer \emph{homogenen} und einer \emph{partikulären} Bewegung bzw. Lösung der DGL. 
+\begin{align}
+	x(t) = x_h(t) + x_p(t)
+\end{align}
+\begin{figure}[h]
+	\centering
+	\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.55,
+		domain=0:10,
+		xmin=0,xmax=10,ymin=-2,ymax=2, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$t$},
+		ylabel={$x_h(t)$}]
+		\addplot[blue, ultra thick] {exp(-x/2)*cos(2*pi*deg(x))};
+		\addplot[black, dashed] {-exp(-x/2)};
+		\addplot[black, dashed] { exp(-x/2)};
+		\end{axis}
+		\end{tikzpicture}}
+	\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.55,
+		domain=0:10,
+		xmin=0,xmax=10,ymin=-2,ymax=2, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$t$},
+		ylabel={$x_p(t)$}]
+		\addplot[red, ultra thick,dashed] {sin(2*pi/3.2*deg(x))};
+		\end{axis}
+		\end{tikzpicture}}
+	\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.55,
+		domain=0:10,
+		xmin=0,xmax=10,ymin=-2,ymax=2, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.12,.5)},rotate=0,anchor=south},
+		xlabel={$t$},
+		ylabel={$x(t)=x_h(t)+x_p(t)$}]
+		\addplot[red, ultra thick,dashed] {sin(2*pi/3.2*deg(x))};
+		\addplot[blue, ultra thick] {exp(-x/2)*cos(2*pi*deg(x))+sin(2*pi/3.2*deg(x))};
+		\end{axis}
+		\end{tikzpicture}}
+	\caption{Erzwungene Schwingung, die sich als Summe von $x_h(t)$ und $x_p(t)$ zusammensetzt.}
+\end{figure}\\
+\begin{itemize}
+	\item Die homogene Lösung wurde bereits in Kapitel 2 betrachtet. Dieser Anteil, der die Bewegung und bzw. den Eigenschwingvorgang infolge von Anfangsauslenkungen wiedergibt, wird ab jetzt $x_h(t)$ genannt. 
+	\item Die partikuläre Lösung, die durch die äußere Anregung vorgegeben wird, nennt sich $x_p(t)$. Er wird auch Zwangsschwingung genannt, da er die Reaktion des Schwingungssystems auf die äußere Anregung darstellt. 
+\end{itemize}
+Ferner wird von nun an vorausgesetzt, dass schwache Dämpfung (Fall 3) vorliegt. Damit klingen die harmonischen Schwingungen $x_h(t)$ mit zunehmender Zeit ab; nach kurzer Zeit bleibt die Zwangsschwingung übrig. 
+Die hier betrachteten Erregungsarten umfassen gemäß Abb. \ref{abb:Anregungen}
+\begin{itemize}
+	\item Kraftanregung: der Einmassenschwinger wird durch eine periodische Kraft der Art ${F(t) = \hat F \cos(\Omega t+\varphi)}$ zur Schwingung angeregt. Hierbei handelt es sich bei $\Omega$ um die Kreisfrequenz der äußeren Anregung. 
+	\item Fußpunktanregung: der Fußpunkt des Einmassenschwingers wird durch eine periodische Bewegung der Art ${u(t) = \hat u \cos(\Omega t+\varphi)}$ verschoben. Hierbei handelt es sich bei $\Omega$ um die Kreisfrequenz der Verschiebung. 
+	\item Unwuchtanregung: Als eine spezielle Art der Kraftanregung wird davon ausgegangen, dass die Masse des Einmassenschwingers aus einer Kreisscheibe besteht, worauf sich eine exzentrische sitzende Masse befindet. Durch Drehung der Scheibe mit Drehzahl $\Omega$ entsteht so die Fliehkraft, deren $x-$Komponente lautet: $F_u(t) = m_u\varepsilon \Omega^2 \cos(\Omega t+\varphi)$.
+\end{itemize}
+\section{Ungedämpfte krafterregte Schwingungen}
+Die Bewegungsgleichung des ungedämpften Einmassenschwingers mit harmonischer Kraftanregung
+\begin{figure}[h]
+	\centering
+	\subfloat{\includegraphics[height=0.11\textwidth,valign=c]{Bilder/03EinMassenSchwingerF}}\hspace{2cm}
+	\subfloat{\includegraphics[height=0.04\textwidth,valign=c]{Bilder/03EinMassenSchwingerFdAlembert}}
+	\caption{Einmassenschwinger ohne Dämpfung sowie die zugehörige Kräftebilanz nach dem Prinzip von d'Alembert}
+\end{figure}\\
+ergibt sich aus dem Prinzip von d'Alembert
+\begin{align}
+	m\ddot x + c x = F(t) = \hat F\cos (\Omega t) \label{eq:32}
+\end{align}
+\begin{lem}[Berechnung der Lösung mit äußerer Anregung]{lem:Gesamtlösung}
+	Das Vorgehen zur Berechnung der Gesamtlösung $x(t)$ eines durch $y(t)$ zwangserregten Systems 
+	\begin{align*}
+		\ddot x(t) +2D\omega_0 \dot x(t) +\omega_0^2 x(t) = y(t)
+	\end{align*}
+	ist wie folgt:
+	\begin{enumerate}
+		\item Berechnung der homogenen Lösung gemäß Kapitel 2. Setze hierzu zunächst die Anregung $y(t)$ zu Null, um das homogene System 
+		\begin{align*}
+		\ddot x(t) +2D\omega_0\dot x(t) +\omega_0^2 x(t) = 0
+		\end{align*}
+		zu lösen. Die Lösung lautet $x_h(t) = e^{-\delta t}\left(C_1\cos(\omega_d t) + C_2\sin(\omega_d t)\right)$. Die Integrationskonstanten der einzelnen Fundamentallösungen werden noch nicht an die Anfangsbedingungen angepasst. 
+		\item Berechnung der partikulären Lösung. Hierzu wird ein \textbf{Ansatz vom Typ der rechten Seite} benötigt. Bei einer Anregung der Art $y(t) = y_0 + y_c \cos(\Omega t)+y_s \sin(\Omega t)$ lautet dieser Ansatz 
+		\begin{align*}
+		x_p(t) = X_0 + A \cos (\Omega t) + B \sin (\Omega t)
+		\end{align*}
+		\item Aus dem Ansatz $x_p(t)$ werden die Ableitungen $\dot x_p(t)$ und $\ddot x_p(t)$ gebildet und in die DGL eingesetzt. Nach Koeffizientenvergleich resultiren $X_0$, $A$ und $B$.
+		\item Die Gesamtlösung $x(t) = x_h(t) + x_p(t)$ beinhaltet nun noch die Integrationskonstanten $C_1$ und $C_2$, die jetzt an die Anfangsbedingungen 
+		\begin{align*}
+		&x(t=0) = x_0&&\dot x(t=0) = v_0&
+		\end{align*}
+		angepasst werden.
+	\end{enumerate}
+\end{lem}
+Mit Einführung der ungedämpften Eigenfrequenz entsteht aus Gl. \ref{eq:32} 
+\begin{align}
+\ddot x + \omega_0^2 x = \frac{\hat F}{m}\cos(\Omega t)\label{eq:33}
+\end{align}
+Die homogene Lösung lautet 
+\begin{align}
+x_h(t) = C_1 \cos(\omega_0 t) + C_2 \sin(\omega_0 t)
+\end{align}
+Die rechte Seite ist rein harmonisch, ohne Konstantanteil -- daher ist schon jetzt absehbar, dass $X_0=0$. Der Vollständigkeit halber wird hier dennoch der gegebene Ansatz verwendet:  
+\begin{align}
+& x_p(t) = X_0 + A \cos(\Omega t) + B \sin(\Omega t)& \\
+& \dot x_p(t) = -A \Omega \sin(\Omega t) + B \Omega \cos(\Omega t)& \\
+& \ddot x_p(t) = -A \Omega^2\cos(\Omega t) - B \Omega^2 \sin(\Omega t)&
+\end{align}
+Einsetzen in Gl. \ref{eq:33} ergibt
+\begin{align}
+	&-A \Omega^2\cos(\Omega t) - B \Omega^2 \sin(\Omega t) +\omega_0^2(X_0 + A \cos(\Omega t) + B \sin(\Omega t)) = \frac{\hat F}{m}\cos(\Omega t)
+\end{align}
+Die Parameter $A$ und $B$ werden durch Koeffizientenvergleich bestimmt: 
+\begin{align}
+&\textrm{Konstantanteile:}& &\omega_0^2 X_0 =0& \\
+&\cos(\Omega t):&& -A \Omega^2 +\omega_0^2 A = \frac{\hat F}{m}&\\
+&\sin(\Omega t):&& -B \Omega^2 +\omega_0^2 B =0&
+\end{align}
+Die Auflösung des Gleichungssystems liefert 
+\begin{align}
+X_0=&0\\
+A =&  \frac{\hat F}{m}\frac{1}{\omega_0^2-\Omega^2}\\
+B =& 0
+\end{align}
+und mit dem dimensionslosen Frequenzverhältnis $\eta = \Omega/\omega_0$ ist dann 
+\begin{align}
+x_p(t)&=\frac{\hat F}{m}\frac{1}{\omega_0^2-\Omega^2}\cos(\Omega t) = \frac{\hat F}{m}\frac{1}{\omega_0^2}\frac{1}{1-\left(\frac{\Omega}{\omega_0}\right)^2}\cos(\Omega t)\\
+&= \frac{\hat F}{c}\frac{1}{1-\eta^2}\cos(\Omega t)\\
+& = \hat x \cos(\Omega t+\varphi(\eta))
+\end{align}
+mit der (positiven) Amplitude $\hat x = \frac{\hat F}{c}\left|\frac{1}{1-\eta^2}\right| = \frac{\hat F}{c}\frac{1}{\left|1-\eta^2\right|} $. Das Verhältnis 
+\begin{align}
+	V(\eta) = \frac{1}{\left|1-\eta^2\right|}
+\end{align}
+wird Vergrößerungsfunktion genannt; sie ist der veränderliche Teil der Amplitude $\hat x$ in Abhängigkeit von der Drehzahl. Ferner ist 
+\begin{align}
+\varphi(\eta) = \left\{\begin{array}{cc}
+0,&\eta<1\\
+-\pi & \eta>1
+\end{array}\right.
+\end{align}
+die Phasenverschiebung zwischen $x_p(t)$ und der Anregung $F(t)$.
+\begin{figure}[h]
+	\centering
+	\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.55,
+		domain=0:10,
+		xmin=0,xmax=2,ymin=0,ymax=5, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$\eta$},
+		ylabel={$V(\eta)$}]
+		\addplot[blue, ultra thick] {abs(1/(1-x*x))};
+		\end{axis}
+		\end{tikzpicture}}\hspace{1cm}
+		\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.55,
+		domain=0:10,
+		xmin=0,xmax=2,ymin=-4,ymax=1.2, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.25,.5)},rotate=0,anchor=south},
+		xlabel={$\eta$},
+		ylabel={$\varphi(\eta)$},	
+		ytick ={0,-1.5705,-3.141},
+		yticklabels={0,$-\pi/2$,$-\pi$}
+		]
+		\addplot[blue, ultra thick] {3.141*(-sign(x-1)-1)/2};
+		\end{axis}
+		\end{tikzpicture}}
+	\caption{Betrag der Vergrößerungsfunktion $V(\eta)$ und Phasenverschiebung $\varphi(\eta)$.}
+\end{figure}\\
+Bei $\eta=1$, also $\Omega=\omega_0$, strebt die Amplitude $\hat x$ gegen $\infty$. In diesem Zustand regt die äußere Anregung genau mit Resonanzfrequenz das System zum Schwingen an. Es kann gezeigt werden, dass die Lösung im Fall $\Omega=\omega_0$ den zeitlichen Verlauf 
+\begin{align}
+	x_p(t) = \frac{\hat F}{2 c}\sin(\omega_0 t)\cdot t
+\end{align}
+hat, also eine Schwingung mit linear in der Zeit anwachsender Amplitude. \\
+Die Gesamtlösung ergibt sich schließlich zu 
+\begin{align}
+	x(t) = C_1 \cos(\omega_0 t) + C_2 \sin(\omega_0 t) + \hat x \cos(\Omega t+\varphi(\eta))
+\end{align}
+Die Anpassung an die Anfangsbedingungen liefert die zwei Gleichungen 
+\begin{align}
+x(0) &= C_1  + \hat x \cos(\varphi(\eta)) = x_0 \\
+\dot x(0) &= \omega_0 C_2  - \Omega \hat x \sin(\varphi(\eta))= v_0
+\end{align}
+woraus $C_1$ und $C_2$ bestimmt werden. 
+\section{Gedämpfte krafterregte Schwingungen}
+Die Kräftebilanz zum krafterregten Einmassenschwinger mit harmonischer Anregung lautet gemäß Abb. \ref{abb:ErzKraft}
+\begin{align}
+	\ddot x + 2D\omega_0 \dot x + \omega_0^2 x = F(t) = \frac{\hat F}{m} \cos(\Omega t) \label{eq:Krafterregung}
+\end{align}
+Die homogene Lösung wird angegeben als 
+\begin{align}
+	x_h(t)= e^{-\delta t}\left(C_1 \cos (\omega_d t) + C_2 \sin (\omega_d t)\right)
+\end{align}
+Der Ansatz zur partikulären Lösung lautet gemeinsam mit den Zeitableitungen 
+\begin{align}
+& x_p(t) = A \cos(\Omega t) + B \sin(\Omega t)& \\
+& \dot x_p(t) = -A \Omega \sin(\Omega t) + B \Omega \cos(\Omega t)& \\
+& \ddot x_p(t) = -A \Omega^2\cos(\Omega t) - B \Omega^2 \sin(\Omega t)&
+\end{align}
+Einsetzen in die DGL liefert zunächst 
+\begin{align}
+	&-A \Omega^2\cos(\Omega t) - B \Omega^2 \sin(\Omega t) \\
+	&+ 2D (-A \Omega \sin(\Omega t) + B \Omega \cos(\Omega t))\nonumber\\ 
+	&+ \omega_0^2(A \cos(\Omega t) + B \sin(\Omega t)) = \frac{\hat F}{m}\nonumber \cos(\Omega t)
+\end{align}
+Aus dem Koeffizientenvergleich folgen die Gleichungen 
+\begin{align}
+	&\cos(\Omega t):& &(\omega_0^2-\Omega^2) A + 2 D \omega_0 B =\frac{\hat F}{m}&\\
+	&\sin(\Omega t):& &- 2 D \omega_0 A + (\omega_0^2-\Omega^2) B= 0& 
+\end{align}
+Das Gleichungssystem für die Unbekannten $A$ und $B$ lautet in Matrix-Vektor-Schreibweise
+\begin{align}
+\left[\begin{array}{cc}
+\omega_0^2-\Omega^2& 2 D \omega_0 \\
+- 2 D \omega_0 & \omega_0^2-\Omega^2
+\end{array}\right]
+\left[\begin{array}{c}
+A\\
+B
+\end{array}\right]
+= 
+\left[\begin{array}{c}
+\frac{\hat F}{m}\\
+0
+\end{array}\right]
+\end{align}
+dessen Lösung lautet
+\begin{align}
+	\left[\begin{array}{c}
+	A\\
+	B
+	\end{array}\right]
+	&= 
+	\frac{1}{(\omega_0^2-\Omega^2)^2 + (2D\Omega \omega_0)^2}
+	\frac{\hat F}{m}
+	\left[\begin{array}{c}
+	\omega_0^2 -\Omega^2\\
+	2D\omega_0 \Omega 
+	\end{array}\right]\\
+	&= 
+	\frac{1}{(1-\eta^2)^2 + (2D\eta)^2}
+	\frac{\hat F}{c}
+	\left[\begin{array}{c}
+	1 -\eta^2\\
+	2D\eta 
+	\end{array}\right]
+\end{align}
+\begin{theo}[Lösung eines linearen Gleichungssystems im $\mathbb{R}^2$]{theo:LGS}
+Ein lineares Gleichungssystem (LGS) im $\mathbb{R}^2$
+\begin{align}
+	\left[\begin{array}{cc}
+		a_{11}& a_{12} \\
+		a_{21} & a_{22}
+	\end{array}\right]
+	\left[\begin{array}{c}
+		x_1\\
+		x_2
+	\end{array}\right]
+	= \nonumber 
+	\left[\begin{array}{c}
+		y_1\\
+		y_2
+	\end{array}\right]
+\end{align}
+hat die Lösung 
+\begin{align}
+	\left[\begin{array}{c}
+		x_1\\
+		x_2
+	\end{array}\right]
+	= \nonumber 
+	\left[\begin{array}{cc}
+	a_{11}& a_{12} \\
+	a_{21} & a_{22}
+\end{array}\right]^{-1}
+	\left[\begin{array}{c}
+		y_1\\
+		y_2
+	\end{array}\right]
+\end{align}
+Die Inverse der Matrix ist gegeben durch  
+\begin{align}
+	\left[\begin{array}{cc}
+		a_{11}& a_{12} \\
+		a_{21} & a_{22}
+	\end{array}\right]^{-1}
+= \nonumber
+	\frac{1}{a_{11} a_{22}-a_{12}a_{21}}
+	\left[\begin{array}{cc}
+	a_{22}& -a_{12} \\
+	-a_{21} & a_{11}
+	\end{array}\right]
+\end{align}
+Also folgt die Lösung
+\begin{align}
+	\left[\begin{array}{c}
+	x_1\\
+	x_2
+\end{array}\right]
+= \nonumber
+\frac{1}{a_{11} a_{22}-a_{12}a_{21}}\left[\begin{array}{c}
+	a_{22}y_1- a_{12}y_2 \\
+	-a_{21}y_1 + a_{11}y_2
+\end{array}\right]
+\end{align}
+\end{theo}
+Folglich ist die Zwangsschwingung 
+\begin{align}
+	x_p(t) = A\cos (\Omega t) + B\sin(\Omega t)
+\end{align}
+oder auch 
+\begin{align}
+x_p(t) = \hat x\cos (\Omega t+\varphi)
+\end{align}
+mit 
+\begin{align}
+\hat x  &= \sqrt{A^2+B^2} = \frac{\hat F}{c}\frac{1}{\sqrt{(1-\eta^2)^2 + (2D\eta)^2}}\\
+\tan \varphi &= -\frac{B}{A} =-\frac{2D\eta}{1-\eta^2}
+\end{align}
+Hier lautet die Vergrößerungsfunktion, die das Verhältnis zwischen dynamischer Amplitude und stationärer Auslenkung angibt, 
+\begin{align}
+V(\eta) &= \frac{1}{\sqrt{(1-\eta^2)^2 + (2D\eta)^2}}
+\end{align}
+Sowohl die Vergrößerungsfunktion als auch der Phasenwinkel konvergieren für $D\rightarrow 0 $ mit dem Verhalten des ungedämpften Einmassenschwingers. 
+\begin{figure}[h]
+	\centering
+	\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.7,
+		domain=0:10,
+		xmin=0,xmax=3,ymin=0,ymax=6, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$\eta$},
+		ylabel={$V(\eta)$}]
+		\addplot[blue, ultra thick] {1/sqrt((1-x*x)*(1-x*x) + (2*0.0*x)*(2*0.0*x))};
+		\addplot[red, ultra thick] {1/sqrt((1-x*x)*(1-x*x) + (2*0.1*x)*(2*0.1*x))};
+		\addplot[orange, ultra thick] {1/sqrt((1-x*x)*(1-x*x) + (2*0.2*x)*(2*0.2*x))};
+		\addplot[black, ultra thick] {1/sqrt((1-x*x)*(1-x*x) + (2*1.0*x)*(2*1.0*x))};
+		\addplot[black, domain=0:0.999, dashed] {1/sqrt(1-x*x*x*x)};		
+ 		\addplot[black, only marks,mark=*] coordinates { (0.989949494,5.013047721) (0.959166305,2.5525403) };
+		\legend{$D=0.0$,$D=0.1$,$D=0.2$,$D=1.0$}
+		\end{axis}
+		\end{tikzpicture}}\hspace{1cm}
+		\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.7,
+		domain=0:10,
+		xmin=0,xmax=3,ymin=-4,ymax=1.2, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.2,.5)},rotate=0,anchor=south},
+		xlabel={$\eta$},
+		ylabel={$\varphi(\eta)$}, 
+		ytick ={0,-1.5705,-3.141},
+		yticklabels={0,$-\pi/2$,$-\pi$}
+		]
+		\addplot[blue, ultra thick,domain=0:1] {atan(-2*0.0*x/(1-x*x))*3.141/180};
+		\addplot[red, ultra thick,domain=0:1] {atan(-2*0.1*x/(1-x*x))*3.141/180};
+		\addplot[orange, ultra thick,domain=0:1] {atan(-2*0.2*x/(1-x*x))*3.141/180};
+		\addplot[black, ultra thick,domain=0:1] {atan(-2*1*x/(1-x*x))*3.141/180};
+		\addplot[blue, ultra thick,domain=1.01:3] {atan(-2*0*x/(1-x*x))*3.141/180-3.141};
+		\addplot[blue, ultra thick] coordinates { (1,0) (1,-3.141) };
+		\addplot[red, ultra thick,domain=1.01:3] {atan(-2*0.1*x/(1-x*x))*3.141/180-3.141};		
+		\addplot[orange, ultra thick,domain=1.01:3] {atan(-2*0.2*x/(1-x*x))*3.141/180-3.141};		
+		\addplot[black, ultra thick,domain=1.01:3] {atan(-2*1*x/(1-x*x))*3.141/180-3.141};		
+		\legend{$D=0.0$,$D=0.1$,$D=0.2$,$D=1.0$}
+		\end{axis}
+		\end{tikzpicture}}
+	\caption{Vergrößerungsfunktion $V(\eta)$ und Phasenverschiebung $\varphi(\eta)$ für den Fall eines gedämpften krafterregten Einmassenschwingers.}
+	\label{abb:UebertragKraft}
+\end{figure}\\
+Als letzter Schritt fehlt noch die Anpassung an die Anfangsbedingungen, um die Integrationskonstanten $C_1$ und $C_2$ zu bestimmen. Dieser Schritt unterscheidet sich nicht bei den verschiedenen Schwingungssystemen und wird daher an dieser Stelle und im folgenden nicht ausgeschrieben. Der Leser ist dazu angehalten, die Rechnung selbständig durchzuführen. 
+\section{Gedämpfte fußpunkterrekte Schwingungen -- Maxwell-Modell}
+Die Kräftebilanz zum fußpunkterregten Einmassenschwinger mit harmonischer Wegvorgabe lautet gemäß Abb. \ref{abb:ErzMaxwell}
+\begin{align}
+	\ddot x + 2D\omega_0 \dot x + \omega_0^2 x = \omega_0^2 u = \omega_0^2 \hat u \cos(\Omega t) \label{eq:DGLFusspunktMaxwell}
+\end{align}
+Die Bewegungsgleichung ist von der Struktur her identisch wie die der Krafterregung (Gl. \ref{eq:Krafterregung}). Der Unterschied besteht in der Amplitude der rechten Seite, die hier $\omega_0^2 \hat u$ anstelle von $\frac{\hat F}{m}$ beträgt. Insofern kann die Lösung direkt angegeben werden: 
+\begin{align}
+& \textrm{homogene Lösung:} & &	x_h(t)= e^{-\delta t}\left(C_1 \cos (\omega_d t) + C_2 \sin (\omega_d t)\right) &\\
+& \textrm{partikuläre Lösung:} & &	x_p(t)= \hat x \cos(\Omega t +\varphi) &\\
+&\textrm{wobei}& &\hat x  = \hat u\frac{1}{\sqrt{(1-\eta^2)^2 + (2D\eta)^2}}\\
+&& &\tan \varphi = -\frac{2D\eta}{1-\eta^2}
+&
+\end{align}
+Die normierten Verläufe von $\hat x$ und $\varphi$ sind damit identisch wie in Abb. \ref{abb:UebertragKraft}. \\
+\section{Gedämpfte fußpunkterrekte Schwingungen -- Voigt-Modell}
+Die Kräftebilanz zum fußpunkterregten Einmassenschwinger mit harmonischer Wegvorgabe lautet gemäß Abb. \ref{abb:ErzVoigt}
+\begin{align}
+	\ddot x + 2D\omega_0 \dot x + \omega_0^2 x = \omega_0^2 u + 2D\omega_0 \dot u
+\end{align}
+Die homogene Lösung lautet 
+\begin{align}
+	x_h(t)= e^{-\delta t}\left(C_1 \cos (\omega_d t) + C_2 \sin (\omega_d t)\right)
+\end{align}
+Die rechte Seite ist ausgeschrieben
+\begin{align}
+&	u(t)= \hat u \cos(\Omega t) &&u(t)= -\Omega \hat u \sin(\Omega t)&
+\end{align}
+Der Ansatz zur partikulären Lösung lautet gemeinsam mit den Zeitableitungen 
+\begin{align}
+	& x_p(t) = A \cos(\Omega t) + B \sin(\Omega t)& \\
+	& \dot x_p(t) = -A \Omega \sin(\Omega t) + B \Omega \cos(\Omega t)& \\
+	& \ddot x_p(t) = -A \Omega^2\cos(\Omega t) - B \Omega^2 \sin(\Omega t)&
+\end{align}
+Einsetzen in die DGL liefert zunächst 
+\begin{align}
+	&-A \Omega^2\cos(\Omega t) - B \Omega^2 \sin(\Omega t) \\
+	&+ 2D (-A \Omega \sin(\Omega t) + B \Omega \cos(\Omega t))\nonumber\\ 
+	&+ \omega_0^2(A \cos(\Omega t) + B \sin(\Omega t)) = \omega_0^2 \hat u \cos(\Omega t) - 2D \Omega \omega_0 \hat u \sin(\Omega t)\nonumber 
+\end{align}
+Aus dem Koeffizientenvergleich folgen die Gleichungen 
+\begin{align}
+	&\cos(\Omega t):& &(\omega_0^2-\Omega^2) A + 2 D \omega_0 B =\omega_0^2\hat u&\\
+	&\sin(\Omega t):& &- 2 D \omega_0 A + (\omega_0^2-\Omega^2) B= -2D \omega_0\Omega \hat u& 
+\end{align}
+Das Gleichungssystem für die Unbekannten $A$ und $B$ lautet in Matrix-Vektor-Schreibweise
+\begin{align}
+	\left[\begin{array}{cc}
+		\omega_0^2-\Omega^2& 2 D \omega_0 \\
+		- 2 D \omega_0 & \omega_0^2-\Omega^2
+	\end{array}\right]
+	\left[\begin{array}{c}
+		A\\
+		B
+	\end{array}\right]
+	= 
+	\left[\begin{array}{c}
+		\omega_0^2\hat u\\
+		-2D \omega_0\Omega \hat u
+	\end{array}\right]
+\end{align}
+dessen Lösung lautet
+\begin{align}
+	\left[\begin{array}{c}
+		A\\
+		B
+	\end{array}\right]
+	&= 
+	\frac{1}{(\omega_0^2-\Omega^2)^2 + (2D\Omega \omega_0)^2}
+	\hat u\left[\begin{array}{c}
+	\omega_0^2(\omega_0^2-\Omega^2)+(2D \omega_0\Omega)^2\\
+	2D \omega_0\Omega^3
+\end{array}\right]\\
+	&= 
+	\frac{1}{(1-\eta^2)^2 + (2D\eta)^2}
+	\hat u
+	\left[\begin{array}{c}
+		1 -\eta^2 + (2D\eta)^2\\
+		2D\eta^3 
+	\end{array}\right]
+\end{align}
+Folglich ist die Zwangsschwingung 
+\begin{align}
+	x_p(t) = A\cos (\Omega t) + B\sin(\Omega t)
+\end{align}
+oder auch 
+\begin{align}
+	x_p(t) = \hat x\cos (\Omega t+\varphi)
+\end{align}
+mit 
+\begin{align}
+	\hat x  &= \sqrt{A^2+B^2} = \hat u \sqrt{\frac{1+(2D\eta)^2}{(1-\eta^2)^2 + (2D\eta)^2}}\\
+	\tan \varphi &= -\frac{B}{A} = -\frac{2D\eta^3}{1-\eta^2+(2D\eta)^2}
+\end{align}
+In diesem Fall lautet die Vergrößerungsfunktion also 
+\begin{align}
+	V(\eta) &= \sqrt{\frac{1+(2D\eta)^2}{(1-\eta^2)^2 + (2D\eta)^2}}
+\end{align}
+\begin{figure}[h]
+	\centering
+	\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.7,
+		domain=0:10,
+		xmin=0,xmax=3,ymin=0,ymax=6, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$\eta$},
+		ylabel={$V(\eta)$}]
+		\addplot[blue, ultra thick] {sqrt((1+2*0*x*2*0*x)/((1-x*x)*(1-x*x) + (2*0.0*x)*(2*0.0*x)))};
+		\addplot[red, ultra thick] {sqrt((1+2*0.1*x*2*0.1*x)/((1-x*x)*(1-x*x) + (2*0.1*x)*(2*0.1*x)))};
+		\addplot[orange, ultra thick] {sqrt((1+2*0.2*x*2*0.2*x)/((1-x*x)*(1-x*x) + (2*0.2*x)*(2*0.2*x)))};
+		\addplot[black, ultra thick] {sqrt((1+2*1*x*2*1*x)/((1-x*x)*(1-x*x) + (2*1*x)*(2*1*x)))};
+%		\addplot[black, domain=0:0.999, dashed] {1/sqrt(1-x*x*x*x)};		
+%		\addplot[black, only marks,mark=*] coordinates { (0.989949494,5.013047721) (0.959166305,2.5525403) };
+		\legend{$D=0.0$,$D=0.1$,$D=0.2$,$D=1.0$}
+		\end{axis}
+		\end{tikzpicture}}\hspace{1cm}
+	\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.7,
+		domain=0:10,
+		xmin=0,xmax=3,ymin=-4,ymax=1.2, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.2,.5)},rotate=0,anchor=south},
+		xlabel={$\eta$},
+		ylabel={$\varphi(\eta)$}, 
+		ytick ={0,-1.5705,-3.141},
+		yticklabels={0,$-\pi/2$,$-\pi$}
+		]
+		\addplot[blue, ultra thick,domain=0:0.99] {atan(-2*0.0*x*x*x/(1-x*x+2*0*x*2*0*x))*3.141/180};
+		\addplot[red, ultra thick,domain=0:1.02] {atan(-2*0.1*x*x*x/(1-x*x+2*0.1*x*2*0.1*x))*3.141/180};
+		\addplot[orange, ultra thick,domain=0:1.09] {atan(-2*0.2*x*x*x/(1-x*x+2*0.2*x*2*0.2*x))*3.141/180};
+		\addplot[black, ultra thick,domain=0:0.99] {atan(-2*1.0*x*x*x/(1-x*x+2*1.0*x*2*1.0*x))*3.141/180};
+		\addplot[blue, ultra thick,domain=1.01:3] {atan(-2*0.0*x*x*x/(1-x*x+2*0.0*x*2*0.0*x))*3.141/180-3.141};
+		\addplot[blue, ultra thick] coordinates { (1,0) (1,-3.141) };
+		\addplot[red, ultra thick,domain=1.03:3] {atan(-2*0.1*x*x*x/(1-x*x+2*0.1*x*2*0.1*x))*3.141/180-3.141};
+		\addplot[orange, ultra thick,domain=1.1:3] {atan(-2*0.2*x*x*x/(1-x*x+2*0.2*x*2*0.2*x))*3.141/180-3.141};
+		\addplot[black, ultra thick,domain=1.03:3] {atan(-2*1*x*x*x/(1-x*x+2*1*x*2*1*x))*3.141/180};
+		\legend{$D=0.0$,$D=0.1$,$D=0.2$,$D=1.0$}
+		\end{axis}
+		\end{tikzpicture}}
+	\caption{Vergrößerungsfunktion $V(\eta)$ und Phasenverschiebung $\varphi(\eta)$ für den Fall eines gedämpften fußpunkterregten Einmassenschwingers (Voigt-Modell).}
+\end{figure}\\
+Beim Frequenzverhältnis $\eta=\sqrt{2}$ kreuzen sich die Verläufe der Vergrößerungsfunktion für alle Werte von $D$. Das bedeutet, dass im Bereich ab $\eta>\sqrt{2}$ eine Erhöhung der Dämpfung zu einer Amplitudensteigerung führt. Dieser Effekt muss bei der Auswahl und Auslegung der Dämpfung in einer technischen Anwendung bekannt sein, sofern das Ziel darin besteht, Schwingungsamplituden zu minimieren. \\
+\section{Gedämpfte unwuchterregte Schwingungen}
+Die Kräftebilanz zum fußpunkterregten Einmassenschwinger mit harmonischer Wegvorgabe lautet gemäß Abb. \ref{abb:ErzUnwucht}
+\begin{align}
+	(m_1 + m_u)\ddot x + d \dot x + c x = m_u e \Omega^2 \cos(\Omega t)
+\end{align}
+Mit $\omega_0^2=c\big/(m_1 + m_u)$, $2D \omega_0 = d\big/(m_1+m_u)$ und $\mu=m_u\big/(m_1 + m_u)$ wird die DGL vereinfacht zu 
+\begin{align}
+	\ddot x + 2D\omega_0 \dot x + \omega_0^2 x = \mu e \Omega^2 \cos(\Omega t)
+\end{align}
+Man erkenne die gleiche Struktur der linken Seite im Vergleich zur Krafterregung, sowie den Unterschied auf der rechten Seite: die Amplitude der Anregung ist jetzt porportional zu $\Omega^2$. Sie wird also mit zunehmender Drehzahl der Maschine größer. Dieser Effekt ist bedingt durch die Fliehkraft der Unwuchtmasse. \\
+Die homogene Lösung lautet 
+\begin{align}
+	x_h(t)= e^{-\delta t}\left(C_1 \cos (\omega_d t) + C_2 \sin (\omega_d t)\right)
+\end{align}
+Der Ansatz zur partikulären Lösung lautet gemeinsam mit den Zeitableitungen 
+\begin{align}
+	& x_p(t) = A \cos(\Omega t) + B \sin(\Omega t)& \\
+	& \dot x_p(t) = -A \Omega \sin(\Omega t) + B \Omega \cos(\Omega t)& \\
+	& \ddot x_p(t) = -A \Omega^2\cos(\Omega t) - B \Omega^2 \sin(\Omega t)&
+\end{align}
+Einsetzen in die DGL liefert zunächst 
+\begin{align}
+	&-A \Omega^2\cos(\Omega t) - B \Omega^2 \sin(\Omega t) \\
+	&+ 2D (-A \Omega \sin(\Omega t) + B \Omega \cos(\Omega t))\nonumber\\ 
+	&+ \omega_0^2(A \cos(\Omega t) + B \sin(\Omega t)) = \mu e \Omega^2 \cos(\Omega t)\nonumber 
+\end{align}
+Aus dem Koeffizientenvergleich folgen die Gleichungen 
+\begin{align}
+	&\cos(\Omega t):& (\omega_0^2-\Omega^2) A + 2 D \omega_0 B &=\mu e \Omega^2&\\
+	&\sin(\Omega t):& - 2 D \omega_0 A + (\omega_0^2-\Omega^2) B&= 0& d..!&
+\end{align}
+Das Gleichungssystem für die Unbekannten $A$ und $B$ lautet in Matrix-Vektor-Schreibweise
+\begin{align}
+	\left[\begin{array}{cc}
+		\omega_0^2-\Omega^2& 2 D \omega_0 \\
+		- 2 D \omega_0 & \omega_0^2-\Omega^2
+	\end{array}\right]
+	\left[\begin{array}{c}
+		A\\
+		B
+	\end{array}\right]
+	= 
+	\left[\begin{array}{c}
+		\mu e \Omega^2\\
+		0
+	\end{array}\right]
+\end{align}
+dessen Lösung lautet
+\begin{align}
+	\left[\begin{array}{c}
+		A\\
+		B
+	\end{array}\right]
+	&= 
+	\frac{1}{(\omega_0^2-\Omega^2)^2 + (2D\Omega \omega_0)^2}
+	\mu e \Omega^2\left[\begin{array}{c}
+		\omega_0^2-\Omega^2\\
+		2D \omega_0 \Omega
+	\end{array}\right]\\
+	&= 
+	\frac{\mu e}{(1-\eta^2)^2 + (2D\eta)^2}
+	\left[\begin{array}{c}
+		(1 -\eta^2)\eta^2\\
+		2D\eta^3 
+	\end{array}\right]
+\end{align}
+Folglich ist die Zwangsschwingung 
+\begin{align}
+	x_p(t) = A\cos (\Omega t) + B\sin(\Omega t)
+\end{align}
+oder auch 
+\begin{align}
+	x_p(t) = \hat x\cos (\Omega t+\varphi)
+\end{align}
+mit 
+\begin{align}
+	\hat x  &= \sqrt{A^2+B^2} = \mu e \frac{\eta^2}{\sqrt{(1-\eta^2)^2 + (2D\eta)^2}}\\
+	\tan \varphi &= -\frac{B}{A} = -\frac{2D\eta}{1-\eta^2}
+\end{align}
+In diesem Fall lautet die Vergrößerungsfunktion also 
+\begin{align}
+	V(\eta) &= \frac{\eta^2}{\sqrt{(1-\eta^2)^2 + (2D\eta)^2}},
+\end{align}
+der Phasengang exakt gleich wie beim krafterregten Einmassenschwinger. 
+\begin{figure}[h]
+	\centering
+	\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.7,
+		domain=0:10,
+		xmin=0,xmax=3,ymin=0,ymax=6, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+		xlabel={$\eta$},
+		ylabel={$V(\eta)$}]
+		\addplot[blue, ultra thick] {x*x/sqrt((1-x*x)*(1-x*x) + (2*0.0*x)*(2*0.0*x))};
+		\addplot[red, ultra thick] {x*x/sqrt((1-x*x)*(1-x*x) + (2*0.1*x)*(2*0.1*x))};
+		\addplot[orange, ultra thick] {x*x/sqrt((1-x*x)*(1-x*x) + (2*0.2*x)*(2*0.2*x))};
+		\addplot[black, ultra thick] {x*x/sqrt((1-x*x)*(1-x*x) + (2*1.0*x)*(2*1.0*x))};
+		\addplot[black, domain=1.001:3, dashed] {x*x/sqrt((1-x*x)*(1-x*x)+4*x*x*(1-1/(x*x))/2)};		
+		\addplot[black, only marks,mark=*] coordinates { (1.01,5.0) (1.05,2.6) };
+		\legend{$D=0.0$,$D=0.1$,$D=0.2$,$D=1.0$}
+		\end{axis}
+		\end{tikzpicture}}\hspace{1cm}
+	\subfloat{
+		\begin{tikzpicture}
+		\begin{axis}[
+		scale=0.7,
+		domain=0:10,
+		xmin=0,xmax=3,ymin=-4,ymax=1.2, 
+		samples=1000,
+		grid=both,
+		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+		y label style={at={(axis description cs:-0.2,.5)},rotate=0,anchor=south},
+		xlabel={$\eta$},
+		ylabel={$\varphi(\eta)$}, 
+		ytick ={0,-1.5705,-3.141},
+		yticklabels={0,$-\pi/2$,$-\pi$}
+		]
+		\addplot[blue, ultra thick,domain=0:1] {atan(-2*0.0*x/(1-x*x))*3.141/180};
+		\addplot[red, ultra thick,domain=0:1] {atan(-2*0.1*x/(1-x*x))*3.141/180};
+		\addplot[orange, ultra thick,domain=0:1] {atan(-2*0.2*x/(1-x*x))*3.141/180};
+		\addplot[black, ultra thick,domain=0:1] {atan(-2*1*x/(1-x*x))*3.141/180};
+		\addplot[blue, ultra thick,domain=1.01:3] {atan(-2*0*x/(1-x*x))*3.141/180-3.141};
+		\addplot[blue, ultra thick] coordinates { (1,0) (1,-3.141) };
+		\addplot[red, ultra thick,domain=1.01:3] {atan(-2*0.1*x/(1-x*x))*3.141/180-3.141};		
+		\addplot[orange, ultra thick,domain=1.01:3] {atan(-2*0.2*x/(1-x*x))*3.141/180-3.141};		
+		\addplot[black, ultra thick,domain=1.01:3] {atan(-2*1*x/(1-x*x))*3.141/180-3.141};		
+		\legend{$D=0.0$,$D=0.1$,$D=0.2$,$D=1.0$}
+		\end{axis}
+		\end{tikzpicture}}
+	\caption{Vergrößerungsfunktion $V(\eta)$ und Phasenverschiebung $\varphi(\eta)$ für den Fall eines gedämpften unwuchterregten Einmassenschwingers.}
+\end{figure}\\
+Aus $V(\eta)$ ist abzulesen, dass bei $\eta=0$, also Stillstand der Maschine, keine Schwingung auftritt. Außerdem gilt $V(\eta\rightarrow\infty)=1$. Zur Interpretation des Verhaltens wird der Schwerpunktsatz betrachtet: Für einen aus $m_1$ und $m_u$ zusammengesetzten Körper gilt für den Gesamtschwerpunkt in $x-$Richtung
+\begin{align}
+	m_{ges} x_{ges} &= m_1 x_1 + m_u x_u&  &\textrm{, also}\\
+	x_{ges} &= \frac{m_1}{m_{ges}} x_1 + \frac{m_u}{m_{ges}} x_u = \frac{m_1}{m_1+m_u} x_1 + \frac{m_u}{m_1+m_u} x_u&&\\\nonumber
+  	&= (1-\mu) x_1 + \mu x_u &&\nonumber	
+\end{align}
+Weiterhin ist 
+\begin{align}
+	x_u = x_1 + h + e\cos(\Omega t)
+\end{align}
+weshalb 
+\begin{align}
+	x_{ges} = x_1 + \mu (h+e\cos(\Omega t)) 
+\end{align}
+Für große Frequenzverhältnisse ist 
+\begin{align}
+	x_1 = V(\eta)\mu e\cos(\Omega t+\varphi)\approx 1\cdot \mu e\cos(\Omega t-\pi)
+	= -\mu e\cos(\Omega t)
+\end{align}
+woraus für den Gesamtschwerpunkt folgt 
+\begin{align}
+x_{ges}= \mu h.
+\end{align}
+Bei sehr großen Frequenzverhältnissen $\eta\gg 1$ (überkritischer Frequenzbereich) bleibt also der Gesamtschwerpunkt $x_{ges}$ des zusammengesetzten Systems in Ruhe. Dieser Effekt nennt sich Selbstzentrierung. \\
+\section{Alternative Lösungsansätze für Zwangsschwingungen}
+Bis jetzt wurde als Lösungsansatz die Form $x_p(t)=A\cos(\Omega t)+ B\sin(\Omega t)$ gewählt, womit durch Einsetzen in die DGL ein algebraisches Gleichungssystem zur Lösung von $A$ und $B$ entstand, wodurch letztlich $x_p(t)$ bestimmt war. Es gibt manche DGLn, für die alternative gleichwertige Lösungsansätze zu geschickteren, ggf. kürzeren Rechenwegen führen. Davon werden in diesem Abschnitt zwei Stück präsentiert und anhand der Fußpunktanregung (Maxwell-Modell) demonstriert. Es sei vorweggeschickt, dass der bisherige Ansatz bereits vollständig ist und durch einen alternativen vollständigen Ansatz dieselbe Lösung resultiert. 
+\subsection{Ansatz mit Phasenverschiebung}
+Der Ansatz mit Phasenverschiebung lautet gemeinsam mit seinen Ableitungen 
+\begin{align}
+ x_p(t) &= \hat x \cos(\Omega t+\varphi)\\ 
+ \dot x_p(t) &= -\Omega \hat x \sin(\Omega t+\varphi)\nonumber \\
+ \ddot x_p(t)&=-\Omega^2\hat x \cos(\Omega t+\varphi)\nonumber 
+\end{align}
+In die DGL (Gl. \ref{eq:DGLFusspunktMaxwell}) eingesetzt resultiert zunächt 
+\begin{align}
+	-\Omega^2\hat x \cos(\Omega t+\varphi) -2D \omega_0 \Omega \hat x \sin(\Omega t+\varphi) + \omega_0^2\hat x \cos(\Omega t+\varphi) = \omega_0^2\hat u \cos(\Omega t)
+\end{align}
+Der Koeffizientenvergleich wie bisher kann auf diese Art nicht durchgeführt werden, da die rechte Seite noch nicht in der Form mit Phasenverschiebung vorliegt. Dazu bedarf es der Additionstheoreme: 
+\begin{theo}[Additionstheoreme der Trigonometrie]{theo:LGS}
+	Die Additionstheoreme der Trigonometrie lauten 
+	\begin{align}
+ 		\sin(x\pm y) = \sin(x)\cos (y) \pm \cos(x) \sin(y) \nonumber \\
+ 		\cos(x\pm y) = \cos(x)\cos (y) \mp \sin(x) \sin(y) \nonumber 
+	\end{align}
+\end{theo}
+Dies wird verwendet für die folgende Umformung: 
+\begin{align}
+	\cos(\Omega t) = \cos(\Omega t+\varphi-\varphi) = \cos(\Omega t+\varphi)\cos(\varphi)+\sin(\Omega t+\varphi)\sin(\varphi)
+\end{align}
+Es folgt also aus der DGL mit Ansatz  
+\begin{align}
+	(\omega_0^2-\Omega^2)\hat x \cos(\Omega t+\varphi) -2D \omega_0 \Omega \hat x \sin(\Omega t+\varphi) \\
+	 =\omega_0^2\hat u \left(\cos(\Omega t+\varphi)\cos(\varphi)+\sin(\Omega t+\varphi)\sin(\varphi)\right)\nonumber
+\end{align}
+Der Koeffizientenvergleich kann nun durchgeführt werden: 
+\begin{align}
+	&\cos(\Omega t+\varphi):& &(\omega_0^2-\Omega^2)\hat x = \omega_0^2\hat u \cos(\varphi)&\label{eq:coeffvlgphase1}\\
+	&\sin(\Omega t+\varphi):& &-2D\omega_0 \Omega \hat x = \omega_0^2\hat u \sin(\varphi)\label{eq:coeffvlgphase2}&
+\end{align}
+Dann folgt aus Quadrieren und Addieren von \ref{eq:coeffvlgphase1} und \ref{eq:coeffvlgphase1}
+\begin{align}
+	& \left((\omega_0^2-\Omega^2)^2 + (2D\omega_0 \Omega)^2\right)\hat x^2 = \omega_0^4\hat u^2& &,\textrm{ also}&\\
+	& \hat x = \frac{\omega_0^2\hat u }{\sqrt{(\omega_0^2-\Omega^2)^2 + (2D\omega_0 \Omega)^2}}.& &&	
+\end{align}
+Der Quotient von \ref{eq:coeffvlgphase1} und \ref{eq:coeffvlgphase1} liefert
+\begin{align}
+	-\frac{2D\omega_0 \Omega }{\omega_0^2-\Omega^2} = \tan(\varphi)
+\end{align}
+Dasselbe Ergebnis wurde bereits zu Beginn dieses Kapitels hergeleitet, wofür aber ein längerer Rechenweg notwendig war. Dadurch, dass hier bereits im Ansatz die betragsmäßige Amplitude $\hat x$ und der Nullphasenwinkel $\varphi$ verwendet wurden, kam das Ergebnis direkt in dieser Form vor. Insgesamt ist dieser Weg also kürzer. \\
+Gleichwohl wird erkannt, dass es sich bei den Gleichungen \ref{eq:coeffvlgphase1} und \ref{eq:coeffvlgphase2} um nichtlineare Zusammenhänge zwischen $\hat x$ und $\varphi$ handelt, welche nur in speziellen Sonderfällen -- so auch hier -- gelöst werden können. Der Ansatz mit Phasenverschiebung birgt also das Risiko eines Gleichungssystems, das keine analytische Lösung mehr besitzt. \\
+\subsection{Komplexe Erweiterung}
+Eine weitere Möglichkeit ist durch die komplexe Erweiterung gegeben. Dazu wird zunächst sowohl die rechte Seite mithilfe der Euler-Formel umgeschrieben: 
+\begin{align}
+	u &= \hat u \cos(\Omega t)=\hat u Re\left( \cos(\Omega t)+i\sin(\Omega t)\right) = \hat u Re( e^{i\Omega t}) = Re(\hat u e^{i\Omega t})
+\end{align}
+wobei $Re(\cdot)$ der Realteil-Operator ist. Aus dem Ansatz für die partikuläre Lösung wird
+\begin{align}
+x_p &= \hat x \cos(\Omega t +\varphi) = \hat x Re\left(\cos(\Omega t +\varphi)+i\sin(\Omega t +\varphi)\right) = \hat x Re(e^{i(\Omega t+\varphi)})\\
+= & Re(\underbrace{\hat x e^{i\varphi}}_{:=X}e^{i \Omega t})=Re(Xe^{i\Omega t})
+\end{align}
+mit $X$ dem \emph{komplexen Frequenzgang}, in dem sowohl die Amplitude als auch eine Phasenlage gegenüber der Anregung $u$ enthalten sind: 
+\begin{align}
+	& \textrm{abs}(X) = \sqrt{Re(X)^2+Im(X)^2} = \sqrt{\hat x^2\cos^2(\varphi)+\hat x^2\cos^2(\varphi)} = \hat x\\
+	&\tan(\textrm{arg}(X)) = \frac{Im(X)}{Re(X)} = \frac{\hat x \sin(\varphi)}{\hat x \cos(\varphi)}= \tan(\varphi)
+\end{align}
+Die komplexe Erweiterung besteht nun darin, den Realteil-Operator wegzulassen. Dann ist 
+\begin{align}
+	&u = \hat u e^{i\Omega t} & &x_p = Xe^{i\Omega t}&\\
+	& \dot x_p = i\Omega Xe^{i\Omega t}& &\ddot x_p = -\Omega^2 Xe^{i\Omega t}&
+\end{align}
+In der DGL des fußpunkterregten Einmassenschwingers nach dem Maxwell-Modell wird dies zu 
+\begin{align}
+	-\Omega^2 Xe^{i\Omega t}+2D\omega_0 i\Omega Xe^{i\Omega t} + \omega_0^2 Xe^{i\Omega t} = \omega_0^2\hat u e^{i\Omega t}
+\end{align}
+Diese Gleichung wird direkt nach $X$ aufgelöst, um den komplexen Frequenzgang zu erhalten: 
+\begin{align}
+	X = \frac{\omega_0^2\hat u}{\omega_0^2-\Omega^2+2Di\omega_0 \Omega}
+\end{align}
+Zur weiteren Analyse ist es hier sinnvoll, die komplexe Zahl $i$ aus dem Nenner zu entfernen, was mithilfe einer Erweiterung gelingt: 
+\begin{align}
+	X = \frac{\omega_0^2\hat u}{\omega_0^2-\Omega^2+2Di\omega_0 \Omega}\cdot \frac{\omega_0^2-\Omega^2-2Di\omega_0 \Omega}{\omega_0^2-\Omega^2-2Di\omega_0 \Omega}
+	= \frac{\omega_0^2\hat u\left(\omega_0^2-\Omega^2-2Di\omega_0 \Omega\right)}{(\omega_0^2-\Omega^2)^2+(2D \omega_0 \Omega)^2}
+\end{align}
+Es folgt wieder das bekannte Ergebnis 
+\begin{align}
+	\hat x =& \omega_0^2\hat u \frac{\sqrt{(\omega_0^2-\Omega^2)^2+(2D\omega_0 \Omega)^2}}{(\omega_0^2-\Omega^2)^2+(2D \omega_0 \Omega)^2} 
+	=  \frac{\omega_0^2\hat u}{\sqrt{(\omega_0^2-\Omega^2)^2+(2Di\omega_0 \Omega)^2}}\\
+	\tan(\varphi) =& -\frac{2D\omega_0 \Omega}{\omega_0^2-\Omega^2}
+\end{align}
+Diese Herangehensweise zur Berechnung zwangserregter Schwingungen hat den Vorteil der kompakten Schreibweise sowie der Linearität der entstehenden Gleichungssysteme; sie ist allerdings wegen der komplexen Ergebnisse schwerer zu interpretieren und daher insbesondere für die numerische Analyse vorteilhaft. \\\newpage
+\section*{Aufgaben zu Kapitel 3}
+\paragraph{3.1} Aus welchen Lösungsanteilen setzt sich die Schwingungsantwort zwangserregter Systeme zusammen?
+\paragraph{3.2} Bestimmen Sie für das System $\ddot x + \frac{1}{2}\dot x + 4 x = 4 \cos(5 t)$ die Parameter $\omega_0$ und $D$. Geben Sie die homogene Lösung $x_h(t)$ an. Berechnen Sie anschließend die partikuläre Lösung $x_p(t)$. Passen Sie schließlich noch die Gesamtlösung $x(t) = x_h(t) + x_p(t)$ an die Anfangsbedingungen $x(0)=1$ und $\dot x(0)=0$ an.
+\paragraph{3.3} Das ungedämpfte System $\ddot x + 4 x = 4\Omega^2 \cos(\Omega t)$ hat die homogene Lösung $x_h(t)=C_1\cos(2 t) + C_2 \sin (2t)$. Berechnen Sie die partikuläre Lösung! Passen Sie außerdem die Gesamtlösung an die Anfangsbedingungen $x(0)=0$ und $\dot x(0)=0$ an.
+\paragraph{3.4} Berechnen Sie die partikuläre Lösung $x_p(t)$ des gedämpften unwuchterregten Einmassenschwingers mithilfe der komplexen Erweiterung. Vergleichen Sie das Ergebnis mit der in Abschnitt 3.5 gezeigten Variante. 
+\paragraph{3.5} Wie lautet der Ansatz für die partikuläre Lösung im Fall eines 
+\begin{enumerate}
+	\item gedämpften Einmassenschwingers mit harmonischer Anregung?
+	\item ungedämpften Einmassenschwingers mit harmonischer Anregung außerhalb der Resonanzfrequenz?
+	\item ungedämpften Einmassenschwingers mit harmonischer Anregung bei Resonanzfrequenz?
+\end{enumerate}
+\paragraph{3.6} Kann ein gedämpfter Einmassenschwinger mit $0<D<1$ durch harmonische Krafterregung derart angeregt werden, dass die Amplitude unendlich groß wird? Wieso nicht?
