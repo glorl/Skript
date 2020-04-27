@@ -883,4 +883,32 @@ mit
 \end{align}
 der \emph{Faltung} zwischen der Gewichtsfunktion und einer beliebigen Anregungsfunktion. \\\newpage
 \section*{Aufgaben zu Kapitel 4}
-
+\paragraph{4.1} Berechnen Sie die Koeffizienten $C_0$, $C_k$ und $S_k$ der folgenden Funktionen: 
+\begin{align}
+	&\textrm{a.}& &f(t) = a \sin(\omega_0 t) + b \cos(2\omega_0 t), &&t\in [{0,2\pi/\omega_0}]& \\
+	&\textrm{b.}& &f(t) = a \sin^2(\omega_0 t)-\cos(\omega_0 t),&&t\in [{0,2\pi/\omega_0}]& \\
+	&\textrm{c.}& &f(t) = c + a \sin(\omega_0 t) + b \sin(\omega_0 t)\cos(\omega_0 t),&& t\in [{0,2\pi/\omega_0}]& \\
+	&\textrm{d.}& &f(t) = \sigma(t) - \sigma(t-1),&& t\in [{0,2}]& \\
+	&\textrm{d.}& &f(t) = t \cdot \sigma(t) + (1-t) \cdot \sigma(t-1),&& t\in [{0,2}]& 
+\end{align}
+\paragraph{4.2} Berechnen Sie die Koeffizienten $a_k$ der folgenden Funktionen: 
+\begin{align}
+	&\textrm{a.}& &f(t) = a \sin(\omega_0 t) + b \cos(2\omega_0 t), &&t\in [{0,2\pi/\omega_0}]& \\
+	&\textrm{b.}& &f(t) = a \sin^2(\omega_0 t)-\cos(\omega_0t),&&t\in [{0,2\pi/\omega_0}]& \\
+	&\textrm{c.}& &f(t) = c + a \sin(\omega_0t) + b \sin(\omega_0t)\cos(\omega_0t),&& t\in [{0,2\pi/\omega_0}]&
+\end{align}
+Vergleichen Sie das Ergebnis mit dem der Aufgabe 4.1.
+\paragraph{4.3} Berechnen Sie jeweils die partikuläre Lösung $x_p(t)$ der DGL
+\begin{align}
+&\textrm{a.}& &\ddot x + 2D\omega_0 \dot x + \omega_0^2 x = c_1 + c_2\sin^2(\Omega t)& \\
+&\textrm{b.}& &\ddot x + 2D\omega_0 \dot x + \omega_0^2 x = c_1|\sin(\Omega t)|& 
+\end{align}
+Verfolgen Sie dabei die folgenden Schritte: Überführung der rechten Seite in eine Fourierreihe, Berechnung der partikulären Lösung zu jeder Anregungskomponente, Summation der Lösungsanteile. 
+\paragraph{4.4} Berechnen Sie die Fouriertransformierte der Ausdrücke 
+\begin{align}
+	&\textrm{a.}& &f(t) = \sigma(t)& \\
+	&\textrm{b.}& &f(t) = \sigma(t-t_0)& \\
+	&\textrm{c.}& &\ddot x + 2D\omega_0 \dot x +\omega_0^2 x = F\cos (\Omega t)& 
+\end{align}
+Berechnen Sie insbesondere für den Ausdruck von Aufgabe c. die Funktion $X(\Omega)$.
+\paragraph{4.5} Führen Sie zum Aufgabenteil c. von 4.4 die Rücktransformation von $X(\Omega)$ in den Zeitbereich durch, sodass Sie die $x(t)$ erhalten. 
