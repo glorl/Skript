@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  30 MAR 2020 22:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  28 APR 2020 22:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1573,102 +1573,133 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
+
+Package natbib Warning: Citation `bronstein2012taschenbuch' on page 1 undefined
+ on input line 3.
+
+
+Package natbib Warning: Citation `dresig2014schwingungen' on page 1 undefined o
+n input line 3.
+
+
+Package natbib Warning: Citation `dubbel2013dubbel' on page 1 undefined on inpu
+t line 3.
+
+
+Package natbib Warning: Citation `gasch2006rotordynamik' on page 1 undefined on
+ input line 3.
+
+
+Package natbib Warning: Citation `hauger2013kinetik' on page 1 undefined on inp
+ut line 3.
+
+
+Package natbib Warning: Citation `hibbeler2012technische' on page 1 undefined o
+n input line 3.
+
+
+Package natbib Warning: Citation `wittenburg2013schwingungslehre' on page 1 und
+efined on input line 3.
+
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 4.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 6.
+(babel)             in language  on input line 4.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 
-Underfull \hbox (badness 1024) in paragraph at lines 13--14
+Underfull \hbox (badness 1024) in paragraph at lines 14--15
 \T1/ppl/m/n/12 Oft sind Schwin-gun-gen von me-cha-ni-schen Kom-po-nen-ten die U
 r-sa-che für de-ren
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 15.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 25.
 
-LaTeX Warning: Reference `eq:11' on page 2 undefined on input line 36.
+LaTeX Warning: Reference `eq:11' on page 2 undefined on input line 37.
 
 
-LaTeX Warning: Reference `abb:Schwingung' on page 3 undefined on input line 102
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `abb:Schwingung' on page 4 undefined on input line 103
 .
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 101--136
+Underfull \hbox (badness 2221) in paragraph at lines 102--137
 \T1/ppl/m/n/12 har-mo-ni-scher Teil-schwin-gun-gen dar-ge-stellt wer-den, die w
 ie-der-um mit-hil-fe von
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--136
+Underfull \hbox (badness 10000) in paragraph at lines 102--137
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 180.
+(babel)             in language  on input line 181.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 180.
+(babel)             in language  on input line 181.
 <Bilder/01EinMassenSchwinger.pdf, id=7, 87.65408pt x 51.29587pt>
 File: Bilder/01EinMassenSchwinger.pdf Graphic file (type pdf)
 <use Bilder/01EinMassenSchwinger.pdf>
 Package pdftex.def Info: Bilder/01EinMassenSchwinger.pdf  used on input line 19
-6.
+7.
 (pdftex.def)             Requested size: 71.09354pt x 41.60655pt.
 <Bilder/01ZweiMassenSchwinger.pdf, id=8, 133.26709pt x 71.90952pt>
 File: Bilder/01ZweiMassenSchwinger.pdf Graphic file (type pdf)
 <use Bilder/01ZweiMassenSchwinger.pdf>
 Package pdftex.def Info: Bilder/01ZweiMassenSchwinger.pdf  used on input line 1
-97.
+98.
 (pdftex.def)             Requested size: 100.17592pt x 54.05379pt.
 <Bilder/01DehnSchwinger.pdf, id=9, 118.69672pt x 57.89186pt>
 File: Bilder/01DehnSchwinger.pdf Graphic file (type pdf)
 <use Bilder/01DehnSchwinger.pdf>
-Package pdftex.def Info: Bilder/01DehnSchwinger.pdf  used on input line 198.
+Package pdftex.def Info: Bilder/01DehnSchwinger.pdf  used on input line 199.
 (pdftex.def)             Requested size: 90.4818pt x 44.13075pt.
 <Bilder/01Schwingformen01.pdf, id=10, 297.15984pt x 36.20258pt>
 File: Bilder/01Schwingformen01.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen01.pdf>
-Package pdftex.def Info: Bilder/01Schwingformen01.pdf  used on input line 205.
+Package pdftex.def Info: Bilder/01Schwingformen01.pdf  used on input line 206.
 (pdftex.def)             Requested size: 135.72763pt x 16.53516pt.
 <Bilder/01Schwingformen02.pdf, id=11, 297.15984pt x 53.45926pt>
 File: Bilder/01Schwingformen02.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen02.pdf>
-Package pdftex.def Info: Bilder/01Schwingformen02.pdf  used on input line 206.
+Package pdftex.def Info: Bilder/01Schwingformen02.pdf  used on input line 207.
 (pdftex.def)             Requested size: 135.72763pt x 24.41698pt.
 <Bilder/01Schwingformen03.pdf, id=12, 297.15984pt x 43.28171pt>
 File: Bilder/01Schwingformen03.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen03.pdf>
-Package pdftex.def Info: Bilder/01Schwingformen03.pdf  used on input line 207.
+Package pdftex.def Info: Bilder/01Schwingformen03.pdf  used on input line 208.
 (pdftex.def)             Requested size: 135.72763pt x 19.76848pt.
 
-Underfull \hbox (badness 3668) in paragraph at lines 202--211
+Underfull \hbox (badness 3668) in paragraph at lines 203--212
 [] []\T1/ppl/b/n/12 Klassifikation nach Schwin-gungs-form.[][] \T1/ppl/m/n/12 V
 or al-lem me-cha-ni-sche Schwin-gun-gen
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 202--211
+Underfull \hbox (badness 1112) in paragraph at lines 203--212
 \T1/ppl/m/n/12 sind da-durch ge-kenn-zeich-net, dass die Fre-quen-zen mit ei-ne
 r be-stimm-ten Be-we-
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 202--211
+Underfull \hbox (badness 1048) in paragraph at lines 203--212
 \T1/ppl/m/n/12 pers bei der be-trach-te-ten Fre-quenz ist die Schwin-gungs-form
 . Am Bei-spiel ei-nes
  []
@@ -2154,15 +2185,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 761.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 761.
-
-LaTeX Warning: Reference `eq:FT' on page 49 undefined on input line 763.
-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 769.
+(mdframed)              on input line 768.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 778.
+(mdframed)              on input line 777.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 799.
@@ -2182,13 +2210,6 @@ et sich we-gen $\OML/cmm/m/it/12 ^^N\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 815.
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 815.
-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 816.
@@ -2218,10 +2239,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 847.
-
-LaTeX Warning: Reference `eq:EMSImpuls' on page 53 undefined on input line 848.
-
-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 853.
@@ -2231,16 +2248,142 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 855.
 
-LaTeX Warning: Reference `eq:GImpuls' on page 53 undefined on input line 869.
-
-
 Underfull \hbox (badness 3354) in paragraph at lines 867--870
 \T1/ppl/m/n/12 quenz-be-reich die Über-tra-gungs-funk-ti-on. Au-ÿer-dem ist die
  Über-tra-gungs-funk-ti-
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 882--883
+
+ []
+
+) (./NFhg.tex
+chapter 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+<Bilder/05EbeneSchwingung.pdf, id=34, 112.34805pt x 111.01178pt>
+File: Bilder/05EbeneSchwingung.pdf Graphic file (type pdf)
+<use Bilder/05EbeneSchwingung.pdf>
+Package pdftex.def Info: Bilder/05EbeneSchwingung.pdf  used on input line 8.
+(pdftex.def)             Requested size: 83.70709pt x 82.70879pt.
+<Bilder/05Nickschwingungen.pdf, id=35, 398.24312pt x 151.30833pt>
+File: Bilder/05Nickschwingungen.pdf Graphic file (type pdf)
+<use Bilder/05Nickschwingungen.pdf>
+Package pdftex.def Info: Bilder/05Nickschwingungen.pdf  used on input line 10.
+(pdftex.def)             Requested size: 290.27145pt x 110.2854pt.
+<Bilder/05Biegeschwinger.pdf, id=36, 214.14792pt x 85.24767pt>
+File: Bilder/05Biegeschwinger.pdf Graphic file (type pdf)
+<use Bilder/05Biegeschwinger.pdf>
+Package pdftex.def Info: Bilder/05Biegeschwinger.pdf  used on input line 16.
+(pdftex.def)             Requested size: 161.6137pt x 64.33139pt.
+<Bilder/05Torsionsschwingerkette.pdf, id=37, 252.45483pt x 86.22386pt>
+File: Bilder/05Torsionsschwingerkette.pdf Graphic file (type pdf)
+<use Bilder/05Torsionsschwingerkette.pdf>
+Package pdftex.def Info: Bilder/05Torsionsschwingerkette.pdf  used on input lin
+e 18.
+(pdftex.def)             Requested size: 201.81389pt x 68.924pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 22.
+<Bilder/05ZweiMassenSchwinger.pdf, id=38, 135.19063pt x 235.67758pt>
+File: Bilder/05ZweiMassenSchwinger.pdf Graphic file (type pdf)
+<use Bilder/05ZweiMassenSchwinger.pdf>
+Package pdftex.def Info: Bilder/05ZweiMassenSchwinger.pdf  used on input line 2
+6.
+(pdftex.def)             Requested size: 100.16533pt x 174.6168pt.
+<Bilder/05ZMSdAlembert.pdf, id=39, 254.61203pt x 271.56183pt>
+File: Bilder/05ZMSdAlembert.pdf Graphic file (type pdf)
+<use Bilder/05ZMSdAlembert.pdf>
+Package pdftex.def Info: Bilder/05ZMSdAlembert.pdf  used on input line 27.
+(pdftex.def)             Requested size: 176.64986pt x 188.40161pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 73.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 73.
+
+LaTeX Warning: Reference `eq:EWP' on page 59 undefined on input line 110.
+
+
+LaTeX Warning: Reference `eq:EV' on page 59 undefined on input line 115.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 167.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 302.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 303.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 462.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 463.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 463.
+
+LaTeX Warning: Reference `eq:EWPij1' on page 65 undefined on input line 475.
+
+
+LaTeX Warning: Reference `eq:EWPij2' on page 65 undefined on input line 475.
+
+
+LaTeX Warning: Reference `eq:EWPij2' on page 65 undefined on input line 483.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 602.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 708.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 709.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 709.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 729.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 739.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 763.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 763.
+<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=40, 130.7565pt x 193.1738pt>
+File: Bilder/05ErzwungeneKoppelschwingungen.pdf Graphic file (type pdf)
+<use Bilder/05ErzwungeneKoppelschwingungen.pdf>
+Package pdftex.def Info: Bilder/05ErzwungeneKoppelschwingungen.pdf  used on inp
+ut line 767.
+(pdftex.def)             Requested size: 91.901pt x 135.77487pt.
+
+LaTeX Warning: Reference `eq:pqpar' on page 70 undefined on input line 799.
+
+
+LaTeX Warning: Reference `eq:AmpTilgung' on page 71 undefined on input line 819
+.
+
+
+LaTeX Warning: Reference `Abb:Amp2Fhg' on page 71 undefined on input line 820.
+
+
+LaTeX Warning: Reference `eq:BGTilgung' on page 71 undefined on input line 849.
+
+
 )
 No file BilderExternalized/Skript-figure89.bbl.
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
@@ -2251,20 +2394,20 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 48786 strings out of 494798
- 1096787 string characters out of 6176801
- 2442889 words of memory out of 5000000
- 51333 multiletter control sequences out of 15000+600000
- 555726 words of font info for 85 fonts, out of 8000000 for 9000
+ 48887 strings out of 494798
+ 1099603 string characters out of 6176801
+ 2445932 words of memory out of 5000000
+ 51423 multiletter control sequences out of 15000+600000
+ 557301 words of font info for 86 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 79i,22n,128p,10446b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,24n,128p,10446b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb>
-Output written on BilderExternalized/Skript-figure89.pdf (1 page, 15313 bytes).
+Output written on BilderExternalized/Skript-figure89.pdf (1 page, 15326 bytes).
 
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

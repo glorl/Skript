@@ -120,7 +120,7 @@ Die Bewegungsgleichung lautet mit Anfangsbedingungen
 	\end{align}
 	Die Lösung ist gegeben durch 
 	\begin{align}
-		x(t) &= \frac{1}{m\omega_d}e^{-D\omega_0 t}\sin(\omega_d t)
+		x(t) &= \frac{1}{m\omega_d}e^{-\delta t}\sin(\omega_d t)
 	\end{align}
 Die Impulsantwort (Antwort auf einen mechanischen Stoß) wird gerne als Testsignal verwendet. Es lässt sich über einen Hammerschlag realisieren: Das System wird kurz angestoßen und dann sich selbst überlassen. Aus der Stoßantwort lassen sich die Systemparameter $m$, $d$, $D$ bestimmen. 
 \section{Periodische Anregung}
@@ -185,7 +185,7 @@ Die Impulsantwort (Antwort auf einen mechanischen Stoß) wird gerne als Testsigna
 %%\end{figure}
 %
 \subsection{Darstellung von Singalen im Zeit- und im Frequenzbereich}
-Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Amplitude $\hat x$, Frequenz $\omega_0$ und Nullphasenwinkel $\varphi$ beschreiben. Diese Eigenschaft motiviert die Darstellung im Zeit- und im Frequenzbereich:
+Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Amplitude $\hat x$, Kreisfrequenz $\Omega$ und Nullphasenwinkel $\varphi$ beschreiben. Diese Eigenschaft motiviert die Darstellung im Zeit- und im Frequenzbereich:
 \begin{figure}[H]
 	\subfloat[Zeitbereich]{
 		\begin{tikzpicture}
@@ -200,7 +200,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 			xlabel={$t$},
 			ylabel={$x(t)$}, 
 			xtick={0,3.141,6.282},
-			xticklabels={0,,$2\pi/\omega_0$}, 
+			xticklabels={0,,$2\pi/\Omega$}, 
 			yticklabels={,$-\hat x$,0,$\hat x$}]
 			\addplot[black, thick] {cos(deg(x)))};
 			\end{axis}
@@ -218,7 +218,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 			xlabel={$\omega$},
 			ylabel={Amplitude}, 
 			xtick={0,1,2},
-			xticklabels={0,$\omega_0$,},
+			xticklabels={0,$\Omega$,},
 			ytick={0,1},
 			yticklabels={0,$\hat x$}]
 			\addplot[black, thick,mark=*] coordinates { (1,1)};
@@ -238,7 +238,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 		xlabel={$\omega$},
 		ylabel={Phase}, 
 		xtick={0,1,2},
-		xticklabels={0,$\omega_0$,},
+		xticklabels={0,$\Omega$,},
 		ytick={-1,0,1},
 		yticklabels={$-\pi$,0,$\pi$}
 		]
@@ -246,7 +246,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 		\end{axis}
 	\end{tikzpicture}
 }
-\caption{Reines Cosinussignal $x(t) = \hat{x}\cos (\omega t) = Re(\hat{x} e^{i \omega t})$}
+\caption{Reines Cosinussignal $x(t) = \hat{x}\cos (\Omega t) = Re(\hat{x} e^{i \Omega t})$}
 \end{figure}
 \begin{figure}[H]
 	\subfloat[Zeitbereich]{
@@ -262,7 +262,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 		xlabel={$t$},
 		ylabel={$x(t)$}, 
 		xtick={0,3.141,6.282},
-		xticklabels={0,,$2\pi/\omega_0$}, 
+		xticklabels={0,,$2\pi/\Omega$}, 
 		yticklabels={,$-\hat x$,0,$\hat x$}]
 		\addplot[black, thick] {sin(deg(x)))};
 		\end{axis}
@@ -280,7 +280,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 		xlabel={$\omega$},
 		ylabel={Amplitude}, 
 		xtick={0,1,2},
-		xticklabels={0,$\omega_0$,},
+		xticklabels={0,$\Omega$,},
 		ytick={0,1},
 		yticklabels={0,$\hat x$}]
 		\addplot[black, thick,mark=*] coordinates { (1,1)};
@@ -300,7 +300,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 		xlabel={$\omega$},
 		ylabel={Phase}, 
 		xtick={0,1,2},
-		xticklabels={0,$\omega_0$,},
+		xticklabels={0,$\Omega$,},
 		ytick={-1,0,1},
 		yticklabels={$-\pi$,0,$\pi$}
 		]
@@ -309,7 +309,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 		\end{axis}
 		\end{tikzpicture}
 	}
-	\caption{Reines Sinussignal $x(t) = \hat{x}\sin (\omega t)  = Re(\hat{x} e^{i (\omega t-\pi/2)})$}
+	\caption{Reines Sinussignal $x(t) = \hat{x}\sin (\Omega t)  = Re(\hat{x} e^{i (\Omega t-\pi/2)})$}
 \end{figure}
 \begin{figure}[H]
 \subfloat[Zeitbereich]{
@@ -325,7 +325,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 	xlabel={$t$},
 	ylabel={$x(t)$}, 
 	xtick={0,3.141,6.282},
-	xticklabels={0,,$2\pi/\omega_0$}, 
+	xticklabels={0,,$2\pi/\Omega$}, 
 	yticklabels={,$-\hat x$,0,$\hat x$}]
 	\addplot[black, thick] {cos(deg(x+pi/3)))};
 	\end{axis}
@@ -343,7 +343,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 	xlabel={$\omega$},
 	ylabel={Amplitude}, 
 	xtick={0,1,2},
-	xticklabels={0,$\omega_0$,},
+	xticklabels={0,$\Omega$,},
 	ytick={0,1},
 	yticklabels={0,$\hat x$}]
 	\addplot[black, thick,mark=*] coordinates { (1,1)};
@@ -363,7 +363,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 	xlabel={$\omega$},
 	ylabel={Phase}, 
 	xtick={0,1,2},
-	xticklabels={0,$\omega_0$,},
+	xticklabels={0,$\Omega$,},
 	ytick={-1,0,1},
 	yticklabels={$-\pi$,0,$\pi$}
 	]
@@ -372,11 +372,11 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 	\end{axis}
 	\end{tikzpicture}
 }
-\caption{Allgemeines Signal $x(t) = \hat{x}\cos (\omega t+\varphi) = Re(\hat{x} e^{i (\omega t+\varphi)})$}
+\caption{Allgemeines Signal $x(t) = \hat{x}\cos (\Omega t+\varphi) = Re(\hat{x} e^{i (\Omega t+\varphi)})$}
 \end{figure}
 Die Überführung einer harmonischen Funktion vom Zeit- in den Frequenzbereich ist eine Äquivalenztransformation. Wird eine allgemeine periodische Funktion als Überlagerung vieler harmonischer Schwingungsanteile mit jeweiliger Kreisfrequenz, Amplitude und Nullphasenwinkel betrachtet, dann kommen in der Darstellung im Frequenzbereich entsprechende Komponenten hinzu. Dies motiviert den nächsten Abschnitt: 
 \section{Darstellung periodischer Funktionen durch Fourierreihen}
-Es sei eine $T$-periodische Funktion mit der Grundfrequenz $\omega_0 = \frac{2\pi}{T}$ gegeben. Unter den Voraussetzungen 
+Es sei eine $T$-periodische Funktion mit der Grundfrequenz $\Omega = \frac{2\pi}{T}$ gegeben. Unter den Voraussetzungen 
 \begin{itemize}
 	\item endlich viele Sprungstellen endlicher Höhe
 	\item 2-Fache Integrierbarkeit von $x(t)$
@@ -385,14 +385,14 @@ lässt sich die Funktion $x(t)$ als \emph{Fourierreihe} darstellen:
 \begin{theo}[Fourierreihe]{theo:Fourierreihe}
 Die Entwicklung von $x(t)$ als Fourierreihe lautet 
 \begin{align}
-	x(t) = C_0 + \sum_{k=1}^{\infty}C_k \cos (k\omega_0 t) + S_k \sin (k\omega_0 t) \nonumber 
+	x(t) = C_0 + \sum_{k=1}^{\infty}C_k \cos (k\Omega t) + S_k \sin (k\Omega t) \nonumber 
 \end{align}
 wobei die Koeffizienten des Polynoms nach 
 \begin{align}
 	C_0 & = \frac{1}{T}\int_{-T/2}^{T/2}x(t) \textrm{d}t \nonumber\\
-	C_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\cos(k\omega_0 t)\textrm{d}t& 
+	C_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\cos(k\Omega t)\textrm{d}t& 
 	&k\in \mathbb{N}&\nonumber\\
-	S_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\sin(k\omega_0 t)\textrm{d}t& 
+	S_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\sin(k\Omega t)\textrm{d}t& 
 	&k\in \mathbb{N}&\nonumber
 \end{align}
 berechnet werden. 
@@ -400,17 +400,17 @@ berechnet werden.
 Alternativ gelten auch die folgenden Darstellungen:\\
 \begin{theo}[Darstellung der Fourierreihe durch Amplitude und Phase]{theo:FourierreiheAmpPha}
 \begin{align}
-x(t) = C_0 + \sum_{k=1}^{\infty}\hat x_k \cos (k\omega_0 t+\varphi_k) \nonumber 
+x(t) = C_0 + \sum_{k=1}^{\infty}\hat x_k \cos (k\Omega t+\varphi_k) \nonumber 
 \end{align}
 Die Folge $\hat x_1$, $\hat x_2$,... heißt \emph{Amplitudenspektrum}, die Folge  $\varphi_1$, $\varphi_2$, ... heißt \emph{Phasenspektrum}. Man spricht auch von der Spektraldarstellung der Funktion $x(t)$. 
 \end{theo}
-\begin{theo}[Darstellung der Fourierreihe also komplexes Polynom]{theo:Fourierreihekomplex}
+\begin{theo}[Darstellung der Fourierreihe als komplexes Polynom]{theo:Fourierreihekomplex}
 		\begin{align}
-		x(t) = \sum_{k=-\infty}^{\infty} a_k e^{i k\omega_0 t} \nonumber 
+		x(t) = \sum_{k=-\infty}^{\infty} a_k e^{i k\Omega t} \nonumber 
 		\end{align}
 		wobei die Koeffizienten des Polynoms nach 
 		\begin{align}
-		a_k & = \frac{1}{T}\int_{0}^{T}x(t)e^{-i k\omega_0 t}\textrm{d}t & 
+		a_k & = \frac{1}{T}\int_{0}^{T}x(t)e^{-i k\Omega t}\textrm{d}t & 
 		&k\in \{-n,n\}, n\in \mathbb{N}&\nonumber 
 		\end{align}
 		berechnet werden. 
@@ -418,9 +418,9 @@ Die Folge $\hat x_1$, $\hat x_2$,... heißt \emph{Amplitudenspektrum}, die Folge 
 Anmerkungen: 
 \begin{itemize}
 	\item Die Darstellung der Funktion $x(t)$ als Fourierreihe bietet den Vorteil der Zerlegung in einzelne Frequenzanteile
-	\item Der Anteil $\hat x_1\cos (\omega_0 t+\varphi_1)$ heißt \emph{Grundschwingung} oder \emph{1. Harmonische}
-	\item Der Anteil $\hat x_2\cos (2\omega_0 t+\varphi_2)$ heißt \emph{1. Oberschwingung} oder \emph{2. Harmonische}
-	\item Der Anteil $\hat x_k\cos (k \omega_0 t+\varphi_k)$ heißt \emph{(k-1)-te Oberschwingung} oder \emph{k-te Harmonische}
+	\item Der Anteil $\hat x_1\cos (\Omega t+\varphi_1)$ heißt \emph{Grundschwingung} oder \emph{1. Harmonische}
+	\item Der Anteil $\hat x_2\cos (2\Omega t+\varphi_2)$ heißt \emph{1. Oberschwingung} oder \emph{2. Harmonische}
+	\item Der Anteil $\hat x_k\cos (k \Omega t+\varphi_k)$ heißt \emph{(k-1)-te Oberschwingung} oder \emph{k-te Harmonische}
 	\item Bei der Berechnung der Fourierkoeffizienten muss nicht zwingend auf $t\in [-T/2, T/2]$ integriert werden. Wichtig ist, dass eine Periode vollständig abgedeckt ist: Es muss gelten $t\in [t_0, t_0 + T]$ für beliebige $t_0$. 
 	\item Periodische Funktionen können durch eine endliche Zahl von Elementen ihrer Fourierreihe approximiert werden. Der Fehler konvergiert im quadratischen Mittel. 
 \end{itemize}
@@ -429,11 +429,11 @@ Es gelten insbesondere die zwei Spezialfälle:
 \paragraph{Gerade Funktionen.} Für gerade Funktionen $x(t)$ gilt $x(t)=x(-t)$. Dann folgt: 
 \begin{align}
 	&S_k = 0&
-	&C_k = \frac{4}{T}\int_{0}^{T/2} x(t) \cos (k\omega_0 t) \textrm{d}t&
+	&C_k = \frac{4}{T}\int_{0}^{T/2} x(t) \cos (k\Omega t) \textrm{d}t&
 \end{align}
 \paragraph{Ungerade Funktionen.} Für ungerade Funktionen $x(t)$ gilt $x(t)=-x(-t)$. Dann folgt: 
 \begin{align}
-&S_k = \frac{4}{T}\int_{0}^{T/2} x(t) \sin (k\omega_0 t) \textrm{d}t&
+&S_k = \frac{4}{T}\int_{0}^{T/2} x(t) \sin (k\Omega t) \textrm{d}t&
 &C_k = 0&
 \end{align}
 \begin{beispiel}[Rechteckschwingung]{beispiel:Rechteckschwingung}
@@ -446,11 +446,11 @@ Das Rechtecksignal ist definiert als
 	\end{array}
 	\right. 
 \end{align}
-Die Grundfrequenz ist $\omega_0=2\pi/T$. Diese Funktion ist punktsymmetrisch zum Ursprung, also ungerade. Daher ist
+Die Grundfrequenz ist $\Omega=2\pi/T$. Diese Funktion ist punktsymmetrisch zum Ursprung, also ungerade. Daher ist
 \begin{align}
 	C_k&=0, k\in \mathbb N_0,\\
-	S_k&=\frac{4}{T}\int_{0}^{T/2}x(t)\sin(k\omega_0 t)\textrm{d}t\\
-	& =-\frac{4}{T k \omega_0}\left(\cos\left(k\omega_0 \frac{T}{2}\right)-1\right)\\
+	S_k&=\frac{4}{T}\int_{0}^{T/2}x(t)\sin(k\Omega t)\textrm{d}t\\
+	& =-\frac{4}{T k \Omega}\left(\cos\left(k\Omega \frac{T}{2}\right)-1\right)\\
 	& = \frac{2}{k \pi}\left(1-(-1)^k\right)\\
 	& = \left\{
 	\begin{array}{ll}
@@ -459,7 +459,7 @@ Die Grundfrequenz ist $\omega_0=2\pi/T$. Diese Funktion ist punktsymmetrisch zum
 	\end{array}
 	\right. 	
 \end{align}
-Die Reihenentwicklung der Rechteckfunktion $x(t)=\sum_{k} S_k \sin (k\omega_0 t)$ hat wegen $x(t)= \sum_{k} S_k \cos (k\omega_0 t-\pi/2)$ die Amplituden $\hat x_k=S_k$ und die Phasen $\varphi_k =-\pi/2$. Die Darstellung im Zeit- und im Frequenzbereich ist wie folgt: 
+Die Reihenentwicklung der Rechteckfunktion $x(t)=\sum_{k} S_k \sin (k\Omega t)$ hat wegen $x(t)= \sum_{k} S_k \cos (k\Omega t-\pi/2)$ die Amplituden $\hat x_k=S_k$ und die Phasen $\varphi_k =-\pi/2$. Die Darstellung im Zeit- und im Frequenzbereich ist wie folgt: 
 \begin{figure}[H]
 	\subfloat[Zeitbereich]{
 		\begin{tikzpicture}
@@ -474,7 +474,7 @@ Die Reihenentwicklung der Rechteckfunktion $x(t)=\sum_{k} S_k \sin (k\omega_0 t)
 		xlabel={$t$},
 		ylabel={$x(t)$}, 
 		xtick={0,3.141,6.282},
-		xticklabels={0,,$2\pi/\omega_0$}, 
+		xticklabels={0,,$2\pi/\Omega$}, 
 		%yticklabels={,$-\hat x$,0,$\hat x$}
 		]
 		\addplot[black, thick] coordinates {(-1,-1) (0,-1) (0,1) (3.141,1) (3.141,-1) (6.242,-1) (6.242,1) (6.5,1)};
@@ -490,10 +490,10 @@ Die Reihenentwicklung der Rechteckfunktion $x(t)=\sum_{k} S_k \sin (k\omega_0 t)
 		grid=both,
 		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
 		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
-		xlabel={$\omega/\omega_0$},
+		xlabel={$\omega/\Omega$},
 		ylabel={$S_k\cdot \pi/4$}, 
 		xtick={1,3,5,7},
-		%		xticklabels={0,$\omega_0$,},
+		%		xticklabels={0,$\Omega$,},
 		ytick={0,1},
 		%		yticklabels={0,$\hat x$}
 		]
@@ -511,10 +511,10 @@ Die Reihenentwicklung der Rechteckfunktion $x(t)=\sum_{k} S_k \sin (k\omega_0 t)
 		grid=both,
 		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
 		y label style={at={(axis description cs:-0.15,.85)},rotate=0,anchor=south},
-		xlabel={$\omega/\omega_0$},
+		xlabel={$\omega/\Omega$},
 		ylabel={$\varphi_k$}, 
 		xtick={1,3,5,7},
-		%		xticklabels={0,$\omega_0$,},
+		%		xticklabels={0,$\Omega$,},
 		ytick={-3.141,-1.505,0},
 		yticklabels={$-\pi$,$-\pi/2$,$0$}
 		]
@@ -538,7 +538,7 @@ Die Amplituden der $k$-ten Harmonischen fallen mit $\frac{1}{k}$ ab. Aufgrund de
 		xlabel={$t$},
 		ylabel={$x(t)$}, 
 		xtick={0,3.141,6.282},
-		xticklabels={0,,$2\pi/\omega_0$}, 
+		xticklabels={0,,$2\pi/\Omega$}, 
 		yticklabels={,$-\hat x$,0,$\hat x$}]
 		\addplot[black, thick] coordinates {(-1,-1) (0,-1) (0,1) (3.141,1) (3.141,-1) (6.242,-1) (6.242,1) (6.5,1)};
 		\addplot[blue, thick,samples=200] {sin(deg(x))*4/pi + sin(3*deg(x))*4/pi/3 + sin(5*deg(x))*4/pi/5};
@@ -557,13 +557,13 @@ Es liegt eine gerade Funktion vor. Die Berechnung der Fourierkoeffizienten liefe
 \begin{align}
 S_k&=0, k\in \mathbb N_0,\\
 C_0&=\frac{1}{T}\int_{0}^{T/2}x(t)\textrm{d}t = \frac{1}{T}\\
-C_k& =\frac{2}{T}\int_{0}^{T}x(t)\cos (k \omega_0 t)\textrm{d}t =\frac{2}{T}\left(\int_{-\tau/2}^{\tau/2}\frac{1}{\tau}\cos (k \omega_0 t)\textrm{d}t +\int_{\tau/2}^{T-\tau/2}0\textrm{d}t\right)\\
-& =2\cdot \frac{2}{T k \omega_0}\frac{1}{\tau}\left(\sin\left(k\omega_0 \frac{\tau}{2}\right)\right)\\
+C_k& =\frac{2}{T}\int_{0}^{T}x(t)\cos (k \Omega t)\textrm{d}t =\frac{2}{T}\left(\int_{-\tau/2}^{\tau/2}\frac{1}{\tau}\cos (k \Omega t)\textrm{d}t +\int_{\tau/2}^{T-\tau/2}0\textrm{d}t\right)\\
+& =2\cdot \frac{2}{T k \Omega}\frac{1}{\tau}\left(\sin\left(k\Omega \frac{\tau}{2}\right)\right)\\
 &= \frac{2}{k\pi \tau}\sin\left(k\pi\frac{\tau}{T}\right)
 \end{align}
 Somit lautet die Fourierreihe der Rechteckimpulsfolge
 \begin{align}
-	x(t) = \frac{1}{T} + \sum_{k=1}^{\infty}\frac{2}{k\pi \tau}\sin\left(k\pi \frac{\tau}{T}\right)\cos (k\omega_0 t)
+	x(t) = \frac{1}{T} + \sum_{k=1}^{\infty}\frac{2}{k\pi \tau}\sin\left(k\pi \frac{\tau}{T}\right)\cos (k\Omega t)
 \end{align}
 Der Stoßcharakter wird unterschieden nach Verhältnis von $\tau$ und $T$: Bei einem kleinen Wert von $\tau$ (kurzer Stoßdauer) ist die Amplitude $\frac{2}{k\pi\tau}$ groß. Die erste Nullstelle der $C_k$ liegt bei $\frac{\tau}{T}=\frac{1}{k}$. Es liegt viel Energie bei hohen Frequenzen vor. Man spricht vom \emph{harten Stoß}. Im Gegensatz dazu kommt die erste Nullstelle der $C_k$ umso früher, je größer das Verhältnis $\tau/T$. Es liegt viel Energie bei den kleinen Frequenzen. Die Verteilung der Amplituden in Abhängigkeit der Frequenz ist in der folgenden Abbildung zu sehen. 
 \begin{figure}[H]
@@ -601,7 +601,7 @@ t\cdot \frac{4}{T} & -\frac{T}{4} \leq t \leq \frac{T}{4}\\
 \end{align}
 Auch diese Funktion ist ungerade, weshalb die Koeffizienten $C_k$ allesamt verschwinden. Ferner ist 
 \begin{align}
-S_k&=\frac{4}{T}\int_{0}^{T/2}x(t)\sin(k\omega_0 t)\textrm{d}t\\
+S_k&=\frac{4}{T}\int_{0}^{T/2}x(t)\sin(k\Omega t)\textrm{d}t\\
 & = \left\{
 \begin{array}{ll}
 0 & k \textrm{ gerade}\\
@@ -624,7 +624,7 @@ Die Darstellung von Zeitsignal, Amplituden- und Phasenspektrum ist wie folgt:
 		xlabel={$t$},
 		ylabel={$x(t)$}, 
 		xtick={0,3.141,6.282},
-		xticklabels={0,,$2\pi/\omega_0$}, 
+		xticklabels={0,,$2\pi/\Omega$}, 
 		%yticklabels={,$-\hat x$,0,$\hat x$}
 		]
 		\addplot[black, thick] coordinates {(0,0) (1.5705,1) (3.141,0) (4.712,-1) (6.242,0) };
@@ -640,10 +640,10 @@ Die Darstellung von Zeitsignal, Amplituden- und Phasenspektrum ist wie folgt:
 		grid=both,
 		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
 		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
-		xlabel={$\omega/\omega_0$},
+		xlabel={$\omega/\Omega$},
 		ylabel={$S_k\cdot \pi^2/8$}, 
 		xtick={1,3,5,7},
-		%		xticklabels={0,$\omega_0$,},
+		%		xticklabels={0,$\Omega$,},
 		ytick={0,1},
 		%		yticklabels={0,$\hat x$}
 		]
@@ -661,10 +661,10 @@ Die Darstellung von Zeitsignal, Amplituden- und Phasenspektrum ist wie folgt:
 		grid=both,
 		x label style={at={(axis description cs:0.9,-0.1)},anchor=north},
 		y label style={at={(axis description cs:-0.15,.7)},rotate=0,anchor=south},
-		xlabel={$\omega/\omega_0$},
+		xlabel={$\omega/\Omega$},
 		ylabel={$\varphi_k$}, 
 		xtick={1,3,5,7},
-		%		xticklabels={0,$\omega_0$,},
+		%		xticklabels={0,$\Omega$,},
 		ytick={-1.505,0,1.505},
 		yticklabels={$-\pi/2$,$0$,$\pi/2$}
 		]
@@ -759,10 +759,9 @@ caxis([0.0 1e-3]); axis([0 10 10 200 0 1e-2]);
 \end{figure}
 \end{beispiel}
 \section{Nichtperiodische Vorgänge}
-Für periodische Funktionen gilt: $\omega_0 = \frac{2\pi}{T}$. Die Grundfrequenz ist also durch die endliche Periodenlänge begrenzt. Für nichtperiodische Funktionen (z.B. einmalige Vorgänge) geht die Schwingungsdauer $T$ gegen unendlich. Damit ist auch die Grundfrequenz $\omega_0\rightarrow \textrm{d}\omega$ (sie wird differenziell klein). 
-Mit Darstellung von (Mathematik 4.5) lauten die komplexen Schwingungskomponenten im Grenzübergang
+Für periodische Funktionen gilt: $\Omega = \frac{2\pi}{T}$. Die Grundfrequenz ist also durch die endliche Periodenlänge begrenzt. Für nichtperiodische Funktionen (z.B. einmalige Vorgänge) geht die Schwingungsdauer $T$ gegen unendlich. Damit ist auch die Grundfrequenz $\Omega\rightarrow \textrm{d}\omega$ (sie wird differenziell klein) bzw. $k\Omega\rightarrow\omega$. Mit Darstellung von (Mathematik 4.5) lauten die komplexen Schwingungskomponenten im Grenzübergang
 \begin{align}
-x(t) &= \sum_{k=-\infty}^{\infty}a_k e^{i k\omega_0 t} = \sum_{k=-\infty}^{\infty}\frac{1}{T}\underbrace{\int_{0}^{T}x(t)e^{-i k\omega_0 t}\textrm{d}t}_{=: X_k = X(k\omega_0)} e^{i k\omega_0 t}\\
+x(t) &= \sum_{k=-\infty}^{\infty}a_k e^{i k\Omega t} = \sum_{k=-\infty}^{\infty}\frac{1}{T}\underbrace{\int_{0}^{T}x(t)e^{-i k\Omega t}\textrm{d}t}_{=: X_k = X(k\Omega)} e^{i k\Omega t}\\
 &\rightarrow \frac{1}{2\pi}\int_{-\infty}^{\infty}\underbrace{\int_{0}^{\infty}x(t)e^{-i \omega t}\textrm{d}t}_{X(\omega)} e^{i \omega t}\textrm{d}\omega
 \end{align}
 Dies motiviert die folgende Definition:
@@ -816,8 +815,8 @@ zu
 \end{beispiel}
 \begin{beispiel}[Harmonische Funktion]{beispiel:harmonisch}
 \begin{align}
-\mathcal{F}(\sin(\omega_0 t)) &= i \pi \left(\delta(\omega+\omega_0)-\delta(\omega-\omega_0)\right)\\
-\mathcal{F}(\cos(\omega_0 t)) &= \pi \left(\delta(\omega-\omega_0)+\delta(\omega+\omega_0)\right)
+\mathcal{F}(\sin(\Omega t)) &= i \pi \left(\delta(\omega+\Omega)-\delta(\omega-\Omega)\right)\\
+\mathcal{F}(\cos(\Omega t)) &= \pi \left(\delta(\omega-\Omega)+\delta(\omega+\Omega)\right)
 \end{align}
 \end{beispiel}
 \begin{beispiel}[Rechteckimpuls ohne Wiederholung]{beispiel:ImpulsOhneWdh}
@@ -825,7 +824,7 @@ In Analogie zur Rechteckimpulsfolge wird der einmalige Rechteckimpuls ohne Wiede
 \begin{align}
 	X(\omega) &= \int_{-\tau/2}^{\tau/2}\frac{1}{\tau}e^{-i\omega t}\textrm{d}t = \frac{e^{i\omega\tau/2}-e^{-i\omega\tau/2}}{i\tau\omega} = \frac{2}{\tau \omega}\sin(\omega\tau /2)
 \end{align}
-Bemerkenswert an diesem Ergebnis sind zwei Beobachtungen: Das bisherige diskrete Frequenzspektrum (Grundfrequenz $\omega_0$) geht nun über in ein verteiltes Spektrum, für das alle reellen Werte von $\omega$ zugelassen sind; die weiteren Eigenschaften des bisherigen Ergebnisses sind beibehalten. Ferner folgt für den Grenzübergang $\tau\rightarrow0$ das Ergebnis von Beispiel 4.5. 
+Bemerkenswert an diesem Ergebnis sind zwei Beobachtungen: Das bisherige diskrete Frequenzspektrum (Grundfrequenz $\Omega$) geht nun über in ein verteiltes Spektrum, für das alle reellen Werte von $\omega$ zugelassen sind; die weiteren Eigenschaften des bisherigen Ergebnisses sind beibehalten. Ferner folgt für den Grenzübergang $\tau\rightarrow0$ das Ergebnis von Beispiel 4.5. 
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
@@ -910,5 +909,5 @@ Verfolgen Sie dabei die folgenden Schritte: Überführung der rechten Seite in ein
 	&\textrm{b.}& &f(t) = \sigma(t-t_0)& \\
 	&\textrm{c.}& &\ddot x + 2D\omega_0 \dot x +\omega_0^2 x = F\cos (\Omega t)& 
 \end{align}
-Berechnen Sie insbesondere für den Ausdruck von Aufgabe c. die Funktion $X(\Omega)$.
-\paragraph{4.5} Führen Sie zum Aufgabenteil c. von 4.4 die Rücktransformation von $X(\Omega)$ in den Zeitbereich durch, sodass Sie die $x(t)$ erhalten. 
+Berechnen Sie insbesondere für den Ausdruck von Aufgabe c. die Funktion $X(\omega)$.
+\paragraph{4.5} Führen Sie zum Aufgabenteil c. von 4.4 die Rücktransformation von $X(\omega)$ in den Zeitbereich durch, sodass Sie die $x(t)$ erhalten. 
