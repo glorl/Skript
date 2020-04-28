@@ -246,7 +246,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 		\end{axis}
 	\end{tikzpicture}
 }
-\caption{Reines Cosinussignal $x(t) = \hat{x}\cos (\omega t) = Re(\hat{x} e^{\omega t})$}
+\caption{Reines Cosinussignal $x(t) = \hat{x}\cos (\omega t) = Re(\hat{x} e^{i \omega t})$}
 \end{figure}
 \begin{figure}[H]
 	\subfloat[Zeitbereich]{
@@ -309,7 +309,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 		\end{axis}
 		\end{tikzpicture}
 	}
-	\caption{Reines Sinussignal $x(t) = \hat{x}\sin (\omega t)  = Re(\hat{x} e^{\omega t-\pi/2})$}
+	\caption{Reines Sinussignal $x(t) = \hat{x}\sin (\omega t)  = Re(\hat{x} e^{i (\omega t-\pi/2)})$}
 \end{figure}
 \begin{figure}[H]
 \subfloat[Zeitbereich]{
@@ -372,7 +372,7 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 	\end{axis}
 	\end{tikzpicture}
 }
-\caption{Allgemeines Signal $x(t) = \hat{x}\cos (\omega t+\varphi) = Re(\hat{x} e^{\omega t+\varphi})$}
+\caption{Allgemeines Signal $x(t) = \hat{x}\cos (\omega t+\varphi) = Re(\hat{x} e^{i (\omega t+\varphi)})$}
 \end{figure}
 Die Überführung einer harmonischen Funktion vom Zeit- in den Frequenzbereich ist eine Äquivalenztransformation. Wird eine allgemeine periodische Funktion als Überlagerung vieler harmonischer Schwingungsanteile mit jeweiliger Kreisfrequenz, Amplitude und Nullphasenwinkel betrachtet, dann kommen in der Darstellung im Frequenzbereich entsprechende Komponenten hinzu. Dies motiviert den nächsten Abschnitt: 
 \section{Darstellung periodischer Funktionen durch Fourierreihen}
@@ -599,7 +599,7 @@ t\cdot \frac{4}{T} & -\frac{T}{4} \leq t \leq \frac{T}{4}\\
 \end{array}
 \right. 
 \end{align}
-Auch diese Funktion ist symmetrisch, weshalb die Koeffizienten $C_k$ allesamt verschwinden. Ferner ist 
+Auch diese Funktion ist ungerade, weshalb die Koeffizienten $C_k$ allesamt verschwinden. Ferner ist 
 \begin{align}
 S_k&=\frac{4}{T}\int_{0}^{T/2}x(t)\sin(k\omega_0 t)\textrm{d}t\\
 & = \left\{

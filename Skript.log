@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  27 APR 2020 08:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  28 APR 2020 19:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2789,7 +2789,19 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 676.
 ===== Image 'BilderExternalized/Skript-figure77' is up-to-date. ======
-===== Image 'BilderExternalized/Skript-figure78' is up-to-date. ======
+\openout3 = `BilderExternalized/Skript-figure78.md5'.
+
+\openout3 = `Skript.auxlock'.
+
+===== 'mode=convert with system call': Invoking 'pdflatex -enable-write18 -halt
+-on-error -interaction=batchmode -jobname "BilderExternalized/Skript-figure78" 
+"\def\tikzexternalrealjob{Skript}\input{Skript}"' ========
+runsystem(pdflatex -enable-write18 -halt-on-error -interaction=batchmode -jobna
+me "BilderExternalized/Skript-figure78" "\def\tikzexternalrealjob{Skript}\input
+{Skript}")...executed.
+
+\openout3 = `Skript.auxlock'.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 677.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3336,7 +3348,7 @@ public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on Skript.pdf (76 pages, 1080991 bytes).
+Output written on Skript.pdf (76 pages, 1081616 bytes).
 PDF statistics:
  2770 PDF objects out of 2984 (max. 8388607)
  2502 compressed objects within 26 object streams
