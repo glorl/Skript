@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  28 APR 2020 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  15 MAY 2020 19:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1868,47 +1868,55 @@ File: Bilder/01DehnSchwinger.pdf Graphic file (type pdf)
 <use Bilder/01DehnSchwinger.pdf>
 Package pdftex.def Info: Bilder/01DehnSchwinger.pdf  used on input line 199.
 (pdftex.def)             Requested size: 90.4818pt x 44.13075pt.
-<Bilder/01Schwingformen01.pdf, id=333, 297.15984pt x 36.20258pt>
+<Bilder/01Schwingformen01.pdf, id=334, 297.1598pt x 36.20258pt>
 File: Bilder/01Schwingformen01.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen01.pdf>
 Package pdftex.def Info: Bilder/01Schwingformen01.pdf  used on input line 206.
-(pdftex.def)             Requested size: 135.72763pt x 16.53516pt.
-<Bilder/01Schwingformen02.pdf, id=334, 297.15984pt x 53.45926pt>
+(pdftex.def)             Requested size: 193.89238pt x 23.62141pt.
+<Bilder/01Schwingformen02.pdf, id=335, 297.1598pt x 54.45651pt>
 File: Bilder/01Schwingformen02.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen02.pdf>
 Package pdftex.def Info: Bilder/01Schwingformen02.pdf  used on input line 207.
-(pdftex.def)             Requested size: 135.72763pt x 24.41698pt.
-<Bilder/01Schwingformen03.pdf, id=335, 297.15984pt x 43.28171pt>
+(pdftex.def)             Requested size: 193.89238pt x 35.53175pt.
+<Bilder/01Schwingformen03.pdf, id=336, 297.1598pt x 48.09587pt>
 File: Bilder/01Schwingformen03.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen03.pdf>
 Package pdftex.def Info: Bilder/01Schwingformen03.pdf  used on input line 208.
-(pdftex.def)             Requested size: 135.72763pt x 19.76848pt.
+(pdftex.def)             Requested size: 193.89238pt x 31.38155pt.
+<Bilder/01Schwingformen04.pdf, id=337, 297.1598pt x 43.80893pt>
+File: Bilder/01Schwingformen04.pdf Graphic file (type pdf)
+<use Bilder/01Schwingformen04.pdf>
+Package pdftex.def Info: Bilder/01Schwingformen04.pdf  used on input line 209.
+(pdftex.def)             Requested size: 193.89238pt x 28.58441pt.
 
-Underfull \hbox (badness 3668) in paragraph at lines 203--212
+Underfull \hbox (badness 3668) in paragraph at lines 203--214
 [] []\T1/ppl/b/n/12 Klassifikation nach Schwin-gungs-form.[][] \T1/ppl/m/n/12 V
 or al-lem me-cha-ni-sche Schwin-gun-gen
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 203--212
+Underfull \hbox (badness 1112) in paragraph at lines 203--214
 \T1/ppl/m/n/12 sind da-durch ge-kenn-zeich-net, dass die Fre-quen-zen mit ei-ne
 r be-stimm-ten Be-we-
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 203--212
+Underfull \hbox (badness 1048) in paragraph at lines 203--214
 \T1/ppl/m/n/12 pers bei der be-trach-te-ten Fre-quenz ist die Schwin-gungs-form
 . Am Bei-spiel ei-nes
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 223.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 223.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 223.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 217.
+(babel)             in language  on input line 223.
 [6 <./Bilder/01EinMassenSchwinger.pdf> <./Bilder/01ZweiMassenSchwinger.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/01ZweiMassenSchwinger.pdf): PD
@@ -1917,18 +1925,6 @@ F inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/01DehnSchwinger.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
-> <./Bilder/01Schwingformen01.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/01Schwingformen01.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
-> <./Bilder/01Schwingformen02.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/01Schwingformen02.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
-> <./Bilder/01Schwingformen03.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/01Schwingformen03.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
 >])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 126.
@@ -1938,7 +1934,19 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 126.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 126.
- [7]
+ [7 <./Bilder/01Schwingformen01.pdf> <./Bilder/01Schwingformen02.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/01Schwingformen02.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./Bilder/01Schwingformen03.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/01Schwingformen03.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./Bilder/01Schwingformen04.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/01Schwingformen04.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]
 \openout2 = `EinFhg.aux'.
 
  (./EinFhg.tex
@@ -1951,13 +1959,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
-<Bilder/02EinMassenSchwinger.pdf, id=366, 87.6559pt x 65.82281pt>
+<Bilder/02EinMassenSchwinger.pdf, id=371, 87.6559pt x 65.82281pt>
 File: Bilder/02EinMassenSchwinger.pdf Graphic file (type pdf)
 <use Bilder/02EinMassenSchwinger.pdf>
 Package pdftex.def Info: Bilder/02EinMassenSchwinger.pdf  used on input line 8.
 
 (pdftex.def)             Requested size: 71.09354pt x 53.3895pt.
-<Bilder/02EinMassenSchwingerdAlembert.pdf, id=367, 80.3664pt x 25.63101pt>
+<Bilder/02EinMassenSchwingerdAlembert.pdf, id=372, 80.3664pt x 25.63101pt>
 File: Bilder/02EinMassenSchwingerdAlembert.pdf Graphic file (type pdf)
 <use Bilder/02EinMassenSchwingerdAlembert.pdf>
 Package pdftex.def Info: Bilder/02EinMassenSchwingerdAlembert.pdf  used on inpu
@@ -2089,7 +2097,7 @@ Package babel Info: Redefining ngerman shorthand "~
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 158.
-<Bilder/02MathematischesPendel.pdf, id=609, 53.45602pt x 98.81929pt>
+<Bilder/02MathematischesPendel.pdf, id=614, 53.45602pt x 98.81929pt>
 File: Bilder/02MathematischesPendel.pdf Graphic file (type pdf)
 <use Bilder/02MathematischesPendel.pdf>
 Package pdftex.def Info: Bilder/02MathematischesPendel.pdf  used on input line 
@@ -2125,13 +2133,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 224.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 224.
-<Bilder/02EinMassenSchwingerDamped.pdf, id=678, 87.47446pt x 77.9005pt>
+<Bilder/02EinMassenSchwingerDamped.pdf, id=683, 87.47446pt x 77.9005pt>
 File: Bilder/02EinMassenSchwingerDamped.pdf Graphic file (type pdf)
 <use Bilder/02EinMassenSchwingerDamped.pdf>
 Package pdftex.def Info: Bilder/02EinMassenSchwingerDamped.pdf  used on input l
 ine 228.
 (pdftex.def)             Requested size: 71.09354pt x 63.31538pt.
-<Bilder/02EinMassenSchwingerDampeddAlembert.pdf, id=679, 118.01222pt x 19.9844p
+<Bilder/02EinMassenSchwingerDampeddAlembert.pdf, id=684, 118.01222pt x 19.9844p
 t>
 File: Bilder/02EinMassenSchwingerDampeddAlembert.pdf Graphic file (type pdf)
 <use Bilder/02EinMassenSchwingerDampeddAlembert.pdf>
@@ -2229,19 +2237,19 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
-<Bilder/03EinMassenSchwinger.pdf, id=859, 134.1397pt x 77.9005pt>
+<Bilder/03EinMassenSchwinger.pdf, id=864, 134.1397pt x 77.9005pt>
 File: Bilder/03EinMassenSchwinger.pdf Graphic file (type pdf)
 <use Bilder/03EinMassenSchwinger.pdf>
 Package pdftex.def Info: Bilder/03EinMassenSchwinger.pdf  used on input line 6.
 
 (pdftex.def)             Requested size: 102.86827pt x 59.7388pt.
-<Bilder/03EinMassenSchwingeruMaxwell.pdf, id=860, 160.07672pt x 76.06628pt>
+<Bilder/03EinMassenSchwingeruMaxwell.pdf, id=865, 160.07672pt x 76.06628pt>
 File: Bilder/03EinMassenSchwingeruMaxwell.pdf Graphic file (type pdf)
 <use Bilder/03EinMassenSchwingeruMaxwell.pdf>
 Package pdftex.def Info: Bilder/03EinMassenSchwingeruMaxwell.pdf  used on input
  line 7.
 (pdftex.def)             Requested size: 125.72156pt x 59.7388pt.
-<Bilder/03EinMassenSchwingeru.pdf, id=861, 110.99414pt x 77.90051pt>
+<Bilder/03EinMassenSchwingeru.pdf, id=866, 110.99414pt x 77.90051pt>
 File: Bilder/03EinMassenSchwingeru.pdf Graphic file (type pdf)
 <use Bilder/03EinMassenSchwingeru.pdf>
 Package pdftex.def Info: Bilder/03EinMassenSchwingeru.pdf  used on input line 8
@@ -2252,7 +2260,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--8
 [][]|\T1/ppl/m/n/10 Fuÿ-punkt
  []
 
-<Bilder/03EinMassenSchwingerExz.pdf, id=862, 123.05234pt x 78.4175pt>
+<Bilder/03EinMassenSchwingerExz.pdf, id=867, 123.05234pt x 78.4175pt>
 File: Bilder/03EinMassenSchwingerExz.pdf Graphic file (type pdf)
 <use Bilder/03EinMassenSchwingerExz.pdf>
 Package pdftex.def Info: Bilder/03EinMassenSchwingerExz.pdf  used on input line
@@ -2298,13 +2306,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 80.
-<Bilder/03EinMassenSchwingerF.pdf, id=927, 134.1397pt x 62.8041pt>
+<Bilder/03EinMassenSchwingerF.pdf, id=932, 134.1397pt x 62.8041pt>
 File: Bilder/03EinMassenSchwingerF.pdf Graphic file (type pdf)
 <use Bilder/03EinMassenSchwingerF.pdf>
 Package pdftex.def Info: Bilder/03EinMassenSchwingerF.pdf  used on input line 8
 4.
 (pdftex.def)             Requested size: 107.96481pt x 50.5466pt.
-<Bilder/03EinMassenSchwingerFdAlembert.pdf, id=928, 118.6024pt x 22.60747pt>
+<Bilder/03EinMassenSchwingerFdAlembert.pdf, id=933, 118.6024pt x 22.60747pt>
 File: Bilder/03EinMassenSchwingerFdAlembert.pdf Graphic file (type pdf)
 <use Bilder/03EinMassenSchwingerFdAlembert.pdf>
 Package pdftex.def Info: Bilder/03EinMassenSchwingerFdAlembert.pdf  used on inp
@@ -2746,7 +2754,7 @@ ure68.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 551.
-<Bilder/04Rechteckimpulsfolge.pdf, id=1704, 202.57547pt x 118.10399pt>
+<Bilder/04Rechteckimpulsfolge.pdf, id=1709, 202.57547pt x 118.10399pt>
 File: Bilder/04Rechteckimpulsfolge.pdf Graphic file (type pdf)
 <use Bilder/04Rechteckimpulsfolge.pdf>
 Package pdftex.def Info: Bilder/04Rechteckimpulsfolge.pdf  used on input line 5
@@ -2821,13 +2829,13 @@ Overfull \hbox (3.69244pt too wide) in paragraph at lines 737--738
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<Bilder/Hochlaufsimulation_Farbkarte.png, id=1853, 488.82625pt x 326.21875pt>
+<Bilder/Hochlaufsimulation_Farbkarte.png, id=1858, 488.82625pt x 326.21875pt>
 File: Bilder/Hochlaufsimulation_Farbkarte.png Graphic file (type png)
 <use Bilder/Hochlaufsimulation_Farbkarte.png>
 Package pdftex.def Info: Bilder/Hochlaufsimulation_Farbkarte.png  used on input
  line 756.
 (pdftex.def)             Requested size: 217.75601pt x 145.3187pt.
-<Bilder/Hochlaufsimulation_y.png, id=1855, 364.36125pt x 268.00125pt>
+<Bilder/Hochlaufsimulation_y.png, id=1860, 364.36125pt x 268.00125pt>
 File: Bilder/Hochlaufsimulation_y.png Graphic file (type png)
 <use Bilder/Hochlaufsimulation_y.png>
 Package pdftex.def Info: Bilder/Hochlaufsimulation_y.png  used on input line 75
@@ -3004,263 +3012,280 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
-<Bilder/05EbeneSchwingung.pdf, id=2155, 112.34805pt x 111.01178pt>
-File: Bilder/05EbeneSchwingung.pdf Graphic file (type pdf)
-<use Bilder/05EbeneSchwingung.pdf>
-Package pdftex.def Info: Bilder/05EbeneSchwingung.pdf  used on input line 8.
-(pdftex.def)             Requested size: 83.70709pt x 82.70879pt.
-<Bilder/05Nickschwingungen.pdf, id=2156, 398.24312pt x 151.30833pt>
-File: Bilder/05Nickschwingungen.pdf Graphic file (type pdf)
-<use Bilder/05Nickschwingungen.pdf>
-Package pdftex.def Info: Bilder/05Nickschwingungen.pdf  used on input line 10.
-(pdftex.def)             Requested size: 290.27145pt x 110.2854pt.
-<Bilder/05Biegeschwinger.pdf, id=2157, 214.14792pt x 85.24767pt>
+<Bilder/05Biegeschwinger.pdf, id=2162, 214.14792pt x 85.24767pt>
 File: Bilder/05Biegeschwinger.pdf Graphic file (type pdf)
 <use Bilder/05Biegeschwinger.pdf>
-Package pdftex.def Info: Bilder/05Biegeschwinger.pdf  used on input line 16.
+Package pdftex.def Info: Bilder/05Biegeschwinger.pdf  used on input line 9.
 (pdftex.def)             Requested size: 161.6137pt x 64.33139pt.
-<Bilder/05Torsionsschwingerkette.pdf, id=2158, 252.45483pt x 86.22386pt>
+<Bilder/05Torsionsschwingerkette.pdf, id=2163, 252.45483pt x 86.22386pt>
 File: Bilder/05Torsionsschwingerkette.pdf Graphic file (type pdf)
 <use Bilder/05Torsionsschwingerkette.pdf>
 Package pdftex.def Info: Bilder/05Torsionsschwingerkette.pdf  used on input lin
-e 18.
+e 11.
 (pdftex.def)             Requested size: 201.81389pt x 68.924pt.
+<Bilder/05EbeneSchwingung.pdf, id=2164, 112.34805pt x 111.01178pt>
+File: Bilder/05EbeneSchwingung.pdf Graphic file (type pdf)
+<use Bilder/05EbeneSchwingung.pdf>
+Package pdftex.def Info: Bilder/05EbeneSchwingung.pdf  used on input line 12.
+(pdftex.def)             Requested size: 79.05794pt x 78.1162pt.
+<Bilder/05Nickschwingungen.pdf, id=2165, 398.24312pt x 151.30833pt>
+File: Bilder/05Nickschwingungen.pdf Graphic file (type pdf)
+<use Bilder/05Nickschwingungen.pdf>
+Package pdftex.def Info: Bilder/05Nickschwingungen.pdf  used on input line 14.
+(pdftex.def)             Requested size: 278.16669pt x 105.68579pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 19.
 [56
 
 
 
 
- <./Bilder/05EbeneSchwingung.pdf> <./Bilder/05Nickschwingungen.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/05Nickschwingungen.pdf): PDF i
-nclusion: multiple pdfs with page group included in a single page
-> <./Bilder/05Biegeschwinger.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/05Biegeschwinger.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
-> <./Bilder/05Torsionsschwingerkette.pdf
+ <./Bilder/05Biegeschwinger.pdf> <./Bilder/05Torsionsschwingerkette.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/05Torsionsschwingerkette.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
+> <./Bilder/05EbeneSchwingung.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/05EbeneSchwingung.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./Bilder/05Nickschwingungen.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/05Nickschwingungen.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
 >]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
-<Bilder/05ZweiMassenSchwinger.pdf, id=2174, 135.19063pt x 235.67758pt>
+(babel)             in language  on input line 19.
+<Bilder/05ZweiMassenSchwinger.pdf, id=2180, 135.19063pt x 235.67758pt>
 File: Bilder/05ZweiMassenSchwinger.pdf Graphic file (type pdf)
 <use Bilder/05ZweiMassenSchwinger.pdf>
 Package pdftex.def Info: Bilder/05ZweiMassenSchwinger.pdf  used on input line 2
-6.
+3.
 (pdftex.def)             Requested size: 100.16533pt x 174.6168pt.
-<Bilder/05ZMSdAlembert.pdf, id=2175, 254.61203pt x 271.56183pt>
+<Bilder/05ZMSdAlembert.pdf, id=2181, 254.61203pt x 271.56183pt>
 File: Bilder/05ZMSdAlembert.pdf Graphic file (type pdf)
 <use Bilder/05ZMSdAlembert.pdf>
-Package pdftex.def Info: Bilder/05ZMSdAlembert.pdf  used on input line 27.
+Package pdftex.def Info: Bilder/05ZMSdAlembert.pdf  used on input line 24.
 (pdftex.def)             Requested size: 176.64986pt x 188.40161pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 68.
  [57 <./Bilder/05ZweiMassenSchwinger.pdf> <./Bilder/05ZMSdAlembert.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/05ZMSdAlembert.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
 >]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 97.
  [58]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 120.
  [59]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 162.
  [60]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 167.
+(mdframed)              on input line 164.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 302.
+(mdframed)              on input line 299.
 
 ===== Image 'BilderExternalized/Skript-figure96' is up-to-date. ======
 ===== Image 'BilderExternalized/Skript-figure97' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 299.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 299.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 299.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 299.
 [61 <./BilderExternalized/Skript-figure97.pdf>]
 ===== Image 'BilderExternalized/Skript-figure98' is up-to-date. ======
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 303.
+(mdframed)              on input line 300.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 462.
+(mdframed)              on input line 459.
 ===== Image 'BilderExternalized/Skript-figure99' is up-to-date. ======
 ===== Image 'BilderExternalized/Skript-figure100' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 [62 <./BilderExternalized/Skript-figure98.pdf> <./BilderExternalized/Skript-fig
 ure100.pdf>]
 ===== Image 'BilderExternalized/Skript-figure101' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 [63 <./BilderExternalized/Skript-figure101.pdf>]
 ===== Image 'BilderExternalized/Skript-figure102' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 459.
 [64 <./BilderExternalized/Skript-figure102.pdf>]
 ===== Image 'BilderExternalized/Skript-figure103' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 460.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 460.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 491.
 [65 <./BilderExternalized/Skript-figure103.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 602.
+(babel)             in language  on input line 599.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 602.
+(babel)             in language  on input line 599.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 602.
+(babel)             in language  on input line 599.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 602.
+(babel)             in language  on input line 599.
  [66]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 602.
+(mdframed)              on input line 599.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 708.
+(mdframed)              on input line 705.
 
 ===== Image 'BilderExternalized/Skript-figure104' is up-to-date. ======
 ===== Image 'BilderExternalized/Skript-figure105' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 708.
+(babel)             in language  on input line 705.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 708.
+(babel)             in language  on input line 705.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 708.
+(babel)             in language  on input line 705.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 708.
+(babel)             in language  on input line 705.
 [67 <./BilderExternalized/Skript-figure105.pdf>]
 ===== Image 'BilderExternalized/Skript-figure106' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 709.
+(babel)             in language  on input line 706.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 709.
+(babel)             in language  on input line 706.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 727.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 727.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 727.
+(babel)             in language  on input line 724.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 727.
+(babel)             in language  on input line 724.
 [68 <./BilderExternalized/Skript-figure106.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 729.
+(mdframed)              on input line 726.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 739.
+(mdframed)              on input line 736.
 
 ===== Image 'BilderExternalized/Skript-figure107' is up-to-date. ======
 ===== Image 'BilderExternalized/Skript-figure108' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 763.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 763.
-<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=2511, 130.7565pt x 193.1738pt>
+(babel)             in language  on input line 760.
+<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=2517, 130.7565pt x 193.1738pt>
 File: Bilder/05ErzwungeneKoppelschwingungen.pdf Graphic file (type pdf)
 <use Bilder/05ErzwungeneKoppelschwingungen.pdf>
 Package pdftex.def Info: Bilder/05ErzwungeneKoppelschwingungen.pdf  used on inp
-ut line 767.
+ut line 764.
 (pdftex.def)             Requested size: 91.901pt x 135.77487pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 769.
+(babel)             in language  on input line 766.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 769.
+(babel)             in language  on input line 766.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 769.
+(babel)             in language  on input line 766.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 769.
+(babel)             in language  on input line 766.
 [69 <./BilderExternalized/Skript-figure108.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 818.
+(babel)             in language  on input line 815.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 818.
+(babel)             in language  on input line 815.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 818.
+(babel)             in language  on input line 815.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 818.
+(babel)             in language  on input line 815.
  [70 <./Bilder/05ErzwungeneKoppelschwingungen.pdf>]
 ===== Image 'BilderExternalized/Skript-figure109' is up-to-date. ======
-)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 851.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 851.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 851.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 851.
+[71 <./BilderExternalized/Skript-figure109.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 851.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 851.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 851.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 851.
+ [72])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3269,16 +3294,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 130.
- [71 <./BilderExternalized/Skript-figure109.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 130.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 130.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 130.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 130.
- [72] (./Skript.bbl
+ [73] (./Skript.bbl
 chapter without number
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -3293,7 +3309,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 152.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 152.
- [73
+ [74
 
 
 
@@ -3304,42 +3320,51 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
 (./ErzwungeneSchwingungen.aux) (./Anregungssignale.aux) (./NFhg.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
-Package rerunfilecheck Info: File `Skript.out' has not changed.
-(rerunfilecheck)             Checksum: E94EA70E42C6042FDF56A954FF46BDC4;2769.
+
+
+Package rerunfilecheck Warning: File `Skript.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Skript.out':
+(rerunfilecheck)             Before: F5C659E1D423706144CC8DC496062AF6;2769
+(rerunfilecheck)             After:  745C9348FDD7ADF40B599D9B497B1888;2769.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 48448 strings out of 494798
- 1079719 string characters out of 6176801
- 1404956 words of memory out of 5000000
- 50315 multiletter control sequences out of 15000+600000
+ 48468 strings out of 494798
+ 1080109 string characters out of 6176801
+ 1405100 words of memory out of 5000000
+ 50323 multiletter control sequences out of 15000+600000
  563093 words of font info for 95 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  78i,24n,128p,10410b,1284s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
-uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+pdfTeX warning (dest): name{chapter*.81} has been referenced but does not exi
+st, replaced by a fixed one
 
-Output written on Skript.pdf (76 pages, 1079287 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
+lr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Skript.pdf (77 pages, 1082419 bytes).
 PDF statistics:
- 2742 PDF objects out of 2984 (max. 8388607)
- 2475 compressed objects within 25 object streams
- 521 named destinations out of 1000 (max. 500000)
- 978 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2764 PDF objects out of 2984 (max. 8388607)
+ 2495 compressed objects within 25 object streams
+ 532 named destinations out of 1000 (max. 500000)
+ 983 words of extra memory for PDF output out of 10000 (max. 10000000)
 

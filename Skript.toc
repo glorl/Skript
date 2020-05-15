@@ -11,7 +11,7 @@
 \contentsline {paragraph}{\nonumberline Klassifikation nach Verlauf (nicht-harmonischer Fall)}{6}{section*.8}
 \contentsline {paragraph}{\nonumberline Klassifikation nach der Anzahl der Freiheisgrade}{6}{section*.9}
 \contentsline {paragraph}{\nonumberline Klassifikation nach Schwingungsform.}{6}{section*.11}
-\contentsline {paragraph}{\nonumberline Klassifikation nach Aufbau der Bewegungsgleichung}{7}{section*.13}
+\contentsline {paragraph}{\nonumberline Klassifikation nach Aufbau der Bewegungsgleichung}{6}{section*.13}
 \contentsline {paragraph}{\nonumberline Klassifikation nach dem Entstehungmechanismus}{7}{section*.14}
 \contentsline {chapter}{\numberline {2}Freie Schwingungen}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}Freie unged\"ampfte Schwingungen}{8}{section.2.1}
@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {4.4}Erzwungene Schwingungen mit periodischer Anregung}{47}{section.4.4}
 \contentsline {paragraph}{\nonumberline Fall 1: $k=0$.}{47}{section*.59}
 \contentsline {paragraph}{\nonumberline Fall 2: $k\geq 1$, $F_{S,k}=0$.}{47}{section*.60}
-\contentsline {paragraph}{\nonumberline Fall 3: $k\geq 0$ $F_{C,k}=0$.}{48}{section*.61}
+\contentsline {paragraph}{\nonumberline Fall 3: $k\geq 0$, $F_{C,k}=0$.}{48}{section*.61}
 \contentsline {section}{\numberline {4.5}Nichtperiodische Vorg\"ange}{50}{section.4.5}
 \contentsline {section}{\numberline {4.6}Berechnung der Schwingungsantwort mithilfe des komplexen Frequenzgangs}{53}{section.4.6}
 \contentsline {paragraph}{\nonumberline 4.1}{55}{section*.65}
@@ -71,4 +71,11 @@
 \contentsline {section}{\numberline {5.4}Modale Entkopplung}{65}{section.5.4}
 \contentsline {section}{\numberline {5.5}Systeme mit modaler D\"ampfung}{68}{section.5.5}
 \contentsline {section}{\numberline {5.6}Erzwungene Koppelschwingungen und Tilgung}{70}{section.5.6}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{73}{chapter*.75}
+\contentsline {paragraph}{\nonumberline 5.1}{73}{section*.75}
+\contentsline {paragraph}{\nonumberline 5.2}{73}{section*.76}
+\contentsline {paragraph}{\nonumberline 5.3}{73}{section*.77}
+\contentsline {paragraph}{\nonumberline 5.4}{73}{section*.78}
+\contentsline {paragraph}{\nonumberline 5.5}{73}{section*.79}
+\contentsline {paragraph}{\nonumberline 5.6}{73}{section*.80}
+\contentsline {paragraph}{\nonumberline 5.7}{73}{section*.81}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{74}{chapter*.82}

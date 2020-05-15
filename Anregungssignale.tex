@@ -686,7 +686,7 @@ m\ddot x + d\dot x + c x = \frac{F_0}{2} +\sum_{k=1}^{\infty} F_{C,k}\cos(k\Omeg
 Die Antwort $x(t)$ kann für drei isolierte Fälle separat betrachtet werden: 
 \paragraph{Fall 1: $k=0$.} Die Anregung $F_1(t)=F_0/2$ ist konstant; die Antwort darauf (partikuläre Lösung) kann durch einen Ansatz vom Typ der rechten Seite bestimmt werden: 
 \begin{align}
-	&x_1(t) = K \textrm{ (konstant)}&&\dot x(t)=0&&\ddot x(t)=0& 
+	&x_1(t) = K \textrm{ (konstant)}&&\dot x_1(t)=0&&\ddot x_1(t)=0& 
 \end{align}
 Nach kurzer Umformung folgt 
 \begin{align}
@@ -696,19 +696,19 @@ x_1(t) = K = \frac{F_0}{2 c}
 \begin{align}
 x_2(t) &= V\left(\frac{k\Omega}{\omega_0}\right)\frac{F_{C,k}}{c}\cos\left(k\Omega t+\varphi_k\right)\\
 V\left(\frac{k\Omega}{\omega_0}\right) &= \frac{1}{\sqrt{\left(1-\left(\frac{k\Omega}{\omega_0}\right)^2\right)^2+\left(2D\frac{k\Omega}{\omega_0}\right)^2}}\\
-&= \frac{1}{\sqrt{\left(1-\left(k\eta\right)^2\right)^2+\left(2Dk\eta\right)^2}}
+&= \frac{1}{\sqrt{\left(1-\left(k\eta\right)^2\right)^2+\left(2Dk\eta\right)^2}} = V(k\eta)
 \end{align}
 \begin{align}
 \tan(\varphi_k) &= - \frac{2D\frac{k\Omega}{\omega_0}}{1-\left(\frac{k\Omega}{\omega_0}\right)^2} 
 = -\frac{2Dk\eta}{1-\left(k\eta\right)^2}
 \end{align}
-\paragraph{Fall 3: $k\geq 0$ $F_{C,k}=0$.} Die Anregung durch eine Drehzahlvielfache lautet $F_3(t)=F_{C,k}\sin(k\Omega t)$. Die Antwort darauf (partikuläre Lösung) lautet in Analogie zu Fall 2
+\paragraph{Fall 3: $k\geq 0$, $F_{C,k}=0$.} Die Anregung durch eine Drehzahlvielfache lautet $F_3(t)=F_{C,k}\sin(k\Omega t)$. Die Antwort darauf (partikuläre Lösung) lautet in Analogie zu Fall 2
 \begin{align}
-x_3(t) &= V\left(\frac{k\Omega}{\omega_0}\right)\frac{F_{C,k}}{c}\sin\left(k\Omega t+\varphi_k\right)
+x_3(t) &= V(k\eta)\frac{F_{C,k}}{c}\sin\left(k\Omega t+\varphi_k\right)
 \end{align}
 Gemäß dem Superpositionsprinzip ist die Schwingungsantwort auf die Einzelanregungen $F(t) = F_1(t) + F_2(t) + F_3(t)$ die Summe der Einzelantworten $x(t) = x_1(t) + x_2(t) + x_3(t)$, also 
 \begin{align}
-x(t) = \frac{F_0}{2c} + \sum_{k=1}^{\infty}V\left(\frac{k\Omega}{\omega_0}\right)\left(\frac{F_{C,k}}{c}\cos\left(k\Omega t+\varphi_k\right) + \frac{F_{S,k}}{c}\sin\left(k\Omega t+\varphi_k\right)\right)
+x(t) = \frac{F_0}{2c} + \sum_{k=1}^{\infty}V\left(k\eta\right)\left(\frac{F_{C,k}}{c}\cos\left(k\Omega t+\varphi_k\right) + \frac{F_{S,k}}{c}\sin\left(k\Omega t+\varphi_k\right)\right)
 \label{eq:PolyH}
 \end{align}
 Diese Lösung hat Eigenschaften wie die Schwingungsantwort auf eine Einzelanregung. Die Resonanz des ungedämpften Einmassenschwingers wird jetzt nicht mehr nur bei $\Omega=\omega_0$, sondern bei $k \Omega=\omega_0$ mit allen $k\in \mathbb N$ angeregt. 
@@ -882,19 +882,19 @@ mit
 \end{align}
 der \emph{Faltung} zwischen der Gewichtsfunktion und einer beliebigen Anregungsfunktion. \\\newpage
 \section*{Aufgaben zu Kapitel 4}
-\paragraph{4.1} Berechnen Sie die Koeffizienten $C_0$, $C_k$ und $S_k$ der folgenden Funktionen: 
+\paragraph{4.1} Bestimmen Sie die Koeffizienten $C_0$, $C_k$ und $S_k$ der folgenden Funktionen: 
 \begin{align}
-	&\textrm{a.}& &f(t) = a \sin(\omega_0 t) + b \cos(2\omega_0 t), &&t\in [{0,2\pi/\omega_0}]& \\
-	&\textrm{b.}& &f(t) = a \sin^2(\omega_0 t)-\cos(\omega_0 t),&&t\in [{0,2\pi/\omega_0}]& \\
-	&\textrm{c.}& &f(t) = c + a \sin(\omega_0 t) + b \sin(\omega_0 t)\cos(\omega_0 t),&& t\in [{0,2\pi/\omega_0}]& \\
+	&\textrm{a.}& &f(t) = a \sin(\Omega t) + b \cos(2\Omega t), &&t\in [{0,2\pi/\Omega}]& \\
+	&\textrm{b.}& &f(t) = a \sin^2(\Omega t)-\cos(\Omega t),&&t\in [{0,2\pi/\Omega}]& \\
+	&\textrm{c.}& &f(t) = c + a \sin(\Omega t) + b \sin(\Omega t)\cos(\Omega t),&& t\in [{0,2\pi/\Omega}]& \\
 	&\textrm{d.}& &f(t) = \sigma(t) - \sigma(t-1),&& t\in [{0,2}]& \\
 	&\textrm{d.}& &f(t) = t \cdot \sigma(t) + (1-t) \cdot \sigma(t-1),&& t\in [{0,2}]& 
 \end{align}
-\paragraph{4.2} Berechnen Sie die Koeffizienten $a_k$ der folgenden Funktionen: 
+\paragraph{4.2} Bestimmen Sie die Koeffizienten $a_k$ der folgenden Funktionen: 
 \begin{align}
-	&\textrm{a.}& &f(t) = a \sin(\omega_0 t) + b \cos(2\omega_0 t), &&t\in [{0,2\pi/\omega_0}]& \\
-	&\textrm{b.}& &f(t) = a \sin^2(\omega_0 t)-\cos(\omega_0t),&&t\in [{0,2\pi/\omega_0}]& \\
-	&\textrm{c.}& &f(t) = c + a \sin(\omega_0t) + b \sin(\omega_0t)\cos(\omega_0t),&& t\in [{0,2\pi/\omega_0}]&
+	&\textrm{a.}& &f(t) = a \sin(\Omega t) + b \cos(2\Omega t), &&t\in [{0,2\pi/\Omega}]& \\
+	&\textrm{b.}& &f(t) = a \sin^2(\Omega t)-\cos(\Omega t),&&t\in [{0,2\pi/\Omega}]& \\
+	&\textrm{c.}& &f(t) = c + a \sin(\Omega t) + b \sin(\Omega t)\cos(\Omega t),&& t\in [{0,2\pi/\Omega}]&
 \end{align}
 Vergleichen Sie das Ergebnis mit dem der Aufgabe 4.1.
 \paragraph{4.3} Berechnen Sie jeweils die partikuläre Lösung $x_p(t)$ der DGL

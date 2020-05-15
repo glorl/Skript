@@ -2,23 +2,20 @@
 % \setcounter{chapter}{4}
 \chapter{Schwingungen mit 2 Freiheitsgraden}
 \section{Beispiele}
-Schwingungssysteme mit mehreren Freiheitsgraden sind in der Technik zuhauf zu finden. Beispiele hierfür sind die ebene Bewegung einer konzentrierten Punktmasse oder gekoppelte Vertikal- und Drehschwingungen (Nickschwingungen) eines Fahrzeugs. 
+Um die Dynamik einer realen Anwendung zu beschreiben, muss die Frage geklärt werden, wie viele Freiheitsgrade das Modell benötigt. In vielen Fällen reicht ein einziger Freiheitsgrad aus -- so im Beispiel der Schwingerkette (Abb. \ref{Abb:Schwingformen4DoF}), wo bei kleinen Anregungsfrequenzen nur eine einzige der vier Schwingformen angeregt wird. Bei höheren Anregungsfrequenzen werden allerdings mehrere Schwingformen angeregt, weshalb eine Modellbeschreibung mehrere Freiheitsgrade enthalten muss. \\
+Beispiele für Schwingungssysteme mit mehreren Schwingformen sind ein Balken mit zwei Punktmassen, sowie Torsionsschwingungen mit zwei Drehträgheiten und elastischer Verbindung (Abb. \ref{Abb:2DoFSchwinger}). Weitere Beispiele sind die ebene Bewegung einer konzentrierten Punktmasse oder gekoppelte Vertikal- und Drehschwingungen (Nickschwingungen) eines Fahrzeugs. 
 \begin{figure}[h]
 	\centering
-	\subfloat{\includegraphics[height=0.18\textwidth]{Bilder/05EbeneSchwingung.pdf}}
-	\hspace{2cm}
-	\subfloat{\includegraphics[height=0.24\textwidth]{Bilder/05Nickschwingungen.pdf}}
-	\caption{Ebene Schwingungen einer Punktmasse, Nickschwingungen im Fahrzeug}
-\end{figure}\\
-Die Frage, wieviele Freiheitsgrade das mechanische Ersatzmodell haben muss, hängt im Allgemeinen von der angeregten Frequenz ab und damit einhergehend mit den zu betrachtenden Schwingungsformen. Beispiele hierfür sind Biegeschwingungen eines Balkens, approximiert durch zwei Punktmassen an einer elastischen Verbindung, oder Torsionsschwingungen mit zwei Drehträgheiten, die ebenfalls elastisch verbunden sind. 
-\begin{figure}[h]
-	\centering
-	\subfloat{\includegraphics[height=0.14\textwidth]{Bilder/05Biegeschwinger.pdf}}
+	\subfloat[Biegeschwinger]{\includegraphics[height=0.14\textwidth]{Bilder/05Biegeschwinger.pdf}}
 	\hspace{1.5cm}
-	\subfloat{\includegraphics[height=0.15\textwidth]{Bilder/05Torsionsschwingerkette.pdf}}
-	\caption{Biegeschwinger, Torsionsschwingerkette}
+	\subfloat[Torsionsschwingerkette]{\includegraphics[height=0.15\textwidth]{Bilder/05Torsionsschwingerkette.pdf}}\\[5mm]
+	\subfloat[Punktmasse]{\includegraphics[height=0.17\textwidth]{Bilder/05EbeneSchwingung.pdf}}
+	\hspace{2cm}
+	\subfloat[Nickschwingungen im Fahrzeug]{\includegraphics[height=0.23\textwidth]{Bilder/05Nickschwingungen.pdf}}
+	\caption{2-Freiheitsgrad-Systeme}
+	\label{Abb:2DoFSchwinger}
 \end{figure}\\
-Ein klassisches Beispiel ist die Vertikalschwingung einer Maschine auf einem Fundament, welche klar in zwei separate Körper unterteilt werden kann. Hierfür lässt sich ein Ersatzmodell aufstellen, in dem die Art der mechanischen Verbindung (Feder, Dämpfer) von den Materialeigenschaften abhängig ist. Dieses Ersatzmodell und dessen Dynamik wird im folgenden Abschnitt behandelt. 
+Im folgenden Abschnitt wird das Ersatzmodell für die Vertikalschwingung einer Maschine auf einem Fundament behandelt. Hierbei ist die Maschine durch eine viskoelastische Verbindung auf einem Schwingfundament befestigt.  
 \section{Bewegungsgleichung}
 Die weiteren Untersuchungen von Zwei-Freiheitsgrad-Systemen werden im Folgenden anhand der Maschine auf Fundament durchgeführt. Zunächst wird der Aufbau und der Freischnitt nach d'Alembert dargestellt: 
 \begin{figure}[h]
@@ -851,3 +848,29 @@ Zur Plausibilisierung kann folgendes Gedankenexperiment durchgeführt werden: set
 	- c_2 x_2 = F_0 \cos (\Omega t)
 \end{align}
 D.h. die Federkraft der Feder $c_2$ steht im Gleichgewicht mit der Anregung. Sie kompensiert also gerade die Anregungskraft, sodass die resultierende Kraft auf die Masse $m_1$ identisch $0$ ist. Daher ruht die Masse $m_1$.
+\newpage
+\section*{Aufgaben zu Kapitel 5}
+\paragraph{5.1} Wie viele unterschiedliche Eigenwerte hat ein mechanisches System mit einem Freiheitsgrad?
+\paragraph{5.2} Wie viele unterschiedliche Eigenwerte hat ein mechanisches System mit zwei Freiheitsgraden?
+\paragraph{5.3} Wie viele unterschiedliche Eigenwerte hat ein mechanisches System mit drei Freiheitsgraden?
+\paragraph{5.4} Bestimmen Sie die Eigenfrequenzen und Eigenvektoren des dynamischen Systems
+\begin{align}
+\left[\begin{array}{cc}
+		1& 0\\ 0& 2
+	\end{array}\right]
+\left[\begin{array}{c}
+\ddot x_1\\ \ddot x_2
+\end{array}\right] +
+\left[\begin{array}{cc}
+	1& -1\\ -1& 3
+\end{array}\right]
+\left[\begin{array}{c}
+	x_1\\ x_2
+\end{array}\right] = 
+\left[\begin{array}{c}
+	F_0\\ 0
+\end{array}\right]\cos(\Omega t)
+\end{align}
+\paragraph{5.5} Berechnen Sie für das System in Aufgabe 5.4 die partikuläre Lösung mithilfe eines Ansatzes vom Typ der rechten Seite.
+\paragraph{5.6} Bestimmen Sie für das System in Aufgabe 5.4 die Modalmatrix und führen Sie die modale Entkopplung durch, sodass Sie zwei entkoppelte DGLn für $z_1$ und $z_2$ erhalten. 
+\paragraph{5.7} Bestimmen Sie für das Ergebnis aus Aufgabe 5.6 die partikuläre Lösung der Gleichungen in $z_1$ und $z_2$. Führen Sie die Rücktransformation der Lösung zu $x_1$ und $x_2$ durch. Vergleichen Sie das Ergebnis mit dem von Aufgabe 5.5.
