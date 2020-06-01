@@ -6,12 +6,12 @@ Die Maschinendynamik untersucht das Verhalten technischer Konstruktionen unter E
 \begin{itemize}
 	\item Torsionsschwingungen von Kolbenmaschinen
 	\item Biegeschwingungen von Turbinenschaufeln
-	\item Unwuchten in Rotoren oder Reifen 
+	\item Unwuchterregte Schwingungen von Rotoren, z.B. Autoreifen 
 	\item Bewegung von Vibrationsstampfern
 	\item Dynamik von Rüttelplatten	
-	\item Schlaglochfahrt eines Fahrzeugs
+	\item Fahrwerksdynamik eines Fahrzeugs bei transienter Anregung, z.B. Schlaglochdurchfahrt
 \end{itemize}
-Oft sind Schwingungen von mechanischen Komponenten die Ursache für deren Versagen. Die aus Schwingungen entstehenden Probleme können unerwünschte Festigkeitsprobleme sein, aber auch komfortrelevante Gerauschphänomene, sogenannte NVH (Noise- Vibration - Harshness) - Probleme. 
+Oft sind Schwingungen von mechanischen Komponenten die Ursache für deren Versagen. Dauerschwingungen führen bei großen Amplituden und langer Dauer zu Ermüdungsversagen von Werkstoffen; es können aber auch komfortrelevante Geräuschphänomene auftreten (NVH: Noise- Vibration - Harshness). 
 \section{Schwingungen} 
 \paragraph{Definition.}
 Kennzeichen einer Schwingung in einem physikalischen System ist die mehr oder weniger regelmäßige Widerkehr bestimmter Merkmale. Die Merkmale werden an messbaren Größen festgemacht: 
@@ -100,7 +100,7 @@ oder invers
 \begin{align}
 &\hat x =\sqrt{C^2+S^2}, && \tan(\varphi) =\frac{S}{C}.&
 \end{align}
-Eine periodische Schwingung wie in Abb. \ref{abb:Schwingung} kann als Überlagerung unendlich vieler harmonischer Teilschwingungen dargestellt werden, die wiederum mithilfe von Fourier-Reihen abgebildet werden können (siehe spätere Kapitel). Die Konvergenz solcher Reihen ist für gemessene Signale in aller Regel erfüllt. Fourier-Reihen haben einige angenehme Eigenschaften, weshalb deren Verwendung im Vergleich zu Rohsignalen im Allgemeinen vorteilhaft ist. 
+Eine periodische Schwingung wie in den Abbildungen \ref{abb:Schwingung} oder \ref{abb:SaegezahnRechteck} kann als Summe unendlich vieler harmonischer Anteile dargestellt werden (siehe Kapitel \ref{Kap:Fourier}). Die Darstellung allgemeiner Signale als harmonische Reihen haben einige angenehme Eigenschaften, weshalb deren Verwendung statt Rohsignalen weit verbreitet ist. 
 \begin{figure}[h]
 	\subfloat{
 \begin{tikzpicture}
@@ -133,15 +133,16 @@ ylabel={$x(t)$}]
 \end{axis}
 \end{tikzpicture}}
 \caption{Beispiele für periodische nicht-harmonische Funktionen: Sägezahnfunktion, Rechteckfunktion. Statt der Schwingungsantwort auf Sägezahn- oder Rechteckanregung können äquivalent die Schwingungsantworten auf deren harmonische Entwicklung (Fourier-Reihen) betrachtet werden.}
+\label{abb:SaegezahnRechteck}
 \end{figure}\\
 \paragraph{Überlagerte harmonische Schwingungen.}
-Überlagerte harmonische Schwingungen stellen sich zum Beispiel ein, wenn Schwingungen von Mehrfreiheitsgradsystemen betrachtet werden. Die Schwingungsanteile sind dann gleichfrequent: 
+In verschiedenen Zusammenhängen, die im Laufe des Skripts beschrieben werden, überlagern sich harmonische Schwingungen. Im einfachsten Fall handelt es sich um gleichfrequente Schwingungen mit verschiedener Amplitude und Phase: 
 \begin{align}
 &x_1(t) = c_{1} + \hat x_1 \cos(\omega t + \varphi_1 )\\
 &x_2(t) = c_{1} + \hat x_2 \cos(\omega t + \varphi_2 )
 \end{align}
 Für $\varphi_1 = \varphi_2$ heißen die Schwingungen \emph{in Phase}, für  $|\varphi_1 - \varphi_2|=\pi$ \emph{in Gegenphase}. Die resultierende Schwingung ist die Summe der zwei Komponenten. \\ 
-Des weiteren können mechanische Systeme mit verschiedenen Anregungsquellen beaufschlagt werden, welche im allgemeinen nicht dieselbe Frequenz haben. Dann folgt für die Gesamtschwingung durch kurze Rechnung 
+Im Fall verschiedener Frequenzen folgt für die Gesamtschwingung durch kurze Rechnung 
 \begin{align}
 x(t) &= x_1(t) + x_2(t) = \hat x_1 \cos(\omega_1 t) + \hat x_2 \cos(\omega_2 t)\\
 & = \frac{\hat x_1+ \hat x_2}{2}\left(\cos(\omega_1 t) + \cos(\omega_2 t)\right)
@@ -232,7 +233,7 @@ Bsp.: Seitenwind bewegt Fahrzeug, die Fahrbahnunebenheit regt ein Fahrzeug zu zu
 	\item \textbf{Erzwungene Schwingung}\\
 	Bsp.: Fahrzeug auf Fahrbahn\\
 	Ursache: äußere Kräfte, Momente\\
-	Frequenz: Erregerfrequenz $\Omega$ \\
+	Frequenz: Erregerfrequenz $\Omega$ (wenn stationärer Zustand erreicht ist)\\
 	Typ der Bewegungsgl.: inhomogen 
 	\item \textbf{Selbsterregte Schwingung}\\
 	Bsp.: Uhr, Klingel, Reibschwinger\\
@@ -240,7 +241,7 @@ Bsp.: Seitenwind bewegt Fahrzeug, die Fahrbahnunebenheit regt ein Fahrzeug zu zu
 	Frequenz: Etwa Eigenfrequenz $\omega_0$ \\
 	Typ der Bewegungsgl.: linear, nichtlinear 
 	\item \textbf{Parametererregte Schwingung}\\
-	Bsp.: Kolbenmotor, Schaukel, Zahnradgetriebe\\
+	Bsp.: Kolbenmotor, Kind auf Schaukel, Zahnradgetriebe\\
 	Ursache: Periodisch zeitveränderliche Parameter im System\\
 	Frequenz: Teile oder Vielfache der Parameterfrequenz\\
 	Typ der Bewegungsgl.: periodische Koeffizienten 
