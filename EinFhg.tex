@@ -1,6 +1,6 @@
 % !TeX spellcheck = de_DE
 \chapter{Freie Schwingungen}
-In diesem Abschnitt werden freie Schwingungen untersucht. Dabei handelt es sich um die Bewegung von Systemen, die ohne Einwirkung äußerer Kräfte oder Bewegungen nach einer Anfangsauslenkung sich selbst überlassen werden. Der Einfachheit halber werden die Betrachtungen anhand von mechanischen 1-Freiheitsgrad-Systemen behandelt. 
+In diesem Abschnitt werden freie Schwingungen von mechanischen 1-Freiheitsgrad-Systemen untersucht, die nach einer Anfangsauslenkung sich selbst überlassen werden. Es sollen nur statische Kräfte auf die betrachteten Systeme wirken. 
 \section{Freie ungedämpfte Schwingungen}\label{kap:UngedaempftEMS}
 Ausgangspunkt für die freien ungedämpften Schwingungen ist ein 1-Massen-Schwinger mit nichtlinearer Federkraft $f(x)$. 
 \begin{figure}[h]
@@ -39,7 +39,7 @@ Eine solche Differentialgleichung (DGL) ist aufgrund des nichtlinearen Zusammenh
 \end{figure} \\\newpage
 \begin{theo}[Taylorreihen-Entwicklung]{theo:taylor}
 Sei $f(x)$ eine $n-$mal stetig differenzierbare Funktion und $x_0$ ein Entwicklungspunkt. Dann ist die Taylorreihenentwicklung definiert als 
-\[f(x) = \sum_{k=0}^{n}\frac{\textrm{d}^k f(x_0)}{\textrm{d} x} \frac{\left(x-x_0\right)^k}{k !} = f(x_0) + f'(x_0) (x-x_0) + f''(x_0) \frac{(x-x_0)^2}{2} + ...\]
+\[f(x) = \sum_{k=0}^{n}\frac{\textrm{d}^k f(x_0)}{\textrm{d} x^k} \frac{\left(x-x_0\right)^k}{k !} = f(x_0) + f'(x_0) (x-x_0) + f''(x_0) \frac{(x-x_0)^2}{2} + ...\]
 Die Reihendarstellung konvergiert für $n\rightarrow\infty$ mit $f(x)$, falls $f(x)$ $\infty-$mal stetig differenzierbar ist.
 \end{theo}
 \begin{lem}[Linearisierung um eine Ruhelage]{lem:linearisierung}
@@ -241,7 +241,7 @@ Die Kräftebilanz liefert
 		\item Ungedämpfte Eigenkreisfrequenz: $\omega_0 = \sqrt{\frac{c}{m}}$
 		\item Exponentielle Abklingrate: $\delta = \frac{d}{2m}$
 		\item Lehr'sches Dämpfungsmaß: $D = \frac{d}{2 m \omega_0}$
-		\item Gedämpfte Eigenkreisfrequenz $\omega_d = \sqrt{1-D^2}\omega_0 $
+		\item Gedämpfte Eigenkreisfrequenz $\omega_d = \omega_0 \sqrt{1-D^2}$
 		\item Schwingungsdauer $T = 2\pi/\omega_d$
 	\end{itemize}
 \end{lem}
@@ -276,7 +276,7 @@ Sie lässt sich auf die Form der Gl. (2.11) bringen, wenn die Koeffizienten
 \end{align}
 gewählt werden. \\
 \end{beispiel}
-Die Fundamentallösung der Gl. \ref{eq:GedEMSD} ist mit $\lambda_{1,2}=-D\omega_0\pm\sqrt{D^2-1}\omega_0$
+Die Fundamentallösung der Gl. \ref{eq:GedEMSD} ist mit $\lambda_{1,2}=-D\omega_0\pm\omega_0\sqrt{D^2-1}$
 \begin{align}
 x = C_1 e^{\lambda_1 t} + C_2 e^{\lambda_2 t}
 \end{align}
@@ -286,11 +286,11 @@ Welchen qualitativen Verlauf die Lösung annimmt, hängt maßgeblich mit der Größe 
 &	\lambda_1 = -D\omega_0+\omega_0\sqrt{D^2-1}<0&& \lambda_2 = -D\omega_0-\omega_0\sqrt{D^2-1}<0
 \end{align}
 Die Lösung $x = C_1 x_1 + C_2 x_2$ setzt sich also aus zwei Anteilen zusammen, deren Verlauf wegen der $\lambda_i<0$ immer expontiell abklingt. Da hiermit Schwingungen ausgeschlossen sind, wird die Bewegung auch \emph{Kriechbewegung} genannt. 
-\paragraph{Fall 2: aperiodischer Grenzfall.} Bei $D=1$ gilt 
+\paragraph{Fall 2: aperiodischer Grenzfall.} Bei $D=1$ fallen die zwei Eigenwerte zusammen: 
 \begin{align}
-&	\lambda_1 = -D\omega_0=-\delta,&& \lambda_2 = -D\omega_0=-\delta
+&	\lambda_1 = \lambda_2 = -D\omega_0=-\delta &
 \end{align}
-Der Verlauf der Lösung ist qualitativ gleich wie im Fall 1. 
+Aufgrund des doppelten Eigenwerts ist die Lösung $x=C_1 e^{\lambda t}+C_2 t e^{\lambda t}$.
 \paragraph{Fall 3: schwache Dämpfung.} Bei $0<D<1$ ist 
 \begin{align}
 &	D^2-1<0,& &\textrm{also}&& \omega_0\sqrt{D^2-1}=i\omega_0\sqrt{1-D^2}=i\omega_d& 
@@ -301,7 +301,7 @@ mit $i$ der komplexen Zahl. Die (komplexe) Fundamentallösung kann hier transform
 	 &= e^{-\delta t}\left(\tilde{C}_1 e^{i \omega_d t} + \tilde{C}_2 e^{-i \omega_d t}\right)\nonumber\\
 	 &= e^{-\delta t}\left(C_1\cos(\omega_d t) + C_2\sin(\omega_d t)\right)\nonumber
 \end{align}
-Es handelt sich bei der Bewegung um eine gedämpfte Schwingung, deren Amplitude mit zunehmender Zeit exponentiell abklingt. 
+Es handelt sich bei der Bewegung um eine gedämpfte Schwingung mit Kreisfrequenz $\omega_d<\omega_0$, deren Amplitude mit zunehmender Zeit exponentiell abklingt. 
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}
@@ -332,7 +332,7 @@ Daraus folgt direkt das \emph{logarithmische Dekrement}:
 Mit bekanntem $\omega_0$, gemessenen $T_d$ und $\Lambda$ lässt sich so aus einer Messung das Lehr'sche Dämpfungsmaß bestimmen. 
 \section*{Aufgaben zu Kapitel 2}
 \paragraph{2.1} Welche Unterschiede gibt es zwischen ungedämpften und gedämpften Schwingungen?
-\paragraph{2.2} Mit welchen Parametern (Konstanten) lässt sich ein lineares mechanisches Schwingungssystem mit einem Freiheigsgrad beschreiben? Welche Bedeutung haben sie?
+\paragraph{2.2} Mit welchen standardisierten Parametern (Konstanten) lässt sich ein lineares mechanisches Schwingungssystem mit einem Freiheigsgrad beschreiben? Welche Bedeutung haben sie?
 \paragraph{2.3} Welche Eigenschaften muss eine DGL haben, damit sie mit einem Exponentialansatz gelöst werden kann?
 \paragraph{2.4} Linearisieren Sie die folgenden Ausdrücke in der Variable $x$ um den Entwicklungspunkt $x=0$: 
 \begin{align}
