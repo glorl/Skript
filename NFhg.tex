@@ -2,8 +2,8 @@
 % \setcounter{chapter}{4}
 \chapter{Schwingungen mit 2 Freiheitsgraden}
 \section{Beispiele}
-Um die Dynamik einer realen Anwendung zu beschreiben, muss die Frage geklärt werden, wie viele Freiheitsgrade das Modell benötigt. In vielen Fällen reicht ein einziger Freiheitsgrad aus -- so im Beispiel der Schwingerkette (Abb. \ref{Abb:Schwingformen4DoF}), wo bei kleinen Anregungsfrequenzen nur eine einzige der vier Schwingformen angeregt wird. Bei höheren Anregungsfrequenzen werden allerdings mehrere Schwingformen angeregt, weshalb eine Modellbeschreibung mehrere Freiheitsgrade enthalten muss. \\
-Beispiele für Schwingungssysteme mit mehreren Schwingformen sind ein Balken mit zwei Punktmassen, sowie Torsionsschwingungen mit zwei Drehträgheiten und elastischer Verbindung (Abb. \ref{Abb:2DoFSchwinger}). Weitere Beispiele sind die ebene Bewegung einer konzentrierten Punktmasse oder gekoppelte Vertikal- und Drehschwingungen (Nickschwingungen) eines Fahrzeugs. 
+Um die Dynamik einer realen Anwendung zu beschreiben, muss die Frage geklärt werden, wie viele Freiheitsgrade nötig sind. In vielen Fällen reicht ein einziger Freiheitsgrad aus -- so im Beispiel der Schwingerkette (Abb. \ref{Abb:Schwingformen4DoF}) bei niedrigen Schwingungsfrequenzen, wo nur die erste Schwingform angeregt wird. Bei höheren Anregungsfrequenzen treten Schwingformen auf, wo sich Kettenglieder teilweise in Gegenphase bewegen. Hier muss die Modellbeschreibung mehrere Freiheitsgrade enthalten. \\
+Beispiele für Schwingungssysteme, wo zwei Freiheitsgrade sinnvoll erscheinen, sind ein Biegebalken mit zwei konzentrierten Massen, ein 2-Drehscheiben-system mit Torsionsfedern, die Bewegung eines Körpers in der Ebene oder ein System zur Beschreibung der Hub- und Nickbewegung eines Fahrzeugs (Abb. \ref{Abb:2DoFSchwinger}). 
 \begin{figure}[h]
 	\centering
 	\subfloat[Biegeschwinger]{\includegraphics[height=0.14\textwidth]{Bilder/05Biegeschwinger.pdf}}
@@ -100,25 +100,25 @@ Zur Lösung wird die folgende Betrachtung herangezogen:  Wenn die Matrix $(M \lam
 \begin{align}
 	\det (M \lambda^2 + K ) = 0
 \end{align}
-Diese Gleichung ist im Fall von 2-Freihetsgrad-Systemen mit $M\in \mathbb{R}^{2\times2}$, $K\in \mathbb{R}^{2\times2}$ ein Polynom 4. Grades in $\lambda$. Die Eigenwerte $\lambda_i$, $i\in \{1,2,3,4\}$ treten in konjugiert komplexen Paaren auf: 
+Diese Gleichung ist im Fall von 2-Freiheitsgrad-Systemen mit $M\in \mathbb{R}^{2\times2}$, $K\in \mathbb{R}^{2\times2}$ ein Polynom 4. Grades in $\lambda$. Die Eigenwerte $\lambda_i$, $i\in \{1,2,3,4\}$ treten in konjugiert komplexen Paaren auf: 
 \begin{align}
-&\lambda_{1/2}=\pm i \omega_1& &\lambda_{3/4}=\pm i \omega_3&
+&\lambda_{1/4}=\pm i \omega_1& &\lambda_{2/3}=\pm i \omega_2&
 \end{align}
 Zur Bestimmung der Eigenvektoren werden die Eigenwerte in das Eigenwertproblem \ref{eq:EWP} eingesetzt: 
 \begin{align}
 &\lambda_{i}:&  &( M \lambda_i^2 + K )\vec{r}_{i} = 0& &i\in\{1,2,3,4\}&
 \label{eq:EV}
 \end{align}
-Wegen der Singularität der Matrix $( M \lambda_i^2 + K )$ sind die Zeilen des Gleichungssystems \ref{eq:EV} linear abhängig. Der Lösungsvektor $\vec{r}_i$ kann bis auf eine freie Konstante berechnet werden. Es verbleiben also insgesamt 4 Konstanten zur Bestimmung der freien Schwingung $\vec{x}_h(t)$, die durch die Anfangsbedingungen gewählt werden. \\
-Die Quadrate der Eigenwerte sind $\lambda_{1/2}^2 = -\omega_{1}^2$,  $\lambda_{3/4}^2 =-\omega_3^2$. Daher sind die Bestimmungsgleichungen für $\vec{r}_1$ und $\vec{r}_2$ identisch, ebenso für $\vec{r}_3$ und $\vec{r}_4$; es folgt $\vec{r}_1 = \vec{r}_2$ und $\vec{r}_3 = \vec{r}_4$. Die homogene Lösung lautet schlussendlich 
+Wegen der Singularität der Matrix $( M \lambda_i^2 + K )$ sind die Zeilen des Gleichungssystems \ref{eq:EV} linear abhängig. Der Lösungsvektor $\vec{r}_i$ kann bis auf eine freie Konstante $u$ berechnet werden. Es verbleiben also insgesamt 4 Konstanten zur Bestimmung der freien Schwingung $\vec{x}_h(t)$, die durch die Anfangsbedingungen gewählt werden. \\
+Die Quadrate der Eigenwerte sind $\lambda_{1/4}^2 = -\omega_{1}^2$,  $\lambda_{2/3}^2 =-\omega_2^2$. Daher sind die Bestimmungsgleichungen für $\vec{r}_1$ und $\vec{r}_4$ identisch, ebenso für $\vec{r}_2$ und $\vec{r}_3$; es folgt $\vec{r}_1 = \vec{r}_4$ und $\vec{r}_2 = \vec{r}_3$. Die homogene Lösung lautet schlussendlich 
 \begin{align}
-&\vec{x}_h(t) = \tilde C_1 \vec{r}_{1/2} e^{i\omega_{1} t} + \tilde C_2 \vec{r}_{1/2} e^{-i\omega_{1} t} + \tilde C_3 \vec{r}_{3/4} e^{i\omega_{3} t} + \tilde C_4 \vec{r}_{3/4} e^{-i\omega_{3} t}
+&\vec{x}_h(t) = \tilde C_1 \vec{r}_{1} e^{i\omega_{1} t} + \tilde C_2 \vec{r}_{2} e^{i\omega_{2} t} + \tilde C_3 \vec{r}_{2} e^{-i\omega_{2} t} + \tilde C_4 \vec{r}_{1} e^{-i\omega_{1} t}
 \end{align}
 oder in reeller Darstellung 
 \begin{align}
-&\vec{x}_h(t) = C_1 \vec{r}_1 \sin (\omega_1 t) + C_2 \vec{r}_1 \cos(\omega_1 t) + C_3 \vec{r}_3 \sin (\omega_3 t) + C_4 \vec{r}_3 \cos(\omega_3 t) 
+&\vec{x}_h(t) = C_1 \vec{r}_1 \sin (\omega_1 t) + C_2 \vec{r}_1 \cos(\omega_1 t) + C_3 \vec{r}_2 \sin (\omega_2 t) + C_4 \vec{r}_2 \cos(\omega_2 t) 
 \end{align}
-Die Massenmatrix $M$ und die Steifigkeitsmatrix $K$ sind positiv definit, sprich, $\det(M)>0$ und $\det(K)>0$. Dann sind die Eigenwerte stets imaginär und die Eigenvektoren reellwertig. \\
+In einem ungedämpften System ($M$-$K$-System) sind die Eigenkreisfrequenzen $\omega$ stets imaginär und die Eigenvektoren $\vec{r}$ reellwertig. Dies ändert sich, sobald Dämpfung vorliegt. \\
 Für die partikuläre Lösung $x_p(t)$ des zwangserregten Systems wird der vektorwertige Ansatz vom Typ der rechten Seite eingesetzt: 
 \begin{align}
 	&\vec{x}_p = \vec{p} \cos(\Omega t)+\vec{q} \sin(\Omega t)&
@@ -337,67 +337,67 @@ Aus der Forderung nach der Existenz der nicht-trivialen Lösung $\vec{r}\neq \vec
 \end{align}
 Die Eigenwerte sind
 \begin{align}
-&\lambda_{1/2} = \pm i\sqrt{\frac{c}{2m}}&
-&\lambda_{3/4} = \pm i\sqrt{\frac{5c}{4m}}&
+&\lambda_{1/4} = \pm i\sqrt{\frac{c}{2m}}&
+&\lambda_{2/3} = \pm i\sqrt{\frac{5c}{4m}}&
 \end{align}
-Wird $\lambda_{1/2}$ in Gl. (5.19) eingesetzt, dann ist 
+Wird $\lambda_{1/4}^2=-\omega_1$ in Gl. (5.19) eingesetzt, dann ist 
 \begin{align}
-0 &= (M\lambda_{1/2}^2 + K) \vec{r}_{1/2} = 
+0 &= (-\omega_1^2 M + K) \vec{r}_{1} = 
 \left[\begin{array}{cc} 
-m\lambda_{1/2}^2+ c & -c \\ -c & 8m\lambda_{1/2}^2 + 6c \\ 
+-\omega_1^2 m + c & -c \\ -c & -8\omega_1^2 m + 6c \\ 
 \end{array}\right]
 	\left[\begin{array}{c} 
 r_1  \\ r_2\\ 
-\end{array}\right]_{1/2}\\
+\end{array}\right]_{1}\\
 &= \left[\begin{array}{cc} 
 \frac{1}{2}c  & -c \\ 
 -c  & 2c \\ 
 \end{array}\right]
 \left[\begin{array}{c} 
 r_1  \\ r_2\\ 
-\end{array}\right]_{1/2}
+\end{array}\right]_{1}
 \end{align}
-Mit $\vec{r}_{1/2}$ dem zum Eigenwertpaar $\lambda_{1/2}$ gehörigen Eigenvektorpaar. Die Eigenvektoren $\vec{r}_{1}$ und $\vec{r}_{2}$ sind identisch. Die zwei Zeilen von Gl.(5.26) sind linear abhängig. Das Gleichungssystem hat unendlich viele Lösungen -- die Lösung kann also nur bis auf eine Konstante bestimmt werden. Setze $r_1 = z$, dann folgt
+Mit $\vec{r}_{1}$ dem zur Eigenkreisfrequenz $\omega_{1}$ gehörigen Eigenvektor. Die zwei Zeilen von Gl.(5.26) sind linear abhängig. Das Gleichungssystem hat unendlich viele Lösungen -- die Lösung kann also nur bis auf eine Konstante bestimmt werden. Setze $r_1 = s$, dann folgt
 \begin{align}
-\vec{r}_{1/2} = 
+\vec{r}_{1} = 
 \left[\begin{array}{c} 
-z \\ \frac{1}{2}z\\ 
+s \\ \frac{1}{2}s\\ 
 \end{array}\right]
 \end{align}
-Die zusätzliche Forderung nach $|\vec{r}_{1/2}|=\sqrt{5}z \overset{!}{=}1$ führt zum \emph{normierten Eigenvektor}
+Die zusätzliche Forderung nach $|\vec{r}_{1}|=\sqrt{5}s \overset{!}{=}1$ führt zum \emph{normierten Eigenvektor}
 \begin{align}
-&\vec{r}_{1/2} = \frac{1}{\sqrt{5}}
+&\vec{r}_{1} = \frac{1}{\sqrt{5}}
 \left[\begin{array}{c} 
 2  \\ 1\\ 
 \end{array}\right]&
-&|\vec{r}_{1/2}|=1&
+&|\vec{r}_{1}|=1&
 \end{align}
-Beim Eigenwertpaar $\lambda_{3/4}$ ergibt sich 
+Beim Eigenwertpaar $\lambda_{2/3}=\pm i\omega_2$ ergibt sich 
 \begin{align}
-0 = (M\lambda_{3/4}^2 + K) \vec{r}_{3/4} 
+0 = (-\omega_2^2 M + K) \vec{r}_{2} 
 = \left[\begin{array}{cc} 
 \frac{1}{4}c & -c\\ 
 -c  & 4c\\ 
 \end{array}\right]
 \left[\begin{array}{c} 
 r_1  \\ r_2\\ 
-\end{array}\right]_{3/4}
+\end{array}\right]_{2}
 \end{align}
 und der zugehörige normierte Eigenvektor ist 
 \begin{align}
-&\vec{r}_{3/4} = \frac{1}{\sqrt{17}}
+&\vec{r}_2 = \frac{1}{\sqrt{17}}
 \left[\begin{array}{c} 
 4  \\ -1\\ 
 \end{array}\right]&
 \end{align}
 Die homogene Lösung ist in reeller Darstellung 
 \begin{align}
-\vec{x}_h(t) = C_1 \vec{r}_{1/2} \sin (\omega_1 t) + C_2 \vec{r}_{1/2} \cos(\omega_1 t) + C_3 \vec{r}_{3/4} \sin (\omega_3 t) + C_4 \vec{r}_{3/4} \cos(\omega_3 t) 
+\vec{x}_h(t) = C_1 \vec{r}_{1} \sin (\omega_1 t) + C_2 \vec{r}_{1} \cos(\omega_1 t) + C_3 \vec{r}_{2} \sin (\omega_2 t) + C_4 \vec{r}_{2} \cos(\omega_2 t) 
 \end{align}
-Die Eigenvektoren $\vec{r}_{1/2}$ und $\vec{r}_{3/4}$ kennzeichnen die Eigenschwingungsformen: 
+Die Eigenvektoren $\vec{r}_{1}$ und $\vec{r}_{2}$ kennzeichnen die Eigenschwingungsformen: 
 \begin{itemize}
-	\item 1. Eigenschwingungsform bei $\omega_1 = \sqrt{\frac{c}{2m}}$. Die Bewegung beider Massen ist gleichphasig, da die Vorzeichen der Komponenten von $\vec{r}_{1/2}$ gleich sind
-	\item 2. Eigenschwingungsform bei $\omega_3 = \sqrt{\frac{5c}{4m}}$. Die Bewegung beider Massen ist gegenphasig, da die Vorzeichen der Komponenten von $\vec{r}_{3/4}$ verschieden sind
+	\item 1. Eigenschwingungsform bei $\omega_1 = \sqrt{\frac{c}{2m}}$. Die Bewegung beider Massen ist gleichphasig, da die Vorzeichen der Komponenten von $\vec{r}_{1}$ gleich sind
+	\item 2. Eigenschwingungsform bei $\omega_2 = \sqrt{\frac{5c}{4m}}$. Die Bewegung beider Massen ist gegenphasig, da die Vorzeichen der Komponenten von $\vec{r}_{2}$ verschieden sind
 \end{itemize}
 Die partikuläre Lösung folgt direkt nach Gl. (5.22)
 \begin{align}
@@ -501,10 +501,10 @@ x_1\\x_2
 \end{array}
 \right]
  = 
-z_1 \vec{r}_1 + z_3 \vec{r}_3 = 
-[\vec{r}_1,\vec{r}_3]\left[
+z_1 \vec{r}_1 + z_2 \vec{r}_2 = 
+[\vec{r}_1,\vec{r}_2]\left[
 \begin{array}{c}
-z_1\\z_3
+z_1\\z_2
 \end{array}
 \right] = 
 R  \vec{z}
@@ -512,13 +512,13 @@ R  \vec{z}
 und folglich ist das zwangserregte System
 \begin{align}
 	\vec{F} & = M\ddot{\vec{x}} + K \vec{x} 
-	= M \left([\vec{r}_1,\vec{r}_3]\left[
+	= M \left([\vec{r}_1,\vec{r}_2]\left[
 	\begin{array}{c}
-	\ddot z_1\\\ddot z_3
+	\ddot z_1\\\ddot z_2
 	\end{array}
-	\right]\right) + K \left([\vec{r}_1,\vec{r}_3]\left[
+	\right]\right) + K \left([\vec{r}_1,\vec{r}_2]\left[
 	\begin{array}{c}
-	z_1\\z_3
+	z_1\\z_2
 	\end{array}
 	\right]\right)\\
 	&=  M R  \ddot{ \vec{z}} + K R  \vec{z}
@@ -529,39 +529,39 @@ R^T\vec{F} & =
 R^T M R  \ddot{ \vec{z}} + R^T K R  \vec{z}\\ 
 &= 	\left[
 \begin{array}{c}
-\vec{r}_1^T\\\vec{r}_3^T
+\vec{r}_1^T\\\vec{r}_2^T
 \end{array}\right]
-M [\vec{r}_1,\vec{r}_3]\left[
+M [\vec{r}_1,\vec{r}_2]\left[
 \begin{array}{c}
-\ddot z_1\\\ddot z_3
+\ddot z_1\\\ddot z_2
 \end{array}
 \right]
 + \left[
 \begin{array}{c}
-\vec{r}_1^T\\\vec{r}_3^T
-\end{array}\right] K [\vec{r}_1,\vec{r}_3]\left[
+\vec{r}_1^T\\\vec{r}_2^T
+\end{array}\right] K [\vec{r}_1,\vec{r}_2]\left[
 \begin{array}{c}
-z_1\\z_3
+z_1\\z_2
 \end{array}
 \right]
 \end{align}
 \begin{align}
 & =  	\left[
 \begin{array}{cc}
-\vec{r}_1^T M \vec{r}_1& \vec{r}_1^T M \vec{r}_3\\
-\vec{r}_3^T M \vec{r}_1& \vec{r}_3^T M \vec{r}_3
+\vec{r}_1^T M \vec{r}_1& \vec{r}_1^T M \vec{r}_2\\
+\vec{r}_2^T M \vec{r}_1& \vec{r}_2^T M \vec{r}_2
 \end{array}\right]
 \left[
 \begin{array}{c}
-\ddot z_1\\\ddot z_3
+\ddot z_1\\\ddot z_2
 \end{array}
 \right]+
 \left[\begin{array}{cc}
-\vec{r}_1^T K \vec{r}_1& \vec{r}_1^T K \vec{r}_3\\
-\vec{r}_3^T K \vec{r}_1& \vec{r}_3^T K \vec{r}_3
+\vec{r}_1^T K \vec{r}_1& \vec{r}_1^T K \vec{r}_2\\
+\vec{r}_2^T K \vec{r}_1& \vec{r}_2^T K \vec{r}_2
 \end{array}\right]
 \left[\begin{array}{c}
-z_1\\z_3
+z_1\\z_2
 \end{array}
 \right]0
 \end{align}
@@ -569,7 +569,7 @@ Bzw.
 \begin{align}
 \left[
 \begin{array}{c}
-	\vec{r}_1\cdot \vec{F}\\\vec{r}_3\cdot \vec{F}
+	\vec{r}_1\cdot \vec{F}\\\vec{r}_2\cdot \vec{F}
 \end{array}
 \right]&=  	\left[
 \begin{array}{cc}
@@ -578,24 +578,24 @@ Bzw.
 \end{array}\right]
 \left[
 \begin{array}{c}
-\ddot z_1\\\ddot z_3
+\ddot z_1\\\ddot z_2
 \end{array}
 \right]+
 \left[\begin{array}{cc}
 \omega_1^2& 0\\
-0& \omega_3^2
+0& \omega_2^2
 \end{array}\right]
 \left[\begin{array}{c}
-z_1\\z_3
+z_1\\z_2
 \end{array}
 \right]
 \end{align}
 Es liegen also zwei entkoppelte Einzeldifferentialgleichungen vor: 
 \begin{align}
 	& \ddot z_1+\omega_1^2 z_1 = \vec{r}_1\cdot \vec{F} &
-	& \ddot z_3+\omega_3^2 z_3 = \vec{r}_3\cdot \vec{F} & 
+	& \ddot z_2+\omega_2^2 z_2 = \vec{r}_2\cdot \vec{F} & 
 \end{align}
-Modale Entkopplung des Differentialgleichungssystems setzt die Kenntnis der Eigenvektoren voraus. Der Vorteil der modalen Entkopplung ist, dass die Gleichungen unabhängig voneinander gelöst werden können. Dies ist insbesondere bei erzwungenen Schwingungen vorteilhaft. 
+Modale Entkopplung des Differentialgleichungssystems setzt die Kenntnis der Eigenvektoren voraus. Der Vorteil der modalen Entkopplung ist, dass die Gleichungen unabhängig voneinander gelöst werden können. Dies ist insbesondere bei erzwungenen Schwingungen vorteilhaft, weil nun auf die vektorwertige DGL zugänglich ist für die Methoden der skalaren DGLn. 
 \begin{beispiel}[Modale Entopplung]{beispiel:Modalmatrix}
 Es wird das ungedämpfte System 
 \begin{align}
@@ -620,26 +620,26 @@ Es wird das ungedämpfte System
 betrachtet. Die Eigenwertpaare sind vor Normierung 
 \begin{align}
 	& \omega_1 = \sqrt{\frac{c}{2m}}& 
-	& \vec{r}_1 = C_1 \left[\begin{array}{c}
+	& \vec{r}_1 = s_1 \left[\begin{array}{c}
 		1\\2
 	\end{array}\right]& \\
-	& \omega_3 = \sqrt{\frac{5c}{4m}}& 
-	& \vec{r}_3 = C_3 \left[\begin{array}{c}
+	& \omega_2 = \sqrt{\frac{5c}{4m}}& 
+	& \vec{r}_2 = s_2 \left[\begin{array}{c}
 		1\\-4
 	\end{array}\right]&
 \end{align} 
 Die Normierung bzgl. der Massenmatrix liefert die freien Konstanten
 \begin{align}
-	&\vec{r}_1\cdot (M\vec{r}_1) = 12 C_1^2 m \overset{!}{=} 1&
+	&\vec{r}_1\cdot (M\vec{r}_1) = 12 s_1^2 m \overset{!}{=} 1&
 	&\rightarrow&
-	&C_1 = \frac{1}{2\sqrt{3m}}&  \\
-	&\vec{r}_3\cdot (M\vec{r}_3) = 24 C_3^2 m \overset{!}{=} 1&
+	&s_1 = \frac{1}{2\sqrt{3m}}&  \\
+	&\vec{r}_2\cdot (M\vec{r}_2) = 24 s_2^2 m \overset{!}{=} 1&
 	&\rightarrow&
-	&C_3 = \frac{1}{2\sqrt{6m}}&  
+	&s_2 = \frac{1}{2\sqrt{6m}}&  
 \end{align}
 Die Modalmatrix ist 
 \begin{align}
-	R = [\vec{r}_1, \vec{r}_3] = 
+	R = [\vec{r}_1, \vec{r}_2] = 
 	\left[\begin{array}{cc}
 		\frac{1}{2\sqrt{3m}}& \frac{1}{2\sqrt{6m}}\\
 		\frac{1}{\sqrt{3m}}& -\frac{2}{\sqrt{6m}}
@@ -702,7 +702,7 @@ und
 		\frac{F_0\cos(\Omega t)}{2\sqrt{6m}}
 	\end{array}\right]
 \end{align}
-Das gekoppelte Differentialgleichungssystem $M\ddot{ \vec{x}} + K \vec{x} = \vec{F}$ wurde also transformiert in zwei voneinander entkoppelte Differentialgleichungen $\ddot z_1 + \omega_1^2 z_1 = F_0\cos(\Omega t)/(2\sqrt{3m})$ und $\ddot z_3 + \omega_3^2 z_3=F_0\cos(\Omega t)/(2\sqrt{6m}) $, die unabhängig voneinander gelöst werden können. \end{beispiel}
+Das gekoppelte Differentialgleichungssystem $M\ddot{ \vec{x}} + K \vec{x} = \vec{F}$ wurde also transformiert in zwei voneinander entkoppelte Differentialgleichungen $\ddot z_1 + \omega_1^2 z_1 = F_0\cos(\Omega t)/(2\sqrt{3m})$ und $\ddot z_2 + \omega_2^2 z_2=F_0\cos(\Omega t)/(2\sqrt{6m}) $, die unabhängig voneinander gelöst werden können. \end{beispiel}
 \section{Systeme mit modaler Dämpfung}
 Im Fall von Dämpfung und ohne äußere Anregung lautet die Systembeschreibung 
 \begin{align}

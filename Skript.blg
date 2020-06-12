@@ -4,6 +4,8 @@ The top-level auxiliary file: Skript.aux
 A level-1 auxiliary file: Einleitung.aux
 A level-1 auxiliary file: EinFhg.aux
 A level-1 auxiliary file: ErzwungeneSchwingungen.aux
+A level-1 auxiliary file: Anregungssignale.aux
+A level-1 auxiliary file: NFhg.aux
 The style file: plaindin.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -13,7 +15,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Literaturliste.bib
 You've used 7 entries,
             4335 wiz_defined-function locations,
-            859 strings with 6745 characters,
+            861 strings with 6773 characters,
 and the built_in function-call counts, 3790 in all, are:
 = -- 318
 > -- 145
