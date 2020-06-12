@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  10 JUN 2020 10:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  12 JUN 2020 22:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1709,17 +1709,17 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 217.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 219.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 219.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 227.
+(babel)             in language  on input line 221.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 227.
+(babel)             in language  on input line 221.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 232.
+(babel)             in language  on input line 223.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 232.
+(babel)             in language  on input line 223.
 ) (./EinFhg.tex
 chapter 2.
 Package babel Info: Redefining ngerman shorthand "|
@@ -2197,9 +2197,9 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 678.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 716.
+(mdframed)              on input line 717.
 
-Overfull \hbox (3.69244pt too wide) in paragraph at lines 736--737
+Overfull \hbox (3.69244pt too wide) in paragraph at lines 737--738
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -2207,27 +2207,27 @@ Overfull \hbox (3.69244pt too wide) in paragraph at lines 736--737
 File: Bilder/Hochlaufsimulation_Farbkarte.png Graphic file (type png)
 <use Bilder/Hochlaufsimulation_Farbkarte.png>
 Package pdftex.def Info: Bilder/Hochlaufsimulation_Farbkarte.png  used on input
- line 755.
+ line 756.
 (pdftex.def)             Requested size: 217.75601pt x 145.3187pt.
 <Bilder/Hochlaufsimulation_y.png, id=28, 364.36125pt x 268.00125pt>
 File: Bilder/Hochlaufsimulation_y.png Graphic file (type png)
 <use Bilder/Hochlaufsimulation_y.png>
 Package pdftex.def Info: Bilder/Hochlaufsimulation_y.png  used on input line 75
-6.
+7.
 (pdftex.def)             Requested size: 174.20215pt x 128.13205pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 759.
+(mdframed)              on input line 760.
 \openout7 = `BilderExternalized/Skript-figure85.dpth'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 759.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 759.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 759.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 759.
+(babel)             in language  on input line 760.
 [50
 
 \providecommand \oddpage@label [2]{}
@@ -2236,26 +2236,26 @@ Package babel Info: Redefining ngerman shorthand "~
 \pgfsyspdfmark {pgfid120}{0}{0}
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 760.
+(babel)             in language  on input line 762.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 760.
+(babel)             in language  on input line 762.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 767.
+(mdframed)              on input line 769.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 776.
+(mdframed)              on input line 778.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 798.
+(mdframed)              on input line 800.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 804.
+(mdframed)              on input line 806.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 805.
+(mdframed)              on input line 807.
 
-Underfull \hbox (badness 1430) in paragraph at lines 806--807
+Underfull \hbox (badness 1430) in paragraph at lines 808--809
 []\T1/ppl/m/n/12 Die Fou-rier-trans-for-mier-te der Sprung-funk-ti-on be-rech-n
 et sich we-gen $\OML/cmm/m/it/12 ^^N\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr
 /m/n/12 ) =
@@ -2263,45 +2263,38 @@ et sich we-gen $\OML/cmm/m/it/12 ^^N\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 814.
+(mdframed)              on input line 816.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 815.
+(mdframed)              on input line 817.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 820.
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 820.
-
+(mdframed)              on input line 822.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 821.
+(mdframed)              on input line 823.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 845.
+(mdframed)              on input line 847.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 846.
+(mdframed)              on input line 848.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 852.
-Package mdframed Info: Not enough space on this page on input line 852.
+(mdframed)              on input line 854.
+Package mdframed Info: Not enough space on this page on input line 854.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 854.
+(babel)             in language  on input line 856.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 854.
+(babel)             in language  on input line 856.
 
-Underfull \hbox (badness 3354) in paragraph at lines 866--869
+Underfull \hbox (badness 3354) in paragraph at lines 868--871
 \T1/ppl/m/n/12 quenz-be-reich die Über-tra-gungs-funk-ti-on. Au-ÿer-dem ist die
  Über-tra-gungs-funk-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--882
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
 
  []
 
@@ -2323,23 +2316,23 @@ line 5.
 LaTeX Warning: Reference `Abb:2DoFSchwinger' on page 58 undefined on input line
  6.
 
-<Bilder/05Biegeschwinger.pdf, id=51, 214.14792pt x 85.24767pt>
+<Bilder/05Biegeschwinger.pdf, id=47, 214.14792pt x 85.24767pt>
 File: Bilder/05Biegeschwinger.pdf Graphic file (type pdf)
 <use Bilder/05Biegeschwinger.pdf>
 Package pdftex.def Info: Bilder/05Biegeschwinger.pdf  used on input line 9.
 (pdftex.def)             Requested size: 161.6137pt x 64.33139pt.
-<Bilder/05Torsionsschwingerkette.pdf, id=52, 252.45483pt x 86.22386pt>
+<Bilder/05Torsionsschwingerkette.pdf, id=48, 252.45483pt x 86.22386pt>
 File: Bilder/05Torsionsschwingerkette.pdf Graphic file (type pdf)
 <use Bilder/05Torsionsschwingerkette.pdf>
 Package pdftex.def Info: Bilder/05Torsionsschwingerkette.pdf  used on input lin
 e 11.
 (pdftex.def)             Requested size: 201.81389pt x 68.924pt.
-<Bilder/05EbeneSchwingung.pdf, id=53, 112.34805pt x 111.01178pt>
+<Bilder/05EbeneSchwingung.pdf, id=49, 112.34805pt x 111.01178pt>
 File: Bilder/05EbeneSchwingung.pdf Graphic file (type pdf)
 <use Bilder/05EbeneSchwingung.pdf>
 Package pdftex.def Info: Bilder/05EbeneSchwingung.pdf  used on input line 12.
 (pdftex.def)             Requested size: 79.05794pt x 78.1162pt.
-<Bilder/05Nickschwingungen.pdf, id=54, 398.24312pt x 151.30833pt>
+<Bilder/05Nickschwingungen.pdf, id=50, 398.24312pt x 151.30833pt>
 File: Bilder/05Nickschwingungen.pdf Graphic file (type pdf)
 <use Bilder/05Nickschwingungen.pdf>
 Package pdftex.def Info: Bilder/05Nickschwingungen.pdf  used on input line 14.
@@ -2348,13 +2341,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
-<Bilder/05ZweiMassenSchwinger.pdf, id=55, 135.19063pt x 235.67758pt>
+<Bilder/05ZweiMassenSchwinger.pdf, id=51, 135.19063pt x 235.67758pt>
 File: Bilder/05ZweiMassenSchwinger.pdf Graphic file (type pdf)
 <use Bilder/05ZweiMassenSchwinger.pdf>
 Package pdftex.def Info: Bilder/05ZweiMassenSchwinger.pdf  used on input line 2
 3.
 (pdftex.def)             Requested size: 100.16533pt x 174.6168pt.
-<Bilder/05ZMSdAlembert.pdf, id=56, 254.61203pt x 271.56183pt>
+<Bilder/05ZMSdAlembert.pdf, id=52, 254.61203pt x 271.56183pt>
 File: Bilder/05ZMSdAlembert.pdf Graphic file (type pdf)
 <use Bilder/05ZMSdAlembert.pdf>
 Package pdftex.def Info: Bilder/05ZMSdAlembert.pdf  used on input line 24.
@@ -2414,7 +2407,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 760.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 760.
-<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=57, 130.7565pt x 193.1738pt>
+<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=53, 130.7565pt x 193.1738pt>
 File: Bilder/05ErzwungeneKoppelschwingungen.pdf Graphic file (type pdf)
 <use Bilder/05ErzwungeneKoppelschwingungen.pdf>
 Package pdftex.def Info: Bilder/05ErzwungeneKoppelschwingungen.pdf  used on inp
@@ -2449,8 +2442,8 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 48912 strings out of 494798
- 1100188 string characters out of 6176801
+ 48909 strings out of 494798
+ 1100146 string characters out of 6176801
  2445983 words of memory out of 5000000
  51437 multiletter control sequences out of 15000+600000
  558632 words of font info for 88 fonts, out of 8000000 for 9000
@@ -2461,15 +2454,14 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
-lb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on BilderExternalized/Skript-figure85.pdf (1 page, 95096 bytes).
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palat
+ino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on BilderExternalized/Skript-figure85.pdf (1 page, 86226 bytes).
 
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

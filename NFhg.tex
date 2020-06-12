@@ -143,20 +143,20 @@ Es folgen die Lösungen
 Als Gesamtlösung ergibt sich durch Superposition 
 \begin{align}
 	\vec{x}(t) =& \vec{x}_h(t)+\vec{x}_p(t)\\
-	=& C_1 \vec{r}_1 \sin (\omega_1 t) + C_2 \vec{r}_1 \cos(\omega_1 t) + C_3 \vec{r}_3 \sin (\omega_3 t) + C_4 \vec{r}_3 \cos(\omega_3 t)\nonumber\\
+	=& C_1 \vec{r}_1 \sin (\omega_1 t) + C_2 \vec{r}_1 \cos(\omega_1 t) + C_3 \vec{r}_2 \sin (\omega_2 t) + C_4 \vec{r}_2 \cos(\omega_2 t)\nonumber\\
 	&+ (K-\Omega^2 M)^{-1}\vec{F}\cos(\Omega t)\nonumber
 \end{align}
 Die freien Konstanten können jetzt mithilfe der Anfangsbedingungen bestimmt werden. Hierzu lauten die vier Gleichungen 
 \begin{align}
-	\vec{x}_0 = \vec{x}(t=0) =& C_2 \vec{r}_1 +C_4 \vec{r}_3 + (K-\Omega^2 M)^{-1}\vec{F}\\
-	\vec{v}_0 = \dot{\vec{x}}(t=0) =& \omega_1 C_1 \vec{r}_1 +\omega_3 C_3 \vec{r}_3 - \Omega (K-\Omega^2 M)^{-1}\vec{F}	
+	\vec{x}_0 = \vec{x}(t=0) =& C_2 \vec{r}_1 +C_4 \vec{r}_2 + (K-\Omega^2 M)^{-1}\vec{F}\\
+	\vec{v}_0 = \dot{\vec{x}}(t=0) =& \omega_1 C_1 \vec{r}_1 +\omega_2 C_3 \vec{r}_2 - \Omega (K-\Omega^2 M)^{-1}\vec{F}	
 \end{align}
 welche die Gleichungssysteme 
 \begin{align}
-	\vec{x}_0 - (K-\Omega^2 M)^{-1}\vec{F} &= \left[\vec{r}_1, \vec{r}_3\right]\left[\begin{array}{c}
+	\vec{x}_0 - (K-\Omega^2 M)^{-1}\vec{F} &= \left[\vec{r}_1, \vec{r}_2\right]\left[\begin{array}{c}
 		C_1\\C_3
 	\end{array}\right] \\
-	\vec{v}_0 + \Omega (K-\Omega^2 M)^{-1}\vec{F} &= \left[\omega_1 \vec{r}_1,\omega_3 \vec{r}_3\right] \left[\begin{array}{c}
+	\vec{v}_0 + \Omega (K-\Omega^2 M)^{-1}\vec{F} &= \left[\omega_1 \vec{r}_1,\omega_2 \vec{r}_2\right] \left[\begin{array}{c}
 		C_2\\C_4
 	\end{array}\right]	
 \end{align}
@@ -491,7 +491,7 @@ und damit der \emph{Rayleigh}-Quotient
 \end{align}
 definiert. Wenn die Eigenwerte massenbezogen normiert werden, d.h. ${\vec{r}_i\cdot (M\vec{r}_i)=1}$, dann vereinfacht sich der Rayleigh-Quotient zu ${\omega_i^2  = \vec{r}_i\cdot (K \vec{r}_i)}$. Ferner wird die \emph{Modalmatrix} definiert durch die Matrix der linear unabhängigen Eigenvektoren
 \begin{align}
-R  = [\vec{r}_1, \vec{r}_3]
+R  = [\vec{r}_1, \vec{r}_2]
 \end{align}
 Da die Eigenvektoren den Zustandsraum vollständig aufspannen, kann der Zustandsvektor auch wie folgt dargestellt werden: 
 \begin{align}
@@ -744,7 +744,7 @@ R^T M R &=  	\left[
 R^T K R &=  	
 \left[\begin{array}{cc}
 	\omega_1^2& 0\\
-	0& \omega_3^2
+	0& \omega_2^2
 \end{array}\right]\\
 R^T D R &=\alpha R^T M R + \beta R^T K R = 
 \alpha \left[\begin{array}{cc}
@@ -753,7 +753,7 @@ R^T D R &=\alpha R^T M R + \beta R^T K R =
 \end{array}\right]+ 
 \beta \left[\begin{array}{cc}
 \omega_1^2& 0\\
-0& \omega_3^2
+0& \omega_2^2
 \end{array}\right]
 \end{align}
 Mit der rechten Seite $R^T \vec{F}$ kann nun folglich das entkoppelte System gelöst werden, um freie und erzwungene Schwingungen zu berechnen. 

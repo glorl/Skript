@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  12 JUN 2020 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  12 JUN 2020 22:04
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2907,16 +2907,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 759.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 759.
-[50]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 759.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 759.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 759.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 759.
- [51 <./BilderExternalized/Skript-figure85.pdf>]
+[50 <./BilderExternalized/Skript-figure85.pdf>]
 ===== Image 'BilderExternalized/Skript-figure86' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 761.
@@ -2930,7 +2921,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 763.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 763.
-[52 <./BilderExternalized/Skript-figure86.pdf>]
+[51 <./BilderExternalized/Skript-figure86.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 768.
@@ -2948,7 +2939,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 786.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 786.
-[53 <./BilderExternalized/Skript-figure88.pdf>]
+[52 <./BilderExternalized/Skript-figure88.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 799.
@@ -2981,7 +2972,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 815.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 815.
-[54 <./BilderExternalized/Skript-figure90.pdf> <./BilderExternalized/Skript-fig
+[53 <./BilderExternalized/Skript-figure90.pdf> <./BilderExternalized/Skript-fig
 ure92.pdf>]
 ===== Image 'BilderExternalized/Skript-figure93' is up-to-date. ======
 Package mdframed Info: mdframed detected package amsthm 
@@ -3009,7 +3000,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 846.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 846.
-[55 <./BilderExternalized/Skript-figure93.pdf> <./BilderExternalized/Skript-fig
+[54 <./BilderExternalized/Skript-figure93.pdf> <./BilderExternalized/Skript-fig
 ure95.pdf> <./BilderExternalized/Skript-figure98.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3039,7 +3030,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 872.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 872.
-[56 <./BilderExternalized/Skript-figure100.pdf>]
+[55 <./BilderExternalized/Skript-figure100.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 882--883
 
  []
@@ -3052,7 +3043,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 883.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 883.
-[57])
+[56])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 129.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3061,7 +3052,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 129.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 129.
- [58]
+ [57]
 \openout2 = `NFhg.aux'.
 
  (./NFhg.tex
@@ -3074,23 +3065,23 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
-<Bilder/05Biegeschwinger.pdf, id=2275, 214.14792pt x 85.24767pt>
+<Bilder/05Biegeschwinger.pdf, id=2267, 214.14792pt x 85.24767pt>
 File: Bilder/05Biegeschwinger.pdf Graphic file (type pdf)
 <use Bilder/05Biegeschwinger.pdf>
 Package pdftex.def Info: Bilder/05Biegeschwinger.pdf  used on input line 9.
 (pdftex.def)             Requested size: 161.6137pt x 64.33139pt.
-<Bilder/05Torsionsschwingerkette.pdf, id=2276, 252.45483pt x 86.22386pt>
+<Bilder/05Torsionsschwingerkette.pdf, id=2268, 252.45483pt x 86.22386pt>
 File: Bilder/05Torsionsschwingerkette.pdf Graphic file (type pdf)
 <use Bilder/05Torsionsschwingerkette.pdf>
 Package pdftex.def Info: Bilder/05Torsionsschwingerkette.pdf  used on input lin
 e 11.
 (pdftex.def)             Requested size: 201.81389pt x 68.924pt.
-<Bilder/05EbeneSchwingung.pdf, id=2277, 112.34805pt x 111.01178pt>
+<Bilder/05EbeneSchwingung.pdf, id=2269, 112.34805pt x 111.01178pt>
 File: Bilder/05EbeneSchwingung.pdf Graphic file (type pdf)
 <use Bilder/05EbeneSchwingung.pdf>
 Package pdftex.def Info: Bilder/05EbeneSchwingung.pdf  used on input line 12.
 (pdftex.def)             Requested size: 79.05794pt x 78.1162pt.
-<Bilder/05Nickschwingungen.pdf, id=2278, 398.24312pt x 151.30833pt>
+<Bilder/05Nickschwingungen.pdf, id=2270, 398.24312pt x 151.30833pt>
 File: Bilder/05Nickschwingungen.pdf Graphic file (type pdf)
 <use Bilder/05Nickschwingungen.pdf>
 Package pdftex.def Info: Bilder/05Nickschwingungen.pdf  used on input line 14.
@@ -3103,7 +3094,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
-[59
+[58
 
 
 
@@ -3125,13 +3116,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
-<Bilder/05ZweiMassenSchwinger.pdf, id=2293, 135.19063pt x 235.67758pt>
+<Bilder/05ZweiMassenSchwinger.pdf, id=2286, 135.19063pt x 235.67758pt>
 File: Bilder/05ZweiMassenSchwinger.pdf Graphic file (type pdf)
 <use Bilder/05ZweiMassenSchwinger.pdf>
 Package pdftex.def Info: Bilder/05ZweiMassenSchwinger.pdf  used on input line 2
 3.
 (pdftex.def)             Requested size: 100.16533pt x 174.6168pt.
-<Bilder/05ZMSdAlembert.pdf, id=2294, 254.61203pt x 271.56183pt>
+<Bilder/05ZMSdAlembert.pdf, id=2287, 254.61203pt x 271.56183pt>
 File: Bilder/05ZMSdAlembert.pdf Graphic file (type pdf)
 <use Bilder/05ZMSdAlembert.pdf>
 Package pdftex.def Info: Bilder/05ZMSdAlembert.pdf  used on input line 24.
@@ -3144,7 +3135,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 68.
- [60 <./Bilder/05ZweiMassenSchwinger.pdf> <./Bilder/05ZMSdAlembert.pdf
+ [59 <./Bilder/05ZweiMassenSchwinger.pdf> <./Bilder/05ZMSdAlembert.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Bilder/05ZMSdAlembert.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
@@ -3161,25 +3152,25 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 97.
+ [60]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 120.
  [61]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 162.
  [62]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 162.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 162.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 162.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 162.
- [63]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 164.
@@ -3197,7 +3188,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 299.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 299.
-[64 <./BilderExternalized/Skript-figure102.pdf>]
+[63 <./BilderExternalized/Skript-figure102.pdf>]
 ===== Image 'BilderExternalized/Skript-figure103' is up-to-date. ======
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3215,7 +3206,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 459.
-[65 <./BilderExternalized/Skript-figure103.pdf> <./BilderExternalized/Skript-fi
+[64 <./BilderExternalized/Skript-figure103.pdf> <./BilderExternalized/Skript-fi
 gure105.pdf>]
 ===== Image 'BilderExternalized/Skript-figure106' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
@@ -3226,7 +3217,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 459.
-[66 <./BilderExternalized/Skript-figure106.pdf>]
+[65 <./BilderExternalized/Skript-figure106.pdf>]
 ===== Image 'BilderExternalized/Skript-figure107' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 459.
@@ -3236,7 +3227,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 459.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 459.
-[67 <./BilderExternalized/Skript-figure107.pdf>]
+[66 <./BilderExternalized/Skript-figure107.pdf>]
 ===== Image 'BilderExternalized/Skript-figure108' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 460.
@@ -3250,7 +3241,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 491.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 491.
-[68 <./BilderExternalized/Skript-figure108.pdf>]
+[67 <./BilderExternalized/Skript-figure108.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 599.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3259,7 +3250,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 599.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 599.
- [69]
+ [68]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 599.
@@ -3277,7 +3268,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 705.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 705.
-[70 <./BilderExternalized/Skript-figure110.pdf>]
+[69 <./BilderExternalized/Skript-figure110.pdf>]
 ===== Image 'BilderExternalized/Skript-figure111' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 706.
@@ -3291,7 +3282,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 724.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 724.
-[71 <./BilderExternalized/Skript-figure111.pdf>]
+[70 <./BilderExternalized/Skript-figure111.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 726.
@@ -3305,7 +3296,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 760.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 760.
-<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=2630, 130.7565pt x 193.1738pt>
+<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=2623, 130.7565pt x 193.1738pt>
 File: Bilder/05ErzwungeneKoppelschwingungen.pdf Graphic file (type pdf)
 <use Bilder/05ErzwungeneKoppelschwingungen.pdf>
 Package pdftex.def Info: Bilder/05ErzwungeneKoppelschwingungen.pdf  used on inp
@@ -3319,7 +3310,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 766.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 766.
-[72 <./BilderExternalized/Skript-figure113.pdf>]
+[71 <./BilderExternalized/Skript-figure113.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 815.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3328,7 +3319,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 815.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 815.
- [73 <./Bilder/05ErzwungeneKoppelschwingungen.pdf>]
+ [72 <./Bilder/05ErzwungeneKoppelschwingungen.pdf>]
 ===== Image 'BilderExternalized/Skript-figure114' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 851.
@@ -3338,7 +3329,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 851.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 851.
-[74 <./BilderExternalized/Skript-figure114.pdf>]
+[73 <./BilderExternalized/Skript-figure114.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 851.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3347,7 +3338,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 851.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 851.
- [75])
+ [74])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3356,7 +3347,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 130.
- [76] (./Skript.bbl
+ [75] (./Skript.bbl
 chapter without number
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -3371,7 +3362,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 152.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 152.
- [77
+ [76
 
 
 
@@ -3387,8 +3378,8 @@ Package rerunfilecheck Info: File `Skript.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 48492 strings out of 494798
- 1080496 string characters out of 6176801
+ 48491 strings out of 494798
+ 1080489 string characters out of 6176801
  1404353 words of memory out of 5000000
  50340 multiletter control sequences out of 15000+600000
  563093 words of font info for 95 fonts, out of 8000000 for 9000
@@ -3414,10 +3405,10 @@ public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on Skript.pdf (80 pages, 1090640 bytes).
+Output written on Skript.pdf (79 pages, 1090400 bytes).
 PDF statistics:
- 2876 PDF objects out of 2984 (max. 8388607)
- 2598 compressed objects within 26 object streams
- 534 named destinations out of 1000 (max. 500000)
+ 2869 PDF objects out of 2984 (max. 8388607)
+ 2592 compressed objects within 26 object streams
+ 533 named destinations out of 1000 (max. 500000)
  1080 words of extra memory for PDF output out of 10000 (max. 10000000)
 
