@@ -67,29 +67,29 @@ Die zu erwähnenden Eigenschaften des Dirac-Impulses sind
 \begin{itemize}
 	\item Die Impulsdauer $2\varepsilon$ ist wegen $\varepsilon\rightarrow0$ unendlich kurz
 	\item Die Impulshöhe $\frac{1}{2\varepsilon}$ ist unendlich groß
-	\item Für jede Funktion $f(x)$ gilt die Ausblendeigenschaft 
+	\item Für jede Funktion $f(t)$, die bei $t=t_0$ stetig ist, gilt die Ausblendeigenschaft 
 	\begin{align}
 		\int_{-\infty}^{\infty}f(t)\delta(t-t_0) \textrm{d}t = f(t_0)		
 	\end{align}
 \end{itemize}
-\subsection{Stoßantwort}
-Die Anregung eines Einmassenschwingers durch einen Stoß (z.B. Hammerschlag) kann formal über den Dirac-Impuls eingeführt werden. Zunächst lautet die DGL 
+\subsection{Impulsantwort}
+Die Anregung durch Impuls ist ein spezielles Testsignal, mit dem die wichtigsten Eigenschaften eines Schwingungssystems ermittelt werden können. Im Falle des Einmassenschwingers lautet die DGL 
 \begin{align}
 	m\ddot x + d\dot x + c x = \delta(t)
 	\label{eq:EMSImpuls}
 \end{align}
-wobei für den Dirac-Impuls $\delta(t)$ die abschnittsweise Definition in Abhängigkeit von $\varepsilon$ verwendet wird. Dementsprechend ist die Lösung eine abschnittsweise definierte Funktion: 
-\paragraph{Vor Stoß ($t \leq -\varepsilon $)}
+wobei für den Dirac-Impuls $\delta(t)$ die abschnittsweise Definition in Abhängigkeit von $\varepsilon$ verwendet wird. Dementsprechend ist die Lösung abschnittsweise definiert: 
+\paragraph{Vor Impuls ($t \leq -\varepsilon $)}
 Die Masse ist in Ruhe. Also sind Lage und Geschwindigkeit 
 	\begin{align}
 	&x(-\varepsilon)=0&  &\dot x(-\varepsilon)=0&
 	\end{align}
-\paragraph{Während des Stoßes ($-\varepsilon  \leq t \leq \varepsilon$)}
+\paragraph{Während des Impuls ($-\varepsilon  \leq t \leq \varepsilon$)}
 Die Bewegungsgleichung lautet 
 	\begin{align}
 	m\ddot x + d\dot x + c x = \frac{1}{2\varepsilon}
 	\end{align}
-	Die Integration über die Stoßdauer ergibt in mehreren Schritten  
+	Die Integration über die Impulsdauer ergibt in mehreren Schritten  
 	\begin{align}
 	\int_{-\varepsilon}^{\varepsilon}\left(m\ddot x + d\dot x + c x\right)\textrm{d}t = \int_{-\varepsilon}^{\varepsilon}\frac{1}{2\varepsilon}\textrm{d}t\\
 	m\int_{-\varepsilon}^{\varepsilon}\ddot x\textrm{d}t 
@@ -98,7 +98,7 @@ Die Bewegungsgleichung lautet
 	m (\dot x(\varepsilon)-\dot x(-\varepsilon)) + d(x(\varepsilon)-x(-\varepsilon)) 
 	+c \int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = 1
 	\end{align}
-	Unter der Annahme, dass die Lage $x(t)$ während der Stoßdauer stetig bleibt, folgt $x(-\varepsilon)= x(\varepsilon)=x_0$ und damit 
+	Unter der Annahme, dass die Lage $x(t)$ während der Impulsdauer stetig bleibt, folgt $x(-\varepsilon)= x(\varepsilon)=x_0$ und damit 
 	\begin{align}
 		\int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = c \int_{-\varepsilon}^{\varepsilon}x_0\textrm{d}t = 2\varepsilon x_0 \underset{\varepsilon\rightarrow 0}{\rightarrow} 0
 	\end{align}
@@ -114,16 +114,16 @@ Die Bewegungsgleichung lautet
 	\begin{align}
 		& t=-\varepsilon = 0^- && t=\varepsilon = 0^+ &
 	\end{align}
-\paragraph{Nach Stoß ($\varepsilon  \leq t $)} 
+\paragraph{Nach dem Impuls ($\varepsilon  \leq t $)} 
 Die Bewegungsgleichung lautet mit Anfangsbedingungen
 	\begin{align}
 	& m\ddot x + d\dot x + c x = 0 &&x(0^+) = 0& &\dot x(0^+) = \frac{1}{m}&
 	\end{align}
 	Die Lösung ist gegeben durch 
 	\begin{align}
-		x(t) &= \frac{1}{m\omega_d}e^{-\delta t}\sin(\omega_d t)
+		x(t) &= \frac{1}{m\omega_d}e^{-\delta t}\sin(\omega_d t)\label{eq:ImpAntwort}
 	\end{align}
-Die Impulsantwort (Antwort auf einen mechanischen Stoß) wird gerne als Testsignal verwendet. Es lässt sich über einen Hammerschlag realisieren: Das System wird kurz angestoßen und dann sich selbst überlassen. Aus der Stoßantwort lassen sich die Systemparameter $m$, $d$, $D$ bestimmen. 
+Der Impuls lässt sich im Experiment als Hammerschlag realisieren. Aus der Impulsantwort (Gl. \ref{eq:ImpAntwort}) lassen sich die Systemparameter $m$, $d$, $D$ bestimmen. 
 \section{Periodische Anregung}
 %%\subsection{Darstellung einer Schwingung durch komplexe Zeiger}
 %%\fbox{\begin{minipage}{\textwidth}
@@ -714,7 +714,7 @@ x(t) = \frac{F_0}{2c} + \sum_{k=1}^{\infty}V\left(k\eta\right)\left(\frac{F_{C,k
 \end{align}
 Diese Lösung hat Eigenschaften wie die Schwingungsantwort auf eine Einzelanregung. Die Resonanz des ungedämpften Einmassenschwingers wird jetzt nicht mehr nur bei $\Omega=\omega_0$, sondern bei $k \Omega=\omega_0$ mit allen $k\in \mathbb N$ angeregt. 
 \begin{beispiel}[Motorblockanregung]{beispiel:Motorblockanregung}
-Die Vertikalbewegung eines Motorblocks kann durch die bekannte DGL des 1-Massen-Schwingers beschrieben werden. Die Schwingungsanregung durch Zündung der 4 Zylinder hat ihre Hauptkomponente bei doppelter Motordrehzahl, eine weitere wichtige Komponente ist die 4. Dehzahlordnung. Wenn die Anregung vereinfachend konstante Amplituden hat, dann lautet die Bewegungsgleichung 
+Die Vertikalbewegung eines Motorblocks kann durch die bekannte DGL des 1-Massen-Schwingers beschrieben werden. Die Schwingungsanregung durch Zündung der 4 Zylinder hat ihre Hauptkomponenten bei doppelter und -facher Motordrehzahl. Die vereinfachte Bewegungsgleichung lautet 
 \begin{align}
 	m\ddot x + d\dot x + c x = F_{C,2} \cos(2 \Omega t) + F_{C,4} \cos(4 \Omega t)
 \end{align}
@@ -723,16 +723,14 @@ Gemäß Gleichung (4.41) lautet die partikuläre Lösung
 x(t) = & V_{Kraftanregung}\left(\frac{2\Omega}{\omega_0}\right)\frac{F_{C,2}}{c}\cos\left(2\Omega t+\varphi_2\right) \\
 &+V_{Kraftanregung}\left(\frac{4\Omega}{\omega_0}\right)\frac{F_{C,4}}{c}\cos\left(2\Omega t+\varphi_4\right) 
 \end{align}
-Diese Aufgabe kann numerisch gelöst werden. In \emph{Octave} lautet eine mögliche Implementierung 
+In \emph{Octave} lautet eine mögliche Implementierung 
 \begin{lstlisting}[frame=single] 
 function dy = Motorblock(t,y)
 m = 1; d = 5; c = 1e4*(2*pi)^2;
 Fc2 = 1; Fc4 = 0.5; 
-
 Omega = t*500*2*pi/60; % Drehzahlhochlauf (500 rpm 
                        % pro Sekunde)
 Phi = 1/2*Omega*t; 
-
 dy = zeros(size(y)); 
 dy(1) = y(2); 
 dy(2) = (-c*y(1)-d*y(2) + Fc2*cos(2*Phi) + Fc4*cos(4*Phi))/m; 
@@ -759,6 +757,7 @@ caxis([0.0 1e-3]); axis([0 10 10 200 0 1e-2]);
 	\caption{Spektrogramm der Auslenkung $y(t)$ bei Hochlaufsimulation und Anregung mit 2. und 4. Ordnung. Charakteristisch sind im Spektrogramm die Anregungsordnungen, mit denen die Resonanz jeweils getroffen wird. }
 \end{figure}
 \end{beispiel}
+
 \section{Nichtperiodische Vorgänge}
 Für periodische Funktionen gilt: $\Omega = \frac{2\pi}{T}$. Die Grundfrequenz ist also durch die endliche Periodenlänge begrenzt. Für nichtperiodische Funktionen (z.B. einmalige Vorgänge) geht die Schwingungsdauer $T$ gegen unendlich. Damit ist auch die Grundfrequenz $\Omega\rightarrow \textrm{d}\omega$ (sie wird differenziell klein) bzw. $k\Omega\rightarrow\omega$. Mit Darstellung von (Mathematik 4.5) lauten die komplexen Schwingungskomponenten im Grenzübergang
 \begin{align}
