@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  12 JUN 2020 20:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  19 JUN 2020 12:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2363,23 +2363,80 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 300.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 459.
+(mdframed)              on input line 456.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 456.
 \openout7 = `BilderExternalized/Skript-figure108.dpth'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 459.
+(babel)             in language  on input line 456.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 459.
+(babel)             in language  on input line 456.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 459.
+(babel)             in language  on input line 456.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 459.
+(babel)             in language  on input line 456.
 [68
 
 \providecommand \oddpage@label [2]{}
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 \pgfsyspdfmark {pgfid144}{0}{0}
-])
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 457.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 457.
+
+LaTeX Warning: Reference `eq:EWPij1' on page 68 undefined on input line 469.
+
+
+LaTeX Warning: Reference `eq:EWPij2' on page 68 undefined on input line 469.
+
+
+LaTeX Warning: Reference `eq:EWPij2' on page 68 undefined on input line 477.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 596.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 702.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 703.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 703.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 723.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 733.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 757.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 757.
+<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=50, 130.7565pt x 193.1738pt>
+File: Bilder/05ErzwungeneKoppelschwingungen.pdf Graphic file (type pdf)
+<use Bilder/05ErzwungeneKoppelschwingungen.pdf>
+Package pdftex.def Info: Bilder/05ErzwungeneKoppelschwingungen.pdf  used on inp
+ut line 761.
+(pdftex.def)             Requested size: 91.901pt x 135.77487pt.
+
+LaTeX Warning: Reference `eq:pqpar' on page 73 undefined on input line 793.
+
+
+LaTeX Warning: Reference `eq:AmpTilgung' on page 74 undefined on input line 813
+.
+
+
+LaTeX Warning: Reference `Abb:Amp2Fhg' on page 74 undefined on input line 814.
+
+
+LaTeX Warning: Reference `eq:BGTilgung' on page 74 undefined on input line 843.
+
+
+)
 No file BilderExternalized/Skript-figure108.bbl.
 
 Package natbib Warning: There were undefined citations.
@@ -2394,10 +2451,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 48857 strings out of 494798
- 1098946 string characters out of 6176801
- 2445988 words of memory out of 5000000
- 51391 multiletter control sequences out of 15000+600000
+ 48903 strings out of 494798
+ 1100080 string characters out of 6176801
+ 2443988 words of memory out of 5000000
+ 51437 multiletter control sequences out of 15000+600000
  557367 words of font info for 86 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  79i,24n,128p,10446b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2410,11 +2467,11 @@ ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on BilderExternalized/Skript-figure108.pdf (1 page, 75040 bytes)
+Output written on BilderExternalized/Skript-figure108.pdf (1 page, 72560 bytes)
 .
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
