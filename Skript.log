@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  19 JUN 2020 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  21 JUN 2020 18:36
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3232,20 +3232,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 456.
 [66 <./BilderExternalized/Skript-figure107.pdf>]
-\openout3 = `BilderExternalized/Skript-figure108.md5'.
-
-\openout3 = `Skript.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -enable-write18 -halt
--on-error -interaction=batchmode -jobname "BilderExternalized/Skript-figure108"
- "\def\tikzexternalrealjob{Skript}\input{Skript}"' ========
-runsystem(pdflatex -enable-write18 -halt-on-error -interaction=batchmode -jobna
-me "BilderExternalized/Skript-figure108" "\def\tikzexternalrealjob{Skript}\inpu
-t{Skript}")...executed.
-
-\openout3 = `Skript.auxlock'.
-
+===== Image 'BilderExternalized/Skript-figure108' is up-to-date. ======
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 457.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3397,7 +3384,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
 Here is how much of TeX's memory you used:
  48491 strings out of 494798
  1080489 string characters out of 6176801
- 1400353 words of memory out of 5000000
+ 1401353 words of memory out of 5000000
  50340 multiletter control sequences out of 15000+600000
  563093 words of font info for 95 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -3422,7 +3409,7 @@ public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on Skript.pdf (79 pages, 1089695 bytes).
+Output written on Skript.pdf (79 pages, 1089454 bytes).
 PDF statistics:
  2869 PDF objects out of 2984 (max. 8388607)
  2592 compressed objects within 26 object streams
