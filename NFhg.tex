@@ -116,7 +116,7 @@ Die Quadrate der Eigenwerte sind $\lambda_{1/4}^2 = -\omega_{1}^2$,  $\lambda_{2
 \end{align}
 oder in reeller Darstellung 
 \begin{align}
-&\vec{x}_h(t) = C_1 \vec{r}_1 \sin (\omega_1 t) + C_2 \vec{r}_1 \cos(\omega_1 t) + C_3 \vec{r}_2 \sin (\omega_2 t) + C_4 \vec{r}_2 \cos(\omega_2 t) 
+&\vec{x}_h(t) = C_1 \vec{r}_1 \cos (\omega_1 t) + C_2 \vec{r}_1 \sin(\omega_1 t) + C_3 \vec{r}_2 \cos(\omega_2 t) + C_4 \vec{r}_2 \sin(\omega_2 t) 
 \end{align}
 In einem ungedämpften System ($M$-$K$-System) sind die Eigenkreisfrequenzen $\omega$ stets imaginär und die Eigenvektoren $\vec{r}$ reellwertig. Dies ändert sich, sobald Dämpfung vorliegt. \\
 Für die partikuläre Lösung $x_p(t)$ des zwangserregten Systems wird der vektorwertige Ansatz vom Typ der rechten Seite eingesetzt: 
@@ -143,20 +143,20 @@ Es folgen die Lösungen
 Als Gesamtlösung ergibt sich durch Superposition 
 \begin{align}
 	\vec{x}(t) =& \vec{x}_h(t)+\vec{x}_p(t)\\
-	=& C_1 \vec{r}_1 \sin (\omega_1 t) + C_2 \vec{r}_1 \cos(\omega_1 t) + C_3 \vec{r}_2 \sin (\omega_2 t) + C_4 \vec{r}_2 \cos(\omega_2 t)\nonumber\\
+	=& C_1 \vec{r}_1 \cos(\omega_1 t) + C_2 \vec{r}_1 \sin(\omega_1 t) + C_3 \vec{r}_2 \cos(\omega_2 t) + C_4 \vec{r}_2 \sin(\omega_2 t)\nonumber\\
 	&+ (K-\Omega^2 M)^{-1}\vec{F}\cos(\Omega t)\nonumber
 \end{align}
 Die freien Konstanten können jetzt mithilfe der Anfangsbedingungen bestimmt werden. Hierzu lauten die vier Gleichungen 
 \begin{align}
-	\vec{x}_0 = \vec{x}(t=0) =& C_2 \vec{r}_1 +C_4 \vec{r}_2 + (K-\Omega^2 M)^{-1}\vec{F}\\
-	\vec{v}_0 = \dot{\vec{x}}(t=0) =& \omega_1 C_1 \vec{r}_1 +\omega_2 C_3 \vec{r}_2 - \Omega (K-\Omega^2 M)^{-1}\vec{F}	
+	\vec{x}_0 = \vec{x}(t=0) =& C_1 \vec{r}_1 +C_3 \vec{r}_2 + (K-\Omega^2 M)^{-1}\vec{F}\\
+	\vec{v}_0 = \dot{\vec{x}}(t=0) =& \omega_1 C_2 \vec{r}_1 +\omega_2 C_4 \vec{r}_2
 \end{align}
 welche die Gleichungssysteme 
 \begin{align}
 	\vec{x}_0 - (K-\Omega^2 M)^{-1}\vec{F} &= \left[\vec{r}_1, \vec{r}_2\right]\left[\begin{array}{c}
 		C_1\\C_3
 	\end{array}\right] \\
-	\vec{v}_0 + \Omega (K-\Omega^2 M)^{-1}\vec{F} &= \left[\omega_1 \vec{r}_1,\omega_2 \vec{r}_2\right] \left[\begin{array}{c}
+	\vec{v}_0  &= \left[\omega_1 \vec{r}_1,\omega_2 \vec{r}_2\right] \left[\begin{array}{c}
 		C_2\\C_4
 	\end{array}\right]	
 \end{align}
@@ -357,44 +357,42 @@ r_1  \\ r_2\\
 r_1  \\ r_2\\ 
 \end{array}\right]_{1}
 \end{align}
-Mit $\vec{r}_{1}$ dem zur Eigenkreisfrequenz $\omega_{1}$ gehörigen Eigenvektor. Die zwei Zeilen von Gl.(5.26) sind linear abhängig. Das Gleichungssystem hat unendlich viele Lösungen -- die Lösung kann also nur bis auf eine Konstante bestimmt werden. Setze $r_1 = s$, dann folgt
+Mit $\vec{r}_{1}$ dem zur Eigenkreisfrequenz $\omega_{1}$ gehörigen Eigenvektor. Die zwei Zeilen von Gl.(5.26) sind linear abhängig. Das Gleichungssystem hat unendlich viele Lösungen -- die Lösung kann also nur bis auf eine Konstante bestimmt werden. Setze $r_1 = s_1$, dann folgt
 \begin{align}
 \vec{r}_{1} = 
 \left[\begin{array}{c} 
-s \\ \frac{1}{2}s\\ 
+s_1 \\ \frac{s_1}{2}\\ 
 \end{array}\right]
-\end{align}
-Die zusätzliche Forderung nach $|\vec{r}_{1}|=\sqrt{5}s \overset{!}{=}1$ führt zum \emph{normierten Eigenvektor}
-\begin{align}
-&\vec{r}_{1} = \frac{1}{\sqrt{5}}
-\left[\begin{array}{c} 
-2  \\ 1\\ 
-\end{array}\right]&
-&|\vec{r}_{1}|=1&
 \end{align}
 Beim Eigenwertpaar $\lambda_{2/3}=\pm i\omega_2$ ergibt sich 
 \begin{align}
 0 = (-\omega_2^2 M + K) \vec{r}_{2} 
 = \left[\begin{array}{cc} 
-\frac{1}{4}c & -c\\ 
--c  & 4c\\ 
+-\frac{1}{4}c & -c\\ 
+-c  & -4c\\ 
 \end{array}\right]
 \left[\begin{array}{c} 
 r_1  \\ r_2\\ 
 \end{array}\right]_{2}
 \end{align}
-und der zugehörige normierte Eigenvektor ist 
+und der zugehörige Eigenvektor ist 
 \begin{align}
-&\vec{r}_2 = \frac{1}{\sqrt{17}}
-\left[\begin{array}{c} 
-4  \\ -1\\ 
+&\vec{r}_2 = \left[\begin{array}{c} 
+s_2  \\ -\frac{s_2}{4}\\ 
 \end{array}\right]&
 \end{align}
 Die homogene Lösung ist in reeller Darstellung 
 \begin{align}
-\vec{x}_h(t) = C_1 \vec{r}_{1} \sin (\omega_1 t) + C_2 \vec{r}_{1} \cos(\omega_1 t) + C_3 \vec{r}_{2} \sin (\omega_2 t) + C_4 \vec{r}_{2} \cos(\omega_2 t) 
+\vec{x}_h(t) = &C_1^* \vec{r}_{1} \cos (\omega_1 t) + C_2^* \vec{r}_{1} \sin(\omega_1 t) + C_3^* \vec{r}_{2} \cos(\omega_2 t) + C_4^* \vec{r}_{2} \sin(\omega_2 t) \\
+=& \left( C_1 \cos (\omega_1 t) + C_2 \sin(\omega_1 t)\right)\left[\begin{array}{c} 
+1 \\ \frac{1}{2}\\ 
+\end{array}\right] \nonumber\\
+&+ \left(C_3  \cos(\omega_2 t) + C_4 \sin(\omega_2 t)\right)
+\left[\begin{array}{c} 
+1 \\ -\frac{1}{4}\\ 
+\end{array}\right] 
 \end{align}
-Die Eigenvektoren $\vec{r}_{1}$ und $\vec{r}_{2}$ kennzeichnen die Eigenschwingungsformen: 
+wobei hier Integrationskonstante und Skalierungskonstante zusammengefasst wurden: $C_1^* s_1= C_1$, $C_2^* s_1= C_2$, $C_3^* s_2= C_2$, $C_4^* s_2= C_4$. Die Eigenvektoren $\vec{r}_{1}$ und $\vec{r}_{2}$ kennzeichnen die Eigenschwingungsformen: 
 \begin{itemize}
 	\item 1. Eigenschwingungsform bei $\omega_1 = \sqrt{\frac{c}{2m}}$. Die Bewegung beider Massen ist gleichphasig, da die Vorzeichen der Komponenten von $\vec{r}_{1}$ gleich sind
 	\item 2. Eigenschwingungsform bei $\omega_2 = \sqrt{\frac{5c}{4m}}$. Die Bewegung beider Massen ist gegenphasig, da die Vorzeichen der Komponenten von $\vec{r}_{2}$ verschieden sind
@@ -420,17 +418,17 @@ C_1 \\ C_3
 \end{array}\right] &= 
 \left[
 \begin{array}{cc}
-\frac{\sqrt{5}}{6} & \frac{2\sqrt{5}}{3} \\ 
-\frac{\sqrt{17}}{6}&-\frac{\sqrt{17}}{3}
+\frac{1}{3} & \frac{4}{3} \\ 
+\frac{2}{3}&-\frac{4}{3}
 \end{array}\right]
 \left[\vec x_0-\vec{p}\right] \\
 &= \left[
 \begin{array}{c}
-\frac{\sqrt{5}}{6}(x_{01}+4 x_{02}) \\ \frac{\sqrt{17}}{6}( x_{01}-2x_{02})
+\frac{1}{3}(x_{01}+4 x_{02}) \\ \frac{1}{3}( 2 x_{01}-4x_{02})
 \end{array}\right]\\
 &-\frac{F_1}{8 m^2\Omega^4 - 14cm\Omega^2 + 5c^2 }\left[\begin{array}{c}
-	\frac{\sqrt{5}}{6}(6 c-8m\Omega^2)+\frac{2\sqrt{5}}{3} c\\
-	\frac{\sqrt{17}}{6}(6 c-8m\Omega^2)-\frac{\sqrt{17}}{3} c	
+	\frac{1}{3}(6 c-8m\Omega^2)+\frac{4}{3} c\\
+	\frac{2}{3}(6 c-8m\Omega^2)-\frac{4}{3} c	
 \end{array}\right]\nonumber
 \end{align}
 \begin{align}
@@ -440,8 +438,8 @@ C_2 \\ C_4
 \end{array}\right] &= 
 \left[
 \begin{array}{cc}
-\frac{\sqrt{5}}{6\omega_1} & \frac{2\sqrt{5}}{3\omega_1} \\ 
-\frac{\sqrt{17}}{6\omega_2} &-\frac{\sqrt{17}}{3\omega_2} \\ 
+\frac{1}{3\omega_1} & \frac{4}{3\omega_1} \\ 
+\frac{2}{3\omega_2} &-\frac{4}{3\omega_2} \\ 
 \end{array}\right]
 \left[
 \begin{array}{c}
@@ -449,8 +447,8 @@ C_2 \\ C_4
 \end{array}\right] \\
 &= \left[
 \begin{array}{c}
-\frac{\sqrt{5}}{6\omega_1}(v_{01}+4v_{02}) \\ 
-\frac{\sqrt{17}}{6\omega_2}(v_{01}-2 v_{02})
+\frac{1}{3\omega_1}(v_{01}+4v_{02}) \\ 
+\frac{1}{3\omega_2}(2v_{01}-4 v_{02})
 \end{array}\right] \nonumber
 \end{align}
 \end{beispiel}
