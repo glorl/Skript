@@ -4,7 +4,7 @@ Dieses Skript wurde als Begleitmaterial zur Vorlesung ''Maschinendynamik'' an de
 Besonderer Dank hinsichtlich Erstellung und Überarbeitung des Skripts gilt den Herren Prof. Dr.-Ing. Jens Deppler und Dr.-Ing. Dominik Kern. 
 \chapter{Einleitung}
 \section{Begriffsdefinition}
-Die Maschinendynamik untersucht das Schwingungsverhalten mechanischer Kons\-truk\-tionen unter Einwirkung zeitabhängiger Beanspruchungen. Das Ziel der Untersuchungen besteht darin, dynamische Bewegungen von Bauteilen sowie wirkende Kräfte zu berechnen. In klassischen Problemstellungen sind die technischen Hintergründe vielfältig: 
+Die Maschinendynamik untersucht das Schwingungsverhalten mechanischer Kons\-truk\-tionen unter Einwirkung zeitabhängiger Beanspruchungen. Das Ziel der Untersuchungen besteht darin, dynamische Bewegungen von Bauteilen sowie wirkende Kräfte zu berechnen. Die technischen Hintergründe klassischer Problemstellungen sind: 
 \begin{itemize}
 	\item Torsionsschwingungen von Kolbenmaschinen
 	\item Biegeschwingungen von Turbinenschaufeln
@@ -95,6 +95,26 @@ Für $\varphi_1 = \varphi_2$ heißen die Schwingungen \emph{in Phase}, für  $|\var
 	x(t) &= x_1(t)+x_2(t) \nonumber\\
 	=& (\hat x_1 \cos(\varphi_1)+\hat x_2 \cos(\varphi_2))\cos(\omega t) - (\hat x_1 \sin(\varphi_1)+\hat x_2 \sin(\varphi_2))\sin(\omega t)
 \end{align}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	domain=0:20,
+	xmin=0,xmax=20,ymin=-2.2,ymax=2.2, 
+	samples=1000,
+	grid=both,
+	x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+	xlabel={$t$},
+	ylabel={$x(t)$}]
+	\addplot[blue, ultra thick] {1*cos(2*pi*deg(x)) + 1*cos(2*pi*1.1*deg(x))};
+	\addplot[black, dashed] {-2*cos(0.1*pi*deg(x))};
+	\addplot[black, dashed] {2*cos(0.1*pi*deg(x))};
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Schwebung, entstanden aus der Addition $\cos(2\pi t) + \cos(2.2 \pi t)$.}
+	\label{abb:Schwebung}
+\end{figure}\\
 Im Fall verschiedener Frequenzen folgt für die Gesamtschwingung durch kurze Rechnung 
 \begin{align}
 x(t) &= x_1(t) + x_2(t) = \hat x_1 \cos(\omega_1 t) + \hat x_2 \cos(\omega_2 t)\\
@@ -112,26 +132,7 @@ wobei
 \hat x  &= \sqrt{(\hat x_1 + \hat x_2)^2\cos^2 (\omega_D t) + (\hat x_1 - \hat x_2)^2\sin^2 (\omega_D t)},\\
 \tan(\varphi) &= \frac{\hat x_2-\hat x_1}{\hat x_2+\hat x_1} \tan(\omega_d t). 
 \end{align}
-Die Amplitude und die Phase der Schwingung ändern sich also mit $\omega_D$. Dieser Effekt wird als Schwebung bezeichnet. 
-\begin{figure}[h]
-	\centering
-		\begin{tikzpicture}
-		\begin{axis}[
-		domain=0:20,
-		xmin=0,xmax=20,ymin=-2.2,ymax=2.2, 
-		samples=1000,
-		grid=both,
-		x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
-		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
-		xlabel={$t$},
-		ylabel={$x(t)$}]
-		\addplot[blue, ultra thick] {1*cos(2*pi*deg(x)) + 1*cos(2*pi*1.1*deg(x))};
-		\addplot[black, dashed] {-2*cos(0.1*pi*deg(x))};
-		\addplot[black, dashed] {2*cos(0.1*pi*deg(x))};
-		\end{axis}
-		\end{tikzpicture}
-\caption{Schwebung, entstanden aus der Addition $\cos(2\pi t) + \cos(2.2 \pi t)$.}
-\end{figure}
+Die Amplitude und die Phase der Schwingung ändern sich also mit $\omega_D$. Dieser Effekt wird als Schwebung (Abb. \ref{abb:Schwebung}) bezeichnet. 
 \subsection{Nicht-harmonische Schwingungen}
 Die meisten Schwingungsarten sind nicht harmonisch. An dieser Stelle seien beispielhaft die Sägezahn- und die Rechteckfunktion genannt (Abb. \ref{abb:SaegezahnRechteck}). Solche Funktionen können in eine harmonische Ersatzdarstellung überführt werden (siehe Kapitel \ref{Kap:Fourier}), was im Vergleich zu den Knick- und Sprung-behafteten ursprünglichen Funktionen viele Vorteile bietet.  
 \begin{figure}[h]
@@ -177,7 +178,7 @@ Es gibt außer den genannten noch weitere Schwingungsverläufe, die die Anforderun
 Bsp.: Seitenwind bewegt Fahrzeug, die Fahrbahnunebenheit regt ein Fahrzeug zu zufälligen horizontalen Schwingungen an, reale Messungen mit Messrauschen, ...
 \end{itemize}
 \section{Schwingungsformen von Mehrfreiheitsgradsystemen}
-Ein schwingungsfähiger Körper kann je nach Anregung auch innere Deformationen ausführen, weshalb in einigen Fällen die Betrachtung der Problemstellung als Mehrfreiheitsgradsystem notwendig wird. Man unterscheidet also 
+Ein schwingungsfähiger Körper kann je nach Anregung auch innere Deformationen ausführen, weshalb in einigen Fällen die Betrachtung der Problemstellung als Mehrfreiheitsgradsystem notwendig wird. Man unterscheidet 
 \begin{itemize}
 	\item 1-Freiheitsgrad-Systeme
 	\item $n$-Freiheitsgrad-Systeme, mit $n$ einer natürlichen Zahl 
@@ -185,11 +186,11 @@ Ein schwingungsfähiger Körper kann je nach Anregung auch innere Deformationen au
 \end{itemize}
 \begin{figure}[h]
 	\centering
-	\subfloat{\includegraphics[width=0.11\textheight,valign=t]{Bilder/01EinMassenSchwinger.pdf}}\hspace{15mm}
-	\subfloat{\includegraphics[width=0.155\textheight,valign=t]{Bilder/01ZweiMassenSchwinger.pdf}}\hspace{15mm}
-	\subfloat{\includegraphics[width=0.14\textheight,valign=t]{Bilder/01DehnSchwinger.pdf}}
+	\subfloat{\includegraphics[height=0.06\textheight,valign=t]{Bilder/01EinMassenSchwinger.pdf}}\hfill
+	\subfloat{\includegraphics[height=0.06\textheight,valign=t]{Bilder/01ZweiMassenSchwinger.pdf}}\hfill
+	\subfloat{\includegraphics[height=0.085\textheight,valign=t]{Bilder/01DehnSchwinger.pdf}}\hfill
 % 	\subfloat{\includegraphics[width=0.3\textwidth]{Bilder/01ZweiMassenSchwinger.pdf}
-	\caption{Schwingungen eines 1-, 2- und $\infty-$Freiheitsgrad-Systems}
+	\caption{Systeme mit einem, vier und $\infty$ vielen Freiheitsgraden}
 \end{figure}
 Die Schwingungsformen des betrachteten Körpers treten in Abhängigkeit von der Frequenz der Anregung auf. Am Beispiel eines 4-Freiheitsgradschwingers können vier verschiedene Schwingungsformen dargestellt werden (Abb. \ref{Abb:Schwingformen4DoF}), bei denen sich die einzelnen Freiheitsgrade wechselweise in Gleich- oder Gegenphase bewegen. 
 \begin{figure}[h]
