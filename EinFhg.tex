@@ -64,21 +64,23 @@ m \ddot x + \sin(x) + a_1 x + a_3 x^3 = 0
 \end{align*}
 Die Ruhelage berechnet sich aus der Gleichung
 \begin{align*}
-\sin(x_0) + a_1 x_0 + a_3 x_0^3 = 0
+f(x_0) = \sin(x_0) + a_1 x_0 + a_3 x_0^3 = 0
 \end{align*}
-zu $x_0=0$. Die DGL in der Störung um $x_0$ ist also 
+zu $x_0=0$. Ferner ist 
 \begin{align*}
-0 = &m(\ddot x_0+\Delta \ddot x) + \sin(x_0) + a_1 (x_0+x) + a_3 (x_0+x)^3 \\
-= &m\Delta \ddot x + \sin(x_0+x) + a_1 (x_0+x) + a_3 (x_0+x)^3 \\
-= &m\Delta \ddot x + \sin(x_0) + a_1 x_0 + a_3 (x_0)^3 + \left(\cos(x_0)+a_1 +3 x_0^2\right)\Delta x\\
-\approx &m\Delta \ddot x + \left(1+a_1\right)\Delta x
+f'(x_0) = \cos(x_0)+a_1 +3 a_3 x_0^2.
 \end{align*}
-Hier ist $f'(x_0)=1+a_1=c$ die lokale Steifigkeit in der Nähe der Ruhelage. Alternativ wird die DGL 
+Die linearisierte DGL in der Störung um $x_0$ ist also mit der Vereinfachung $x_0=0$ 
+\begin{align*}
+0 = &m\Delta \ddot x + \sin(x_0) + a_1 x_0 + a_3 (x_0)^3 + \left(\cos(x_0)+a_1 +3 a_3 x_0^2\right)\Delta x\\
+= &m\Delta \ddot x + \left(1+a_1\right)\Delta x
+\end{align*}
+Alternativ wird die DGL 
 \begin{align*}
 \Delta \ddot x + \omega_0^2 \Delta x=0, 
 % \label{eq:27}
 \end{align*}
-wobei $\omega_0^2 = \frac{f'(x_0)}{m}=\frac{c}{m}$ das Quadrat der ungedämpften Eigenkreisfrequenz ist. 
+wobei $\omega_0^2 = \frac{f'(x_0)}{m}=\frac{1+a_1}{m}$ das Quadrat der ungedämpften Eigenkreisfrequenz ist. 
 \end{beispiel}
 Die Koeffizienten der DGL \ref{eq:21} sind konstant, weshalb als Lösungsansatz für die homogene Lösung der Exponentialansatz verwendet werden kann: 
 \begin{theo}[Lineare homogene DGL mit konstanten Koeffizienten]{theo:konstKoeff}
