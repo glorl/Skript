@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  13 JUL 2020 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  23 DEC 2020 14:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -85,8 +85,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 2.4185pt
-(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)              \evensidemargin = 27.31467pt
+(typearea)              \oddsidemargin  = -22.47766pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 606.5pt
 (typearea)              \topmargin      = -1.84941pt
@@ -1454,7 +1454,7 @@ LaTeX Info: Redefining \nameref on input line 95.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: includehead includefoot 
+* modes: includehead includefoot twoside 
 * h-part:(L,W,R)=(72.55452pt, 459.51202pt, 65.44133pt)
 * v-part:(T,H,B)=(54.06023pt, 736.92639pt, 54.06023pt)
 * \paperwidth=597.50787pt
@@ -1462,13 +1462,13 @@ LaTeX Info: Redefining \nameref on input line 95.
 * \textwidth=459.51202pt
 * \textheight=646.30139pt
 * \oddsidemargin=0.28453pt
-* \evensidemargin=0.28453pt
+* \evensidemargin=-6.82866pt
 * \topmargin=-18.20976pt
 * \headheight=18.125pt
 * \headsep=21.75pt
 * \topskip=12.0pt
 * \footskip=50.75pt
-* \marginparwidth=49.79233pt
+* \marginparwidth=74.68849pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -1476,8 +1476,8 @@ LaTeX Info: Redefining \nameref on input line 95.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1551,7 +1551,7 @@ LaTeX Font Info:    Try loading font information for U+wasy on input line 103.
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 111.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 112.
 (./Einleitung.tex
 
 Package natbib Warning: Citation `bronstein2012taschenbuch' on page 1 undefined
@@ -1618,7 +1618,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 17.
 
-LaTeX Warning: Reference `eq:11' on page 3 undefined on input line 27.
+LaTeX Warning: Reference `eq:11' on page 4 undefined on input line 27.
 
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 60.
@@ -1635,91 +1635,89 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 87.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `abb:Schwebung' on page 7 undefined on input line 135.
+
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 136.
 
-LaTeX Warning: Reference `abb:SaegezahnRechteck' on page 5 undefined on input l
-ine 136.
-
-
-LaTeX Warning: Reference `Kap:Fourier' on page 5 undefined on input line 136.
+LaTeX Warning: Reference `abb:SaegezahnRechteck' on page 7 undefined on input l
+ine 137.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `Kap:Fourier' on page 7 undefined on input line 137.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 179.
-<Bilder/01EinMassenSchwinger.pdf, id=7, 87.65408pt x 51.29587pt>
+(babel)             in language  on input line 180.
+<Bilder/01EinMassenSchwinger.pdf, id=7, 80.34966pt x 45.59828pt>
 File: Bilder/01EinMassenSchwinger.pdf Graphic file (type pdf)
 <use Bilder/01EinMassenSchwinger.pdf>
 Package pdftex.def Info: Bilder/01EinMassenSchwinger.pdf  used on input line 18
-8.
-(pdftex.def)             Requested size: 71.09354pt x 41.60655pt.
-<Bilder/01ZweiMassenSchwinger.pdf, id=8, 133.26709pt x 71.90952pt>
+9.
+(pdftex.def)             Requested size: 68.32939pt x 38.7765pt.
+<Bilder/01ZweiMassenSchwinger.pdf, id=8, 203.811pt x 46.61038pt>
 File: Bilder/01ZweiMassenSchwinger.pdf Graphic file (type pdf)
 <use Bilder/01ZweiMassenSchwinger.pdf>
 Package pdftex.def Info: Bilder/01ZweiMassenSchwinger.pdf  used on input line 1
-89.
-(pdftex.def)             Requested size: 100.17592pt x 54.05379pt.
-<Bilder/01DehnSchwinger.pdf, id=9, 118.69672pt x 57.89186pt>
+90.
+(pdftex.def)             Requested size: 169.55804pt x 38.7765pt.
+<Bilder/01DehnSchwinger.pdf, id=9, 195.86911pt x 66.76918pt>
 File: Bilder/01DehnSchwinger.pdf Graphic file (type pdf)
 <use Bilder/01DehnSchwinger.pdf>
-Package pdftex.def Info: Bilder/01DehnSchwinger.pdf  used on input line 190.
-(pdftex.def)             Requested size: 90.4818pt x 44.13075pt.
+Package pdftex.def Info: Bilder/01DehnSchwinger.pdf  used on input line 191.
+(pdftex.def)             Requested size: 161.17558pt x 54.93996pt.
 
-LaTeX Warning: Reference `Abb:Schwingformen4DoF' on page 7 undefined on input l
-ine 194.
+LaTeX Warning: Reference `Abb:Schwingformen4DoF' on page 8 undefined on input l
+ine 195.
 
 <Bilder/01Schwingformen01.pdf, id=10, 297.1598pt x 36.20258pt>
 File: Bilder/01Schwingformen01.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen01.pdf>
-Package pdftex.def Info: Bilder/01Schwingformen01.pdf  used on input line 197.
+Package pdftex.def Info: Bilder/01Schwingformen01.pdf  used on input line 198.
 (pdftex.def)             Requested size: 193.89238pt x 23.62141pt.
 <Bilder/01Schwingformen02.pdf, id=11, 297.1598pt x 54.45651pt>
 File: Bilder/01Schwingformen02.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen02.pdf>
-Package pdftex.def Info: Bilder/01Schwingformen02.pdf  used on input line 198.
+Package pdftex.def Info: Bilder/01Schwingformen02.pdf  used on input line 199.
 (pdftex.def)             Requested size: 193.89238pt x 35.53175pt.
 <Bilder/01Schwingformen03.pdf, id=12, 297.1598pt x 48.09587pt>
 File: Bilder/01Schwingformen03.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen03.pdf>
-Package pdftex.def Info: Bilder/01Schwingformen03.pdf  used on input line 199.
+Package pdftex.def Info: Bilder/01Schwingformen03.pdf  used on input line 200.
 (pdftex.def)             Requested size: 193.89238pt x 31.38155pt.
 <Bilder/01Schwingformen04.pdf, id=13, 297.1598pt x 43.80893pt>
 File: Bilder/01Schwingformen04.pdf Graphic file (type pdf)
 <use Bilder/01Schwingformen04.pdf>
-Package pdftex.def Info: Bilder/01Schwingformen04.pdf  used on input line 200.
+Package pdftex.def Info: Bilder/01Schwingformen04.pdf  used on input line 201.
 (pdftex.def)             Requested size: 193.89238pt x 28.58441pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 216.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 216.
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 217.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 217.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 220.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 220.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 222.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 222.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 224.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 224.
 ) (./EinFhg.tex
 chapter 2.
 Package babel Info: Redefining ngerman shorthand "|
@@ -1749,7 +1747,7 @@ Overfull \hbox (3.88696pt too wide) in paragraph at lines 5--13
  []
 
 
-LaTeX Warning: Reference `eq:21' on page 9 undefined on input line 17.
+LaTeX Warning: Reference `eq:21' on page 11 undefined on input line 17.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 16--39
@@ -1759,6 +1757,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--39
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package mdframed Info: mdframed works in twoside mode on input line 40.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 40.
@@ -1766,12 +1765,26 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
 Package mdframed Info: Not enough space on this page on input line 44.
+
+LaTeX Warning: Reference `mdf@pagelabel-1' on page 12 undefined on input line 4
+4.
+
+Package mdframed Info: mdframed works in twoside mode on input line 45.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 45.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
+
+LaTeX Warning: Reference `mdf@pagelabel-2' on page 12 undefined on input line 5
+9.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-3' on page 13 undefined on input line 5
+9.
+
+Package mdframed Info: mdframed works in twoside mode on input line 60.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 60.
@@ -1783,86 +1796,127 @@ raft-Weg-Zusammenhang
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 82.
-
-LaTeX Warning: Reference `eq:21' on page 11 undefined on input line 83.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
 (mdframed)              on input line 84.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 111.
 
-LaTeX Warning: Reference `eq:21' on page 12 undefined on input line 112.
+LaTeX Warning: Reference `mdf@pagelabel-4' on page 13 undefined on input line 8
+4.
 
 
-LaTeX Warning: Reference `eq:21' on page 13 undefined on input line 122.
+LaTeX Warning: Reference `eq:21' on page 13 undefined on input line 85.
 
+Package mdframed Info: mdframed works in twoside mode on input line 86.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 141.
+(mdframed)              on input line 86.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 146.
+(mdframed)              on input line 113.
+
+LaTeX Warning: Reference `mdf@pagelabel-5' on page 14 undefined on input line 1
+13.
+
+
+LaTeX Warning: Reference `eq:21' on page 14 undefined on input line 114.
+
+
+LaTeX Warning: Reference `eq:21' on page 15 undefined on input line 124.
+
+Package mdframed Info: mdframed works in twoside mode on input line 143.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 158.
+(mdframed)              on input line 143.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 148.
+
+LaTeX Warning: Reference `mdf@pagelabel-6' on page 15 undefined on input line 1
+48.
+
+Package mdframed Info: mdframed works in twoside mode on input line 160.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 160.
 <Bilder/02MathematischesPendel.pdf, id=16, 53.45602pt x 98.81929pt>
 File: Bilder/02MathematischesPendel.pdf Graphic file (type pdf)
 <use Bilder/02MathematischesPendel.pdf>
 Package pdftex.def Info: Bilder/02MathematischesPendel.pdf  used on input line 
-160.
+162.
 (pdftex.def)             Requested size: 52.25931pt x 96.61153pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 221.
+(mdframed)              on input line 223.
+
+LaTeX Warning: Reference `mdf@pagelabel-7' on page 16 undefined on input line 2
+23.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-8' on page 17 undefined on input line 2
+23.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-9' on page 18 undefined on input line 2
+23.
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 226.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 226.
 <Bilder/02EinMassenSchwingerDamped.pdf, id=17, 87.47446pt x 77.9005pt>
 File: Bilder/02EinMassenSchwingerDamped.pdf Graphic file (type pdf)
 <use Bilder/02EinMassenSchwingerDamped.pdf>
 Package pdftex.def Info: Bilder/02EinMassenSchwingerDamped.pdf  used on input l
-ine 228.
+ine 230.
 (pdftex.def)             Requested size: 71.09354pt x 63.31538pt.
 <Bilder/02EinMassenSchwingerDampeddAlembert.pdf, id=18, 118.01222pt x 19.9844pt
 >
 File: Bilder/02EinMassenSchwingerDampeddAlembert.pdf Graphic file (type pdf)
 <use Bilder/02EinMassenSchwingerDampeddAlembert.pdf>
 Package pdftex.def Info: Bilder/02EinMassenSchwingerDampeddAlembert.pdf  used o
-n input line 229.
+n input line 231.
 (pdftex.def)             Requested size: 96.94125pt x 16.41658pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--230
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 [][]|\T1/ppl/m/n/10 Li-nea-rer ge-dämpf-ter Ein-mas-sen-schwin-ger so-wie des-s
 en Kräf-te-frei-schnitt nach
  []
 
 
-LaTeX Warning: Reference `kap:UngedaempftEMS' on page 16 undefined on input lin
-e 232.
+LaTeX Warning: Reference `kap:UngedaempftEMS' on page 18 undefined on input lin
+e 234.
 
+Package mdframed Info: mdframed works in twoside mode on input line 240.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 238.
+(mdframed)              on input line 240.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 247.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 252.
+(mdframed)              on input line 249.
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
+LaTeX Warning: Reference `mdf@pagelabel-10' on page 19 undefined on input line 
+249.
+
+Package mdframed Info: mdframed works in twoside mode on input line 254.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 254.
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--280
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 278.
+(mdframed)              on input line 280.
 
-LaTeX Warning: Reference `eq:GedEMSD' on page 18 undefined on input line 279.
+LaTeX Warning: Reference `mdf@pagelabel-11' on page 19 undefined on input line 
+280.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-12' on page 20 undefined on input line 
+280.
+
+
+LaTeX Warning: Reference `eq:GedEMSD' on page 20 undefined on input line 281.
 
 ) (./ErzwungeneSchwingungen.tex
 chapter 3.
@@ -1910,7 +1964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--69
  []
 
 
-LaTeX Warning: Reference `abb:Anregungen' on page 22 undefined on input line 74
+LaTeX Warning: Reference `abb:Anregungen' on page 24 undefined on input line 74
 .
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1932,6 +1986,7 @@ ut line 89.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package mdframed Info: mdframed works in twoside mode on input line 92.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 92.
@@ -1940,23 +1995,36 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 115.
 Package mdframed Info: Not enough space on this page on input line 115.
 
-LaTeX Warning: Reference `eq:32' on page 23 undefined on input line 116.
+LaTeX Warning: Reference `mdf@pagelabel-13' on page 25 undefined on input line 
+115.
 
 
-LaTeX Warning: Reference `eq:33' on page 24 undefined on input line 130.
+LaTeX Warning: Reference `eq:32' on page 25 undefined on input line 116.
 
+
+LaTeX Warning: Reference `eq:33' on page 26 undefined on input line 130.
+
+Package mdframed Info: mdframed works in twoside mode on input line 201.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 201.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 207.
+
+LaTeX Warning: Reference `mdf@pagelabel-14' on page 27 undefined on input line 
+207.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-15' on page 28 undefined on input line 
+207.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 218.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 218.
 
-LaTeX Warning: Reference `abb:ErzKraft' on page 26 undefined on input line 219.
+LaTeX Warning: Reference `abb:ErzKraft' on page 28 undefined on input line 219.
 
 
 
@@ -1966,26 +2034,31 @@ Overfull \hbox (13.65883pt too wide) in paragraph at lines 243--245
 ktor-Schreibweise 
  []
 
+Package mdframed Info: mdframed works in twoside mode on input line 281.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 281.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 339.
+
+LaTeX Warning: Reference `mdf@pagelabel-16' on page 29 undefined on input line 
+339.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 412.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 412.
 
-LaTeX Warning: Reference `abb:ErzMaxwell' on page 28 undefined on input line 41
+LaTeX Warning: Reference `abb:ErzMaxwell' on page 30 undefined on input line 41
 3.
 
 
-LaTeX Warning: Reference `eq:Krafterregung' on page 29 undefined on input line 
+LaTeX Warning: Reference `eq:Krafterregung' on page 31 undefined on input line 
 417.
 
 
-LaTeX Warning: Reference `abb:UebertragKraft' on page 29 undefined on input lin
+LaTeX Warning: Reference `abb:UebertragKraft' on page 31 undefined on input lin
 e 425.
 
 
@@ -1998,7 +2071,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 426.
 
-LaTeX Warning: Reference `abb:ErzVoigt' on page 29 undefined on input line 427.
+LaTeX Warning: Reference `abb:ErzVoigt' on page 31 undefined on input line 427.
 
 
 
@@ -2018,7 +2091,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 562.
 
-LaTeX Warning: Reference `abb:ErzUnwucht' on page 31 undefined on input line 56
+LaTeX Warning: Reference `abb:ErzUnwucht' on page 33 undefined on input line 56
 3.
 
 
@@ -2042,9 +2115,10 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 724.
 
-LaTeX Warning: Reference `eq:DGLFusspunktMaxwell' on page 35 undefined on input
+LaTeX Warning: Reference `eq:DGLFusspunktMaxwell' on page 37 undefined on input
  line 731.
 
+Package mdframed Info: mdframed works in twoside mode on input line 736.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 736.
@@ -2052,27 +2126,31 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 742.
 
-LaTeX Warning: Reference `eq:coeffvlgphase1' on page 35 undefined on input line
+LaTeX Warning: Reference `mdf@pagelabel-17' on page 37 undefined on input line 
+742.
+
+
+LaTeX Warning: Reference `eq:coeffvlgphase1' on page 37 undefined on input line
  757.
 
 
-LaTeX Warning: Reference `eq:coeffvlgphase1' on page 35 undefined on input line
+LaTeX Warning: Reference `eq:coeffvlgphase1' on page 37 undefined on input line
  757.
 
 
-LaTeX Warning: Reference `eq:coeffvlgphase1' on page 36 undefined on input line
+LaTeX Warning: Reference `eq:coeffvlgphase1' on page 38 undefined on input line
  762.
 
 
-LaTeX Warning: Reference `eq:coeffvlgphase1' on page 36 undefined on input line
+LaTeX Warning: Reference `eq:coeffvlgphase1' on page 38 undefined on input line
  762.
 
 
-LaTeX Warning: Reference `eq:coeffvlgphase1' on page 36 undefined on input line
+LaTeX Warning: Reference `eq:coeffvlgphase1' on page 38 undefined on input line
  767.
 
 
-LaTeX Warning: Reference `eq:coeffvlgphase2' on page 36 undefined on input line
+LaTeX Warning: Reference `eq:coeffvlgphase2' on page 38 undefined on input line
  767.
 
 
@@ -2084,6 +2162,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 768.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 768.
+Package mdframed Info: mdframed works in twoside mode on input line 783.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 783.
@@ -2091,6 +2170,10 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 797.
 Package mdframed Info: Not enough space on this page on input line 797.
+
+LaTeX Warning: Reference `mdf@pagelabel-18' on page 39 undefined on input line 
+797.
+
 
 Underfull \hbox (badness 1087) in paragraph at lines 821--822
 \T1/ppl/m/n/12 Diese Her-an-ge-hens-wei-se zur Be-rech-nung zwangs-er-reg-ter S
@@ -2109,97 +2192,115 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 5.
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 8.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 18.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 20.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 40.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 66.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 257.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 257.
+Package mdframed Info: mdframed works in twoside mode on input line 264.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 264.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 280.
 
-LaTeX Warning: Reference `eq:ImpAntwort' on page 42 undefined on input line 126
-.
+LaTeX Warning: Reference `mdf@pagelabel-19' on page 44 undefined on input line 
+280.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 127.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 127.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 188.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 188.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 379.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 379.
+
+LaTeX Warning: Reference `mdf@pagelabel-20' on page 45 undefined on input line 
+280.
+
+Package mdframed Info: mdframed works in twoside mode on input line 282.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 386.
+(mdframed)              on input line 282.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 400.
+(mdframed)              on input line 287.
+
+LaTeX Warning: Reference `mdf@pagelabel-21' on page 45 undefined on input line 
+287.
+
+Package mdframed Info: mdframed works in twoside mode on input line 288.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 402.
+(mdframed)              on input line 288.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 407.
+(mdframed)              on input line 298.
+
+LaTeX Warning: Reference `mdf@pagelabel-22' on page 45 undefined on input line 
+298.
+
+Package mdframed Info: mdframed works in twoside mode on input line 320.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 408.
+(mdframed)              on input line 320.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 418.
+(mdframed)              on input line 433.
+
+LaTeX Warning: Reference `mdf@pagelabel-23' on page 46 undefined on input line 
+433.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-24' on page 47 undefined on input line 
+433.
+
+Package mdframed Info: mdframed works in twoside mode on input line 434.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 440.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 551.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 552.
+(mdframed)              on input line 434.
 <Bilder/04Rechteckimpulsfolge.pdf, id=25, 202.57547pt x 118.10399pt>
 File: Bilder/04Rechteckimpulsfolge.pdf Graphic file (type pdf)
 <use Bilder/04Rechteckimpulsfolge.pdf>
-Package pdftex.def Info: Bilder/04Rechteckimpulsfolge.pdf  used on input line 5
-55.
+Package pdftex.def Info: Bilder/04Rechteckimpulsfolge.pdf  used on input line 4
+37.
 (pdftex.def)             Requested size: 217.75601pt x 126.96109pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 592.
-Package mdframed Info: Not enough space on this page on input line 592.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 593.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 677.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 678.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 678.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 716.
+(mdframed)              on input line 476.
 
-Overfull \hbox (3.69244pt too wide) in paragraph at lines 736--737
+LaTeX Warning: Reference `mdf@pagelabel-25' on page 47 undefined on input line 
+476.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-26' on page 48 undefined on input line 
+476.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-27' on page 49 undefined on input line 
+476.
+
+Package mdframed Info: mdframed works in twoside mode on input line 477.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 477.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 561.
+
+LaTeX Warning: Reference `mdf@pagelabel-28' on page 49 undefined on input line 
+561.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 562.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 562.
+Package mdframed Info: mdframed works in twoside mode on input line 600.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 600.
+
+Overfull \hbox (3.69244pt too wide) in paragraph at lines 620--621
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -2207,38 +2308,103 @@ Overfull \hbox (3.69244pt too wide) in paragraph at lines 736--737
 File: Bilder/Hochlaufsimulation_Farbkarte.png Graphic file (type png)
 <use Bilder/Hochlaufsimulation_Farbkarte.png>
 Package pdftex.def Info: Bilder/Hochlaufsimulation_Farbkarte.png  used on input
- line 755.
+ line 639.
 (pdftex.def)             Requested size: 217.75601pt x 145.3187pt.
 <Bilder/Hochlaufsimulation_y.png, id=28, 364.36125pt x 268.00125pt>
 File: Bilder/Hochlaufsimulation_y.png Graphic file (type png)
 <use Bilder/Hochlaufsimulation_y.png>
-Package pdftex.def Info: Bilder/Hochlaufsimulation_y.png  used on input line 75
-6.
+Package pdftex.def Info: Bilder/Hochlaufsimulation_y.png  used on input line 64
+0.
 (pdftex.def)             Requested size: 174.20215pt x 128.13205pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 759.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 761.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 761.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 768.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 777.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 799.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 805.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 806.
+(mdframed)              on input line 643.
 
-Underfull \hbox (badness 1430) in paragraph at lines 807--808
+LaTeX Warning: Reference `mdf@pagelabel-29' on page 51 undefined on input line 
+643.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-30' on page 53 undefined on input line 
+643.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 645.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 645.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 646.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 646.
+Package mdframed Info: mdframed works in twoside mode on input line 648.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 648.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 658.
+
+LaTeX Warning: Reference `mdf@pagelabel-31' on page 54 undefined on input line 
+658.
+
+Package mdframed Info: mdframed works in twoside mode on input line 660.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 660.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 680.
+
+LaTeX Warning: Reference `mdf@pagelabel-32' on page 54 undefined on input line 
+680.
+
+Package mdframed Info: mdframed works in twoside mode on input line 719.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 719.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 771.
+
+LaTeX Warning: Reference `mdf@pagelabel-33' on page 55 undefined on input line 
+771.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-34' on page 56 undefined on input line 
+771.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 772.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 772.
+Package mdframed Info: mdframed works in twoside mode on input line 779.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 779.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 788.
+
+LaTeX Warning: Reference `mdf@pagelabel-35' on page 57 undefined on input line 
+788.
+
+Package mdframed Info: mdframed works in twoside mode on input line 810.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 810.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 816.
+Package mdframed Info: Not enough space on this page on input line 816.
+
+LaTeX Warning: Reference `mdf@pagelabel-36' on page 58 undefined on input line 
+816.
+
+Package mdframed Info: mdframed works in twoside mode on input line 817.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 817.
+
+Underfull \hbox (badness 1430) in paragraph at lines 818--819
 []\T1/ppl/m/n/12 Die Fou-rier-trans-for-mier-te der Sprung-funk-ti-on be-rech-n
 et sich we-gen $\OML/cmm/m/it/12 ^^N\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr
 /m/n/12 ) =
@@ -2246,45 +2412,60 @@ et sich we-gen $\OML/cmm/m/it/12 ^^N\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 815.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 816.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 821.
+(mdframed)              on input line 826.
 
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 821.
+LaTeX Warning: Reference `mdf@pagelabel-37' on page 58 undefined on input line 
+826.
 
+Package mdframed Info: mdframed works in twoside mode on input line 827.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 822.
+(mdframed)              on input line 827.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 846.
+(mdframed)              on input line 832.
+
+LaTeX Warning: Reference `mdf@pagelabel-38' on page 58 undefined on input line 
+832.
+
+Package mdframed Info: mdframed works in twoside mode on input line 833.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 847.
+(mdframed)              on input line 833.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 853.
-Package mdframed Info: Not enough space on this page on input line 853.
+(mdframed)              on input line 857.
+
+LaTeX Warning: Reference `mdf@pagelabel-39' on page 58 undefined on input line 
+857.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-40' on page 59 undefined on input line 
+857.
+
+Package mdframed Info: mdframed works in twoside mode on input line 858.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 858.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 864.
+
+LaTeX Warning: Reference `mdf@pagelabel-41' on page 59 undefined on input line 
+864.
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 855.
+(babel)             in language  on input line 866.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 855.
+(babel)             in language  on input line 866.
 
-Underfull \hbox (badness 3354) in paragraph at lines 867--870
+Underfull \hbox (badness 3354) in paragraph at lines 878--881
 \T1/ppl/m/n/12 quenz-be-reich die Über-tra-gungs-funk-ti-on. Au-ÿer-dem ist die
  Über-tra-gungs-funk-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 882--883
+Underfull \hbox (badness 10000) in paragraph at lines 893--894
 
  []
 
@@ -2299,11 +2480,11 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
 
-LaTeX Warning: Reference `Abb:Schwingformen4DoF' on page 59 undefined on input 
+LaTeX Warning: Reference `Abb:Schwingformen4DoF' on page 63 undefined on input 
 line 5.
 
 
-LaTeX Warning: Reference `Abb:2DoFSchwinger' on page 59 undefined on input line
+LaTeX Warning: Reference `Abb:2DoFSchwinger' on page 63 undefined on input line
  6.
 
 <Bilder/05Biegeschwinger.pdf, id=29, 214.14792pt x 85.24767pt>
@@ -2347,17 +2528,27 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
 
-LaTeX Warning: Reference `eq:EWP' on page 62 undefined on input line 107.
+LaTeX Warning: Reference `eq:EWP' on page 66 undefined on input line 107.
 
 
-LaTeX Warning: Reference `eq:EV' on page 62 undefined on input line 112.
+LaTeX Warning: Reference `eq:EV' on page 66 undefined on input line 112.
 
+Package mdframed Info: mdframed works in twoside mode on input line 164.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 164.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 299.
+
+LaTeX Warning: Reference `mdf@pagelabel-42' on page 68 undefined on input line 
+299.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-43' on page 69 undefined on input line 
+299.
+
+Package mdframed Info: mdframed works in twoside mode on input line 300.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 300.
@@ -2370,71 +2561,105 @@ an-te zu-sam-men-ge-fasst
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 454.
+
+LaTeX Warning: Reference `mdf@pagelabel-44' on page 69 undefined on input line 
+454.
+
+\openout7 = `BilderExternalized/Skript-figure109.dpth'.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 454.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 454.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 454.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 454.
+[69
+
+\providecommand \oddpage@label [2]{}
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+\pgfsyspdfmark {pgfid145}{0}{0}
+]
+
+LaTeX Warning: Reference `mdf@pagelabel-45' on page 70 undefined on input line 
+454.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-46' on page 71 undefined on input line 
+454.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-47' on page 72 undefined on input line 
+454.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 455.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 455.
 
-LaTeX Warning: Reference `eq:EWPij1' on page 68 undefined on input line 467.
+LaTeX Warning: Reference `eq:EWPij1' on page 72 undefined on input line 467.
 
 
-LaTeX Warning: Reference `eq:EWPij2' on page 68 undefined on input line 467.
+LaTeX Warning: Reference `eq:EWPij2' on page 72 undefined on input line 467.
 
 
-LaTeX Warning: Reference `eq:EWPij2' on page 68 undefined on input line 475.
+LaTeX Warning: Reference `eq:EWPij2' on page 72 undefined on input line 475.
 
+Package mdframed Info: mdframed works in twoside mode on input line 594.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 594.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 700.
-\openout7 = `BilderExternalized/Skript-figure109.dpth'.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 700.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 700.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 700.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 700.
-[70
+LaTeX Warning: Reference `mdf@pagelabel-48' on page 74 undefined on input line 
+700.
 
-\providecommand \oddpage@label [2]{}
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `mdf@pagelabel-49' on page 75 undefined on input line 
+700.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 701.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 701.
+Package mdframed Info: mdframed works in twoside mode on input line 721.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 721.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 731.
+
+LaTeX Warning: Reference `mdf@pagelabel-50' on page 76 undefined on input line 
+731.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 755.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 755.
-<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=41, 130.7565pt x 193.1738pt>
+<Bilder/05ErzwungeneKoppelschwingungen.pdf, id=50, 130.7565pt x 193.1738pt>
 File: Bilder/05ErzwungeneKoppelschwingungen.pdf Graphic file (type pdf)
 <use Bilder/05ErzwungeneKoppelschwingungen.pdf>
 Package pdftex.def Info: Bilder/05ErzwungeneKoppelschwingungen.pdf  used on inp
 ut line 759.
 (pdftex.def)             Requested size: 91.901pt x 135.77487pt.
 
-LaTeX Warning: Reference `eq:pqpar' on page 73 undefined on input line 791.
+LaTeX Warning: Reference `eq:pqpar' on page 77 undefined on input line 791.
 
 
-LaTeX Warning: Reference `eq:AmpTilgung' on page 74 undefined on input line 811
+LaTeX Warning: Reference `eq:AmpTilgung' on page 78 undefined on input line 811
 .
 
 
-LaTeX Warning: Reference `Abb:Amp2Fhg' on page 74 undefined on input line 812.
+LaTeX Warning: Reference `Abb:Amp2Fhg' on page 78 undefined on input line 812.
 
 
-LaTeX Warning: Reference `eq:BGTilgung' on page 74 undefined on input line 841.
+LaTeX Warning: Reference `eq:BGTilgung' on page 78 undefined on input line 841.
 
 
 )
@@ -2442,30 +2667,36 @@ No file BilderExternalized/Skript-figure109.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 152.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 153.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 48902 strings out of 494798
- 1100065 string characters out of 6176801
- 2443988 words of memory out of 5000000
- 51437 multiletter control sequences out of 15000+600000
- 557301 words of font info for 86 fonts, out of 8000000 for 9000
+ 48906 strings out of 494798
+ 1100189 string characters out of 6176801
+ 2444012 words of memory out of 5000000
+ 51438 multiletter control sequences out of 15000+600000
+ 557976 words of font info for 87 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 79i,24n,128p,10446b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,24n,128p,10446b,2540s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb>
-Output written on BilderExternalized/Skript-figure109.pdf (1 page, 14719 bytes)
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
+lb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on BilderExternalized/Skript-figure109.pdf (1 page, 86774 bytes)
 .
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,190 +2,68 @@
 \setcounter{chapter}{3}
 \chapter{Anregungssignale und Fourieranalyse}
 \label{Kap:Fourier}
-\section{Anregung durch Impuls}
-\subsection{Sprungfunktion und Dirac-Impuls}
-Die Sprung- und die Impulsfunktion gehören zur Funktionenklasse der Distributionen. Sie zeichnen sich dadurch aus, dass sie mengenwertige Eigenschaften besitzen -- beispielsweise die elementweise Definition. 
-\begin{theo}[Sprungfunktion]{theo:Sprung}
-Die Sprungfunktion $\sigma(t)$ ist definiert als 
-\begin{align}
-	\sigma(t) = \left\{
-	\begin{array}{ll}
-		0 & t < 0 \\
-		1 & 0 \leq t \\
-	\end{array}
-	\right. \nonumber
-\end{align}
-\end{theo}
-Formal betrachtet ist der Dicac-Impuls die Ableitung der Sprungfunktion. Wegen der unendlich großen Steigung bei $t=0$ wird die Definition über einen Grenzwert eingeführt:
-\begin{theo}[Dirac-Impuls]{theo:Dirac}
-	Der Dirac-Impuls $\delta(t)$ ist definiert als 
-	\begin{align}
-		\delta(t)& = \frac{\textrm{d} \sigma(t)}{\textrm{d} t}
-		= 
-		\left\{
-		\begin{array}{ll}
-			\infty & t =0\\
-			0 & \textrm{sonst} \\
-		\end{array}
-		\right\}
-		= \lim_{\varepsilon\rightarrow0}
-		\left\{
-		\begin{array}{ll}
-			0 & t \leq -\varepsilon \\
-			\frac{1}{2\varepsilon} & -\varepsilon  \leq t \leq \varepsilon  \\
-			0 & \varepsilon \leq t \\
-		\end{array}
-		\right. \nonumber
-	\end{align}
-\end{theo}
-%\begin{figure}[h]
-%	\begin{tikzpicture}
-%	\begin{axis}[
-%	width=0.45\textwidth,
-%	xmin=-1,xmax=1,ymin=-0.3,ymax=1.3, 
-%	samples=1000,
-%	grid=none,
-%	x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
-%	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
-%	xlabel={$t$},
-%	ylabel={$x(t)$}, 
-%	xtick={-0.2,0,0.2}, 
-%	xticklabels={$-\varepsilon$,0,$\varepsilon$}]
-%	\addplot[blue, ultra thick] coordinates {(-1,0) (-0.2,0) (-0.2,1) (0.2,1) (0.2,0) (1,0)};
-%	\end{axis}
-%	\end{tikzpicture}
-%\end{figure}\\
-Es gilt der integrale Zusammenhang zwischen Sprungfunktion und Dirac-Impuls 
-\begin{align}
-\int_{-\infty}^{\infty}\delta(t) \textrm{d}t
-= \lim_{\varepsilon\rightarrow0}\int_{-\varepsilon}^{\varepsilon}\frac{1}{2\varepsilon} \textrm{d}t
-= \lim_{\varepsilon\rightarrow0}\left.\frac{1}{2\varepsilon}t\right|_{-\varepsilon}^{\varepsilon}
-= \lim_{\varepsilon\rightarrow0}\frac{\varepsilon-(-\varepsilon)}{2\varepsilon}
-=1
-\end{align}
-Die zu erwähnenden Eigenschaften des Dirac-Impulses sind
-\begin{itemize}
-	\item Die Impulsdauer $2\varepsilon$ ist wegen $\varepsilon\rightarrow0$ unendlich kurz
-	\item Die Impulshöhe $\frac{1}{2\varepsilon}$ ist unendlich groß
-	\item Für jede Funktion $f(t)$, die bei $t=t_0$ stetig ist, gilt die Ausblendeigenschaft 
-	\begin{align}
-		\int_{-\infty}^{\infty}f(t)\delta(t-t_0) \textrm{d}t = f(t_0)		
-	\end{align}
-\end{itemize}
-\subsection{Impulsantwort}
-Die Anregung durch Impuls ist ein spezielles Testsignal, mit dem die wichtigsten Eigenschaften eines Schwingungssystems ermittelt werden können. Im Falle des Einmassenschwingers lautet die DGL 
-\begin{align}
-	m\ddot x + d\dot x + c x = \delta(t)
-	\label{eq:EMSImpuls}
-\end{align}
-wobei für den Dirac-Impuls $\delta(t)$ die abschnittsweise Definition in Abhängigkeit von $\varepsilon$ verwendet wird. Dementsprechend ist die Lösung abschnittsweise definiert: 
-\paragraph{Vor Impuls ($t \leq -\varepsilon $)}
-Die Masse ist in Ruhe. Also sind Lage und Geschwindigkeit 
-	\begin{align}
-	&x(-\varepsilon)=0&  &\dot x(-\varepsilon)=0&
-	\end{align}
-\paragraph{Während des Impuls ($-\varepsilon  \leq t \leq \varepsilon$)}
-Die Bewegungsgleichung lautet 
-	\begin{align}
-	m\ddot x + d\dot x + c x = \frac{1}{2\varepsilon}
-	\end{align}
-	Die Integration über die Impulsdauer ergibt in mehreren Schritten  
-	\begin{align}
-	\int_{-\varepsilon}^{\varepsilon}\left(m\ddot x + d\dot x + c x\right)\textrm{d}t = \int_{-\varepsilon}^{\varepsilon}\frac{1}{2\varepsilon}\textrm{d}t\\
-	m\int_{-\varepsilon}^{\varepsilon}\ddot x\textrm{d}t 
-	+ d\int_{-\varepsilon}^{\varepsilon}\dot x\textrm{d}t 
-	+c \int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = 1\\
-	m (\dot x(\varepsilon)-\dot x(-\varepsilon)) + d(x(\varepsilon)-x(-\varepsilon)) 
-	+c \int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = 1
-	\end{align}
-	Unter der Annahme, dass die Lage $x(t)$ während der Impulsdauer stetig bleibt, folgt $x(-\varepsilon)= x(\varepsilon)=x_0$ und damit 
-	\begin{align}
-		\int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = c \int_{-\varepsilon}^{\varepsilon}x_0\textrm{d}t = 2\varepsilon x_0 \underset{\varepsilon\rightarrow 0}{\rightarrow} 0
-	\end{align}
-	Somit verbleibt 
-	\begin{align}
-		m\left(\dot x(\varepsilon)-\underbrace{\dot x(-\varepsilon)}_{0}\right)=1
-	\end{align}
-	Zur Zeit $t=\varepsilon$ gilt also: 
-	\begin{align}
-		&x(\varepsilon)=x(-\varepsilon)=0&&\dot{x}(\varepsilon) = \frac{1}{m}&
-	\end{align}
-	Wegen $\varepsilon\rightarrow0$ gelten auch die Bezeichnungen 
-	\begin{align}
-		& t=-\varepsilon = 0^- && t=\varepsilon = 0^+ &
-	\end{align}
-\paragraph{Nach dem Impuls ($\varepsilon  \leq t $)} 
-Die Bewegungsgleichung lautet mit Anfangsbedingungen
-	\begin{align}
-	& m\ddot x + d\dot x + c x = 0 &&x(0^+) = 0& &\dot x(0^+) = \frac{1}{m}&
-	\end{align}
-	Die Lösung ist gegeben durch 
-	\begin{align}
-		x(t) &= \frac{1}{m\omega_d}e^{-\delta t}\sin(\omega_d t)\label{eq:ImpAntwort}
-	\end{align}
-Der Impuls lässt sich im Experiment als Hammerschlag realisieren. Aus der Impulsantwort (Gl. \ref{eq:ImpAntwort}) lassen sich die Systemparameter $m$, $d$, $D$ bestimmen. 
+In den Kapiteln 1-3 wurde die Anregung \emph{monofrequent harmonisch} angenommen. Dieser Spezialfall wird nun durch Betrachtung allgemeiner Signale generalisiert. 
 \section{Periodische Anregung}
-%%\subsection{Darstellung einer Schwingung durch komplexe Zeiger}
-%%\fbox{\begin{minipage}{\textwidth}
-%%\paragraph{Definition: Euler-Formel.} Es gilt die folgende Zerlegung der Exponentialfunktion: 
-%%\begin{align}
-%%e^{i\varphi}  = \cos (\varphi) + i \sin (\varphi)
-%%\end{align}
-%%\end{minipage}}\\[5mm]
-%%Damit lässt sich eine harmonische Schwingung $\hat x \cos (\omega t+\varphi)$ schreiben als Realteil der \emph{komplexen Erweiterung} $X$
-%%\begin{align}
-%%	X &= \hat x e^{i(\omega t + \varphi)}  = \hat x \left(\cos (\omega t+\varphi) + i \sin (\omega t+\varphi)\right)\\
-%%	Re(X) &= \hat x \cos (\omega t+\varphi)
-%%\end{align}
-%%Die geometrische Interpretation der komplexen Erweiterung $X$ ist mit der Abbildung \ref{abb:Einheitskreis} gegeben. 
-%%%\begin{figure}[H]
-%%%	\subfloat{
-%%%		\begin{tikzpicture}
-%%%		\begin{axis}[
-%%%		width=0.4\textwidth,
-%%%		height=0.4\textwidth,
-%%%		xmin=-1.2,xmax=1.2,
-%%%		ymin=-1.2,ymax=1.2,
-%%%		grid=both,
-%%%		x label style={at={(axis description cs:0.3,-0.1)},anchor=north},
-%%%		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
-%%%		xlabel={$Im(x)$},
-%%%		ylabel={$Re(x)$}, 
-%%%		xtick = {-1,0,1}, 
-%%%		xticklabels = {1,0,-1}]
-%%%		\addplot[samples=100, domain=0:2*pi] ({cos(deg(x))}, {sin(deg(x))});
-%%%		\addplot[black] coordinates {(0,0) (-0.342020143, 0.939692621)};
-%%%		\addplot[black] coordinates {(0,0) (-0.7, 0.7)};		\end{axis}
-%%%		\end{tikzpicture}
-%%%	}
-%%%	\subfloat{
-%%%		\begin{tikzpicture}
-%%%		\begin{axis}[
-%%%		width=0.4\textwidth,
-%%%		height=0.4\textwidth,
-%%%		xmin=-1.2,xmax=1.2,
-%%%		ymin=-1.2,ymax=1.2,
-%%%		grid=both,
-%%%		x label style={at={(axis description cs:0.3,-0.1)},anchor=north},
-%%%		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
-%%%		xlabel={$Im(x)$},
-%%%		ylabel={$Re(x)$}, 
-%%%		xtick = {-1,0,1}, 
-%%%		xticklabels = {1,0,-1}]
-%%%		\addplot[samples=100, domain=0:2*pi] ({cos(deg(x))}, {sin(deg(x))});
-%%%		\end{axis}
-%%%		\end{tikzpicture}
-%%%	}
-%%%	\caption{Einheitskreis und Projektion auf die reelle Achse.}
-%%%\label{abb:Einheitskreis}
-%%%\end{figure}
+%\subsection{Darstellung einer Schwingung durch komplexe Zeiger}
+%\fbox{\begin{minipage}{\textwidth}
+%\paragraph{Definition: Euler-Formel.} Es gilt die folgende Zerlegung der Exponentialfunktion: 
+%\begin{align}
+%e^{i\varphi}  = \cos (\varphi) + i \sin (\varphi)
+%\end{align}
+%\end{minipage}}\\[5mm]
+%Damit lässt sich eine harmonische Schwingung $\hat x \cos (\omega t+\varphi)$ schreiben als Realteil der \emph{komplexen Erweiterung} $X$
+%\begin{align}
+%	X &= \hat x e^{i(\omega t + \varphi)}  = \hat x \left(\cos (\omega t+\varphi) + i \sin (\omega t+\varphi)\right)\\
+%	Re(X) &= \hat x \cos (\omega t+\varphi)
+%\end{align}
+%Die geometrische Interpretation der komplexen Erweiterung $X$ ist mit der Abbildung \ref{abb:Einheitskreis} gegeben. 
 %%\begin{figure}[H]
-%%	\includegraphics[width=\textwidth]{Bilder/04Einheitskreis.png}
+%%	\subfloat{
+%%		\begin{tikzpicture}
+%%		\begin{axis}[
+%%		width=0.4\textwidth,
+%%		height=0.4\textwidth,
+%%		xmin=-1.2,xmax=1.2,
+%%		ymin=-1.2,ymax=1.2,
+%%		grid=both,
+%%		x label style={at={(axis description cs:0.3,-0.1)},anchor=north},
+%%		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+%%		xlabel={$Im(x)$},
+%%		ylabel={$Re(x)$}, 
+%%		xtick = {-1,0,1}, 
+%%		xticklabels = {1,0,-1}]
+%%		\addplot[samples=100, domain=0:2*pi] ({cos(deg(x))}, {sin(deg(x))});
+%%		\addplot[black] coordinates {(0,0) (-0.342020143, 0.939692621)};
+%%		\addplot[black] coordinates {(0,0) (-0.7, 0.7)};		\end{axis}
+%%		\end{tikzpicture}
+%%	}
+%%	\subfloat{
+%%		\begin{tikzpicture}
+%%		\begin{axis}[
+%%		width=0.4\textwidth,
+%%		height=0.4\textwidth,
+%%		xmin=-1.2,xmax=1.2,
+%%		ymin=-1.2,ymax=1.2,
+%%		grid=both,
+%%		x label style={at={(axis description cs:0.3,-0.1)},anchor=north},
+%%		y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+%%		xlabel={$Im(x)$},
+%%		ylabel={$Re(x)$}, 
+%%		xtick = {-1,0,1}, 
+%%		xticklabels = {1,0,-1}]
+%%		\addplot[samples=100, domain=0:2*pi] ({cos(deg(x))}, {sin(deg(x))});
+%%		\end{axis}
+%%		\end{tikzpicture}
+%%	}
 %%	\caption{Einheitskreis und Projektion auf die reelle Achse.}
-%%	\label{abb:Einheitskreis}
+%%\label{abb:Einheitskreis}
 %%\end{figure}
-%
-\subsection{Darstellung von Singalen im Zeit- und im Frequenzbereich}
+%\begin{figure}[H]
+%	\includegraphics[width=\textwidth]{Bilder/04Einheitskreis.png}
+%	\caption{Einheitskreis und Projektion auf die reelle Achse.}
+%	\label{abb:Einheitskreis}
+%\end{figure}
+\subsection{Darstellung von Signalen im Zeit- und im Frequenzbereich}
 Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Amplitude $\hat x$, Kreisfrequenz $\Omega$ und Nullphasenwinkel $\varphi$ beschreiben. Diese Eigenschaft motiviert die Darstellung im Zeit- und im Frequenzbereich:
 \begin{figure}[H]
 	\subfloat[Zeitbereich]{
@@ -375,25 +253,27 @@ Eine harmonische Schwingung lässt sich im Frequenzbereich vollständig durch Ampl
 }
 \caption{Allgemeines Signal $x(t) = \hat{x}\cos (\Omega t+\varphi) = Re(\hat{x} e^{i (\Omega t+\varphi)})$}
 \end{figure}
-Die Überführung einer harmonischen Funktion vom Zeit- in den Frequenzbereich ist eine Äquivalenztransformation. Wird eine allgemeine periodische Funktion als Überlagerung vieler harmonischer Schwingungsanteile mit jeweiliger Kreisfrequenz, Amplitude und Nullphasenwinkel betrachtet, dann kommen in der Darstellung im Frequenzbereich entsprechende Komponenten hinzu. Dies motiviert den nächsten Abschnitt: 
-\section{Darstellung periodischer Funktionen durch Fourierreihen}
-Es sei eine $T$-periodische Funktion mit der Grundfrequenz $\Omega = \frac{2\pi}{T}$ gegeben. Unter den Voraussetzungen 
+Die Überführung einer harmonischen Funktion vom Zeit- in den Frequenzbereich ist eine Äquivalenztransformation. Wird eine allgemeine periodische Funktion als Überlagerung vieler harmonischer Schwingungsanteile mit jeweiliger Kreisfrequenz, Amplitude und Nullphasenwinkel betrachtet, dann kommen in der Darstellung im Frequenzbereich entsprechende Komponenten hinzu. Dies gibt Motivation für den nächsten Abschnitt: 
+\subsection{Darstellung periodischer Funktionen durch Fourierreihen}
+Es sei eine $T$-periodische Funktion $x(t)$ mit der Wiederholdauer $T = \frac{2\pi}{\Omega}$ bzw. Grundschwingungsfrequenz $\Omega=\frac{2\pi}{T}$ gegeben. Unter den Voraussetzungen 
 \begin{itemize}
 	\item endlich viele Sprungstellen endlicher Höhe
 	\item 2-Fache Integrierbarkeit von $x(t)$
 \end{itemize}
-lässt sich die Funktion $x(t)$ als \emph{Fourierreihe} darstellen:
+lässt sich $x(t)$ als \emph{Fourierreihe} darstellen:
 \begin{theo}[Fourierreihe]{theo:Fourierreihe}
 Die Entwicklung von $x(t)$ als Fourierreihe lautet 
 \begin{align}
-	x(t) = C_0 + \sum_{k=1}^{\infty}C_k \cos (k\Omega t) + S_k \sin (k\Omega t) \nonumber 
+	x(t) = C_0 + \sum_{k=1}^{\infty}C_k \cos \left(k \Omega t  \right) + S_k \sin \left(k \Omega t \right) \nonumber 
 \end{align}
 wobei die Koeffizienten des Polynoms nach 
 \begin{align}
-	C_0 & = \frac{1}{T}\int_{-T/2}^{T/2}x(t) \textrm{d}t \nonumber\\
-	C_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\cos(k\Omega t)\textrm{d}t& 
+	C_0 & = \frac{1}{T}\int_{-T/2}^{T/2}x(t) \textrm{d}t \nonumber
+\end{align}
+\begin{align}
+	C_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\cos\left(k \Omega t \right)\textrm{d}t& 
 	&k\in \mathbb{N}&\nonumber\\
-	S_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\sin(k\Omega t)\textrm{d}t& 
+	S_k & = \frac{2}{T}\int_{-T/2}^{T/2}x(t)\sin\left(k \Omega t \right)\textrm{d}t& 
 	&k\in \mathbb{N}&\nonumber
 \end{align}
 berechnet werden. 
@@ -401,17 +281,17 @@ berechnet werden.
 Alternativ gelten auch die folgenden Darstellungen:\\
 \begin{theo}[Darstellung der Fourierreihe durch Amplitude und Phase]{theo:FourierreiheAmpPha}
 \begin{align}
-x(t) = C_0 + \sum_{k=1}^{\infty}\hat x_k \cos (k\Omega t+\varphi_k) \nonumber 
+x(t) = C_0 + \sum_{k=1}^{\infty}\hat x_k \cos \left(k \Omega t +\varphi_k \right) \nonumber 
 \end{align}
 Die Folge $\hat x_1$, $\hat x_2$,... heißt \emph{Amplitudenspektrum}, die Folge  $\varphi_1$, $\varphi_2$, ... heißt \emph{Phasenspektrum}. Man spricht auch von der Spektraldarstellung der Funktion $x(t)$. 
 \end{theo}
 \begin{theo}[Darstellung der Fourierreihe als komplexes Polynom]{theo:Fourierreihekomplex}
 		\begin{align}
-		x(t) = \sum_{k=-\infty}^{\infty} a_k e^{i k\Omega t} \nonumber 
+		x(t) = \sum_{k=-\infty}^{\infty} a_k e^{i k \Omega t } \nonumber 
 		\end{align}
 		wobei die Koeffizienten des Polynoms nach 
 		\begin{align}
-		a_k & = \frac{1}{T}\int_{0}^{T}x(t)e^{-i k\Omega t}\textrm{d}t & 
+		a_k & = \frac{1}{T}\int_{0}^{T}x(t)e^{-i k \Omega t }\textrm{d}t & 
 		&k\in \{-n,n\}, n\in \mathbb{N}&\nonumber 
 		\end{align}
 		berechnet werden. 
@@ -419,9 +299,9 @@ Die Folge $\hat x_1$, $\hat x_2$,... heißt \emph{Amplitudenspektrum}, die Folge 
 Anmerkungen: 
 \begin{itemize}
 	\item Die Darstellung der Funktion $x(t)$ als Fourierreihe bietet den Vorteil der Zerlegung in einzelne Frequenzanteile
-	\item Der Anteil $\hat x_1\cos (\Omega t+\varphi_1)$ heißt \emph{Grundschwingung} oder \emph{1. Harmonische}
-	\item Der Anteil $\hat x_2\cos (2\Omega t+\varphi_2)$ heißt \emph{1. Oberschwingung} oder \emph{2. Harmonische}
-	\item Der Anteil $\hat x_k\cos (k \Omega t+\varphi_k)$ heißt \emph{(k-1)-te Oberschwingung} oder \emph{k-te Harmonische}
+	\item Der Anteil $\hat x_1\cos \left(\Omega t+\varphi_1\right)$ heißt \emph{Grundschwingung} oder \emph{1. Harmonische}
+	\item Der Anteil $\hat x_2\cos \left(2 \Omega t +\varphi_2\right)$ heißt \emph{1. Oberschwingung} oder \emph{2. Harmonische}
+	\item Der Anteil $\hat x_k\cos \left(k \Omega t +\varphi_k\right)$ heißt \emph{(k-1)-te Oberschwingung} oder \emph{k-te Harmonische}
 	\item Bei der Berechnung der Fourierkoeffizienten muss nicht zwingend auf $t\in [-T/2, T/2]$ integriert werden. Wichtig ist, dass eine Periode vollständig abgedeckt ist: Es muss gelten $t\in [t_0, t_0 + T]$ für beliebige $t_0$. 
 	\item Periodische Funktionen können durch eine endliche Zahl von Elementen ihrer Fourierreihe approximiert werden. Der Fehler konvergiert im quadratischen Mittel. 
 \end{itemize}
@@ -430,11 +310,11 @@ Es gelten insbesondere die zwei Spezialfälle:
 \paragraph{Gerade Funktionen.} Für gerade Funktionen $x(t)$ gilt $x(t)=x(-t)$. Dann folgt: 
 \begin{align}
 	&S_k = 0&
-	&C_k = \frac{4}{T}\int_{0}^{T/2} x(t) \cos (k\Omega t) \textrm{d}t&
+	&C_k = \frac{4}{T}\int_{0}^{T/2} x(t) \cos \left( k \Omega t \right) \textrm{d}t&
 \end{align}
 \paragraph{Ungerade Funktionen.} Für ungerade Funktionen $x(t)$ gilt $x(t)=-x(-t)$. Dann folgt: 
 \begin{align}
-&S_k = \frac{4}{T}\int_{0}^{T/2} x(t) \sin (k\Omega t) \textrm{d}t&
+&S_k = \frac{4}{T}\int_{0}^{T/2} x(t) \sin \left(k \Omega t \right) \textrm{d}t&
 &C_k = 0&
 \end{align}
 \begin{beispiel}[Rechteckschwingung]{beispiel:Rechteckschwingung}
@@ -452,7 +332,9 @@ Die Grundfrequenz ist $\Omega=2\pi/T$. Diese Funktion ist punktsymmetrisch zum U
 	C_k&=0, k\in \mathbb N_0,\\
 	S_k&=\frac{4}{T}\int_{0}^{T/2}x(t)\sin(k\Omega t)\textrm{d}t\\
 	& =-\frac{4}{T k \Omega}\left(\cos\left(k\Omega \frac{T}{2}\right)-1\right)\\
-	& = \frac{2}{k \pi}\left(1-(-1)^k\right)\\
+	& = \frac{2}{k \pi}\left(1-(-1)^k\right)
+\end{align}
+\begin{align}
 	& = \left\{
 	\begin{array}{ll}
 		0 & k \textrm{ gerade}\\
@@ -556,7 +438,9 @@ Eine Rechteckimpulsfolge ist definiert als die periodische Abfolge von Rechtecki
 \end{figure}
 Es liegt eine gerade Funktion vor. Die Berechnung der Fourierkoeffizienten liefert
 \begin{align}
-S_k&=0, k\in \mathbb N_0,\\
+S_k&=0, k\in \mathbb N_0,
+\end{align}
+\begin{align}
 C_0&=\frac{1}{T}\int_{0}^{T/2}x(t)\textrm{d}t = \frac{1}{T}\\
 C_k& =\frac{2}{T}\int_{0}^{T}x(t)\cos (k \Omega t)\textrm{d}t =\frac{2}{T}\left(\int_{-\tau/2}^{\tau/2}\frac{1}{\tau}\cos (k \Omega t)\textrm{d}t +\int_{\tau/2}^{T-\tau/2}0\textrm{d}t\right)\\
 & =2\cdot \frac{2}{T k \Omega}\frac{1}{\tau}\left(\sin\left(k\Omega \frac{\tau}{2}\right)\right)\\
@@ -712,7 +596,7 @@ Gemäß dem Superpositionsprinzip ist die Schwingungsantwort auf die Einzelanregun
 x(t) = \frac{F_0}{2c} + \sum_{k=1}^{\infty}V\left(k\eta\right)\left(\frac{F_{C,k}}{c}\cos\left(k\Omega t+\varphi_k\right) + \frac{F_{S,k}}{c}\sin\left(k\Omega t+\varphi_k\right)\right)
 \label{eq:PolyH}
 \end{align}
-Diese Lösung hat Eigenschaften wie die Schwingungsantwort auf eine Einzelanregung. Die Resonanz des ungedämpften Einmassenschwingers wird jetzt nicht mehr nur bei $\Omega=\omega_0$, sondern bei $k \Omega=\omega_0$ mit allen $k\in \mathbb N$ angeregt.% \vspace*{2mm}
+Diese Lösung hat Eigenschaften wie die Schwingungsantwort auf eine Einzelanregung. Die Resonanz des ungedämpften Einmassenschwingers wird jetzt nicht mehr nur bei $\Omega=\omega_0$, sondern bei $k \Omega=\omega_0$ mit allen $k\in \mathbb N$ angeregt. % \vspace*{2mm}
 \begin{beispiel}[Motorblockanregung]{beispiel:Motorblockanregung}
 Die Vertikalbewegung eines Motorblocks kann durch die bekannte DGL des 1-Massen-Schwingers beschrieben werden. Die Schwingungsanregung durch Zündung der 4 Zylinder hat ihre Hauptkomponenten bei doppelter und -facher Motordrehzahl. Die vereinfachte Bewegungsgleichung lautet 
 \begin{align}
@@ -757,14 +641,141 @@ caxis([0.0 1e-3]); axis([0 10 10 200 0 1e-2]);
 	\caption{Spektrogramm der Auslenkung $y(t)$ bei Hochlaufsimulation und Anregung mit 2. und 4. Ordnung. Charakteristisch sind im Spektrogramm die Anregungsordnungen, mit denen die Resonanz jeweils getroffen wird. }
 \end{figure}
 \end{beispiel}
-
+\newpage
 \section{Nichtperiodische Vorgänge}
-Für periodische Funktionen gilt: $\Omega = \frac{2\pi}{T}$. Die Grundfrequenz ist also durch die endliche Periodenlänge begrenzt. Für nichtperiodische Funktionen (z.B. einmalige Vorgänge) geht die Schwingungsdauer $T$ gegen unendlich. Damit ist auch die Grundfrequenz $\Omega\rightarrow \textrm{d}\omega$ (sie wird differenziell klein) bzw. $k\Omega\rightarrow\omega$. Mit Darstellung von (Mathematik 4.5) lauten die komplexen Schwingungskomponenten im Grenzübergang
+\subsection{Sprungfunktion, Dirac-Impuls, Impulsantwort}
+Nichtperiodische Vorgänge sind einmalig und wiederholen sich nicht. Um sich ihnen im Zeitbereich zu nähern, werden zur späteren Verwendung zunächst zwei Distributionen eingeführt, nämlich Sprungfunktion und Dirac-Impuls:
+\begin{theo}[Sprungfunktion]{theo:Sprung}
+	Die Sprungfunktion $\sigma(t)$ ist definiert als 
+	\begin{align}
+		\sigma(t) = \left\{
+		\begin{array}{ll}
+			0 & t < 0 \\
+			1 & 0 \leq t \\
+		\end{array}
+		\right. \nonumber
+	\end{align}
+\end{theo}
+Formal betrachtet ist der Dicac-Impuls die Ableitung der Sprungfunktion. Wegen der unendlich großen Steigung bei $t=0$ wird die Definition über einen Grenzwert eingeführt:
+\begin{theo}[Dirac-Impuls]{theo:Dirac}
+	Der Dirac-Impuls $\delta(t)$ ist definiert als 
+	\begin{align}
+		\delta(t)& = \frac{\textrm{d} \sigma(t)}{\textrm{d} t}
+		= 
+		\left\{
+		\begin{array}{ll}
+			\infty & t =0\\
+			0 & \textrm{sonst} \\
+		\end{array}
+		\right\}
+		= \lim_{\varepsilon\rightarrow0}
+		\left\{
+		\begin{array}{ll}
+			0 & t \leq -\varepsilon \\
+			\frac{1}{2\varepsilon} & -\varepsilon  \leq t \leq \varepsilon  \\
+			0 & \varepsilon \leq t \\
+		\end{array}
+		\right. \nonumber
+	\end{align}
+\end{theo}
+%\begin{figure}[h]
+%	\begin{tikzpicture}
+%	\begin{axis}[
+%	width=0.45\textwidth,
+%	xmin=-1,xmax=1,ymin=-0.3,ymax=1.3, 
+%	samples=1000,
+%	grid=none,
+%	x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+%	y label style={at={(axis description cs:-0.1,.5)},rotate=0,anchor=south},
+%	xlabel={$t$},
+%	ylabel={$x(t)$}, 
+%	xtick={-0.2,0,0.2}, 
+%	xticklabels={$-\varepsilon$,0,$\varepsilon$}]
+%	\addplot[blue, ultra thick] coordinates {(-1,0) (-0.2,0) (-0.2,1) (0.2,1) (0.2,0) (1,0)};
+%	\end{axis}
+%	\end{tikzpicture}
+%\end{figure}\\
+Der integrale Zusammenhang zwischen Sprungfunktion und Dirac-Impuls kann auf zwei Arten bewiesen werden: 
+\begin{align}
+	& \int_{-\infty}^{\infty}\delta(t) \textrm{d}t
+	= \int_{-\infty}^{\infty}\frac{\textrm{d}\sigma(t)}{\textrm{d}t} \textrm{d}t
+	= \left[\sigma(t)\right]_{-\infty}^\infty = 1-0=1\\
+	& \int_{-\infty}^{\infty}\delta(t) \textrm{d}t
+	= \lim_{\varepsilon\rightarrow0}\int_{-\varepsilon}^{\varepsilon}\frac{1}{2\varepsilon} \textrm{d}t
+	= \lim_{\varepsilon\rightarrow0}\left.\frac{1}{2\varepsilon}t\right|_{-\varepsilon}^{\varepsilon}
+	= \lim_{\varepsilon\rightarrow0}\frac{\varepsilon-(-\varepsilon)}{2\varepsilon}
+	=1
+\end{align}
+Die zu erwähnenden Eigenschaften des Dirac-Impulses sind
+\begin{itemize}
+	\item Die Impulsdauer $2\varepsilon$ ist wegen $\varepsilon\rightarrow0$ unendlich kurz
+	\item Die Impulshöhe $\frac{1}{2\varepsilon}$ ist unendlich groß
+	\item Für jede Funktion $f(t)$, die bei $t=t_0$ stetig ist, gilt die Ausblendeigenschaft 
+	\begin{align}
+		\int_{-\infty}^{\infty}f(t)\delta(t-t_0) \textrm{d}t = f(t_0)		
+	\end{align}
+\end{itemize}
+Mithilfe des Dirac-Impuls kann die Schwingungsantwort auf einmalige Vorgänge im Zeitbereich berechnet werden, wie im folgenden Beispiel gezeigt: 
+\begin{beispiel}[Impulsantwort]{beispiel:Impulsantwort}
+Die Anregung durch Impuls ist ein spezielles Testsignal, mit dem die wichtigsten Eigenschaften eines Schwingungssystems ermittelt werden können. Im Falle des Einmassenschwingers lautet die DGL 
+\begin{align}
+	m\ddot x + d\dot x + c x = \delta(t)
+	\label{eq:EMSImpuls}
+\end{align}
+wobei für den Dirac-Impuls $\delta(t)$ die abschnittsweise Definition in Abhängigkeit von $\varepsilon$ verwendet wird. Dementsprechend ist die Lösung abschnittsweise definiert: 
+\paragraph{Vor Impuls ($t \leq -\varepsilon $)}
+Die Masse ist in Ruhe. Also sind Lage und Geschwindigkeit 
+\begin{align}
+	&x(-\varepsilon)=0&  &\dot x(-\varepsilon)=0&
+\end{align}
+\paragraph{Während des Impuls ($-\varepsilon  \leq t \leq \varepsilon$)}
+Die Bewegungsgleichung lautet 
+\begin{align}
+	m\ddot x + d\dot x + c x = \frac{1}{2\varepsilon}
+\end{align}
+Die Integration über die Impulsdauer ergibt in mehreren Schritten  
+\begin{align}
+	\int_{-\varepsilon}^{\varepsilon}\left(m\ddot x + d\dot x + c x\right)\textrm{d}t = \int_{-\varepsilon}^{\varepsilon}\frac{1}{2\varepsilon}\textrm{d}t\\
+	m\int_{-\varepsilon}^{\varepsilon}\ddot x\textrm{d}t 
+	+ d\int_{-\varepsilon}^{\varepsilon}\dot x\textrm{d}t 
+	+c \int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = 1\\
+	m (\dot x(\varepsilon)-\dot x(-\varepsilon)) + d(x(\varepsilon)-x(-\varepsilon)) 
+	+c \int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = 1
+\end{align}
+Unter der Annahme, dass die Lage $x(t)$ während der Impulsdauer stetig bleibt, folgt $x(-\varepsilon)= x(\varepsilon)=x_0$ und damit 
+\begin{align}
+	\int_{-\varepsilon}^{\varepsilon}x\textrm{d}t = c \int_{-\varepsilon}^{\varepsilon}x_0\textrm{d}t = 2\varepsilon x_0 \underset{\varepsilon\rightarrow 0}{\rightarrow} 0
+\end{align}
+Somit verbleibt 
+\begin{align}
+	m\left(\dot x(\varepsilon)-\underbrace{\dot x(-\varepsilon)}_{0}\right)=1
+\end{align}
+Zur Zeit $t=\varepsilon$ gilt also: 
+\begin{align}
+	&x(\varepsilon)=x(-\varepsilon)=0&&\dot{x}(\varepsilon) = \frac{1}{m}&
+\end{align}
+Wegen $\varepsilon\rightarrow0$ gelten auch die Bezeichnungen 
+\begin{align}
+	& t=-\varepsilon = 0^- && t=\varepsilon = 0^+ &
+\end{align}
+\paragraph{Nach dem Impuls ($\varepsilon  \leq t $)} 
+Die Bewegungsgleichung lautet mit Anfangsbedingungen
+\begin{align}
+	& m\ddot x + d\dot x + c x = 0 &&x(0^+) = 0& &\dot x(0^+) = \frac{1}{m}&
+\end{align}
+Die Lösung ist gegeben durch 
+\begin{align}
+	x(t) &= \frac{1}{m\omega_d}e^{-\delta t}\sin(\omega_d t)\label{eq:ImpAntwort}
+\end{align}
+Der Impuls lässt sich im Experiment als Hammerschlag realisieren. Aus der Impuls\-antwort (Gl. 4.45) lassen sich die Systemparameter $m$, $d$, $D$ bestimmen. 
+\end{beispiel}
+\subsection{Fouriertransformation}
+Für periodische Funktionen gilt: $\Omega = \frac{2\pi}{T}$. Die Grundfrequenz ist also durch die endliche Periodenlänge begrenzt. Für nichtperiodische Funktionen (z.B. einmalige Vorgänge) geht die Schwingungsdauer $T$ gegen unendlich. Damit ist auch die Grundfrequenz $\Omega\rightarrow \textrm{d}\omega$ (sie wird differenziell klein) bzw. $k\Omega\rightarrow\omega$. Mit Darstellung von (Mathematik 4.3) lauten die komplexen Schwingungskomponenten im Grenzübergang
 \begin{align}
 x(t) &= \sum_{k=-\infty}^{\infty}a_k e^{i k\Omega t} = \sum_{k=-\infty}^{\infty}\frac{1}{T}\underbrace{\int_{0}^{T}x(t)e^{-i k\Omega t}\textrm{d}t}_{=: X_k = X(k\Omega)} e^{i k\Omega t}\\
 &\rightarrow \frac{1}{2\pi}\int_{-\infty}^{\infty}\underbrace{\int_{0}^{\infty}x(t)e^{-i \omega t}\textrm{d}t}_{X(\omega)} e^{i \omega t}\textrm{d}\omega
 \end{align}
-Dies motiviert die folgende Definition:
+Dies gibt Motivation für die folgende Definition:
 \begin{theo}[Fouriertransformation]{theo:Fouriertransformation}
 Die Fouriertransformation $\mathcal{F}(x)$ beschreibt die Transformation einer Funktion $x(t)$ in den Frequenzbereich. Sie ist definiert durch 
 \begin{align}
@@ -843,9 +854,9 @@ Bemerkenswert an diesem Ergebnis sind zwei Beobachtungen: Das bisherige diskrete
 	\end{axis}
 	\end{tikzpicture}
 \end{figure}
-\end{beispiel}\newpage
+\end{beispiel}
 \begin{beispiel}[Impulsantwort des Einmassenschwingers]{beispiel:HarmOsz}
-Die Fouriertransformation angewandt auf die Gleichung (4.3) lautet gemäß der Rechenregeln: 
+Die Fouriertransformation angewandt auf die Gleichung (4.34) lautet gemäß der Rechenregeln: 
 \begin{align}
 	-\omega^2 X(\omega) + 2Di\omega X(\omega)+\omega_0^2 X(\omega)& =\frac{1}{m}\mathcal{F}\{\delta(t)\}=\frac{1}{m}&&\textrm{bzw.}&\label{eq:GImpuls}\\
 	X(\omega)& = \frac{1}{m}\frac{1}{\left(\omega_0^2-\omega^2 + 2Di\omega \right)}&
